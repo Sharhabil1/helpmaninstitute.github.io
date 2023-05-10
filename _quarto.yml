@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: docs
+
+  preview: 
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+website:
+  title: "Helpman Institute"
+  favicon: "/files/icon.png"
+  site-url: "https://www.edifofon.com"
+  repo-url: "https://github.com/EdifofonA/website"
+  
+  navbar:
+    pinned: true
+
+    left:
+      - text: "Research"
+        href: "index.qmd"
+        
+    right:
+      - icon: envelope
+        aria-label: email
+        href: "mailto:hello@edifofon.com"
+      - icon: github
+        aria-label: github
+        href: https://github.com/EdifofonA
+      - icon: linkedin
+        aria-label: linkedin
+        href: https://www.linkedin.com/in/edifofon
+
+format:
+  html:
+    theme: zephyr
+    css: styles.css
+    toc: true
+    #mainfont: "Neue Haas Grotesk Text Pro"
+
+editor: visual
+
