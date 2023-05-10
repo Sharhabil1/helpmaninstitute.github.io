@@ -75,15 +75,13 @@ knitr::opts_chunk$set(fig.width = 12, fig.height = 10, fig.align = "center",
 
 {{< pagebreak >}}
 
-**ABSTRACT**
+Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
 
-**Background:** Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
+Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
 
-**Methods:** Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
+Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
 
-**Results:** Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
-
-**Conclusion:** Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
+Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
 
 {{< pagebreak >}}
 
