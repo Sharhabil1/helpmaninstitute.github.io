@@ -34,7 +34,6 @@ format:
     theme: zephyr
     css: styles.css
     toc: true
-    #mainfont: "Neue Haas Grotesk Text Pro"
     embed-resources: true
 
 editor: visual
