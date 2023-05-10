@@ -47,6 +47,19 @@ format:
     toc-location: left
     fig-cap-location: margin
     output-file: larcs-scoping-review.html
+  pdf:
+    default-image-extension: pdf
+    link-citations: true
+    linestretch: 1.25
+    geometry:
+    - top=25.4mm
+    - left=25.4mm
+    - right=25.4mm
+    - bottom=25.4mm
+    extra_dependencies: ["flafter"]
+    output-file: larcs-scoping-review.pdf
+    header-includes: |
+      \usepackage[labelsep=period]{caption}
 
 editor: visual
 crossref:
