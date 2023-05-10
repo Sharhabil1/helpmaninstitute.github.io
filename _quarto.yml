@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: ""
+  output-dir: docs
 
   preview: 
     port: 5555
@@ -10,9 +10,9 @@ project:
 
 website:
   title: "Helpman Institute"
-  favicon: "/files/icon.png"
-  site-url: "https://www.edifofon.com"
-  repo-url: "https://github.com/EdifofonA/website"
+  #favicon: "/files/icon.png"
+  site-url: "https://www.helpmaninstitute.org"
+  #repo-url: "https://github.com/helpmaninstitute/website"
   
   navbar:
     pinned: true
@@ -24,13 +24,10 @@ website:
     right:
       - icon: envelope
         aria-label: email
-        href: "mailto:hello@edifofon.com"
-      - icon: github
-        aria-label: github
-        href: https://github.com/EdifofonA
+        href: "mailto:info@helpmaninstitute.org"
       - icon: linkedin
         aria-label: linkedin
-        href: https://www.linkedin.com/in/edifofon
+        href: https://www.linkedin.com/company/helpmaninstitute
 
 format:
   html:
@@ -38,6 +35,7 @@ format:
     css: styles.css
     toc: true
     #mainfont: "Neue Haas Grotesk Text Pro"
+    embed-resources: true
 
 editor: visual
 

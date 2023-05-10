@@ -1,0 +1,19 @@
+# Date format
+date-format: "dddd, MMMM D, YYYY"
+
+# Add blog-post class to the banner header area
+format: 
+  html:
+    code-tools: true
+    embed-resources: true
+    quarto-template-params:
+      banner-header-class: "blog-post"
+
+toc: true
+toc-title: Contents
+toc-location: left
+
+# Default author
+author:
+  - name: Helpman Institute
+    url: https://www.helpmaninstitute.org
