@@ -34,7 +34,7 @@ format:
     theme: zephyr
     css: styles.css
     toc: true
-    embed-resources: false
+    embed-resources: true
 
 editor: visual
 
