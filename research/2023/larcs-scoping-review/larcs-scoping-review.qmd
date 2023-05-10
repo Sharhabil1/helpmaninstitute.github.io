@@ -1,13 +1,7 @@
 ---
 # Use the title below for MS Word or PDF documents
 title: "![](figures/hdi_logo.png){width=2.5in}  \n \n Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
-image: "figures/larcs-use-map.png"
-# Use the title below for html documents
-# title: "Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
-categories:
-  - health
-  - working papers
-  - citations
+
 subtitle: Working Paper
 date: 2023-05-04
 date-modified: today
@@ -52,12 +46,9 @@ format:
     - right=25.4mm
     - bottom=25.4mm
     extra_dependencies: ["flafter"]
+    output-file: larcs-scoping-review.pdf
     header-includes: |
       \usepackage[labelsep=period]{caption}
-  docx:
-    default-image-extension: svg
-    reference-doc: resources/hdi-quarto-template-v0001.docx
-    link-citations: true
 
 editor: visual
 crossref:
@@ -69,12 +60,7 @@ toc: true
 toc-depth: 2
 toc-title: "Table of Contents"
 
-mainfont: "Helvetica Neue Lt Std" # install this font
-titlefont: "Helvetica Neue Lt Std Md"
-sansfont: "Helvetica Neue Lt Std Md"
-#fontsize: 13pt
 bibliography: references.bib
-csl: resources/elsevier-vancouver.csl
 pdf-engine: lualatex
 ---
 
@@ -318,7 +304,7 @@ Furthermore, these programs have provided proof for many vague concepts about LA
 Table 2: Provision of Long-Acting Reversible Contraceptive Methods by Selected Program Initiatives, Nigeria, 2015
 
 |                                           |              |             |                 |
-|---------------------|-----------------|-----------------|-----------------|
+|---------------------------|---------------|---------------|---------------|
 | **Programs**                              | **Implants** | **IUDs**    | **Total LARCs** |
 | Blue Star (Marie Stopes Nigeria           | 51,643       | 13,811      | 65,454          |
 | Healthy Family Network (SFH)              | 20,273       | 53,900      | 74,173          |

@@ -1,18 +1,16 @@
 ---
-# Use the title below for MS Word or PDF documents
 title: "Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
-image: "figures/larcs-use-map.svg"
-
+subtitle: Working Paper
+description: ""
 categories:
   - health
   - working papers
   - citations
 
-subtitle: Working Paper
 date: 2023-05-04
-description: ""
 date-modified: today
 date-format: "MMM YYYY"
+
 author:
   - name: Chidinma Oli
     affiliations:
@@ -41,14 +39,14 @@ affiliations:
     name: School of Pharmacy, University of Washington, Seattle, United States.
   - id: unimelb
     name: School of Population and Global Health, The University of Melbourne, Victoria, Australia.
-    
+
 format: 
   html:
     default-image-extension: svg
     anchor-sections: true
     toc-location: left
     fig-cap-location: margin
-    self-contained: true
+    output-file: larcs-scoping-review.html
 
 editor: visual
 crossref:
@@ -60,11 +58,7 @@ toc: true
 toc-depth: 2
 toc-title: "Table of Contents"
 
-mainfont: "Helvetica Neue Lt Std"
-titlefont: "Helvetica Neue Lt Std Md"
-sansfont: "Helvetica Neue Lt Std Md"
 bibliography: references.bib
-csl: resources/elsevier-vancouver.csl
 pdf-engine: lualatex
 ---
 
