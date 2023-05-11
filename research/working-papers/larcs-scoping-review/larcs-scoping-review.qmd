@@ -1,6 +1,6 @@
 ---
 # Use the title below for MS Word or PDF documents
-title: "![](figures/hdi_logo.png){width=2.5in}  \n \n Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
+title: "![](resources/hdi_logo.png){width=2.5in}  \n \n Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
 
 subtitle: Working Paper
 date: 2023-05-04
@@ -309,7 +309,7 @@ Furthermore, these programs have provided proof for many vague concepts about LA
 Table 2: Provision of Long-Acting Reversible Contraceptive Methods by Selected Program Initiatives, Nigeria, 2015
 
 |                                           |              |             |                 |
-|---------------------|-----------------|-----------------|-----------------|
+|--------------------|-----------------|-----------------|-----------------|
 | **Programs**                              | **Implants** | **IUDs**    | **Total LARCs** |
 | Blue Star (Marie Stopes Nigeria           | 51,643       | 13,811      | 65,454          |
 | Healthy Family Network (SFH)              | 20,273       | 53,900      | 74,173          |
