@@ -11,8 +11,8 @@ font_add("helvetica",   "resources/HelveticaNeueRg.ttf")
 font_add("helveticaMd",   "resources/HelveticaNeueMd.ttf")
 showtext_auto()
 
-ngaShape <- st_read("data/NGA_population_v2_0_admin/NGA_population_v2_0_admin_level1_boundaries.shp")
-larcsState <- read_csv("data/larcs_state.csv")
+ngaShape <- st_read("NGA_population_v2_0_admin/NGA_population_v2_0_admin_level1_boundaries.shp")
+larcsState <- read_csv("larcs_state.csv")
 
 ngaShape <- ngaShape %>% 
   mutate(perc_larcs = larcsState$percent_total)
