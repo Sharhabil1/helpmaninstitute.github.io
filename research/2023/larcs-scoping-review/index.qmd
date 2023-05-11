@@ -1,7 +1,7 @@
 ---
 title: "Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
 description: "Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries."
-
+image: "figures/larcs-use-map.svg"
 categories:
   - health
   - working papers
@@ -40,11 +40,13 @@ affiliations:
     name: School of Population and Global Health, The University of Melbourne, Victoria, Australia.
 
 format: 
-  html: default
-
+  html: 
+    fig-cap-location: margin
 execute:
   echo: false
 ---
+
+## Abstract
 
 Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
 
@@ -52,4 +54,11 @@ Universal provision of iron supplements or iron-containing multiple micronutrien
 
 Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh. Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
 
-[Paper (preprint)](larcs-scoping-review.pdf)
+## Key figure
+
+![Percent distribution of long-acting reversible contraception use by state in 2018](figures/larcs-use-map.svg)
+
+## PDF links
+
+-   [Paper (preprint) in PDF format](larcs-scoping-review.pdf)
+-   [Appendix (preprint) in PDF format](larcs-scoping-review.pdf)

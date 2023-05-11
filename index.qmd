@@ -17,6 +17,8 @@ code-tools: false
 comments: false
 ---
 
+Explore the latest health and economic research and policy proposals from Helpman Development Institute's experts.
+
 ## 2023
 
 ::: {#posts_2023}
