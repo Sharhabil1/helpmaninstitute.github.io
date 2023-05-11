@@ -1,6 +1,6 @@
 ---
 # Use the title below for MS Word or PDF documents
-title: "![](resources/hdi_logo.png){width=2.5in}  \n \n Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
+title: "![](resources/hdi_logo.png){width=2in}  \n \n Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
 
 subtitle: Working Paper
 date: 2023-05-04
