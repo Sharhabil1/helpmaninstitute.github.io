@@ -70,7 +70,8 @@ toccolor: blue
 toc: true
 toc-depth: 2
 toc-title: "Table of Contents"
-
+execute:
+  echo: false
 bibliography: references.bib
 pdf-engine: lualatex
 ---
