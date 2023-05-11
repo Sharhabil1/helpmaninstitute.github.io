@@ -1,7 +1,7 @@
 ---
 title: "Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
-subtitle: Working Paper
-description: ""
+description: "Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries."
+
 categories:
   - health
   - working papers
@@ -31,7 +31,6 @@ author:
     attributes:
       corresponding: false
     email: eakpan@helpmaninstitute.org
-
 affiliations:
   - id: hdi
     name: Population Health Sciences, Helpman Development Institute, FCT Abuja, Nigeria.
@@ -41,52 +40,16 @@ affiliations:
     name: School of Population and Global Health, The University of Melbourne, Victoria, Australia.
 
 format: 
-  html:
-    default-image-extension: svg
-    anchor-sections: true
-    toc-location: left
-    fig-cap-location: margin
-    output-file: larcs-scoping-review.html
-  pdf:
-    default-image-extension: pdf
-    link-citations: true
-    linestretch: 1.25
-    geometry:
-    - top=25.4mm
-    - left=25.4mm
-    - right=25.4mm
-    - bottom=25.4mm
-    extra_dependencies: ["flafter"]
-    output-file: larcs-scoping-review.pdf
-    header-includes: |
-      \usepackage[labelsep=period]{caption}
+  html: default
 
-editor: visual
-crossref:
-  title-delim: "."
-number-sections: true
-
-toccolor: blue
-toc: true
-toc-depth: 2
-toc-title: "Table of Contents"
 execute:
   echo: false
-bibliography: references.bib
-pdf-engine: lualatex
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(fig.width = 12, fig.height = 10, fig.align = "center",
-                      out.width = "100%", collapse = TRUE, fig.pos = "H", out.extra = "")
-```
-
-{{< pagebreak >}}
-
 Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
 
-Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
+Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh. Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
 
-Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
+Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh. Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
 
-Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries. The Benefits and Risks of Iron Interventions in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh.
+[Paper (preprint)](larcs-scoping-review.pdf)
