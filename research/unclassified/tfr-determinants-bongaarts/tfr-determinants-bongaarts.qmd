@@ -1,11 +1,352 @@
 ---
-title: "tfr-determinants-bongaarts"
+# Use the title below for MS Word or PDF documents
+title: "![](figures/hdi_logo.png){width=2.5in}  \n \n Biological and Behavioural Determinants of Fertility in Nigeria: An Application of the Revised Bongaarts Model"
+
+# Use the title below for html documents
+# title: Biological and Behavioural Determinants of Fertility in Nigeria: An Application of the Revised Bongaarts Model
+
+subtitle: Working Paper
+
+author:
+  - name: Edifofon Akpan
+    affiliations:
+      - ref: hdi
+      - ref: checod
+    attributes:
+      corresponding: true
+    email: eakpan@helpmaninstitute.org
+
+  - name: O.Taiwo
+    affiliations:
+      - ref: hdi
+      - ref: checod
+    attributes:
+      corresponding: false
+
+  - name: C.Oli
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: false
+
+  - name: A.Adefabi
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: false
+
+  - name: E. Baiye
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: false
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+  - id: checod
+    name: Centre for Health Economics and Development, Abuja, Nigeria.
+    
+format: 
+  docx:
+    default-image-extension: svg
+    reference-doc: resources/hdi-quarto-template-v0001.docx
+    link-citations: true
+  html:
+    default-image-extension: svg
+    anchor-sections: true
+    toc-location: left
+    fig-cap-location: margin
+    self-contained: true
+  pdf:
+    papersize: a4
+    default-image-extension: pdf
+    link-citations: true
+    linestretch: 1.25
+    geometry:
+    - top=25.4mm
+    - left=25.4mm
+    - right=25.4mm
+    - bottom=25.4mm
+    extra_dependencies: ["flafter"]
+    header-includes: |
+      \usepackage[labelsep=period]{caption}
+      
+#filters:
+# - authors-block
+
+editor: visual
+crossref:
+  title-delim: "."
+number-sections: true
+
+# toccolor: blue
+# toc: true
+# toc-depth: 2
+# toc-title: "Table of Contents"
+
+bibliography: references.bib
+csl: resources/bmj.csl
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-```{r}
-1 + 1
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width = 12, fig.height = 10, fig.align = "center",
+                      out.width = "100%", collapse = TRUE, fig.pos = "H", out.extra = "")
 ```
+
+{{< pagebreak >}}
+
+**ABSTRACT**
+
+It is projected that the global population will grow from 7.7 billion in 2019 to 8.5 billion in 2030, reaching 11 billion by the middle of the 21st century. This rise is a result of three processes, the key determinants of population growth: births (fertility), deaths (mortality), and movement (migration). Although women have had fewer kids in many parts of the world over the past few decades, amid numerous interventions, high fertility rates persist in sub-Saharan Africa. In these countries with lifetime fertility, up to half of the overall population growth worldwide is expected to remain well above two births per woman by 2050, although many countries will remain well above two births per woman. The primary fertility level measure is the total fertility rate (TFR), which shows the average number of children a woman can bear in her lifetime, based on current age-specific fertility rates. Data from the Nigeria Demographic and Health Survey of 2003, 2008, 2013 and 2018 were used for this study while a revised version of Bongaarts' proximate determinants model to was used to assess the relationship between projected potential fertility (PF) and behavioural and biological factors. Findings from the study showed that postpartum infecundability remained the strongest influential factor in reducing fertility while sexual exposure and contraception have an inverse relationship with educational attainment levels in all years of the survey. However, if was found that contraception use had a more impact among women with higher education who lived in urban regions and belonged to the highest wealth quintile. The study, therefore suggested that the Government of Nigeria and developing partners need to design effective strategies to increase contraceptive use across the country.
+
+**Keywords:** fertility, determinants.
+
+{{< pagebreak >}}
+
+# Introduction {#sec-introduction}
+
+Since 1990, fertility levels in Nigeria as measured by total fertility rates (TFRs) have gradually declined, from 6.0 children per woman to 5.3 children per woman in 2018 (NPC and ICF 2019, NPC and ICF International 2014, National Population Commission and ORC Macro 2004). Irrespective of this decline, Nigeria's fertility levels remain notably high compared to observed fertility levels in developed countries such as the United States and the United Kingdom, which have TFRs of 1.6. However, high fertility rates are not exclusive to Nigeria. Other sub-Saharan African countries such as Mali and Burundi, have TFRs of 6.0 and 5.2 respectively. There are also regional differences in fertility rates within Nigeria. In general, fertility rates are highest in the Northwest (6.6 children per woman) and lowest in the Southwest (3.9 children per woman). Similar regional variations in fertility rates are found in other sub-Saharan African countries.
+
+Demographically observed fertility is the result of proximate (biological and determinants) of fertility [@laelago2019]. These proximate determinants serve to mediate the influence of culture, socioeconomic conditions, and related background determinants on reproductive behaviour. The key characteristic of these proximate determinants is their direct effect on fertility, which improves our understanding of the operation of the socioeconomic determinants. In 1978, Bongaarts designed a quantitative framework for analysis which indicated that variations in four major proximate determinants of fertility -- marriage, contraception, breastfeeding practice, and induced abortion were the primary proximate causes of differences among populations (Bongaarts 1978). This framework has since been revised (Stover 1998, Bongaarts 2015), and used in modified forms in various studies to analyse the proximate determinants (Laelago et al. 2019, Palamuleni 2017, Chola and Michelo 2016).
+
+Early studies on fertility using the old Bongaarts model in Nigeria have estimated exposure to the risk of childbearing through first marriage to be the most important proximate determinant followed closely by breastfeeding and postpartum sexual abstinence (Odimegwu and Zerai 1996, Chimere‐Dan 1990, Jolly and Gribble 1993). Socio-economic and cultural characteristics that have been proven to explain fertility differentials are education, female labour force participation, residence, household wealth, caesarean birth, cultural norms often measured by religion or ethnicity (Wusu and Isiugo-Abanihe 2019, Alaba et al. 2017, Akpa and Ikpotokin 2012).
+
+In this study, we examine trends in the determinants of fertility along with trends in geographical and socioeconomic correlates using a revised Bongaarts model. We also assess how changes in these factors over time may have influenced changes in the effects of proximate determinants on fertility. Finally, we reflect on the key outcome indicators by examining women's reproductive options alongside maternal and child health policy priorities. By providing insights into fertility dynamics and possible points of programmatic intervention, we hope to inform fertility-related population policy priorities.
+
+# Methods {#sec-methods}
+
+## Data Sources
+
+We used data from the Nigeria Demographic and Health Survey of 2003, 2008, 2013 and 2018 for this study (National Population Commission and ICF International 2014, National Population Commission and ORC Macro 2004, National Population Commission and ICF International 2019, National Population Commission and ICF Macro 2009). The survey is a nationally representative survey of Nigerian households. Women aged 15-49 were eligible to be interviewed if they were either permanent residents or visitors who spent the previous night in the household. A total of 7,620; 33,385; 38,948 and 41,821 women aged 15-49 were interviewed in 2003, 2008, 2013 and 2018 surveys. The survey collected various information from women including fertility preference, sexual activity, and reproductive history, alongside background characteristics.
+
+The key background variables considered in this study were percentage of women with secondary education or above, percentage of women working in the labour force, percentage of women living in urban residence, percentage of women in different geographical zones. The TFR was calculated from births and exposure during the three years (36 months) prior to each woman's month of interview. The nominal date of a TFR is the year of the survey, but the reference period is prior to that. The reference period for the proximate determinants is also prior to the date of interview except for contraception, which is based on current contraceptive use. In terms of synchronization, the link between fertility and contraception is problematic. For individual women, contraception affects subsequent fertility, but in the data, fertility s measured for an earlier date than contraception.
+
+For the estimation of index of abortion, we used the total abortion rate (TAR) reported in a survey by Guttmacher Institute (Bankole et al. 2015). The survey estimated the TAR using data on delivery of abortion and post-abortion care services from a nationally representative sample of 772 health facilities in 2012. The TAR obtained from his study was kept constant for all years of the analysis -- 2003, 2008, 2013 and 2018.
+
+## Data analysis
+
+This study examines the contributions of biological and behavioural determinants to fertility change, as well as the effects of the socio-economic and geographic factors through which the determinants exert their influence. Statistical analyses for inputs in the model were performed using Stata 16.0 (StataCorp) and confirmed with published DHS reports for inputs available in the reports. The proximate determinants of fertility, potential fertility and background variables were calculated using Microsoft Excel 2019 software. In the following section we present detailed analysis of fertility differentials that quantifies the negative and positive effects of each of the socio-economic and geographic factors on fertility through various intermediate fertility variables.
+
+### *Proximate determinants: The Bongaart's Model*
+
+We used a revised version of Bongaarts' proximate determinants model to assess the relationship between projected potential fertility (PF) and behavioural and biological factors. Each of the determinants is assumed to independently inhibit fertility. In the original model, Bongarts identified the following: an index for marriage, contraception, abortion and post-partum infecundity and expressed TFR as the product of the four indices together with total fecundity (TF) - the average number of live births expected among women during their entire lifetime, (Bongaarts 1978).
+
+$$
+TFR = C_m\:*\:C_{i}\:*\:C_{c}\:*\:C_{a}\:*\:TF
+$$
+
+where, TFR is the total fertility rate, C~m~ is the index of proportion married, C~i~ is the index of post-partum infecundability, C~a~ is the index of induced abortion, C~c~ is the index of contraception. The indices only take values between 0 and 1. If the corresponding index is of no fertility inhibition effect, the index equals 1; an index of 0 which is not empirically proven, indicates total inhibition effect(Bongaarts 1978).
+
+A revision of this model attempted to account for overlaps between the determinants, specifically between postpartum amenorrhea and contraceptive use (Stover 1998). The revised framework used for this study includes five intermediate fertility variables; proportion sexually exposed, postpartum infecundability, contraception, induced abortion, and sterility which are key direct determinants of fertility. From the original model, the index of marriage i was revised to include women who have been in a sexual union in the last month, use contraceptives, are pregnant or post-partum infecundable. This index was renamed index of sexual exposure (Stover 1998). The index of post-partum infecundability was modified to post-partum insusceptibility including both median duration of post-partum amenorrhea and post-partum abstinence. The index of abortion was revised by multiplying contraceptive prevalence with average use effectiveness of contraception (Stover 1998).
+
+The index of sterility was modified from proportion of women 45-49 years old who had no live births to the proportion of sexually active women who are infecund. Index of contraception was revised to the proportion of sexually active fecund women using contraceptives that do not overlap with those experiencing postpartum amenorrhea and the average effectiveness of contraception (Stover, 1998). The revised equation relating the total fertility rate to the proximate determinants used in this study is expressed as:
+
+$$
+TFR=PF\:*\:C_{x}\:*\:C_{u}\:*C_{a}\:*C_{i}\:*C_{f}\:
+$$
+
+Where TFR is the total fertility rate, PF is the potential fertility, C~x~ represents the index of sexual exposure, C~u~ is the index of contraception, C~a~ is the index of induced abortion, C~i~ is the index of postpartum insusceptibility and C~f~ represents the index of sterility. Estimates from empirical data showed an average potential fertility of 21 (18-24) births per woman for the 35-year reproductive period from age 15 to 49 years (Stover 1998). Nonetheless, estimates of PF may exceed its theoretical limits because of a large error term in the proximate determinants' framework, attributed in a large part to the effects of unmeasured factors exogenous to the framework (UN Population Division 2014).
+
+### *The index of sexual exposure (C~x~)*
+
+The index of sexual exposure expresses the reduction in fertility caused by women's not being sexually active throughout their entire reproductive period. The index is calculated as:
+
+$$
+C_x=\:s
+$$
+
+where s is the proportion of women aged 15-49 who are sexually active (women who either are pregnant, report sex in the last month, use contraception, or are postpartum infecundable). The index of sexual exposure, C~x~, equals 1 if all women of reproductive age are sexually active during the entire reproductive period and 0 in the absence of such.
+
+### *The index of contraception (C~c~)*
+
+This considers both the level of contraceptive prevalence and the average effectiveness of contraceptive methods used. It is estimated as:
+
+$$
+C_c=\:1\:-\:1.08ue
+$$ where u is the proportion of women in the reproductive ages who are currently using contraception among those sexually active, excluding exclude those infecund and postpartum amenorrhic within 6 months after birth; and e is the average of use-effectiveness of contraception as practiced in the population. Estimates of the method-specific effectiveness are: sterilization (0.995), pill (0.930), injectable (0.970), implant (0.999), intra-uterine device (0.993), male condom (0.870), and other modern methods (0.800) (World Health Organization and Johns Hopkins CCP 2017).
+
+### *The index of sexual abortion (C~a~)*
+
+The index of abortion is the proportion by which the PF is reduced due to induced abortion. Births averted per induced abortion are related to contraceptive use (UN Population Division 2014). The index of abortion is defined as the ratio of the observed TFR to the estimated TFR without induced abortion, and declines with increasing incidence of induced abortion (Stover 1998). This index is calculated as follows:
+
+$$
+C_a=\frac{TFR}{TFR\:+\:0.4\:*\:(1\:+\:u)\:*\:TAR}
+$$ where TFR is the total fertility rate, u represents the proportion protected by contraception among women who have an induced abortion and TAR is the total abortion rate which is the average number of induced abortions per married or in-union woman at the end of the reproductive period if induced abortions remain at prevailing levels. The index of induced abortion equals 1 in the absence of induced abortion and 0 if all pregnancies are aborted. Reliable data on the total abortion rate for all years is not available. We assumed abortion rates prevailing in 2012 (Bankole et al. 2015), will remain constant throughout 2018.
+
+### *The index of postpartum infecundability (C~i~)*
+
+The index of postpartum infecundability represents the reduced risk of exposure to conception immediately following a birth (Bongaarts and Potter 1983). In the absence of any breastfeeding (and postpartum abstinence), the average birth interval is around 20 months, which includes four segments: a period of postpartum amenorrhea (1.5 months), the average waiting time to conception (7.5 months), time added by spontaneous intrauterine mortality (2 months) and 9 months of a full term pregnancy. The last three segments are assumed constant and sum up to 18.5 months. Postpartum amenorrhea is extended by breastfeeding and abstinence. The index of postpartum infecundability is estimated by the ratio of the average birth interval where breastfeeding and abstinence are absent, and the length of a birth interval where the period of postpartum infecundability is extended by breastfeeding and abstinence. It is estimated using the formula:
+
+$$
+C_i\:=\:\frac{20}{18.5\:+\:i}
+$$
+
+where C~i~ = index of postpartum infecundability; and i = average duration of postpartum infecundability due to breastfeeding and postpartum abstinence. In the absence of breastfeeding and abstinence, i would be equal to 1.5, its minimum possible value, and C~i~ would equal 1. As the duration of postpartum infecundability increases, C~i~ declines and it would tend towards 0 if the duration of postpartum infecundability were to continue indefinitely.
+
+### *The index of sterility (C~s~)*
+
+C~s~ measures the incidence of natural infertility and pathological sterility. This index expresses the total effect of infecundity because of a pathological condition. The net effect of pathological sterility would be the difference between the actual index and some base value that represents natural infecundity. The formula for measuring the index of sterility is represented as:
+
+$$
+C~f~=\:1\:-\:f
+$$
+
+where *f* is defined as the proportion of sexually active women who are infecund.
+
+## Background and institutional factors
+
+In this study, we assessed the socio-economic or contextual characteristics that influence fertility through changes in the proximate determinants. These were the level of education, female participation in the workforce, wealth quintile, geopolitical regions and type of residence. Each of these factors has well established associations with fertility (Johnson et al. 2011). We examined fertility preferences through the ideal number of children and desire for more children. The DHS asks women with living children, *"If you could go back to the time \[when\] you did not have any children and could choose exactly the number of children to have in your whole life, how many would that be?"* For women who are yet to give birth, the question is framed as *"If you could choose exactly the number of children to have in your whole life, how many would that be?"* (National Population Commission and ICF International 2019). We considered only numeric responses. The survey also asked women whether they wanted more children in addition to those they have, thus reflecting desire for further reproduction.
+
+The study also tracked four indicators of women's fertility preferences. The key indicators that reflect fertility-related international policy and program priorities include planning status for most recent birth in the past five years, percent of children born to mothers under age 18, percent of children born to mothers over age 34, and the median length of the birth interval (in months). We assessed the strength of Nigeria's Family planning programs using the Family Planning Effort Index (FPEI) and National Composite Index on Family Planning (NCIFP). The FPE has been collected periodically since 1972, and provides results across four key components: policies, services, evaluation, and access (Avenir Health 2017a). The index was developed to measure the level of effort that goes into FP programs, and to track how these changes over time. The NCIPF measures the existence and implementation of family planning policies and program under five components: strategy, data, quality, equity, and accountability. It is built on the FPEIS framework (Avenir Health 2017b).
+
+## Results
+
+The indices of direct biological and behavioural determinants of fertility from Bongaarts models is shown in Table 1. The behavioural indices include index of sexual exposure (C~x~), index of contraception (C~c~)and index of abortion (C~a~) while the index of sterility (C~s~) is a biological determinant. Postpartum infecundability (C~i~) is a function of the duration of postpartum amenorrhea and postpartum abstinence. The duration of amenorrhea is a function of the normal length of amenorrhea after childbirth women which is due to breastfeeding practices. The duration of abstinence is entirely behavioural.
+
+Table 1: Estimated Indices for Proximate Determinants of Fertility, DHS 2003-2018
+
+|          |          |          |          |          |          |        |                  |                     |
+|----------|----------|----------|----------|----------|----------|--------|------------------|---------------------|
+| **Year** | **C~x~** | **C~i~** | **C~a~** | **C~f~** | **C~u~** | **PF** | **TFR (Survey)** | **TFR (Bongaarts)** |
+| 2003     | 0.70     | 0.59     | 0.94     | 0.81     | 0.85     | 21.00  | 5.65             | 5.65                |
+| 2008     | 0.70     | 0.62     | 0.94     | 0.82     | 0.82     | 20.72  | 5.72             | 5.80                |
+| 2013     | 0.72     | 0.64     | 0.94     | 0.80     | 0.81     | 19.48  | 5.50             | 5.93                |
+| 2018     | 0.68     | 0.64     | 0.94     | 0.80     | 0.82     | 19.61  | 5.29             | 5.67                |
+
+C~i~ was the lowest among the indices in our study at 0.64 in the 2018 survey. This implies that postpartum infecundability is associated with reduction of potential fertility by 36% from its biological maximum. Delayed sexual exposure (C~x~) inhibited fertility by 32% being the second most effective ferility reducing factor. The index of abortion was high at 0.94. Hence, abortion (Awoyemi and Novignon 2014, Ibrahim and Onwudiegwu 2012, Lamina 2015). This index is therefore excluded from the discussions. The other reductions in PF occurred because of inability to bear children (C~f~, 0.80) and effects from the use of contraceptive technologies (C~u~, 0.82). The lowest contributor is the index of contraception, contributing to 18% reduction in PF. There were little changes during the period of the survey in the 5 indices.
+
+The revised Bongaart's model gave an estimated TFR of 5.67, which is 0.38 children higher than TFR measured by DHS survey in 2018 (5.29). The analysis arrived at similar values for 2003 (5.65 each). Any difference between these sets of TFRs may be due to underestimation in DHS samples, inaccuracies in the data, inexactitude in our estimation of the indices, or other factors left out of the model. Nevertheless, the model shows the relative contributions of the determinants, and enables us report variations between socioeconomic and geographic groups, as well as changes over the years of the surveys 2003-2018.
+
+The influence of the proximate determinants and their variability by these background factors are presented in tables 2, 3, 4 and 5 for 2018, 2013, 2008 and 2003 respectively. The study shows that for 2018, attainment of secondary education is associated with relatively low indices for sexual exposure (0.58) and contraception (0.62). Across the educational attainment levels, these two indices have an inverse relationship in all years of the survey. On the other hand, the index of postpartum infecundability increases with additional educational attainment. This would reflect shorter duration of breastfeeding which is essential to prolong duration of postpartum amenorrhea, and quicker cessation of sexual abstinence after delivery. Concerning disparity in place of residence and wealth, C~x~ was higher among rural residents in all years (rural - 0.74, urban - 061). This means sexual exposure inhibited fertility by 33.5% among rural residents, and 39% among city dwellers. On the contrary, the Ci was higher among urban residents (rural - 0.61, urban - 0.68). Contribution of sterility to reducing PF is not dependent on place of residence, as C~f~ in all years were within ±0.03 units. As expected, the index of contraception is higher in rural areas relative to urban population, reflecting a higher contraceptive use among sexually exposed female urban dwellers. There also are notable differences between women of different wealth quintiles. The values of the indices are lower for women in higher wealth quintiles, meaning a higher depression of fertility, with exception of C~i~. The C~i~ increases progressively along the wealth quintiles (lowest - 0.56, second - 0.61, middle - 0.64, fourth - 0.68, highest - 0.75) in 2018, as well as across all the years of the survey.
+
+Workforce participation is associated with a lower fertility in 2018, with no notable difference in preceding years. In the latest year of the survey, the estimated TFR among women in workforce was 5.22, compared to 5.93 in women without workforce participation. In 2013 however, the reverse was the case (in workforce - 5.76, not in workforce - 5.62) The differences were negligible in 2008 (in workforce -- 5.93, not in workforce - 5.99), and 2003 (in workforce - 5.78, not in workforce - 5.74). In all years, the index of contraception contributed more to depression of fertility among those in workforce compared to those not active in workforce. In contrast, the index of marriage and index of sterility contributed more to fertility reduction among women of reproductive age not active in workforce. The contributions of the index of postpartum infecundability and index of abortion were near identical.
+
+Table 2: Estimated indices of proximate determinants of fertility 2018
+
+|                   |          |          |          |          |          |        |                  |                     |
+|-------------------|----------|----------|----------|----------|----------|--------|------------------|---------------------|
+| **Variables**     | **C~x~** | **C~i~** | **C~a~** | **C~f~** | **C~u~** | **PF** | **TFR (Survey)** | **TFR (Bongaarts)** |
+| *Aggregate*       |          |          |          |          |          |        |                  |                     |
+| National          | 0.68     | 0.64     | 0.94     | 0.80     | 0.82     | 19.61  | 5.29             | 5.67                |
+| *Education*       |          |          |          |          |          |        |                  |                     |
+| No education      | 0.83     | 0.58     | 0.95     | 0.78     | 0.91     | 20.57  | 6.74             | 6.88                |
+| Primary           | 0.69     | 0.63     | 0.94     | 0.75     | 0.69     | 27.65  | 5.81             | 4.41                |
+| Secondary/Higher  | 0.58     | 0.70     | 0.91     | 0.84     | 0.62     | 22.09  | 4.21             | 4.00                |
+| *Residence*       |          |          |          |          |          |        |                  |                     |
+| Urban             | 0.61     | 0.68     | 0.92     | 0.80     | 0.59     | 24.82  | 4.50             | 3.81                |
+| Rural             | 0.74     | 0.61     | 0.94     | 0.80     | 0.81     | 21.45  | 5.94             | 5.82                |
+| *Wealth quintile* |          |          |          |          |          |        |                  |                     |
+| Lowest            | 0.79     | 0.56     | 0.95     | 0.81     | 0.91     | 21.44  | 6.70             | 6.56                |
+| Second            | 0.75     | 0.61     | 0.95     | 0.80     | 0.84     | 21.26  | 6.20             | 6.12                |
+| Middle            | 0.66     | 0.64     | 0.94     | 0.79     | 0.75     | 23.89  | 5.59             | 4.91                |
+| Fourth            | 0.63     | 0.68     | 0.92     | 0.80     | 0.61     | 23.63  | 4.55             | 4.04                |
+| Highest           | 0.61     | 0.73     | 0.90     | 0.80     | 0.54     | 21.82  | 3.79             | 3.65                |
+| *Workforce*       |          |          |          |          |          |        |                  |                     |
+| In workforce      | 0.73     | 0.64     | 0.93     | 0.78     | 0.67     | 22.94  | 5.22             | 4.78                |
+| Not in workforce  | 0.58     | 0.63     | 0.94     | 0.86     | 0.84     | 23.68  | 5.93             | 5.26                |
+| *Regions*         |          |          |          |          |          |        |                  |                     |
+| North Central     | 0.65     | 0.63     | 0.93     | 0.80     | 0.70     | 23.73  | 5.03             | 4.45                |
+| North East        | 0.73     | 0.62     | 0.95     | 0.82     | 0.84     | 20.60  | 6.06             | 6.18                |
+| North West        | 0.77     | 0.58     | 0.95     | 0.83     | 0.86     | 21.81  | 6.60             | 6.35                |
+| South East        | 0.55     | 0.69     | 0.92     | 0.77     | 0.56     | 31.44  | 4.72             | 3.15                |
+| South South       | 0.63     | 0.75     | 0.90     | 0.74     | 0.63     | 20.05  | 4.03             | 4.22                |
+| South West        | 0.63     | 0.68     | 0.91     | 0.80     | 0.53     | 23.24  | 3.86             | 3.49                |
+
+Table 3: Estimated indices of proximate determinants of fertility (2013)
+
+|                   |          |          |          |          |          |        |                  |                     |
+|-------------------|----------|----------|----------|----------|----------|--------|------------------|---------------------|
+| **Variables**     | **C~x~** | **C~i~** | **C~a~** | **C~f~** | **C~u~** | **PF** | **TFR (Survey)** | **TFR (Bongaarts)** |
+| *Aggregate*       |          |          |          |          |          |        |                  |                     |
+| National          | 0.72     | 0.64     | 0.94     | 0.80     | 0.81     | 19.48  | 5.50             | 5.93                |
+| *Education*       |          |          |          |          |          |        |                  |                     |
+| No education      | 0.86     | 0.58     | 0.95     | 0.77     | 0.94     | 20.20  | 6.93             | 7.20                |
+| Primary           | 0.74     | 0.63     | 0.95     | 0.78     | 0.65     | 27.27  | 6.13             | 4.72                |
+| Secondary/Higher  | 0.59     | 0.72     | 0.91     | 0.86     | 0.50     | 24.79  | 4.21             | 3.57                |
+| *Residence*       |          |          |          |          |          |        |                  |                     |
+| Urban             | 0.65     | 0.70     | 0.92     | 0.82     | 0.51     | 26.49  | 4.66             | 3.69                |
+| Rural             | 0.78     | 0.61     | 0.95     | 0.80     | 0.79     | 22.06  | 6.18             | 5.88                |
+| *Wealth quintile* |          |          |          |          |          |        |                  |                     |
+| Lowest            | 0.86     | 0.57     | 0.96     | 0.77     | 0.96     | 19.84  | 6.95             | 7.36                |
+| Second            | 0.78     | 0.58     | 0.95     | 0.80     | 0.87     | 22.13  | 6.72             | 6.38                |
+| Middle            | 0.67     | 0.64     | 0.94     | 0.80     | 0.71     | 25.14  | 5.68             | 4.74                |
+| Fourth            | 0.66     | 0.70     | 0.93     | 0.81     | 0.56     | 25.52  | 4.89             | 4.02                |
+| Highest           | 0.66     | 0.76     | 0.90     | 0.83     | 0.42     | 24.46  | 3.90             | 3.35                |
+| *Workforce*       |          |          |          |          |          |        |                  |                     |
+| In workforce      | 0.79     | 0.64     | 0.94     | 0.78     | 0.63     | 24.55  | 5.76             | 4.93                |
+| Not in workforce  | 0.61     | 0.64     | 0.94     | 0.86     | 0.77     | 23.43  | 5.62             | 5.04                |
+| *Regions*         |          |          |          |          |          |        |                  |                     |
+| North Central     | 0.65     | 0.63     | 0.94     | 0.82     | 0.68     | 24.63  | 5.28             | 4.50                |
+| North East        | 0.79     | 0.62     | 0.95     | 0.79     | 0.93     | 18.47  | 6.30             | 7.16                |
+| North West        | 0.83     | 0.58     | 0.95     | 0.79     | 0.87     | 20.75  | 6.68             | 6.76                |
+| South East        | 0.57     | 0.69     | 0.92     | 0.77     | 0.45     | 37.89  | 4.71             | 2.61                |
+| South South       | 0.66     | 0.76     | 0.91     | 0.81     | 0.49     | 23.60  | 4.27             | 3.80                |
+|                   |          |          |          |          |          |        |                  |                     |
+| South West        | 0.67     | 0.69     | 0.92     | 0.84     | 0.37     | 34.19  | 4.55             | 2.79                |
+
+Table 4: Estimated indices of proximate determinants of fertility (2008)
+
+|                   |          |          |          |          |          |        |                  |                     |
+|-------------------|----------|----------|----------|----------|----------|--------|------------------|---------------------|
+| **Variables**     | **C~x~** | **C~i~** | **C~a~** | **C~f~** | **C~u~** | **PF** | **TFR (Survey)** | **TFR (Bongaarts)** |
+| *Aggregate*       |          |          |          |          |          |        |                  |                     |
+| National          | 0.70     | 0.62     | 0.94     | 0.82     | 0.82     | 20.72  | 5.72             | 5.80                |
+| *Education*       |          |          |          |          |          |        |                  |                     |
+| No education      | 0.85     | 0.57     | 0.96     | 0.77     | 0.94     | 21.80  | 7.29             | 7.02                |
+| Primary           | 0.71     | 0.63     | 0.95     | 0.82     | 0.72     | 25.95  | 6.49             | 5.25                |
+| Secondary/Higher  | 0.55     | 0.69     | 0.91     | 0.89     | 0.54     | 24.85  | 4.23             | 3.57                |
+| *Residence*       |          |          |          |          |          |        |                  |                     |
+| Urban             | 0.65     | 0.70     | 0.92     | 0.84     | 0.56     | 23.71  | 4.71             | 4.17                |
+| Rural             | 0.73     | 0.59     | 0.95     | 0.81     | 0.79     | 23.83  | 6.28             | 5.53                |
+| *Wealth quintile* |          |          |          |          |          |        |                  |                     |
+| Lowest            | 0.83     | 0.56     | 0.96     | 0.80     | 0.94     | 21.29  | 7.12             | 7.02                |
+| Second            | 0.76     | 0.57     | 0.96     | 0.81     | 0.87     | 24.17  | 7.02             | 6.10                |
+| Middle            | 0.66     | 0.60     | 0.95     | 0.81     | 0.77     | 24.92  | 5.88             | 4.95                |
+| Fourth            | 0.64     | 0.69     | 0.93     | 0.84     | 0.60     | 23.92  | 4.96             | 4.35                |
+| Highest           | 0.64     | 0.75     | 0.90     | 0.86     | 0.47     | 22.79  | 4.04             | 3.72                |
+| *Workforce*       |          |          |          |          |          |        |                  |                     |
+| In workforce      | 0.77     | 0.62     | 0.94     | 0.80     | 0.67     | 24.54  | 5.93             | 5.08                |
+| Not in workforce  | 0.60     | 0.61     | 0.95     | 0.87     | 0.77     | 26.24  | 5.99             | 4.79                |
+| *Regions*         |          |          |          |          |          |        |                  |                     |
+| North Central     | 0.66     | 0.56     | 0.94     | 0.80     | 0.73     | 26.42  | 5.41             | 4.30                |
+| North East        | 0.81     | 0.59     | 0.96     | 0.80     | 0.93     | 20.97  | 7.16             | 7.17                |
+| North West        | 0.86     | 0.58     | 0.96     | 0.81     | 0.95     | 20.19  | 7.30             | 7.59                |
+| South East        | 0.51     | 0.73     | 0.92     | 0.80     | 0.57     | 31.08  | 4.82             | 3.26                |
+| South South       | 0.66     | 0.71     | 0.92     | 0.84     | 0.51     | 25.49  | 4.69             | 3.86                |
+| South West        | 0.64     | 0.65     | 0.92     | 0.84     | 0.49     | 28.48  | 4.52             | 3.33                |
+
+Table 5: Estimated indices of proximate determinants of fertility (2003)
+
+|                   |          |          |          |          |          |        |                  |                     |
+|-------------------|----------|----------|----------|----------|----------|--------|------------------|---------------------|
+| **Variables**     | **C~x~** | **C~i~** | **C~a~** | **C~f~** | **C~u~** | **PF** | **TFR (Survey)** | **TFR (Bongaarts)** |
+| *Aggregate*       |          |          |          |          |          |        |                  |                     |
+| National          | 0.70     | 0.59     | 0.94     | 0.81     | 0.85     | 21.00  | 5.65             | 5.65                |
+| *Education*       |          |          |          |          |          |        |                  |                     |
+| No education      | 0.83     | 0.56     | 0.95     | 0.73     | 0.93     | 21.78  | 6.71             | 6.47                |
+| Primary           | 0.69     | 0.61     | 0.95     | 0.83     | 0.76     | 25.19  | 6.32             | 5.27                |
+| Secondary/Higher  | 0.56     | 0.75     | 0.91     | 0.91     | 0.60     | 20.12  | 4.24             | 4.43                |
+| *Residence*       |          |          |          |          |          |        |                  |                     |
+| Urban             | 0.66     | 0.64     | 0.93     | 0.82     | 0.65     | 23.12  | 4.86             | 4.41                |
+| Rural             | 0.73     | 0.57     | 0.95     | 0.80     | 0.82     | 23.58  | 6.07             | 5.41                |
+| *Wealth quintile* |          |          |          |          |          |        |                  |                     |
+| Lowest            | 0.77     | 0.54     | 0.95     | 0.77     | 0.86     | 24.62  | 6.52             | 5.56                |
+| Second            | 0.77     | 0.56     | 0.95     | 0.78     | 0.87     | 22.76  | 6.30             | 5.81                |
+| Middle            | 0.69     | 0.57     | 0.95     | 0.79     | 0.84     | 23.28  | 5.70             | 5.14                |
+| Fourth            | 0.66     | 0.64     | 0.94     | 0.82     | 0.74     | 24.19  | 5.85             | 5.08                |
+| Highest           | 0.64     | 0.77     | 0.91     | 0.88     | 0.58     | 18.46  | 4.21             | 4.79                |
+| *Workforce*       |          |          |          |          |          |        |                  |                     |
+| In workforce      | 0.77     | 0.59     | 0.95     | 0.79     | 0.73     | 23.23  | 5.78             | 5.23                |
+| Not in workforce  | 0.61     | 0.60     | 0.94     | 0.83     | 0.80     | 25.04  | 5.74             | 4.81                |
+| *Regions*         |          |          |          |          |          |        |                  |                     |
+| North Central     | 0.60     | 0.53     | 0.95     | 0.81     | 0.71     | 32.48  | 5.70             | 3.69                |
+| North East        | 0.77     | 0.57     | 0.96     | 0.79     | 0.91     | 23.14  | 7.03             | 6.38                |
+| North West        | 0.87     | 0.59     | 0.95     | 0.78     | 0.93     | 18.66  | 6.69             | 7.53                |
+| South East        | 0.56     | 0.63     | 0.92     | 0.78     | 0.71     | 23.16  | 4.11             | 3.73                |
+| South South       | 0.63     | 0.72     | 0.92     | 0.84     | 0.58     | 23.13  | 4.63             | 4.20                |
+| South West        | 0.56     | 0.65     | 0.92     | 1.00     | 0.49     | 25.20  | 4.12             | 3.43                |
+
+This study also attempts to examine the effects of inputs into Nigeria's family planning program on fertility reduction. The family planning effort index (FEPI) score increased between 1972 and 1999, then reduced through 2009, before increasing to 41% in 2014. The increase in FEPI to its all-time highest in 1999 corresponds to the lowest survey TFR recorded in Nigeria, 5.11 in 1999 (National Population Commission 2000). During this time, access to contraceptives was high at 70.3%, and evaluation of services rendered stood at 81.4% (see Supplementary Information). The FEPI has since been replaced by another measure, the National Composite Index on Family Planning, NCIFP (see Supplementary Information). The most recent NCIFP in 2017 assessed the strategy (score - 62.4%), data (65.5%), quality (62.0%), accountability (39.0%) and equity (58.0%) of family planning in Nigeria. On all measures, the scores in 2017 (composite index - 62.4%) were higher than those in 2014 (composite index - 49.5%).
+
+![](figures/Figure%201.jpg)
