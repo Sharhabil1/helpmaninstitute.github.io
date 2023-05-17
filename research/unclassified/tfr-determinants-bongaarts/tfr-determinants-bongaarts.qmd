@@ -16,26 +16,20 @@ author:
       corresponding: true
     email: eakpan@helpmaninstitute.org
 
-  - name: O.Taiwo
+  - name: Olumide Taiwo
     affiliations:
       - ref: hdi
       - ref: checod
     attributes:
       corresponding: false
 
-  - name: C.Oli
+  - name: Chidinma Oli
     affiliations:
       - ref: hdi
     attributes:
       corresponding: false
 
-  - name: A.Adefabi
-    affiliations:
-      - ref: hdi
-    attributes:
-      corresponding: false
-
-  - name: E. Baiye
+  - name: Abdulafeez Adefabi
     affiliations:
       - ref: hdi
     attributes:
