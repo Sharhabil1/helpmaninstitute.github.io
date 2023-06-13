@@ -7,7 +7,7 @@ listing:
     sort: "date desc"
     categories: true
   - id: posts_journal-articles
-    contents: "research/journal-articles/**/index.qmd"
+    contents: "research/articles-reports/**/index.qmd"
     sort: "date desc"
 page-layout: full
 toc-title: Year
@@ -19,12 +19,12 @@ comments: false
 
 Explore the latest health and economic research and policy proposals from Helpman Development Institute's experts.
 
+## Articles and reports
+
+::: {#posts_articles_reports}
+:::
+
 ## Working papers
 
 ::: {#posts_working-papers}
-:::
-
-## Journal articles
-
-::: {#posts_journal-articles}
 :::

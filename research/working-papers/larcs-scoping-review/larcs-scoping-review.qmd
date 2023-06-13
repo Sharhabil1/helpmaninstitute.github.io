@@ -1,11 +1,9 @@
 ---
-# Use the title below for MS Word or PDF documents
 title: "![](resources/hdi_logo.png){width=2in}  \n \n Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
 
 subtitle: Working Paper
-date: 2023-05-04
-date-modified: today
-date-format: "MMM YYYY"
+date: today
+date-format: "MMMM YYYY"
 author:
   - name: Chidinma Oli
     affiliations:
@@ -102,7 +100,7 @@ Unplanned pregnancies and births are becoming prevalent in Nigeria [@sedgh2006].
 
 Use of highly effective contraception can reduce the rates of unintended pregnancy rates and resulting unsafe abortions. Long-acting reversible contraceptive (LARC) methods available in Nigeria include intrauterine devices (IUDs) and the etonogestrel (ENG) subdermal implant. These methods are one of the most effective contraception methods given they are associated with low failure rates, are durable, have relatively milder side effects, and may prevent some cancers [@bahamondes2020]. Irrespective of their associated advantages, LARCs are still underutilized by Nigerian women as compared to other short-acting reversible contraceptives [@nationalpopulationcommission2019]. Studies in other African countries also documented deep-seated resistance to the use of modern contraceptives [@rutenberg1997].
 
-Few studies have examined trends in access to and utilization of contraceptives in Nigeria [@eke2011; @benova2017; @mccurdy2018; @adedini2019; @bolarinwa2020]. @ujah2022 examined trends in differential uptake of LARCs between women residing in rural and urban settings in Nigeria. However, there has been no review to summarize the evidence from these different sources. Some of the evidence on use of LARCs exist in the grey literature, policy documents, and large-scale surveys which are often not included in systematic reviews (for example @rouncivell2021.
+Few studies have examined trends in access to and utilization of contraceptives in Nigeria [@eke2011; @benova2017; @mccurdy2018; @adedini2019; @bolarinwa2020]. @ujah2022 examined trends in differential uptake of LARCs between women residing in rural and urban settings in Nigeria. However, there has been no review to summarize the evidence from these different sources. Some of the evidence on use of LARCs exist in the grey literature, policy documents, and large-scale surveys which are often not included in systematic reviews (for example @rouncivell2021).
 
 This study focuses on reviewing the practice of long-acting reversible contraception by Nigerian women. The aim is to discuss the trends over the years, identify the challenges to uptake of LARCs, provide policy reviews and make recommendations to address these identified barriers to uptake of LARCs by Nigerian women. The need for this review stems from the fact that available evidence has not yet been systematically appraised and condensed on the use of LARCs in Nigeria. Findings from this review will help policy makers and donors design and direct interventions that will increase LARC uptake in Nigeria.
 
@@ -132,7 +130,6 @@ Two independent reviewers (CO and BN) screened titles and abstracts for eligibil
 
 The search strategy produced a total of 863 results, including five reports from DHS. After removing duplicates, 651 studies were left. Title and abstract screening retrieved 195 articles, eliminating 456 search results. Following the full-text screening, a total of 130 articles met the eligibility criteria and were included in the review (@fig-larcs-prisma-flow).
 
-
 ## Knowledge and awareness on LARC methods
 
 The knowledge of LARCs is relatively low. In 2003, only 27 percent of Nigerian women had heard of IUDs, 57 percent of Injectables and 10 percent of Implants [@nationalpopulationcommission2004] . Nonetheless, by 2018, 46 percent of women had heard of IUDs, 82 percent of Injectables and 70 percent of Implants [@nationalpopulationcommission2019]. Awareness of LARCs varied with geographical location, wealth quintile and education levels. Women living in rural, and less literate North East and North West zones were least likely to be informed on any method of long-acting contraception. In contrast, women residing in urban Southern regions, (especially South West) were well-educated on the different LARCs available to them. Expectedly, low levels of education and household income led to reduced knowledge and awareness of LARCs in recentrounds of NDHS[@nationalpopulationcommission2009; @nationalpopulationcommission2014; @nationalpopulationcommission2019].
@@ -155,7 +152,7 @@ Use of LARCs varied with residence, region, level of education, number of living
 
 Use of LARCs was relatively low among singles compared to married women [@ijarotimi2015; @olaleye2014; @oye-adeniran2005]. This may be because single women are less likely to source for contraception openly because of cultural and religious prohibition of premarital sex in Nigeria [@ijarotimi2015]. The uptake of LARCs increased with parity; women do not begin to use LARCs until they have had at least one child [@aduloju2021; @ijarotimi2015; @konje1998; @nationalpopulationcommission2019; @nationalpopulationcommission2009; @nationalpopulationcommission2014; @nationalpopulationcommission2004; @udigwe2002]. An attribute pointing to the reproductive need of women with less than 3 children and the popular consideration of LARC methods as an alternative to the sterilization method [@aduloju2021; @ijarotimi2015]. Due to poor information on the use of LARCs, many healthcare providers were found reluctant to offer intrauterine contraceptive devices to women who have never had a live birth [@harper2008; @black2013]. It is very crucial that misconceptions about LARCs are dispelled based on current evidence to increase the uptake especially among Nigerian women.
 
-Women from poor households (lowest and second wealth quintiles) subscribed less to the different LARC methods compared to women from middle and wealthy households (middle, fourth and highest wealth quintiles) [@bolarinwa2020; @ijarotimi2015; @nationalpopulationcommission2019; @nationalpopulationcommission2009; @nationalpopulationcommission2014; @nationalpopulationcommission2004; @ugboaja2011]. Women aged 25 years and above were more likely to use a LARC method compared to women aged 15--24 years [@bolarinwa2020; @ijarotimi2015; @nationalpopulationcommission2019; @nationalpopulationcommission2009; @nationalpopulationcommission2014; @nationalpopulationcommission2004; @udigwe2002; @ugboaja2011]. Additionally, women who had 1--4 children subscribed further to LARC methods as opposed to women with no children [@bolarinwa2020; @ijarotimi2015; @nationalpopulationcommission2019; @nationalpopulationcommission2009; @nationalpopulationcommission2014; @nationalpopulationcommission2004; @ugboaja2011].
+Women from poor households (lowest and second wealth quintiles) subscribed less to the different LARC methods compared to women from middle and wealthy households (middle, fourth and highest wealth quintiles) [@bolarinwa2020; @ijarotimi2015; @nationalpopulationcommission2019; @nationalpopulationcommission2009; @nationalpopulationcommission2014; @nationalpopulationcommission2004; @ugboaja2011]. Women aged 25 years and above were more likely to use a LARC method compared to women aged 15--24 years. Additionally, women who had 1--4 children subscribed further to LARC methods as opposed to women with no children.
 
 ![Percent distribution of long-acting reversible contraception use by state in 2018](figures/larcs-use-map){#fig-larcs-use-map}
 

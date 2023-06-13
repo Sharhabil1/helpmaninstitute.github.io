@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.helpmaninstitute.org/index.html</loc>
-    <lastmod>2023-05-19T12:49:54.426Z</lastmod>
+    <lastmod>2023-06-13T14:23:55.909Z</lastmod>
   </url>
   <url>
     <loc>https://www.helpmaninstitute.org/research/2023/larcs-scoping-review/index.html</loc>
@@ -38,11 +38,11 @@
   </url>
   <url>
     <loc>https://www.helpmaninstitute.org/research/working-papers/larcs-scoping-review/index.html</loc>
-    <lastmod>2023-05-13T07:26:50.417Z</lastmod>
+    <lastmod>2023-06-13T14:23:57.856Z</lastmod>
   </url>
   <url>
     <loc>https://www.helpmaninstitute.org/research/working-papers/larcs-scoping-review/larcs-scoping-review.html</loc>
-    <lastmod>2023-05-15T07:56:25.962Z</lastmod>
+    <lastmod>2023-06-13T14:13:59.695Z</lastmod>
   </url>
   <url>
     <loc>https://www.helpmaninstitute.org/research/unclassified/tfr-determinants-bongaarts/appendix-tfr-determinants-bongaarts.html</loc>
@@ -51,5 +51,25 @@
   <url>
     <loc>https://www.helpmaninstitute.org/research/unclassified/tfr-determinants-bongaarts/tfr-determinants-bongaarts-old.html</loc>
     <lastmod>2023-05-18T09:00:52.322Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.helpmaninstitute.org/research/working-papers/tfr-determinants-bongaarts/index.html</loc>
+    <lastmod>2023-06-13T13:57:40.471Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.helpmaninstitute.org/research/working-papers/tfr-determinants-bongaarts/tfr-determinants-bongaarts-appendix.html</loc>
+    <lastmod>2023-06-13T13:57:42.758Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.helpmaninstitute.org/research/working-papers/tfr-determinants-bongaarts/tfr-determinants-bongaarts.html</loc>
+    <lastmod>2023-06-13T14:20:23.108Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.helpmaninstitute.org/research/articles-reports/hurdle-lognormal-gaussian-brms/index.html</loc>
+    <lastmod>2023-06-13T14:02:39.413Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.helpmaninstitute.org/research/articles-reports/sokoto-epidemiology-profile/sokoto-epidemiology-profile.html</loc>
+    <lastmod>2023-06-13T14:13:54.744Z</lastmod>
   </url>
 </urlset>

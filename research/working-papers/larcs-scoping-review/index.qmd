@@ -42,6 +42,7 @@ affiliations:
 format: 
   html: 
     fig-cap-location: margin
+
 execute:
   echo: false
 ---
@@ -62,5 +63,4 @@ execute:
 
 ## PDF links
 
--   [Paper (preprint) in PDF format](larcs-scoping-review.pdf)
--   [Appendix (preprint) in PDF format](larcs-scoping-review.pdf)
+-   [Paper in \[PDF\] format](larcs-scoping-review.pdf)
