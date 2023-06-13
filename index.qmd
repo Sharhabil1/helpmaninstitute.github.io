@@ -6,7 +6,7 @@ listing:
     contents: "research/working-papers/**/index.qmd"
     sort: "date desc"
     categories: true
-  - id: posts_journal-articles
+  - id: posts_articles-reports
     contents: "research/articles-reports/**/index.qmd"
     sort: "date desc"
 page-layout: full
