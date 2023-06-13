@@ -18,13 +18,6 @@ author:
     attributes:
       corresponding: true
     email: coli@helpmaninstitute.org
-  - name: Edifofon Akpan
-    affiliations:
-      - ref: hdi
-      - ref: unimelb
-    attributes:
-      corresponding: false
-    email: eakpan@helpmaninstitute.org
 affiliations:
   - id: hdi
     name: Population Health Sciences, Helpman Development Institute, FCT Abuja, Nigeria.
@@ -43,7 +36,7 @@ The epidemiological profile of Sokoto state shows the distribution of deaths, il
 
 ## Key figure
 
-![substance abuse prevalence in nigeria](figures/substance-abuse-nigeria.svg)
+![substance abuse prevalence in nigeria](figures/road-traffic-accidents.svg)
 
 ## PDF links
 

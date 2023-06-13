@@ -21,7 +21,7 @@ Explore the latest health and economic research and policy proposals from Helpma
 
 ## Articles and reports
 
-::: {#posts_articles_reports}
+::: {#posts_articles-reports}
 :::
 
 ## Working papers
