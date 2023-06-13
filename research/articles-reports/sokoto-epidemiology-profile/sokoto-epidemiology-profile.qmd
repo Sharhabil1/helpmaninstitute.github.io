@@ -296,7 +296,7 @@ In 2017, prevalence of any drug use in Nigeria was estimated at 14.4% or 14.3 mi
 
 The prevalence of drug use in the North-West zone is estimated at 12% of the population. The use of cannabis and non-medical use of opioids (tramadol, codeine, morphine) and cough syrups (containing codeine or dextromethorphan) are also the most common in this zone [@nationalbureauofstatistics2017]. A qualitative study was conducted to examine the abuse of cough syrup as a new trend in drug abuse among the youth in five (5) Northwestern States of Nigeria. The results show that 33% claimed to source the substances from chemists and pharmacies, 36% claimed to acquire the substance from Drug dealers (retail), while 23% claimed they obtained the substance from Drug dealers (Wholesale) [@nasiru2015].
 
-![Prevalence of substance abuse in Sokoto State (2008-2013). Source: Federal Neuro-Psychiatric Hospital Kware, Sokoto, 2014.](figures/substance-abuse-prevalence-sokoto){#fig-substance-abuse-prevalence-sokoto}
+![Prevalence of substance abuse in Sokoto State (2008-2013). Source: Federal Neuro-Psychiatric Hospital Kware, Sokoto, 2014.](figures/substance-abuse-sokoto){#fig-substance-abuse-prevalence-sokoto}
 
 ## Injuries and Accidents
 
@@ -304,7 +304,7 @@ Injuries have been noted to be the leading cause of death and a major source of 
 
 The number of deaths as a result of road traffic accidents increased by 6.2% (2010-2013) with a simultaneous increase to 2.2% injured persons within the same time interval [@statisticsSocioEconomicStatistics2014]. This could be as a result of flouting traffic rules and regulations, poor use of seat belts by motorists, outright refusal to use seat belts and an influx of alternatives to vehicles such as motorcycles and tricycles. Small Arms and Light Weapons (SALWs) enable and extend violence which has enormous public health consequences too. Within a ten-year interval of 2003-2013, Sokoto state had a prevalence of 0.07% SALWs, with 14% fatality, and peak age range of 26--35 years being affected. The most common types of injuries were wounds, systemic organ injuries and fractures. Brain trauma, though not very common had 75% mortality while systemic organ injury had 24.6% mortality [@okolo2016].
 
-![Prevalence of Substance Abuse in Sokoto 2018. Source: Drug use in Nigeria, 2018](figures/substance-abuse-prevalence-nigeria){#fig-substance-abuse-prevalence-nigeria}
+![Prevalence of Substance Abuse in Sokoto 2018. Source: Drug use in Nigeria, 2018](figures/substance-abuse-nigeria){#fig-substance-abuse-prevalence-nigeria}
 
 ![Mortality and Morbidity rates of RTA (2010-2013). Source: National Bureau of Statistics, 2014](figures/road-traffic-accidents){#fig-road-traffic-accidents}
 
