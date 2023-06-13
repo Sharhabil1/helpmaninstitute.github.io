@@ -1,0 +1,298 @@
+---
+# Use the title below for MS Word or PDF documents
+title: "![](resources/hdi_logo.png){width=2.5in}  \n \n The Epidemiological Profile of Sokoto State"
+
+subtitle: Working Paper
+
+author:
+  - name: Olumide Taiwo, PhD.
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+   
+format:
+  docx:
+    default-image-extension: svg
+    reference-doc: resources/hdi-quarto-template-v0001.docx
+    link-citations: true
+  html:
+    default-image-extension: svg
+    anchor-sections: true
+    toc-location: left
+    fig-cap-location: margin
+    self-contained: true
+  pdf:
+    papersize: a4
+    default-image-extension: pdf
+    link-citations: true
+    linestretch: 1.25
+    geometry:
+    - top=25.4mm
+    - left=25.4mm
+    - right=25.4mm
+    - bottom=25.4mm
+    extra_dependencies: ["flafter"]
+    header-includes: |
+      \usepackage[labelsep=period]{caption}
+     
+#filters:
+# - authors-block
+
+editor: visual
+crossref:
+  title-delim: "."
+number-sections: true
+
+toccolor: blue
+toc: true
+toc-depth: 2
+toc-title: "Table of Contents"
+
+bibliography: citations (8).bib
+csl: style.csl
+---
+
+```{r setup, include=FALSE}
+library(flextable)
+library(officer)
+library(officedown)
+knitr::opts_chunk$set(fig.width = 12, fig.height = 10, fig.align = "center",
+                      out.width = "100%", collapse = TRUE, fig.pos = "H", out.extra = "",
+                      ft.tabcolsep=5)
+set_flextable_defaults(font.size = 10,
+                       theme_fun = theme_booktabs,
+                       table.layout = 'autofit',
+                       font.family = "Arial")
+```
+
+{{< pagebreak >}}
+
+# Summary
+
+The importance of health information for proper planning and policy making cannot be over emphasized. Although previous studies have been undertaken in many parts of Sokoto, a comprehensive compendium of the epidemiological profile of Sokoto state detailing past and present health transition is unavailable. In order to assess the successes achieved caution as well against the daunting challenges awaiting the state, parameters such as proportional mortality and health status indicators were discussed. This study revealed that Sokoto has been through some health transition from the pre transition phase of pestilence and famine to the early epidemiologic phase of receding pandemics. These can be attributed to success in interventions and other health programs. Communicable diseases are still a huge cause of death in Sokoto State. Deaths due to communicable diseases, maternal, neonatal and postnatal account for about 75% of all deaths, whilst non communicable diseases cause 21% and deaths due to other causes, 4%. Population stabilization, poverty alleviation, life-style modification, surveillance and control of communicable diseases constitute the major challenges demanding urgent attention in the future. Hence, the government should re-orient its policies by adopting a complete, integrated, intra- and inter-sectoral, life span approach to health care assessment and service delivery, which will ensure healthcare service efficiency and proper address and resolution of specific health needs.
+
+# Background and Context
+
+## Introduction and Purpose
+
+Understanding the epidemiological profile of a territory is necessary to evaluate and address public health needs. Reliable and appropriate health metrics aid policy development, proper health management, evidence-based decision-making, rational resource allocation and monitoring and evaluation of health services and policy. Population health data is becoming an effective and increasingly utilized tool in efforts to treat widespread health problems. Health data has also played an important role in the design and implementation of community-wide health initiatives implemented to promote good health practices. While the demand for health information is increasing in terms of quantity and quality, the response to these needs has been hampered because of fragmentation and major gaps and weaknesses in national health information systems. Insufficient track of epidemiological events has long plagued Sokoto State. Information is poor on progress, success or consequent failure of programs and interventions. As a result, proper health planning and interventions have been stalled affecting the general health welfare of the Sokoto population. In order to fill this breach, accurate and enough informant should be collated and made easily assessible to the general public further enhancing health planning. Failure to this will not only result in public health issues but affect the economic growth of Sokoto state. The present effort is a modest attempt to describe the epidemiological profile of Sokoto from the past and contemporary perspective. This profile will also aid in evaluating the successes achieved as well as caution against the daunting challenges awaiting the state. Variation in the population age structure, altered lifestyles of population attest to the demographic, development and health transition occurring in the state. Population stabilization, life-style modification, surveillance and control of communicable and non-communicable diseases constitute the major challenges demanding urgent attention in the future. The main objective of this project to construct an epidemiological profile, which would serve as a tool to monitor progress of the health of Sokoto, enable efficient program planning and management. Furthermore, this will provide the information needed by health policy and decision-makers. The public health issues facing the states are presented in the following sections: communicable diseases, noncommunicable diseases, injuries and accidents and other important health information. Each section focuses on analyzing past as well as current situations, providing policymakers with evidence and forecasts for planning.
+
+## Data Sources
+
+Primarily, the main sources of the data presented in the report are from the WHO and UN agency databases which in turn, rely on surveys as their primary sources: Demographic and health surveys (DHS), Multiple indicator cluster surveys (MICS), Malaria Indicator Survey (MIS), National Nutrition and Health Survey (NNHS) and Standardized monitoring and assessment of relief and transitions (SMART) surveys. Information on indicators that are not collected in routine surveys was obtained from modelled estimates available from public sources (such as, the National Bureau of Statistics), status reports, and reviews, journal publications. Health data on Sokoto state are difficult to assess and often unavailable. When unavailable, assumptions were made based on recommended standards.
+
+Major causes of mortality in Sokoto State (2016) was estimated to assess disease impact to the population. To obtain a proper representation of various mortality factors and their corresponding effects, it became pertinent to describe Sokoto's mortality profile with a proportional mortality; a ratio of individual mortality cause to the total mortality, showing the percentage each disease contributed. \[\@centersfordiseasecontrolandprevention2012\]. Sokoto's proportional mortaility was computed based on data from the Sokoto State Health Strategic plan (HHSP-II) of 2016 \[ministryofhealthSokotoStateHealth2016\]. In addition, some assumptions were made based on experts' opinion and WHO standards for missing data. Death from several diseases were then expressed as a ratio of the total death in Sokoto. The proportions were represented as percentages. An Excel template was created to capture prevalence and incidence data for indicators discussed.
+
+## State Context
+
+Sokoto State is located in the extreme northwest of Nigeria, and subdivided into 23 local government areas (LGAs). The State covers a land area of approximately 27,825 square kilometers, surrounded by sandy savannah and isolated hills has its topography dominated by a rolling peneplain 3-5. The state experiences its rainy season from June to October, with cold and dry north eastern winds known as the "Harmattan" occurring frequently from December through March 6.
+
+The economic activity in Sokoto is agriculture, in addition to exploitation of natural resources. More than 90% of the population engaged in subsistence farming 6. The state is one of the fish producing areas of the country, thus, many people along the river basins engage in fishing activities. Large-scale farming is practiced in the State using irrigation water. There are all kinds of animals both wild and domestic in the State. Sokoto ranks second in livestock production in the country with animal population of well over 8 million. Minerals such as Kaolin, Gypsum limestone, laterite, Red mills, Phosphate, both yellow and green shade clay, sand etc. are available in the State in commercial quantities (Sokoto State Government, 2018). The availability of these economic potentials provides good investment opportunities, particularly in agro-allied industries such as flour mills, tomato processing, sugar refining, textiles, glue, tanning, fish canning and dairy.
+
+The Sokoto State Ministry of Health (SMOH), like other Nigerian states, has overall responsibility for the health sector. The State Ministry of Health is responsible for advising government on policy formulation, regulation and implementation of health and health related issues in the state 7. Organization of the health delivery system in Sokoto State conforms to a three-tiered system: tertiary, secondary and primary level care. The people of the state are majorly Muslims and Islam provides them with code of conduct that influences their day-to-day activities, such as the emphasis on cleanliness in all aspects of life. Hence, in Sokoto state, there are strict injunctions regarding private and public hygiene derived from their Islamic law, which if applied will improve overall well-being of dwellers 8.
+
+# Demographic and Epidemiological Transitions
+
+Sokoto had a total population of about 3.7 million in 2006 4, with a growth rate 3% between 1991 and 2006. The growth rates reflected in its high total fertility rate (TFR) of 5.2 in 2011 and 7.0 as at 2018, twelve years after the census . Population in Sokoto state which will most likely double in the next eleven years reaching a projected size of above 9 million by 2030 using the Spectrum model for population projections. Such rapid population growth is not without repercussions exerting tremendous effects on the population health and well-being.
+
+![Location of Sokoto State in Nigeria and Local Government Areas. Source: Albert, 2015](Sokoto%20Epid%20Profile%20Figures%20PDF/Location_Sokoto_State.png)
+
+The population structure of Sokoto is typical of an actively growing state. Children under 15 years accounts for 40.7% of the population making the population generally young 11. This youthful age structure has enormous implications for future socioeconomic development, as most youth are not yet part of the workforce, placing a heavy burden on the working age population (urban -- 58.8%; rural -- 54.3%) 11. It also constrains the availability and accessibility of basic health and education services. In addition, as the young-aged reach working age, the number of available jobs may not match the number in need. The average dependency ratio is 80% (71.9% in urban areas and 84.3% in rural areas). This relatively high dependency ratio places a greater burden on the working-age people. However, it is an improvement as it is a decline from 101.7% in 2006 11.
+
+About two-thirds of the population live in rural areas where human settlement patterns are often very dispersed. Over the years, rural-urban migration has been noted particularly to neighboring cities like Kaduna, Kano and Lagos 12 which is attributed to poor rural development. The gender ratio1 in urban areas (101.2%) is considerably lower than rural areas (116.5%). This high ratio in rural areas (117 males for every 100 females) relative to urban areas specifies low rural-urban migration. This may be due to cultural sensitivity of men staying back at the community to carry out subsistence agriculture (the major occupation in the state) 11.The population still suffers from some endemic diseases (notably malaria, leprosy and schistosomiasis), environmental health problems, communicable and infectious diseases, maternal and child health problems, and malnutrition which have long plagued it over the years 13.
+
+One of the primary goals of epidemiology is to quantify various aspects of a population's health, illness, death and risk factors by calculating health indicators that measure the magnitudes of various conditions. A Burden of Disease (BOD) pertains to the nature and magnitude of the public health problem posed by diseases. Conventionally, BOD has been measured in terms of morbidity, mortality and disability 14. A useful, frequently used indicator of aspects of population health is the Proportional Mortality Rate (PMR). This is the number of observed deaths from a specified cause in a defined population at a given time interval divided by the number of deaths from all causes during the same time interval. Changes in PMR over time indicate time trends in changes in causes of death 1.
+
+Sokoto state have experienced an epidemiological transition progressively from the age of pestilence and famine2 to the age of receding pandemic3 15. This transition could be attributed to the improvement in nutrition as a result of stable food production. An overall reduction in malnutrition enables populations to better resist infectious disease, make advances in medicine and further develop health care systems 16. However, a decline in mortality without a corresponding decrease in fertility leads to a population pyramid assuming the shape of a bullet or a barrel, as young and middle-age groups comprise equivalent percentages of the population 17. The third stage of the epidemiological transition is the migration to degenerative and man-made disease4 15, a feat Sokoto is yet to achieve. Finally, the stage of delayed degenerative diseases5.
+
+These shifts may be expected to occur in Sokoto if these alterations in population structure takes place; Mortality continues to decline and eventually approaches stability at a relatively low level, average life expectancy at birth rises gradually until it exceeds 70 years, urbanization associated with improved sanitation, nutrition, and health systems increases, which reduces the burden of infectious diseases and related mortality particularly among vulnerable populations 18. With better health systems and conquest of communicable diseases and proper health management, Sokoto maybe on its way to the third and final stage of epidemiological transition few years from now. It is important to note that this mortality transition will occur with the conquest of infectious disease, not a mysterious displacement of infection by degeneration as the cause of death.
+
+Table 1
+
+The resulting demographic transition with its changing age of death and the existence of large numbers of people afflicted with chronic degenerative disease (rather than life-threatening infectious disease), is important for planning health services and medical training; which is the current focus of the burden of disease approach 19. Error! Reference source not found. shows a time trend of diseases in Sokoto State. The mortality pattern in Sokoto has taken a different array. As at 1980, Measles was the leading cause of death due to communicable disease, followed by pneumonia, tuberculosis and tetanus 13. Mortality due to measles, Meningitis and Tetanus have substantially reduced over the years; adherence to health policies and mass immunization campaign have contributed immensely to the effectiveness in curbing these diseases. By 2016, Malaria, tuberculosis; Pneumonia and Diarrhea are taking the lead
+
+![Proportional Mortality in Sokoto (2016). Source: Sokoto State Health Development plan-II, 2016.](figures/proportional-mortality-sokoto){#fig-proportional-mortality-sokoto}
+
+# Causes of Death and Illness
+
+## Infectious and Parasitic Diseases
+
+Diseases Communicable diseases are illnesses caused by pathogens that people spread to one another through contact with contaminated surfaces, bodily fluids, blood products, insect bites, or through the air 20. Most common forms of spread include fecal-oral, food, sexual intercourse, insect bites, contact with contaminated fomites, droplets, or skin contact. Some of the leading communicable disease in Nigeria include HIV/AIDS, Tuberculosis, malaria, meningitis, diarrheal diseases, syphilis and lower respiratory tract infections 21. Regarding CDs in general, the interplay of agent, host and environment factors lead to a dynamic state of health and disease. New or emerging illnesses are often caused by organisms already in the environment and which become infectious due to altered conditions in the ecology 14. This occurrence could be as a result of poor hygiene and unsafe sanitation (e.g. open defecation by adult and unhygienic disposal of children feces-a prevalent practice), poor utilization of health personnel for maternal health care (In 2017, 87.7% pregnant women aged 15-49 years used their homes for delivery whilst 11.7% and 0.6% visited public and private health facilities) which are major risk factors especially in rural communities in Sokoto State 22.
+
+Communicable diseases remain the primary cause of death in Sokoto state 13. Sokoto state has long been plagued by communicable diseases notably: malaria, leprosy, dysentery, measles, gonorrhea, whooping cough, HIV and meningitis as far back as the nineties tetanus 13. Based on the proportional mortality that was estimated (2016), CDs along with maternal, perinatal and nutritional conditions in Sokoto State accounted for an estimated 73% of all deaths - a high figure especially in contrast with developed countries (deaths due to communicable diseases in the United States of America was 5% only in 2016) 23. Common communicable diseases plaguing Sokoto state are discussed below: ###HIV/AIDS The first case of AIDS was reported in Nigeria in 1986. The current national prevalence of HIV is estimated at 1.4% (15-49 years), with a total estimated 1.9 million persons living with HIV in Nigeria 24. Prevalence among females is significantly higher at an estimated 1.9%, with male prevalence estimated at 0.2%. In 2014, about 136,833 people were living with HIV (PLWHIV) in Sokoto out of a projected population of about 5 million 25.
+
+HIV/AIDS prevalence in Sokoto has fluctuated substantially over the years. The first HIV Sentinel Survey in 1991 showed a prevalence of 1.8% 26. Subsequent sentinel surveys produced prevalence of 1.6% (1993), 2.7% (1999), 2.8% (2001), 4.5% (2003), 3.2% (2005), 6.0% (2008) and 3.3% (2010) 25. Based on the recent National Aids Indicator Survey (2018), HIV/AIDS prevalence in Sokoto state is estimated to have reduced to 0.4% (15-49) years in 2018; making them one of the low prevalence states in Nigeria with a disease burden of 12,844 approximately 0.013% of the burden in low prevalence states.
+
+New infections are primarily from key populations , especially female sex workers and their partners in the general population 24. The HIV prevalence in the urban areas is lower than the rural areas in Sokoto State. In these rural towns and villages, risk is driven by variations in sexual behaviors such as casual, transactional and sex work; with female sex workers ranking high as the source of new infections Beyond behavioral risk factors, environmental and systemic factors also constitute risks for HIV infection. Transfusion of infected blood and blood products and poor handling and disposal of highly infectious wastes generated in healthcare settings increase the risk for HIV transmission.
+
+In addition, other structural drivers play a role in the HIV epidemic in Sokoto. These include those socio-cultural factors that increase people's vulnerability to HIV infection such as: poverty, gender inequality-inability of women to demand condom use due to male dominance over women's reproductive rights, extra-marital sex and/or multiple sex partners, female genital mutilation and levirate marriage (Widow Inheritance), disempowering women from seeking HIV prevention or treatment services without the permission of their husbands/partners, human rights violations and the persistence of HIV and AIDS- related stigma and discrimination 24.
+
+Mortality due to AIDS in Sokoto have considerably reduced over the years. This decreased by 14% from 2016-2018. As at 2016, AIDS death contributes to 2 percent only of the total mortality rates in Sokoto State. 2. This accomplishment might as well be credited to successful intervention programs.
+
+### Tuberculosis
+
+Several infectious diseases once considered to be controlled have re-emerged to become major public health problems of a greater magnitude than was previously the case; tuberculosis is one of such. Tuberculosis is caused by the bacteria Mycobacterium spp. There are two types of human tuberculosis: Pulmonary and Extra-pulmonary tuberculosis. A study conducted to determine the species of Mycobacterium involved in cases of human tuberculosis in Sokoto State indicated that Mycobacterium tuberculosis (69.23%) has remained the major causative organism causing tuberculosis in Sokoto, followed by Mycobacterium bovis (20.51%) and finally the atypical mycobacterium (10.26%) 27.
+
+In 2006, a total of 1,383 of all forms of cases were registered out of which 92% (1,265) tested sputum smear positive 28. However, this increased to 3,329 in 2013 with 67% (2,170) testing sputum smear positive. The rate of relapse remained fluctuating from 2009-2013. Nevertheless, the number of failed treatment cases reduced by 1% (2008-2013) 29. Individuals within the age group of 25-34 years had the highest infection rate while those within the age group of 0-14 years had the least infection. Overall, males were affected more than females probably as a result of high exposure. The number of Direct Observed Treatment Short course centers (DOTS) increased progressively from 2008 to 2013 which improved treatment access to TB patients. Hence, DOTS can be credited to be one of factors resulting to a reduction in the total number of cases rate 29.
+
+Nigeria has a high degree of overlap between HIV and TB infected population among 15-49 years age group. The recorded HIV prevalence among TB patients has risen from 2.2% in 1991 to 19.1% in 2001 and an estimated 27% in 2003 30. The TB/HIV co-infection rate of 27%, suggests that about 800,000 persons have both HIV and TB infection. At this rate, an additional burden of 50,000 TB cases annually is added from the HIV infected people 31. Prevalence rates of HIV, HBsAg and HCV among TB patients vary from region to region in Nigeria. In 2016, the prevalence of HIV co-infection among TB patients was 5.6% (2.2% female and 3.3% male) in Sokoto State. The female to male ratio of TB patients was 1:2.9, while the ratio of co-infection of HIV among TB patients for female to male was 1:1.5 32. Co-infection occurred in age range of 21-40 years only, with age group 31 -- 40 years having the highest prevalence of co-infection 32. This high prevalence of HIV co-infection among TB patients was observed in younger sexually active age group. In 2018, the prevalence of HIV co-infection among TB patients increased to 16.3%. Prevalence of HBsAg and HCV among TB patients was 14.9% and 5.4% respectively 33. In addition, prevalence of co-infection of HIV-HBsAg-HCV in TB patients was 1.45% in 2018 33. The causes of HIV-HBV-HCV co-infection has been associated with parenteral, sexual and vertical transmission, and sharing of injections by injection drug users
+
+![HIV Prevalence Trends in Sokoto state (1991-2018). Source: Nigeria ANC Surveillance Report 2010; National Aids Indicator Survey, 2019.](Sokoto%20Epid%20Profile%20Figures%20PDF/HIV_Prevalence_Trends.pdf)
+
+![Distribution of Mycobacterium specie causing tuberculosis. Source: Garba & Galadima, 2004.](Sokoto%20Epid%20Profile%20Figures%20PDF/Distribution_Mycobacterium_specie.pdf)
+
+![TB positivity rate in Sokoto 2006-2013. Source: National Tuberculosis and Leprosy Control Program, 2006-2013.](Sokoto%20Epid%20Profile%20Figures%20PDF/TB_positivity_rate.pdf)
+
+### Leprosy
+
+Leprosy is known to occur at all ages ranging from early infancy to very old age. Leprosy is curable and early treatment averts most disabilities 34. Cases of leprosy are usually classified as either paucibacillary leprosy (PB) or multibacillary leprosy (MB). This classification is based on counting the number of skin lesions and is primarily used for the purposes of chemotherapy, as PB cases are treated for 6 months and MB cases for 12 months using different regimens 35.
+
+Before 1998, Nigeria was one of the most leprosy endemic countries in the world. Surveys in the 1940s and 1950s found prevalence rates ranging from 16-390 per 10,000. In 1991, country wide leprosy prevalence rate of 30.3 per 10,000 was estimated 36. Although Nigeria achieved the targeted prevalence level for the elimination of leprosy before the year 2000 and attained low endemicity to a large extent, incidences have still being noted since then 36.
+
+Leprosy cases in Sokoto dropped by approximately 76% from 2006 to 2013 (with a total registered case of 263 in 2006 and 63 in 2013) 29. This can be attributed to the success of the Multi-drug therapy introduced to Nigeria in 1985 and launched with the National Tuberculosis and Leprosy Control Program (NTBLCP) in 1991 together with the discharge of inactive or wrongly diagnosed patients, adoption of the WHO 12-month MB treatment regimen and massive discharge of all patients on the former 24-month regimen that had received more than 12 doses 36.
+
+![Trend of Registered Leprosy cases in Sokoto State. Source: National Tuberculosis and Control Program, 2009-2013](Sokoto%20Epid%20Profile%20Figures%20PDF/Registered_Leprosy_Cases.pdf)
+
+In 2009, 225 leprosy cases registered, 62% (139) were males including children and adults whilst 38% were females (86). This however declined to 86 registered cases in 2013; 73% males and 27% females . Leprosy is known to occur at all ages ranging from early infancy to very old age. In 2009 about 7.5% of children were affected by leprosy among all the registered cases 37, which increased to 19% of children in 2011 38 but declined slightly to 15% of children in the year 2013-indicating a high level of leprosy transmission 29. The pre-dominant type of leprosy in Sokoto state is the MB while lesser cases of leprosy is the PB. MB proportion increased progressively from 91% in 2009 to all forms of leprosy cases falling into the MB classification by 2013, implying longer treatment regimens for patients as well as increased risk of transmission since MB is commonly classified as the infectious leprosy 36.
+
+The WHO disability leprosy grading system has been in use for years. Its main application has been used as an indicator for early case detection/reporting 39. This grading system varies from 0 to 2; with 2 being the most severe. The rate of WHO Grade 2 disability decreased significantly from 19% to 9% during a one-year interval from 2011-2012. This falling disability rate indicates that new cases were increasingly diagnosed before they developed visible deformities. Thus, representing an improved promptness in case detection. Crude death rate due to leprosy has being fluctuating from 4.7 per 100,000 in 2010, 3.1 per 100, 000 in 2011 and 5.5 per 100,000 in 2012. This variation in the number of deaths may be indicative of an unstable treatment regimen. Efforts ought to be put in place to ensure this is effective 29,37,38.
+
+### Malaria
+
+Malaria accounts for 40% of public health expenditure. 30 - 50% of in-patient admissions and up to 50% of out-patient visits in areas with high malaria transmission 40. Malaria is endemic throughout Nigeria with seasonal variation in different geographic zones of the country. More than 90% of the total population is at risk of malaria and at least 50% of the population suffers from at least one episode of malaria each year 41. Malaria has long plagued Sokoto State like other Nigerian states. However, there have been improvements over the years. This may be as a result of three major control interventions: insecticide treated nets (ITNs), indoor residual spraying (IRS) and intermittent preventive treatment in pregnancy (IPTp) 42.
+
+Gender-specific infection rate in Sokoto showed that males had the higher infection rate than females. There are no scientific facts to explain this phenomenon, however, suggestions have been made that this high prevalence rate could just be by chance, or due to the fact that males engage in activities which make them more prone to infective mosquito bites in comparison to their female counterparts, that are mostly at home and protected from such infective bites 41. The age group 0 - 5 years had the highest infection rate followed by 6 - 10 and 11 - 15 years age groups 41. Among children aged 6-59 months with malaria parasites, the dominant species of malaria parasites is Plasmodium falciparum specie (\>90%) with P. malaria playing a minor role 43.
+
+Figure 6
+
+Malaria prevalence among children under 5 was measured in the 2015 National Malaria Indicator Survey (NMIS) and 66% of the children tested positive for malaria when RDTs were used to detect the presence of parasites while 46.6% tested positive when microscopy was used. The prevalence is higher with RDTs than with microscopy as expected because false positive test results are possible with RDTs 43. This have been proven true by other studies, which have shown a higher prevalence of malaria using RDTs instead of microscopy (Ajumobi et al., 2015; Wongsrichanalai et al., 2007).
+
+The percentage of children with malaria is much higher in rural than in urban areas 43 as a result of poor environmental sanitation, which provides adequate breeding sites for the malaria parasite. Malaria prevalence decreases as the mother's education level and wealth quintile status increase; which could be as a result of knowledge of preventive measures to malaria infection and access to cleaner as well as safer environs 43.
+
+Use of insecticide-treated nets (ITNs) is one of the most effective measures used to prevent malaria. Between May 2009 and November 2013, the government of Nigeria, with support from several partners, distributed approximately 52 million mosquito nets across the country (NMEP and NPopC, 2015). Overall in Sokoto (2015), 79% of households had at least one mosquito net, 77% had at least one ITN, and 77% percent had at least one LLIN (NMEP and NPopC, 2015). By 2018, 84% of households having at least one mosquito net, an average number of two ITNs per household and 39% having at least one net for every two persons in the household. 17. Rural households are more likely to own at least one ITN than urban households 17.
+
+Figure 7
+
+Figure 8
+
+### Diarrhea
+
+Each year, an estimated 2.5 billion cases of diarrhea occur among children under five years of age, and estimates suggest that overall incidence has remained relatively stable over the past two decades, more than half of these cases are in Africa and South Asia, where bouts of diarrhea are more likely to result in death or other severe outcome . Diarrhea is the second biggest killer of children in Nigeria; responsible for about 16% of child's death every year. Nigeria was estimated to have a total number of annual child deaths due to diarrhea to be 151,700 46.
+
+Rotavirus has been identified among the most important cause of infantile diarrhea especially in developing countries. Reports have shown that 39% of diarrhea episodes seen at health centers were rotavirus positive . In 2015, the prevalence of rotavirus diarrhea accounted for 25.5% of diarrhea cases among children younger than five years of age presented to hospitals in Sokoto metropolis 49. In Sokoto, diarrhea is most common among children age 12--23 months and least common among those age 48-59 months. Diarrhea with blood was also most common in children aged 12-23 months. Children of mothers with no education were twice as likely as children of mothers with more than a secondary education to have had diarrhea 50.
+
+Figure 9
+
+### Schistosomiasi
+
+About 252 million individuals might be affected worldwide with the disease 51. Globally, the disease is on the increase in both prevalence and incidence because of the expansion of irrigated agriculture which provides habitats for vector snails; construction of hydro-electricity generating sites; lack of good sanitary habits; and lack of safe water for the growing population 52. In Nigeria, three species are pathogenic to man: S. haematobium, S. mansoni and S. intercalatum 53.
+
+Both intestinal and urinogenital schistosomiasis occur in Nigeria. Previous research has documented prevalence rates between 14.2% and 91.4% 54-59. Schistosomiasis is typically more prevalent in children than adults. In a study, findings revealed that males within the age group 10-14 years recorded highest prevalence than females. Perhaps, as a result of frequent water contact by males in cercariae infested areas around the river 58.
+
+In 2016, the prevalence of urinary schistosomiasis (children) in Sokoto state was 60.80% and 2.93% for intestinal schistosomiasis. The prevalence of the infection by water contact activities showed that children who were involved in farming and children who swim and fish had the highest and second-highest rates respectively. Likewise, those who contact river and dam water for bathing, fetching and washing had similar pattern 53. Children whose source of drinking water were dams, ponds and rivers had the highest prevalence in contrast with children that drink water from wells and boreholes- with the least prevalence.
+
+Prevalence of intestinal schistosomiasis is low, which may be because intestinal schistosomiasis is transmitted by Biomphalaria sps. of snails, whose presence is very low-slung in northern Nigerian regions. In contrast, high prevalence of urinary schistosomiasis may be attributed to high occurrence of vector snails of Bulinus sps. in the local water bodies of northern Nigeria 60 and high dependence on untreated water from natural water (especially amongst rural dwellers) where infection may set in, since schistosomiasis is a water-borne disease and frequent contact of the population with fresh water may lead to high infection rates and constant re-infection 53.
+
+Figure 10
+
+### Polio
+
+Nigeria is a major reservoir of poliovirus in the world and until recently the only country with ongoing transmission of all three serotypes namely: wild poliovirus type 1 (WPV1), wild poliovirus type 3 (WPV3), and circulating vaccine-derived poliovirus type 2 (cVDPV2). Nigeria is one of the three remaining endemic countries. As at 2005, Nigeria was responsible for about half of the global burden of polio 61.
+
+Environmental surveillance has repeatedly detected cVDPVs in Sokoto since mid-2013. An Environmental sampling conducted during 2014 detected 16 cVDPV2 in Sokoto 62. The last reported case of poliomyelitis due to wild poliovirus type 2 was reported in 1999 and wild poliovirus type 2 was officially certified as eradicated in September 2015 63. In Sokoto State, four genetically related viruses were isolated from four environmental samples collected between 24 April and 9 May 2018; no associated case of acute flaccid paralysis has been detected, as the virus was isolated only from environmental samples. In October 2016, an unrelated circulating vaccine-derived poliovirus (cVDPV2) outbreak and subsequently Vaccine-derived poliovirus (VDPV2) events occurred in Sokoto State 64.
+
+Nigeria mounted a massive vaccine response with bivalent oral polio vaccine (bOPV), Monovalent Oral Polio Vaccine (mOPV2) and Inactivated polio vaccine (IPV), even surpassing outbreak guidelines. However, Vaccine-derived poliovirus type 2 (VDPV2) has persisted in Sokoto 65. This indicates that there is a high number of unimmunized children which threaten to sustain transmission. Improving the quality and oversight of the Sokoto program is an urgent priority to head off a resurgence of Type 2 disease nation-wide, particularly as immunity levels drop following the withdrawal of Trivalent oral polio vaccine and continued weak routine immunization 65. However, the polio eradication program over the years have proven somewhat successful. 21st August 2019 marks three years since Nigeria last reported a case of wild poliovirus. This is an important public health milestone for the country and the entire Africa Region, with a step closer to being certified as polio-free 64.
+
+### Meningitis
+
+Cerebrospinal meningitis is a major public health problem still affecting tropical countries, particularly in sub-Saharan Africa. It is highly contagious and mortality from the disease remains high, despite major achievements in the treatment modalities. Outbreaks of Neisseria Meningitides (Nm) type C has been on the increase since 2013 in Sokoto state in Northwest, Nigeria. Eight hundred and fifty-six (856) cases were reported in Sokoto state in 2013 with a case fatality rate (CFR) of 6.8%. The 2015 figure gives an alarming 5-fold rise in the number of cases seen compared to that of 2014. This implies it could get worse in subsequent years if no public health measures are put in place to stop the trend 66.
+
+## Maternal & Reproductive Health
+
+### Maternal Health
+
+Three-quarters of all maternal deaths occur during delivery and immediate post-partum period. The single most critical intervention for safe motherhood is to ensure a competent health worker with mid-wifery skill is present at every birth 10. A world fit for children goal is to ensure that women have ready and available access to skilled attendance at delivery. The indicators include the proportion of births with a skilled attendant and proportion of institutional deliveries. About 7.4% of births occurring in 2011 (Sokoto) were delivered by skilled personnel (2.5% Doctor, 4.9% Nurses and Mid-Wife). This increased to 20.6% in 2017 (7.7% doctors, 12.9% Nurses and Mid-Wives) 10.
+
+Increasing the proportion of births that are delivered in health facilities is an important factor in reducing the health risks to both the mother and the baby. Proper medical attention and hygienic conditions during delivery can reduce the risks of complications and infections that can cause morbidity and mortality to either the mother or the baby. A large percentage of pregnant women in Sokoto deliver in their respective homes- 92.6% in 2011. However, a decrease to 87.7% was noted in 2017, with the rest delivery occurring in health facilities (Public and Private Facilities) 10.
+
+Figure 11
+
+### Vesico-vaginal Fistula
+
+Vesico-vaginal fistula (VVF) is a devastating and debilitating condition which profoundly hampers the quality of life of women. Despite improvement in health care delivery systems and advancement in surgical techniques, VVF continues to be a major health problem 67. Predisposing factors to obstetric fistula include early age at delivery, home delivery, early marriage, obstructed labor, unskilled birth attendant, economic and socio-cultural factors among others.
+
+Prolonged obstructed labor is the main cause of obstetric fistula in developing countries, Nigeria inclusive at 96.5% 68. It is a preventable and treatable disease commonly found among the poor population- young women and illiterate girls, who mainly live in the rural communities with difficulty in accessing emergency obstetric care and areas with limited or under-utilized skilled birth attendants 69. Most of the vesicovaginal fistula patients in northern Nigeria had early marriages: 93.6% of Sokoto patients were married before or at 18 years of age 70.
+
+## Nutritional Deficiencies
+
+Nutrition plays an essential component in the evaluation of a child's growth and health. Children's physical development is an important indicator of a society's welfare. It reflects socioeconomic, food safety and environmental conditions 71. The living conditions (i.e., socioeconomic, nutritional and environmental) to which children are exposed, influences their optimal growth potential 72. Child malnutrition indicators are typically classified into: Acute Malnutrition, Underweight, Stunting and Overweight.
+
+### Acute malnutrition (AM)
+
+Acute Malnutrition7 in children (6-59 months) is either moderate or severe. Severe Acute Malnutrition (SAM)8 is an important indicator and the most dangerous form of malnutrition and closely linked to mortality risk 73. A child with SAM has 9-fold increased risk of death compared to a child with no acute malnutrition 74. Sokoto state had 9.8% Global Acute Malnutrition9 (GAM) and 1.0% Severe Acute Malnutrition coefficient in 2018, compared to its GAM of 10.5% and SAM of 2.4% in 2015, a slight change 73. The estimates show a poor nutrition situation according to WHO classification of GAM rate of 5-9.9%. Sokoto has the fourth highest state prevalence in GAM and SAM of 8.4% and 2.0% respectively, evincing reflecting a poor nutritional status of the state. In 2015, Sokoto was above the warning threshold for GAM (10 \< GAM \<15) and WHO SAM crisis threshold of 2 percent 73.
+
+The causes of malnutrition and food insecurity are multifaceted and include poor infant and young child feeding practices, which contribute to high rates of illness and poor nutrition among children under 2 years; lack of access to healthcare, water, and sanitation; armed conflict, particularly in the north; irregular rainfall; high unemployment; and poverty. Although chronic and seasonal food insecurity occurs throughout the country and is exacerbated by volatile and rising food prices, the impact of conflict and other shocks has resulted in acute levels of food insecurity. 16
+
+## Noncommunicable Diseases
+
+Non-communicable diseases (NCDs) are the leading cause of death globally, and one of the major health challenges of the 21st century. In 2016, they were responsible for 71% (41 million) of the 57 million deaths which occurred globally 75. Non-communicable diseases are characterized as that which is non-infectious and of chronic nature. These include diseases such as diabetes, cardiovascular diseases, mental disorders, neuro-degenerative disorders and injuries 76. In the current global health context, 'NCDs' mainly refer to four diseases -- diabetes, cardiovascular diseases, cancers and chronic respiratory disease 76. Nigeria is currently witnessing both demographic and epidemiologic transitions, which could be some of the possible reasons why the prevalence of non-communicable diseases is increasing 77.
+
+In Nigeria, research by WHO in 2016 shows that NCDs were estimated to account for 29% of all deaths (Cardiovascular diseases 11%, cancer 4%, diabetes 1%) 78. Similar to the national pattern, NCDs less cancer was estimated to account for 21% of all deaths in Sokoto (Cardio vascular diseases 10%, Diabetes 2%) 2. Though communicable diseases remain the primary cause of death in Sokoto, the state is currently facing an increase in the burden of NCDs. The costs on society will therefore be staggering; the burden on the health system will be increasingly unsustainable, the loss from the workforce of adults in their prime will have profound effects on the fiscus and families, and communities will struggle to make ends meet. All these of course, is likely to be made worse by a rising population 79.
+
+The focus of the health sector in most countries had been almost exclusively on healthcare services. However, because NCD risk factors lie in sectors beyond health, the key strategy to curb this rise is to use a multisectoral approach. Different sectors have different contributions to make towards solving this problem. Inability to curb this will lead to a bigger challenge future wise. Currently, NCDs contribute to 88% of all deaths in the USA (2016) -a huge burden yet to be tackled 23
+
+### Diabetes
+
+Diabetes mellitus (DM) was previously considered to be rare in sub-Saharan Africa. However, the prevalence is on the increase mainly because of urbanization and changes in lifestyle 80. The prevalence of diabetes mellitus (DM) is increasing worldwide, and it is projected that by the year 2030 over 500 million adults will be affected by DM 81. These large increases are predicted to occur mostly in developing countries and in adults especially between 45 and 64 years of age due to changes in lifestyles especially diet and physical inactivity 82. These predictions indicate a growing burden of diabetes, particularly in developing countries. In 2011, the prevalence of diabetes mellitus was about 2.7% in Nigeria 83.
+
+The prevalence rate of 4.3% for DM in Sokoto was noted in 2017 amongst sub-urban dwellers 80. The prevalence was slightly higher in men than women (4.5% vs. 4.0%) and differed significantly according to weight status or Body Mass Index classification. Prevalence of DM is still lower in rural (0.8%) than urban. This low prevalence of DM among rural dwellers could be attributed to the complementary traditional lifestyle, which depends on animal husbandry and subsistence economy 84. The prevalence of DM increases with advancing age, a finding that is consistent with previous studies .
+
+With respect to other blood sugar disorders, there was a relatively high prevalence of prediabetes defined as Impaired fasting glycemia (IFG) or Impaired glucose tolerance (IGT) among a rural Fulani community in Wamakko Local Government area of Sokoto state (International Diabetes Foundation, 2014) The prevalence rates of IGT and IFG were 8 and 6.9% respectively This relatively high prevalence of IGT is similar to International Diabetes Federation estimates of about 8% prevalence rate for IGT in Nigeria 81 In urbanized Fulani, prevalence of 14.6% of IGT was recorded 86. This is attributable to lifestyle changes associated with urbanization. Urban lifestyle in Africa is characterized by changes in dietary habits involving an increase in the consumption of refined sugars, saturated fat, and reduction in fiber intake 87. Urbanization tends to decrease physical activity as very little physical activity is required for daily living whereas rural populations rely on foot walk as transportation means and often have intense agricultural activities as their main occupation 84.
+
+### Cancer
+
+Cancer is a public health problem worldwide affecting all ages. It is the second commonest cause of death in developed countries and among the three leading causes of death in developing countries. WHO reported that about 24.6 million people live with cancer world-wide. There are 12.5% of all deaths attributable to cancer and if the trend continues, it is estimated that by 2020, 16 million new cases will be diagnosed per annum out of which 70% will be in the developing countries 88. Cancer is an emerging non-communicable disease in sub-Sahara Africa. The pattern of cancer distribution in developed and sub-Saharan Africa vary significantly. While lung, breast, prostate, colorectal and urinary bladder carry more than 50% of cancer burden in Europe and America; the Sub-Saharan African region showed that breast, cervical, prostate, Lymphomas, gastrointestinal cancers carry more than 60% of cancer burden 89.
+
+Among males in Sokoto state, the five most frequently reported cancers are bladder cancer (19.3%), prostate (9.9%) and non- hodgkin's lymphoma (6.5%). The most frequent sites of cancers in females by rank order are breast (25.3%), followed by cervix uteri (14.1%) and ovary (5.6%). Almost half of the breast cancers were diagnosed in premenopausal women (in the 30-49 years age group), while cervical cancer tended to affect women a decade later. Significantly, bladder cancer did not appear to be frequent in females 90.
+
+### Cardiovascular Diseases
+
+Cardiovascular diseases (CVD) are the leading cause of mortality and morbidity in developed countries and they are emerging as prominent public health problems in developing countries.
+
+The prevalence of CVD in Sokoto (2009) was 52.60% in males and 47.40% in females 93 . The highest incidence of CVD was seen between the age ranges of 40-49 years while the lowest incidence was seen between the age ranges of 19 years. Hypertension, closely followed by stroke, is the most prevalent CVD while Chronic Heart Disease (CHD) is the least prevalent CVD in Sokoto Prevalence of hypertension (2017) was 23.6%. There is an age-related increase in the prevalence of hypertension. This is not surprising as blood pressure tends to rise with age and hence the possibility of a greater burden of hypertension as people live longer. The potential impact is the additional stretching of health resources, which is already failing the stress utilization test 94.
+
+Cigarette smoking of any amount, elevated blood pressure, elevated serum total cholesterol and low density lipoprotein cholesterol (LDLC), low serum high density lipoprotein cholesterol (HDLC), diabetes mellitus, and advancing age have been identified as the major and independent risk factors for Chronic Heart Diseases (CHD). In 2017, the prevalence of dyslipidemia, total cholesterol and cigarette smoking in Sokoto was 3.5%, 6% and 7% respectively. These values are low possibly reflecting the low level of cholesterol in diet of most the people and nature of our occupation such as farming and transport system that force resident to engage in physical activity most at times strenuous 94. Hypertension had the highest occurrence of mortality of all the CVD's 30.85% while congenital heart disease had the lowest number of deaths 0.56% 93.
+
+### Obesity
+
+Obesity is a non-communicable medical disorder that has largely been accepted as reflection of healthy living and affluence among Nigerians. It is usually defined as body mass index (BMI) ??30 kg/m 2 and is assuming an epidemic dimension globally 95.
+
+In 2014, the prevalence rate of generalized obesity was 13.9% of which 1.7% had BMI\>40 kg/m 230.6% (11.4% in men and 19.2% in women), which was lower than the national prevalence rate observed in 2008 96. The higher rate of obesity in females may be related to their sedentary lifestyle in this part of country as many are full house wives, while males are more involved in physical activities arising from their farming occupations 94.
+
+### Drug Use In Sokoto State
+
+In 2017, prevalence of any drug use in Nigeria was estimated at 14.4% or 14.3 million people aged between 15 and 64 years. The extent of drug use in Nigeria is comparatively high when compared with the 2016 global annual prevalence of any drug use of 5.6% among the adult population . People who inject drugs constitute a sizeable proportion of high-risk drug users in Nigeria. The most common drugs injected in the past year were pharmaceutical opioids, followed by cocaine and heroin. While overall, more men were injecting drugs, women were more likely than men to report injecting heroin. The extent of risky injecting practices and sexual behaviors among the high-risk drug users and those who inject drugs is also of concern as is the extent of self-reported HIV among this group. Women who injected drugs were more likely than men to engage in high-risk sexual behaviors further compounding their risk for acquiring HIV among other infections 22
+
+The prevalence of drug use in the North-West zone is estimated at 12% of the population. The use of cannabis and non-medical use of opioids (tramadol, codeine, morphine) and cough syrups (containing codeine or dextromethorphan) are also the most common in this zone 22. A qualitative study was conducted to examine the abuse of cough syrup as a new trend in drug abuse among the youth in five (5) Northwestern States of Nigeria. The results show that 33% claimed to source the substances from chemists and pharmacies, 36% claimed to acquire the substance from Drug dealers (retail), while 23% claimed they obtained the substance from Drug dealers (Wholesale) 98.
+
+Figure 12
+
+## Injuries and Accidents
+
+Injuries have been noted to be the leading cause of death and a major source of disability amongst children and young adults in industrialized countries. This is more so in the developing countries like Nigeria where increasing industrialization, high velocity vehicles, increasing ethno-religious clashes and recently widespread terrorist attacks have resulted in sudden, unexpected mass casualties presenting to secondary and/or tertiary health centers 99.
+
+The number of deaths as a result of road traffic accidents increased by 6.2% (2010-2013) with a simultaneous increase to 2.2% injured persons within the same time interval 100. This could be as a result of flouting traffic rules and regulations, poor use of seat belts by motorists, outright refusal to use seat belts and an influx of alternatives to vehicles such as motorcycles and tricycles. Small Arms and Light Weapons (SALWs) enable and extend violence which has enormous public health consequences too. Within a ten-year interval of 2003-2013, Sokoto state had a prevalence of 0.07% SALWs, with 14% fatality, and peak age range of 26--35 years being affected. The most common types of injuries were wounds, systemic organ injuries and fractures. Brain trauma, though not very common had 75% mortality while systemic organ injury had 24.6% mortality 101.
+
+Figure 13
+
+Figure 14
+
+# Conclusion
+
+Sokoto state has experienced epidemiologic transitions. However, irrespective of the previous year's changes, communicable diseases still bear the main crux of death in Sokoto state. This can be as a result of poor health management, diseases, trauma and disaster/outbreak management in the State. It is therefore necessary that the government re-orients its policies such as adopting a complete, integrated, intra- and inter-sectoral, life span approach to health care assessment and service delivery. This will ensure that people are assured of efficient services throughout their life cycle, with the special needs of specific age groups being addressed and resolved adequately and appropriately.
