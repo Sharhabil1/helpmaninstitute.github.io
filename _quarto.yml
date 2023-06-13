@@ -29,6 +29,9 @@ website:
         aria-label: linkedin
         href: https://www.linkedin.com/company/helpmaninstitute
 
+execute:
+  freeze: true
+
 format:
   html:
     theme: zephyr
