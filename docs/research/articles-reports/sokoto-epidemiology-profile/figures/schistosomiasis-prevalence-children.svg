@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='1008.00pt' height='720.00pt' viewBox='0 0 1008.00 720.00'>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='864.00pt' height='720.00pt' viewBox='0 0 864.00 720.00'>
 <defs>
   <style type='text/css'><![CDATA[
     .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
@@ -16,43 +16,46 @@
 </defs>
 <rect width='100%' height='100%' style='stroke: none; fill: none;'/>
 <defs>
-  <clipPath id='cpMC4wMHwxMDA4LjAwfDAuMDB8NzIwLjAw'>
-    <rect x='0.00' y='0.00' width='1008.00' height='720.00' />
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw3MjAuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='720.00' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NzIwLjAw)'>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw3MjAuMDA=)'>
 </g>
 <defs>
-  <clipPath id='cpNTAuMTR8MTAwMi41Mnw1LjQ4fDY4Mi43Nw=='>
-    <rect x='50.14' y='5.48' width='952.38' height='677.29' />
+  <clipPath id='cpNjEuODZ8ODU4LjUyfDUuNDh8Njc1LjM0'>
+    <rect x='61.86' y='5.48' width='796.66' height='669.86' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpNTAuMTR8MTAwMi41Mnw1LjQ4fDY4Mi43Nw==)'>
-<polyline points='50.14,651.98 1002.52,651.98 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='50.14,564.02 1002.52,564.02 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='50.14,476.06 1002.52,476.06 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='50.14,388.10 1002.52,388.10 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='50.14,300.14 1002.52,300.14 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='50.14,212.18 1002.52,212.18 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='50.14,124.22 1002.52,124.22 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='50.14,36.27 1002.52,36.27 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
-<rect x='154.30' y='117.19' width='148.81' height='534.79' style='stroke-width: 1.07; stroke-linecap: butt; stroke-linejoin: miter; fill: #FFF7BC;' />
-<rect x='451.92' y='332.95' width='148.81' height='319.03' style='stroke-width: 1.07; stroke-linecap: butt; stroke-linejoin: miter; fill: #FEC44F;' />
-<rect x='749.54' y='626.21' width='148.81' height='25.77' style='stroke-width: 1.07; stroke-linecap: butt; stroke-linejoin: miter; fill: #D95F0E;' />
-<rect x='50.14' y='5.48' width='952.38' height='677.29' style='stroke-width: 2.13;' />
+<g clip-path='url(#cpNjEuODZ8ODU4LjUyfDUuNDh8Njc1LjM0)'>
+<polyline points='61.86,644.89 858.52,644.89 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='61.86,557.90 858.52,557.90 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='61.86,470.90 858.52,470.90 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='61.86,383.91 858.52,383.91 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='61.86,296.91 858.52,296.91 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='61.86,209.92 858.52,209.92 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='61.86,122.92 858.52,122.92 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='61.86,35.93 858.52,35.93 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<rect x='148.99' y='115.96' width='124.48' height='528.93' style='stroke-width: 1.07; stroke-linecap: butt; stroke-linejoin: miter; fill: #CCEBC5;' />
+<rect x='397.95' y='329.36' width='124.48' height='315.53' style='stroke-width: 1.07; stroke-linecap: butt; stroke-linejoin: miter; fill: #A8DDB5;' />
+<rect x='646.91' y='619.40' width='124.48' height='25.49' style='stroke-width: 1.07; stroke-linecap: butt; stroke-linejoin: miter; fill: #7BCCC4;' />
+<text x='211.23' y='107.82' text-anchor='middle' style='font-size: 11.38px; font-family: "Arial";' textLength='22.77px' lengthAdjust='spacingAndGlyphs'>61%</text>
+<text x='460.19' y='321.22' text-anchor='middle' style='font-size: 11.38px; font-family: "Arial";' textLength='22.77px' lengthAdjust='spacingAndGlyphs'>36%</text>
+<text x='709.15' y='611.26' text-anchor='middle' style='font-size: 11.38px; font-family: "Arial";' textLength='16.44px' lengthAdjust='spacingAndGlyphs'>3%</text>
+<rect x='61.86' y='5.48' width='796.66' height='669.86' style='stroke-width: 1.07;' />
 </g>
-<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NzIwLjAw)'>
-<text x='45.21' y='656.28' text-anchor='end' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='17.34px' lengthAdjust='spacingAndGlyphs'>0%</text>
-<text x='45.21' y='568.32' text-anchor='end' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='24.02px' lengthAdjust='spacingAndGlyphs'>10%</text>
-<text x='45.21' y='480.36' text-anchor='end' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='24.02px' lengthAdjust='spacingAndGlyphs'>20%</text>
-<text x='45.21' y='392.40' text-anchor='end' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='24.02px' lengthAdjust='spacingAndGlyphs'>30%</text>
-<text x='45.21' y='304.44' text-anchor='end' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='24.02px' lengthAdjust='spacingAndGlyphs'>40%</text>
-<text x='45.21' y='216.48' text-anchor='end' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='24.02px' lengthAdjust='spacingAndGlyphs'>50%</text>
-<text x='45.21' y='128.52' text-anchor='end' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='24.02px' lengthAdjust='spacingAndGlyphs'>60%</text>
-<text x='45.21' y='40.56' text-anchor='end' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='24.02px' lengthAdjust='spacingAndGlyphs'>70%</text>
-<text x='228.71' y='696.29' text-anchor='middle' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='128.07px' lengthAdjust='spacingAndGlyphs'>Urinary Schistosomiasis</text>
-<text x='526.33' y='696.29' text-anchor='middle' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='36.02px' lengthAdjust='spacingAndGlyphs'>Others</text>
-<text x='823.95' y='696.29' text-anchor='middle' style='font-size: 12.00px;fill: #4D4D4D; font-family: "Arial";' textLength='137.42px' lengthAdjust='spacingAndGlyphs'>Intestinal Schistosomiasis</text>
-<text transform='translate(15.50,344.12) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='70.02px' lengthAdjust='spacingAndGlyphs'>Prevalence</text>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw3MjAuMDA=)'>
+<text x='56.93' y='650.62' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='23.13px' lengthAdjust='spacingAndGlyphs'>0%</text>
+<text x='56.93' y='563.63' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>10%</text>
+<text x='56.93' y='476.63' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>20%</text>
+<text x='56.93' y='389.64' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>30%</text>
+<text x='56.93' y='302.64' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>40%</text>
+<text x='56.93' y='215.65' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>50%</text>
+<text x='56.93' y='128.65' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>60%</text>
+<text x='56.93' y='41.66' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>70%</text>
+<text x='211.23' y='691.73' text-anchor='middle' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='170.71px' lengthAdjust='spacingAndGlyphs'>Urinary Schistosomiasis</text>
+<text x='460.19' y='691.73' text-anchor='middle' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='118.27px' lengthAdjust='spacingAndGlyphs'>Other categories</text>
+<text x='709.15' y='691.73' text-anchor='middle' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='183.18px' lengthAdjust='spacingAndGlyphs'>Intestinal Schistosomiasis</text>
+<text transform='translate(18.37,340.41) rotate(-90)' text-anchor='middle' style='font-size: 18.00px; font-family: "Arial";' textLength='90.04px' lengthAdjust='spacingAndGlyphs'>Prevalence</text>
 </g>
 </svg>

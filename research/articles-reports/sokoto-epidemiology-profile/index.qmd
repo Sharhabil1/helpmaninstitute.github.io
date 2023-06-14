@@ -1,7 +1,7 @@
 ---
 title: "The Epidemiological Profile of Sokoto State"
 description: "To assess the health transition in Sokoto State, Nigeria, from a phase of widespread communicable diseases to a phase of receding pandemics, while highlighting the continued significance of communicable diseases as a major cause of mortality.."
-image: "figures/substance-abuse-nigeria.svg"
+image: "figures/road-traffic-accidents.svg"
 categories:
   - health
   - working papers
@@ -18,13 +18,6 @@ author:
     attributes:
       corresponding: true
     email: coli@helpmaninstitute.org
-  - name: Edifofon Akpan
-    affiliations:
-      - ref: hdi
-      - ref: unimelb
-    attributes:
-      corresponding: false
-    email: eakpan@helpmaninstitute.org
 affiliations:
   - id: hdi
     name: Population Health Sciences, Helpman Development Institute, FCT Abuja, Nigeria.
@@ -41,9 +34,12 @@ execute:
 ## Abstract
 The epidemiological profile of Sokoto state shows the distribution of deaths, illnesses, injuries and other health-related events in Sokoto. This study used the theory of epidemiologic transitions to show the changes with time in the epidemiological profile of Sokoto and quantified these changes using proportional mortality rate. The epidemiologic transitions are the age of pestilence and famine, the age of receding pandemics, the age of degenerative and man-made diseases, and the age of delayed degenerative diseases respectively. Data from World Health Organization (WHO) and United Nations (UN) agency databases and Sokoto State Health Strategic plan (HHSP-II) of 2016 used for this study, showed that Sokoto state has progressed from the first epidemiological transition to the second epidemiological transition, featuring the proportional mortality rates (PMR) of communicable diseases, maternal, perinatal and nutritional conditions (75% of all deaths), non-communicable diseases (21% of all deaths), and other causes (4% of all deaths). The decline in communicable diseases and gradual increase in non-communicable diseases over time shows that Sokoto might be moving towards the third epidemiological transition. Therefore, this profile would serve as a blueprint and valuable tool in making policies, developing, implementing, and evaluating effective intervention and prevention programs, and allocating healthcare resources.  
 
-## Key figure
+## Key figures
 
-![substance abuse prevalence in nigeria](figures/substance-abuse-nigeria.svg)
+![Mortality and Morbidity rates of RTA (2010-2013)](figures/road-traffic-accidents.svg)
+
+
+![Substance abuse prevalence in nigeria](figures/substance-abuse-nigeria.svg)
 
 ## PDF links
 

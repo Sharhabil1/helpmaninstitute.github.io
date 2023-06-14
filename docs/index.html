@@ -91,20 +91,20 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-posts_journal-articles .list');
+    const listingTargetEl = window.document.querySelector('#listing-posts_articles-reports .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-posts_journal-articles'] = new List('listing-posts_journal-articles', options);
+    window['quarto-listings']['listing-posts_articles-reports'] = new List('listing-posts_articles-reports', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -177,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working papers</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="citations">citations <span class="quarto-category-count">(1)</span></div><div class="category" data-category="health">health <span class="quarto-category-count">(1)</span></div><div class="category" data-category="working papers">working papers <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="citations">citations <span class="quarto-category-count">(2)</span></div><div class="category" data-category="health">health <span class="quarto-category-count">(2)</span></div><div class="category" data-category="working papers">working papers <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -201,8 +201,53 @@ ul.task-list li input[type="checkbox"] {
 <p>Explore the latest health and economic research and policy proposals from Helpman Development Institute’s experts.</p>
 <section id="articles-and-reports" class="level2">
 <h2 class="anchored" data-anchor-id="articles-and-reports">Articles and reports</h2>
-<div id="posts_articles_reports">
+<div id="listing-posts_articles-reports" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="health,working papers,citations" data-listing-date-sort="1683154800000" data-listing-file-modified-sort="1686674461211" data-listing-date-modified-sort="1686610800000" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./research/articles-reports/sokoto-epidemiology-profile/index.html"> <img src="./research/articles-reports/sokoto-epidemiology-profile/figures/road-traffic-accidents.svg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./research/articles-reports/sokoto-epidemiology-profile/index.html">
+<h3 class="no-anchor listing-title">
+The Epidemiological Profile of Sokoto State
+</h3>
+<div class="listing-subtitle">
 
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('health'); return false;">
+health
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('working papers'); return false;">
+working papers
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('citations'); return false;">
+citations
+</div>
+</div>
+<a href="./research/articles-reports/sokoto-epidemiology-profile/index.html">
+<div class="listing-description">
+<p>To assess the health transition in Sokoto State, Nigeria, from a phase of widespread communicable diseases to a phase of receding pandemics, while highlighting the continued significance of communicable diseases as a major cause of mortality..</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./research/articles-reports/sokoto-epidemiology-profile/index.html">
+<div class="listing-date">
+May 4, 2023
+</div>
+<div class="listing-author">
+Chidinma Oli
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 </section>
 <section id="working-papers" class="level2">
@@ -281,14 +326,7 @@ No matching items
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-posts_journal-articles">
-<div class="list quarto-listing-default">
-
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
