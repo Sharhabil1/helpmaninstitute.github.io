@@ -1,6 +1,6 @@
 ---
 title: "Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
-description: "Universal provision of iron supplements or iron-containing multiple micronutrients powders (MNPs) are widely used to prevent anemia in young children in low- and middle-income countries."
+description: "This scoping review emphasizes the pressing need for research to explore prevalence and factors affecting discontinuation of LARCs."
 image: "figures/larcs-use-map.svg"
 categories:
   - Working papers
