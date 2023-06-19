@@ -16,7 +16,8 @@ author:
       - ref: hdi
     attributes:
       corresponding: true
-    email: otaiwo@helpmaninstitute.org
+    email: otaiwo@helpmaninstitute.org 
+    
 affiliations:
   - id: hdi
     name: Helpman Development Institute, FCT Abuja, Nigeria.
