@@ -1,7 +1,7 @@
 ---
 title: "Research"
 
-author: ""
+author: "Helpman Institute"
 
 listing:
   - id: posts_2023
@@ -28,7 +28,6 @@ date-format: "MMMM D, YYYY"
 code-tools: false
 
 comments: false
-
 ---
 
 Explore the latest health and economic research and policy proposals from Helpman Development Institute's experts.
