@@ -2,12 +2,15 @@
 title: "Research"
 author: ""
 listing:
-  - id: posts_working-papers
-    contents: "research/working-papers/**/index.qmd"
+  - id: posts_2023
+    contents: "research/2023/**/index.qmd"
     sort: "date desc"
     categories: true
-  - id: posts_articles-reports
-    contents: "research/articles-reports/**/index.qmd"
+  - id: posts_2022
+    contents: "research/2022/**/index.qmd"
+    sort: "date desc"
+  - id: posts_2021
+    contents: "research/2021/**/index.qmd"
     sort: "date desc"
 page-layout: full
 toc-title: Year
@@ -19,12 +22,17 @@ comments: false
 
 Explore the latest health and economic research and policy proposals from Helpman Development Institute's experts.
 
-## Articles and reports
+## 2023
 
-::: {#posts_articles-reports}
+::: {#posts_2023}
 :::
 
-## Working papers
+## 2022
 
-::: {#posts_working-papers}
+::: {#posts_2022}
+:::
+
+## 2021
+
+::: {#posts_2021}
 :::
