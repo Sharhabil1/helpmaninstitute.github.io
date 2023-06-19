@@ -19,7 +19,7 @@ author:
     email: otaiwo@helpmaninstitute.org
 affiliations:
   - id: hdi
-    name: Population Health Sciences, Helpman Development Institute, FCT Abuja, Nigeria.
+    name: Helpman Development Institute, FCT Abuja, Nigeria.
 
 format: 
   html: 
