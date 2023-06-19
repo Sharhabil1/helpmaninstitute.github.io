@@ -1,7 +1,31 @@
 ---
-title: "MAKING SENSE OF NIGERIA'S GROWING POPULATION"
-format: html 
-editor: visual
+title: " Making sense of Nigeria's growing population"
+
+image: "figures/sense-nigeria-population.png"
+
+categories:
+  - Blog & commentary
+
+date: 2018-05-04
+#date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: coli@helpmaninstitute.org
+affiliations:
+  - id: hdi
+    name: Population Health Sciences, Helpman Development Institute, FCT Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+execute:
+  echo: false
 ---
 
 There is currently limited evidence, if any, to support the hysteria that emerged out of the first decade of the 21st century, of the prospective dividends of Africa's growing population, and especially of the youth cohorts. The Africa rising meme has since mellowed as a result of weakening economic growth, due primarily to falling commodity prices, and softening growth prospects.
@@ -9,6 +33,8 @@ There is currently limited evidence, if any, to support the hysteria that emerge
 Economic growth in the continent fell from average of 5.4% in 2000-2010 to 3.3% in 2010-2015 compared to global growth of 3.0% and 2.9% during the corresponding periods. The downward trend continued as growth in the region dropped further to 2.2% in 2016. Meanwhile, as population growth slowed in the rest of the world, Africa has continued to experience population boom. Projections indicate that Africa will account for about 60% of global population growth between 2017 and 2050 and be the main contributor to global population thereafter.
 
 Nigeria maintains an outsize influence on the African population and economic growth trajectory. As shown below, the decline in Africa's economic growth from 3.9% in 2013 to 2.2% in 2016 reflects largely the decline in performance of the Nigeria economy from 5.5% growth in 2013 to 1.5% contraction in 2016. The influence is also noticeable in the projections through 2018 (Figure 1.1).
+
+![](figures/graph.png)
 
 With population of 187 million in 2017, Nigeria is currently the 7^th^ most populous country and home to the fastest growing population in the world (2.7% per annum during 2010-2015). As a result, while Africa is recognized to have the youngest population among the world regions, Nigeria's population is even younger. Children under age 15 account for 44% of Nigeria's population compared to 41% in Africa, while the share of youths aged 15-19 remains the same at 19%. While a youthful population portends opportunities for demographic dividends, young children create additional burden of economic dependency that constrains potential dividends.
 

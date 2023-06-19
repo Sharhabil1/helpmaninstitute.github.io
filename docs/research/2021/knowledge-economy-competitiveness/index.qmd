@@ -16,7 +16,7 @@ author:
       - ref: hdi
     attributes:
       corresponding: true
-    email: otaiwo@helpmaninstitute.org
+    email: coli@helpmaninstitute.org
 affiliations:
   - id: hdi
     name: Population Health Sciences, Helpman Development Institute, FCT Abuja, Nigeria.
