@@ -43,12 +43,6 @@ format:
     default-image-extension: svg
     reference-doc: resources/hdi-quarto-template-v0001.docx
     link-citations: true
-  html:
-    default-image-extension: svg
-    anchor-sections: true
-    toc-location: left
-    fig-cap-location: margin
-    self-contained: true
   pdf:
     papersize: a4
     default-image-extension: pdf
