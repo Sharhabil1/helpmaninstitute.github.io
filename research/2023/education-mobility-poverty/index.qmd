@@ -2,10 +2,11 @@
 title: "Education, Intergenerational Mobility, and Poverty Dynamics"
 
 categories:
-  - Blog & commentary
+  - Working papers
+  - Research notes
 
 date: 2023-06-19
-#date-modified: today
+date-modified: today
 date-format: "MMM YYYY"
 
 author:
@@ -17,7 +18,7 @@ author:
     email: otaiwo@helpmaninstitute.org
 affiliations:
   - id: hdi
-    name: Population Health Sciences, Helpman Development Institute, FCT Abuja, Nigeria.
+    name: Helpman Development Institute, FCT Abuja, Nigeria.
 
 format: 
   html: 
@@ -42,18 +43,18 @@ set_flextable_defaults(font.size = 10,
 
 # Model
 
-We consider a closed overlapping-generations economy operating over an infinite discrete time horizon, starting with period 0. Individuals with perfect foresight invest in education and assets under capital market imperfection. However, the production of a single good occurs in a perfectly competitive environment where a single good produced can be consumed, invested, or passed on to the next generation. Population is exogenous and technology is assumed to be exogenous and stationary over time. Markets are imperfect in the sense that borrowing in the earlier periods of life for education acquisition is not possible. In particular, investment in education, which is apparently indivisible in this model, has to be financed out of savings of parents [^1]. In the adulthood (time $t$) each individual is allowed to invest, borrow, and/or lend at the market interest rate $R~t~$.
+We consider a closed overlapping-generations economy operating over an infinite discrete time horizon, starting with period 0. Individuals with perfect foresight invest in education and assets under capital market imperfection. However, the production of a single good occurs in a perfectly competitive environment where a single good produced can be consumed, invested, or passed on to the next generation. Population is exogenous and technology is assumed to be exogenous and stationary over time. Markets are imperfect in the sense that borrowing in the earlier periods of life for education acquisition is not possible. In particular, investment in education, which is apparently indivisible in this model, has to be financed out of savings of parents.[^1] In the adulthood (time $t$) each individual is allowed to invest, borrow, and/or lend at the market interest rate $R_t$.
 
 [^1]: Becker Gary S. and Nigel Tomes (1986), "Human Capital and the Rise and Fall of Families, *Journal of Labor Economics.* 4(3, part 2):S1-39.
 
 ## Producers
 
-The amount of aggregate output produced in the adulthood (time $t$), $Y~t~$, is determined by the aggregate stock of physical capital at time $t$ (adulthood), $K~t~$, and the existing amount of efficient labor $N~t~$ --- where $N~t~$ is the amount of efficient labor---is defined as follows:[^2] (Rainer and Nardini, 2007)
+The amount of aggregate output produced in the adulthood (time $t$), $Y_t$, is determined by the aggregate stock of physical capital at time $t$ (adulthood), $K_t$, and the existing amount of efficient labor $N_t$ --- where $N_t$ is the amount of efficient labor---is defined as follows:[^2] (Rainer and Nardini, 2007)
 
 [^2]: Andergassen Rainer and Franco Nardini (2007), "Educational Choice, Endogenous Inequality and Economic Development," *Journal of Macroeconomics*, 29, pp. 940 -- 958
 
 $$
-N~t = \lambda_tH_t^P + (1-\lambda_t)L_t^P \tag{1.1.1}\\    
+N_t = \lambda_tH_t^P + (1-\lambda_t)L_t^P \tag{1.1.1}\\    
 $$
 
 We assume that $\lambda_t \in (0,1)$, and $ρ≤1$. $H_t$ and $L_t$ are numbers of skilled and unskilled workers, respectively; where $H_t+L_t=Z_t$. At different stages of economic development, unskilled (skilled) workers might be relatively more abundant than skilled (unskilled) workers for aggregated production.
@@ -63,12 +64,12 @@ Following Rainer and Nardini (2007), we assume that skilled and unskilled worker
 The aggregate production function takes the Cobb-Douglas form:
 
 $$
-Y~t = AK_t^\alpha (N_t^\frac{1}{P})^{1-\alpha} \tag{1.1.2}\\     
+Y_t = AK_t^\alpha (N_t^\frac{1}{P})^{1-\alpha} \tag{1.1.2}\\     
 $$
 
 where $\alpha \in (0,1)$,and $A>0$ stands for the level of technology. The market price of the final good is normalized to 1.
 
-Producers can freely rent the services of capital and labor from household through competitive factors markets. Hence, they maximize their profits given the market wages per unit of skilled and unskilled labors, $w_t^H,w_t^L$ and the rental price per unit of physical capital, $R_t$. Solving this problem is equivalent to choosing $H_t, L_t,and \:K_t$ that maximize $Y_t - w^HH_t - w_t^L L_t - r_t K_t$ subject to $Y~t = AK_t^\alpha (N_t^\frac{1}{P})^{1-\alpha}$ .The associated equilibrium wages of skilled and unskilled labors and the equilibrium price of physical capital are given by:
+Producers can freely rent the services of capital and labor from household through competitive factors markets. Hence, they maximize their profits given the market wages per unit of skilled and unskilled labors, $w_t^H,w_t^L$ and the rental price per unit of physical capital, $R_t$. Solving this problem is equivalent to choosing $H_t$, $L_t$, and $\:K_t$ that maximize $Y_t - w^HH_t - w_t^L L_t - r_t K_t$ subject to $Y_t = AK_t^\alpha (N_t^\frac{1}{P})^{1-\alpha}$ . The associated equilibrium wages of skilled and unskilled labors and the equilibrium price of physical capital are given by:
 
 $$
 w_L^H = (1 - \alpha) \lambda \frac{Y_t}{N_t} H_t^{p-1}    
@@ -94,7 +95,7 @@ $$
 s_t^i = \eta_t^iw_t^H + (1 - \eta_t^i) w_t^L + (b_t^i - \eta_t^iP_t) \tag{1.2.1}\\   
 $$
 
-where $P_t$ indicates the cost of education for each individual during his young age, $s_t^i$ indicates savings made by an adult member of generation $t$. $(s_t^i = \eta_t^iw_t^H + (1 - \eta_t^i) w_t^L + (b_t^i - \eta_t^iP_t))$is the first period wealth after investment in education has occurred, that is, when $\eta_t^i=1$.
+where $P_t$ indicates the cost of education for each individual during his young age, $s_t^i$ indicates savings made by an adult member of generation $t$. $s_t^i = \eta_t^iw_t^H + (1 - \eta_t^i) w_t^L + (b_t^i - \eta_t^iP_t)$ is the first period wealth after investment in education has occurred, that is, when $\eta_t^i=1$.
 
 In the childhood, when young, each agent engages in skills acquisition. Investment in education is indivisible and is financed out of savings of parents; making poverty dynamics an issue in this model. Since a young agent is credit constrained when acquiring knowledge, education costs have to be covered out by parents through an intergenerational transfer (or bequest), $b_t^i$. If transfers from a parent is not enough to cover the entire cost of education, then there is no investment in education since capital markets are imperfect and there is no possibility for borrowing. However, if parental transfers exceed the cost of education, the excess is saved for the second period of life at the market interest rate $r_{t+1}$. Hence, investment in education is feasible only if transfers from parents are at least equal to the costs of acquiring education, that is, if
 
@@ -263,7 +264,7 @@ $$
 b_{t+i}^i = \beta \frac {s_t^i}{1-\mu} [q_{t+1} + \Phi^i - \mu r_{t+1}] \tag{1.2.15}
 $$
 
-where $s_t^i = \eta_t^iw_t^H + (1-\eta_t^i)w_t^L + (b_t^i-\eta_t^iP_t)$, and \$ \frac {\\partial b\_{t+1}\^i}{\\partial\\mu} \> 0\$. $\mu$ is the index of the financial market development (or deepening). The last result in (1.1.15) indicates that intergenerational transfers for education purposes might depend on the level of development of financial market.
+where $s_t^i = \eta_t^iw_t^H + (1-\eta_t^i)w_t^L + (b_t^i-\eta_t^iP_t)$, and \$ \frac {\\\\partial b\\\_{t+1}\\\^i}{\\\\partial\\\\mu} \> 0\$. $\mu$ is the index of the financial market development (or deepening). The last result in (1.1.15) indicates that intergenerational transfers for education purposes might depend on the level of development of financial market.
 
 In the next pages we will make a simplifying assumption that $\phi^L \le (r_{t+1}/q_{t+1}) \equiv \Phi_t < \phi^H$.
 
