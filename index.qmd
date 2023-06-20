@@ -1,7 +1,7 @@
 ---
 title: "Research"
 
-author: "Helpman Institute"
+author: ""
 
 listing:
   - id: posts_2023
