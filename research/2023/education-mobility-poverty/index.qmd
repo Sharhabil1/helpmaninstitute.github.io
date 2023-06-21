@@ -264,7 +264,7 @@ $$
 b_{t+i}^i = \beta \frac {s_t^i}{1-\mu} [q_{t+1} + \Phi^i - \mu r_{t+1}] \tag{1.2.15}
 $$
 
-where $s_t^i = \eta_t^iw_t^H + (1-\eta_t^i)w_t^L + (b_t^i-\eta_t^iP_t)$, and \$ \frac {\\\\partial b\\\_{t+1}\\\^i}{\\\\partial\\\\mu} \> 0\$. $\mu$ is the index of the financial market development (or deepening). The last result in (1.1.15) indicates that intergenerational transfers for education purposes might depend on the level of development of financial market.
+where $s_t^i = \eta_t^iw_t^H + (1-\eta_t^i)w_t^L + (b_t^i-\eta_t^iP_t)$, and $\frac {\partial b_{t+1}^i}{\partial \mu} > 0$. $\mu$ is the index of the financial market development (or deepening). The last result in (1.1.15) indicates that intergenerational transfers for education purposes might depend on the level of development of financial market.
 
 In the next pages we will make a simplifying assumption that $\phi^L \le (r_{t+1}/q_{t+1}) \equiv \Phi_t < \phi^H$.
 
