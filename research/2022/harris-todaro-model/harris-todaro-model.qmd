@@ -18,11 +18,6 @@ affiliations:
     name: Helpman Development Institute, Abuja, Nigeria.
    
 format:
-  docx:
-    default-image-extension: svg
-    reference-doc: resources/hdi-quarto-template-v0001.docx
-    link-citations: true
-  
   pdf:
     papersize: a4
     default-image-extension: pdf
@@ -36,9 +31,6 @@ format:
     extra_dependencies: ["flafter"]
     header-includes: |
       \usepackage[labelsep=period]{caption}
-     
-#filters:
-# - authors-block
 
 editor: visual
 crossref:

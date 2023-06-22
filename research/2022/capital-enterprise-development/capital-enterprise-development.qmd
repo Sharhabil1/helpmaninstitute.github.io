@@ -43,9 +43,6 @@ toc-depth: 2
 toc-title: "Table of Contents"
 
 bibliography: references.bib
-#csl: resources/bmj.csl
-
-pdf-engine: lualatex 
 ---
 
 ```{r setup, include=FALSE}

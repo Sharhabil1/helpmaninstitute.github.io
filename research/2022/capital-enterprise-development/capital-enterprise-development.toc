@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}The setting}{12}{section.2}%
+\contentsline {subsection}{\numberline {2.1}The Enterprise Sector}{13}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Enterprise Labor Market}{19}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Structure of Enterprise Sector}{21}{subsection.3.1}%
+\contentsline {section}{\numberline {4}A Description of the General Equilibrium}{23}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Skill and Capital Mobility}{24}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}General Equilibrium Dynamics}{24}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Conclusion}{26}{section.5}%
+\contentsline {section}{References}{28}{section*.15}%
+\contentsline {section}{Appendix}{29}{section*.16}%
+\contentsline {subsubsection}{Appendix A}{29}{section*.17}%
+\contentsline {subsubsection}{Appendix B}{29}{section*.20}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
