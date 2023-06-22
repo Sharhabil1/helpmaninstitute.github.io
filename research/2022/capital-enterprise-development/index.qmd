@@ -1,0 +1,45 @@
+---
+title: "Capital-Skill Matching and Enterprise Development"
+
+image: "figures/figure-5.png"
+
+categories:
+  - Articles & reports
+
+date: 2022-05-04
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+
+execute:
+  echo: false
+---
+
+## Abstract
+
+This paper analyzes an innovative model of entrepreneurship in which enterprise technology is defined by capital and enterprise output and wages are outcomes of a skill-capital matching process. In this model, enterprise quality is driven by the opportunity costs of labor and capital. A reduction in the cost of capital raises workers' surplus, draws low-skill workers into entrepreneurship and results in low wage equilibrium while an increase in alternate wages has the opposite effect of raising enterprise wages. The potential for wage growth is determined by the extent of capital-skill gap: enterprises with gaps within a small neighborhood demonstrate a potential to grow while others are limited by competitively high price of capital or high cost of skill. The model suggests that strategies aimed at growth of entrepreneurship and wages must distinguish between existing and potential entrepreneurs. For existing entrepreneurs reinvesting wages, a program of skill upgrade is more potent than supply of low price capital; the former leads to higher wages while the latter perpetuates low wages. For enterprises generating below- subsistence wages, a strict targeting program of low-cost capital is appropriate. For potential entrepreneurs, efforts should seek to combine skill development with frameworks to match new skills to commensurate capital. A public-private partnership could achieve this goal without burdening the private sector while simultaneously eliminating inefficiencies associated with public lending programs.
+
+## Key figures
+
+![Income Distribution.](figures/figure-5.png)
+
+![Substance abuse prevalence in nigeria](figures/figure-9.png)
+
+## PDF links
+
+-   [See Articles in PDF format](capital-enterprise-development.pdf)
