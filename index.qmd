@@ -16,6 +16,30 @@ listing:
     contents: "research/2021/**/index.qmd"
     sort: "date desc"
     categories: true
+  - id: posts_2020
+    contents: "research/2020/**/index.qmd"
+    sort: "date desc"
+    categories: true
+  - id: posts_2019
+    contents: "research/2019/**/index.qmd"
+    sort: "date desc"
+    categories: true
+  - id: posts_2018
+    contents: "research/2018/**/index.qmd"
+    sort: "date desc"
+    categories: true
+  - id: posts_2017
+    contents: "research/2017/**/index.qmd"
+    sort: "date desc"
+    categories: true
+  - id: posts_2016
+    contents: "research/2016/**/index.qmd"
+    sort: "date desc"
+    categories: true
+  - id: posts_2015
+    contents: "research/2015/**/index.qmd"
+    sort: "date desc"
+    categories: true
 
 page-layout: full
 
@@ -45,4 +69,34 @@ Explore the latest health and economic research and policy proposals from Helpma
 ## 2021
 
 ::: {#posts_2021}
+:::
+
+## 2020
+
+::: {#posts_2020}
+:::
+
+## 2019
+
+::: {#posts_2019}
+:::
+
+## 2018
+
+::: {#posts_2018}
+:::
+
+## 2017
+
+::: {#posts_2017}
+:::
+
+## 2016
+
+::: {#posts_2016}
+:::
+
+## 2015
+
+::: {#posts_2015}
 :::

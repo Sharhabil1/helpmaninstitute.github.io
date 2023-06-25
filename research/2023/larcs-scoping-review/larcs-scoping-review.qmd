@@ -47,11 +47,6 @@ bibliography: references.bib
 pdf-engine: lualatex
 
 format: 
-  docx:
-    default-image-extension: svg
-    reference-doc: resources/hdi-quarto-template-v0001.docx
-    link-citations: true
-    output-file: larcs-scoping-review.docx
   pdf:
     default-image-extension: pdf
     link-citations: true
