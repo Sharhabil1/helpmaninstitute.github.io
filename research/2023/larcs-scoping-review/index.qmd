@@ -2,6 +2,7 @@
 title: "Use of Long-Acting Reversible Contraceptives in Nigeria: A Scoping Review"
 description: "This scoping review emphasizes the pressing need for research to explore prevalence and factors affecting discontinuation of LARCs."
 image: "figures/larcs-use-map.svg"
+
 categories:
   - Working papers
 

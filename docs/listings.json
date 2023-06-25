@@ -2,17 +2,18 @@
   {
     "listing": "/index.html",
     "items": [
-      "/research/2023/education-mobility-poverty/index.html",
       "/research/2023/larcs-scoping-review/index.html",
-      "/research/2023/tfr-determinants-bongaarts/index.html",
-      "/research/2022/sokoto-epidemiology-profile/index.html",
+      "/research/2023/labour-employment-elasticity/index.html",
       "/research/2022/policy-relevant-economic/index.html",
-      "/research/2022/capital-enterprise-development/index.html",
       "/research/2022/harris-todaro-model/index.html",
-      "/research/2021/labour-employment-elasticity/index.html",
+      "/research/2021/tfr-determinants-bongaarts/index.html",
       "/research/2021/knowledge-economy-competitiveness/index.html",
-      "/research/2021/medical-tourism-nigeria/index.html",
-      "/research/2021/sense-nigeria-population/index.html"
+      "/research/2020/science-technology-africa/index.html",
+      "/research/2019/sokoto-epidemiology-profile/index.html",
+      "/research/2018/sense-nigeria-population/index.html",
+      "/research/2017/medical-tourism-nigeria/index.html",
+      "/research/2016/education-mobility-poverty/index.html",
+      "/research/2015/capital-enterprise-development/index.html"
     ]
   }
 ]

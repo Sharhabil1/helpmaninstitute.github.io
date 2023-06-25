@@ -1,0 +1,315 @@
+---
+# Use the title below for MS Word or PDF documents
+title: "![](resources/hdi_logo.png){width=2.5in}  \n \n Biological and Behavioural Determinants of Fertility in Nigeria"
+
+subtitle: Working Paper
+
+author:
+  - name: Edifofon Akpan
+    affiliations:
+      - ref: hdi
+      - ref: checod
+    attributes:
+      corresponding: true
+    email: eakpan@helpmaninstitute.org
+
+  - name: Chidinma Oli
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: false
+
+  - name: Abdulafeez Adefabi
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: false
+
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+      - ref: checod
+    attributes:
+      corresponding: false
+      
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+  - id: checod
+    name: Centre for Health Economics and Development, Abuja, Nigeria.
+    
+format: 
+  pdf:
+    papersize: a4
+    default-image-extension: pdf
+    link-citations: true
+    linestretch: 1.25
+    geometry:
+    - top=25.4mm
+    - left=25.4mm
+    - right=25.4mm
+    - bottom=25.4mm
+    extra_dependencies: ["flafter"]
+    header-includes: |
+      \usepackage[labelsep=period]{caption}
+      
+#filters:
+# - authors-block
+
+editor: visual
+crossref:
+  title-delim: "."
+number-sections: true
+
+toccolor: blue
+toc: true
+toc-depth: 2
+toc-title: "Table of Contents"
+
+bibliography: references.bib
+csl: resources/bmj.csl
+---
+
+```{r setup, include=FALSE}
+library(flextable)
+library(officer)
+library(officedown)
+knitr::opts_chunk$set(fig.width = 12, fig.height = 10, fig.align = "center",
+                      out.width = "100%", collapse = TRUE, fig.pos = "H", out.extra = "",
+                      ft.tabcolsep=5)
+set_flextable_defaults(font.size = 10, 
+                       theme_fun = theme_booktabs, 
+                       table.layout = 'autofit',
+                       font.family = "Arial")
+```
+
+{{< pagebreak >}}
+
+**ABSTRACT**
+
+Total fertility rates (TFR) show the average number of children a woman can bear in her lifetime, based on current age-specific fertility rates. Data from the Nigeria Demographic and Health Survey of 2003, 2008, 2013 and 2018 were used for this study while a revised version of Bongaarts' proximate determinants model was used to assess the trends in the proximate determinants of fertility along with trends in geographical and socioeconomic correlates. Findings from the study showed that postpartum infecundability remained the strongest influential factor in reducing fertility while sexual exposure and contraception have an inverse relationship with educational attainment levels in all years of the survey. We also found that contraception use had a more impact among women with higher education who lived in urban regions and belonged to the highest wealth quintile.
+
+**Keywords:** fertility, determinants.
+
+{{< pagebreak >}}
+
+# Introduction {#sec-introduction}
+
+Since 1990, fertility levels in Nigeria as measured by total fertility rates (TFRs) have gradually declined, from 6.0 children per woman to 5.3 children per woman in 2018 [@nationalpopulationcommission2019; @nationalpopulationcommission2014; @nationalpopulationcommission2004]. Irrespective of this decline, fertility levels in Nigeria remain notably high compared to observed fertility levels in developed countries such as the United States and the United Kingdom, which have TFRs of 1.7 and 1.6 respectively [@martin2018; @mattwells2022]. However, high fertility rates are not exclusive to Nigeria. Other sub-Saharan African countries such as Mali and Burundi, have TFRs of 6.3 [@institutNationaldelaStatistiqueandICF2019] and 5.2 respectively [@institutdestatistiquesTroisiemeEnqueteDemographique2017].
+
+These demographically observed fertility levels (TFRs) is the result of proximate (biological and determinants) of fertility [@laelago2019].Proximate determinants of fertility serve to mediate the influence of culture, socio-economic conditions, and related background determinants on reproductive behaviour. The key characteristic of proximate determinants is their direct effect on fertility. As a result, a study of the proximate determinants of fertility together with a comparative evaluation of their individual contribution to fertility is crucial to understanding observed fertility rates within a specified population. To achieve this, John Bongaarts designed a quantitative framework for analysis which indicated that variations in four major proximate determinants of fertility -- marriage, contraception, breastfeeding practice, and induced abortion were the primary proximate causes of differences among populations [@bongaarts1978]. This framework has since been revised [@stover1998; @bongaarts2015], and used in modified forms in various studies to analyse the proximate determinants [@laelago2019; @palamuleni2017; @chola2016].
+
+Early studies on fertility in Nigeria using the old Bongaarts model estimated that exposure to the risk of childbearing through first marriage was the most important proximate determinant followed closely by breastfeeding and postpartum sexual abstinence [@odimegwu1996; @chimere-dan1990; @jolly1993]. HHowever, these studies were based on the old Bongaarts model which lacks a comprehensive framework for analysing and understanding current fertility dynamics [@wusu2019; @alaba2017; @akpa2012].In addition, these previous studies did not consider socio-economic and cultural characteristics which have been proven to explain fertility differentials such as education, female labour force participation, residence, household wealth, caesarean birth, cultural norms often measured by religion or ethnicity [@wusu2019; @alaba2017; @akpa2012].
+
+Therefore, in this study, we examine trends in the proximate determinants of fertility along with trends in geographical and socioeconomic correlates using a revised Bongaarts model, to allow for a more accurate and current estimation of fertility rates by considering a broader range of determinants. We also assess how changes in these factors over time may have influenced changes in the effects of proximate determinants on fertility. Finally, we reflect on the key outcome indicators by examining women's reproductive options alongside maternal and child health policy priorities. By providing insights into fertility dynamics and possible points of programmatic intervention, we hope to inform fertility-related population policy priorities.
+
+# Methods {#sec-methods}
+
+## Data Sources
+
+We used data from the Nigeria Demographic and Health Survey of 2003, 2008, 2013 and 2018 for this study [@nationalpopulationcommission2014; @nationalpopulationcommission2004; @nationalpopulationcommission2019; @nationalpopulationcommission2009]. The survey is a nationally representative survey of Nigerian households. Women aged 15-49 were eligible to be interviewed if they were either permanent residents or visitors who spent the previous night in the household. A total of 7,620; 33,385; 38,948 and 41,821 women aged 15-49 were interviewed in 2003, 2008, 2013 and 2018 surveys. The survey collected various information from women including fertility preference, sexual activity, and reproductive history, alongside background characteristics.
+
+The key background variables considered in this study were percentage of women with secondary education or above, percentage of women working in the labour force, percentage of women living in urban residence, percentage of women in different geographical zones. The TFR was calculated from births and exposure during the three years (36 months) prior to each woman's month of interview. The nominal date of a TFR is the year of the survey, but the reference period is prior to that. The reference period for the proximate determinants is also prior to the date of interview except for contraception, which is based on current contraceptive use. In terms of synchronization, the link between fertility and contraception is problematic. For individual women, contraception affects subsequent fertility, but in the data, fertility s measured for an earlier date than contraception.
+
+For the estimation of index of abortion, we used the total abortion rate (TAR) reported in a survey by Guttmacher Institute [@bankole2015]. The survey estimated the TAR using data on delivery of abortion and post-abortion care services from a nationally representative sample of 772 health facilities in 2012. The TAR obtained from his study was kept constant for all years of the analysis -- 2003, 2008, 2013 and 2018.
+
+## Data analysis
+
+This study examines the contributions of biological and behavioural determinants to fertility change, as well as the effects of the socio-economic and geographic factors through which the determinants exert their influence. Statistical analyses for inputs in the model were performed using Stata 16.0 (StataCorp) and confirmed with published DHS reports for inputs available in the reports. The proximate determinants of fertility, potential fertility and background variables were calculated using Microsoft Excel 2019 software. In the following section we present detailed analysis of fertility differentials that quantifies the negative and positive effects of each of the socio-economic and geographic factors on fertility through various intermediate fertility variables.
+
+### *Proximate determinants: The Bongaart's Model*
+
+We used a revised version of Bongaarts' proximate determinants model to assess the relationship between projected potential fertility (PF) and behavioural and biological factors. Each of the determinants is assumed to independently inhibit fertility. In the original model, Bongarts identified the following: an index for marriage, contraception, abortion and post-partum infecundity and expressed TFR as the product of the four indices together with total fecundity (TF) - the average number of live births expected among women during their entire lifetime, [@bongaarts1978].
+
+$$
+TFR = C_m\:*\:C_{i}\:*\:C_{c}\:*\:C_{a}\:*\:TF
+$$
+
+where, TFR is the total fertility rate, C~m~ is the index of proportion married, C~i~ is the index of post-partum infecundability, C~a~ is the index of induced abortion, C~c~ is the index of contraception. The indices only take values between 0 and 1. If the corresponding index is of no fertility inhibition effect, the index equals 1; an index of 0 which is not empirically proven, indicates total inhibition effect [@bongaarts1978].
+
+A revision of this model attempted to account for overlaps between the determinants, specifically between postpartum amenorrhea and contraceptive use [@stover1998]. The revised framework used for this study includes five intermediate fertility variables; proportion sexually exposed, postpartum infecundability, contraception, induced abortion, and sterility which are key direct determinants of fertility. From the original model, the index of marriage was revised to include women who have been in a sexual union in the last month, use contraceptives, are pregnant or post-partum infecundable. This index was renamed index of sexual exposure [@stover1998]. The index of post-partum infecundability was modified to post-partum insusceptibility including both median duration of post-partum amenorrhea and post-partum abstinence. The index of abortion was revised by multiplying contraceptive prevalence with average use effectiveness of contraception [@stover1998].
+
+The index of sterility was modified from proportion of women 45-49 years old who had no live births to the proportion of sexually active women who are infecund. Index of contraception was revised to the proportion of sexually active fecund women using contraceptives that do not overlap with those experiencing postpartum amenorrhea and the average effectiveness of contraception [@stover1998]. The revised equation relating the total fertility rate to the proximate determinants used in this study is expressed as:
+
+$$
+TFR=PF\:*\:C_{x}\:*\:C_{u}\:*C_{a}\:*C_{i}\:*C_{f}\:
+$$
+
+Where TFR is the total fertility rate, PF is the potential fertility, C~x~ represents the index of sexual exposure, C~u~ is the index of contraception, C~a~ is the index of induced abortion, C~i~ is the index of postpartum insusceptibility and C~f~ represents the index of sterility. Estimates from empirical data showed an average potential fertility of 21 (18-24) births per woman for the 35-year reproductive period from age 15 to 49 years [@stover1998]. Nonetheless, estimates of PF may exceed its theoretical limits because of a large error term in the proximate determinants' framework, attributed in a large part to the effects of unmeasured factors exogenous to the framework [@unpopulationdivision2014].
+
+### *The index of sexual exposure (C~x~)*
+
+The index of sexual exposure expresses the reduction in fertility caused by women's not being sexually active throughout their entire reproductive period. The index is calculated as:
+
+$$
+C_x=\:s
+$$
+
+where s is the proportion of women aged 15-49 who are sexually active (women who either are pregnant, report sex in the last month, use contraception, or are postpartum infecundable). The index of sexual exposure, C~x~, equals 1 if all women of reproductive age are sexually active during the entire reproductive period and 0 in the absence of such.
+
+### *The index of contraception (C~c~)*
+
+This considers both the level of contraceptive prevalence and the average effectiveness of contraceptive methods used. It is estimated as:
+
+$$
+C_c=\:1\:-\:1.08ue
+$$
+
+where u is the proportion of women in the reproductive ages who are currently using contraception among those sexually active, excluding exclude those infecund and postpartum amenorrhic within 6 months after birth; and e is the average of use-effectiveness of contraception as practiced in the population. Estimates of the method-specific effectiveness are: sterilization (0.995), pill (0.930), injectable (0.970), implant (0.999), intra-uterine device (0.993), male condom (0.870), and other modern methods (0.800) [@worldhealthorganization2017].
+
+### *The index of sexual abortion (C~a~)*
+
+The index of abortion is the proportion by which the PF is reduced due to induced abortion. Births averted per induced abortion are related to contraceptive use [@unpopulationdivision2014]. The index of abortion is defined as the ratio of the observed TFR to the estimated TFR without induced abortion, and declines with increasing incidence of induced abortion [@stover1998]. This index is calculated as follows:
+
+$$
+C_a=\frac{TFR}{TFR\:+\:0.4\:*\:(1\:+\:u)\:*\:TAR}
+$$
+
+where TFR is the total fertility rate, u represents the proportion protected by contraception among women who have an induced abortion and TAR is the total abortion rate which is the average number of induced abortions per married or in-union woman at the end of the reproductive period if induced abortions remain at prevailing levels. The index of induced abortion equals 1 in the absence of induced abortion and 0 if all pregnancies are aborted. Reliable data on the total abortion rate for all years is not available. We assumed abortion rates prevailing in 2012 [@bankole2015], will remain constant throughout 2018.
+
+### *The index of postpartum infecundability (C~i~)*
+
+The index of postpartum infecundability represents the reduced risk of exposure to conception immediately following a birth [@bongaarts1983]. In the absence of any breastfeeding (and postpartum abstinence), the average birth interval is around 20 months, which includes four segments: a period of postpartum amenorrhea (1.5 months), the average waiting time to conception (7.5 months), time added by spontaneous intrauterine mortality (2 months) and 9 months of a full term pregnancy. The last three segments are assumed constant and sum up to 18.5 months. Postpartum amenorrhea is extended by breastfeeding and abstinence. The index of postpartum infecundability is estimated by the ratio of the average birth interval where breastfeeding and abstinence are absent, and the length of a birth interval where the period of postpartum infecundability is extended by breastfeeding and abstinence. It is estimated using the formula:
+
+$$
+C_i\:=\:\frac{20}{18.5\:+\:i}
+$$
+
+where C~i~ = index of postpartum infecundability; and i = average duration of postpartum infecundability due to breastfeeding and postpartum abstinence. In the absence of breastfeeding and abstinence, i would be equal to 1.5, its minimum possible value, and C~i~ would equal 1. As the duration of postpartum infecundability increases, C~i~ declines and it would tend towards 0 if the duration of postpartum infecundability were to continue indefinitely.
+
+### *The index of sterility (C~s~)*
+
+C~s~ measures the incidence of natural infertility and pathological sterility. This index expresses the total effect of infecundity because of a pathological condition. The net effect of pathological sterility would be the difference between the actual index and some base value that represents natural infecundity. The formula for measuring the index of sterility is represented as:
+
+$$
+C_f~=\:1\:-\:f
+$$
+
+where *f* is defined as the proportion of sexually active women who are infecund.
+
+## Background and institutional factors
+
+In this study, we assessed the socio-economic or contextual characteristics that influence fertility through changes in the proximate determinants. These were the level of education, female participation in the workforce, wealth quintile, geopolitical regions and type of residence. Each of these factors has well established associations with fertility [@johnson2011]. We examined fertility preferences through the ideal number of children and desire for more children. The DHS asks women with living children, *"If you could go back to the time \[when\] you did not have any children and could choose exactly the number of children to have in your whole life, how many would that be?"* For women who are yet to give birth, the question is framed as *"If you could choose exactly the number of children to have in your whole life, how many would that be?"* (National Population Commission and ICF International 2019). We considered only numeric responses. The survey also asked women whether they wanted more children in addition to those they have, thus reflecting desire for further reproduction.
+
+The study also tracked four indicators of women's fertility preferences. The key indicators that reflect fertility-related international policy and program priorities include planning status for most recent birth in the past five years, percent of children born to mothers under age 18, percent of children born to mothers over age 34, and the median length of the birth interval (in months). We assessed the strength of Nigeria's Family planning programs using the Family Planning Effort Index (FPEI) and National Composite Index on Family Planning (NCIFP). The FPE has been collected periodically since 1972, and provides results across four key components: policies, services, evaluation, and access [@avenirhealth2017a]. The index was developed to measure the level of effort that goes into FP programs, and to track how these changes over time. The NCIPF measures the existence and implementation of family planning policies and program under five components: strategy, data, quality, equity, and accountability. It is built on the FPEIS framework [@avenirhealth2017].
+
+## Results
+
+The indices of direct biological and behavioural determinants of fertility from Bongaarts models is shown in Table 1. The behavioural indices include index of sexual exposure (C~x~), index of contraception (C~c~)and index of abortion (C~a~) while the index of sterility (C~s~) is a biological determinant. Postpartum infecundability (C~i~) is a function of the duration of postpartum amenorrhea and postpartum abstinence. The duration of amenorrhea is a function of the normal length of amenorrhea after childbirth women which is due to breastfeeding practices. The duration of abstinence is entirely behavioural.
+
+```{r echo=FALSE, message=FALSE}
+#| echo: false
+#| output: asis
+#| tbl-cap: Estimated Indices for Proximate Determinants of Fertility, DHS 2003-2018
+#| label: tfrAll
+library(readr)
+tfrAll <- read_csv("analysis/tfrAll.csv", col_types = cols(Year = col_character()))
+tfrAll <- flextable(tfrAll)
+tfrAll <- set_caption(tfrAll, caption = "Estimated Indices for Proximate Determinants of Fertility, DHS 2003-2018",
+                       style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "tfrAll"))
+tfrAll <- add_footer_lines(tfrAll, "Data from Nigeria Demographic and Health Survey 2003-2018")
+tfrAll
+```
+
+C~i~ was the lowest among the indices in our study at 0.64 in the 2018 survey. This implies that postpartum infecundability is associated with reduction of potential fertility by 36% from its biological maximum. Delayed sexual exposure (C~x~) inhibited fertility by 32% being the second most effective ferility reducing factor. The index of abortion was high at 0.94. Hence, abortion [@awoyemi2014; @ibrahim2012; @lamina2015]. This index is therefore excluded from the discussions. The other reductions in PF occurred because of inability to bear children (C~f~, 0.80) and effects from the use of contraceptive technologies (C~u~, 0.82). The lowest contributor is the index of contraception, contributing to 18% reduction in PF. There were little changes during the period of the survey in the 5 indices.
+
+The revised Bongaart's model gave an estimated TFR of 5.67, which is 0.38 children higher than TFR measured by DHS survey in 2018 (5.29). The analysis arrived at similar values for 2003 (5.65 each). Any difference between these sets of TFRs may be due to underestimation in DHS samples, inaccuracies in the data, inexactitude in our estimation of the indices, or other factors left out of the model. Nevertheless, the model shows the relative contributions of the determinants, and enables us report variations between socio-economic and geographic groups, as well as changes over the years of the surveys 2003-2018.
+
+The influence of the proximate determinants and their variability by these background factors are presented in tables 2, 3, 4 and 5 for 2018, 2013, 2008 and 2003 respectively. The study shows that for 2018, attainment of secondary education is associated with relatively low indices for sexual exposure (0.58) and contraception (0.62). Across the educational attainment levels, these two indices have an inverse relationship in all years of the survey. On the other hand, the index of postpartum infecundability increases with additional educational attainment. This would reflect shorter duration of breastfeeding which is essential to prolong duration of postpartum amenorrhea, and quicker cessation of sexual abstinence after delivery. Concerning disparity in place of residence and wealth, C~x~ was higher among rural residents in all years (rural - 0.74, urban - 061). This means sexual exposure inhibited fertility by 33.5% among rural residents, and 39% among city dwellers. On the contrary, the Ci was higher among urban residents (rural - 0.61, urban - 0.68). Contribution of sterility to reducing PF is not dependent on place of residence, as C~f~ in all years were within ±0.03 units. As expected, the index of contraception is higher in rural areas relative to urban population, reflecting a higher contraceptive use among sexually exposed female urban dwellers. There also are notable differences between women of different wealth quintiles. The values of the indices are lower for women in higher wealth quintiles, meaning a higher depression of fertility, with exception of C~i~. The C~i~ increases progressively along the wealth quintiles (lowest - 0.56, second - 0.61, middle - 0.64, fourth - 0.68, highest - 0.75) in 2018, as well as across all the years of the survey.
+
+Workforce participation is associated with a lower fertility in 2018, with no notable difference in preceding years. In the latest year of the survey, the estimated TFR among women in workforce was 5.22, compared to 5.93 in women without workforce participation. In 2013 however, the reverse was the case (in workforce - 5.76, not in workforce - 5.62) The differences were negligible in 2008 (in workforce -- 5.93, not in workforce - 5.99), and 2003 (in workforce - 5.78, not in workforce - 5.74). In all years, the index of contraception contributed more to depression of fertility among those in workforce compared to those not active in workforce. In contrast, the index of marriage and index of sterility contributed more to fertility reduction among women of reproductive age not active in workforce. The contributions of the index of postpartum infecundability and index of abortion were near identical.
+
+```{r echo=FALSE, message=FALSE}
+#| echo: false
+#| output: asis
+#| tbl-cap: Estimated indices of proximate determinants of fertility 2018
+#| label: tfr2018
+library(readr)
+tfr2018 <- read_csv("analysis/tfr2018.csv", col_types = cols(Variables = col_character()))
+tfr2018 <- flextable(tfr2018)
+tfr2018 <- set_caption(tfr2018, caption = "Estimated indices of proximate determinants of fertility 2018",
+                       style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "tfr2018"))
+tfr2018 <- add_footer_lines(tfr2018, "Data from Nigeria Demographic and Health Survey 2018")
+tfr2018
+```
+
+```{r echo=FALSE, message=FALSE}
+#| echo: false
+#| output: asis
+#| tbl-cap: Estimated indices of proximate determinants of fertility 2013
+#| label: tfr2013
+library(readr)
+tfr2013 <- read_csv("analysis/tfr2013.csv", col_types = cols(Variables = col_character()))
+tfr2013 <- flextable(tfr2013)
+tfr2013 <- set_caption(tfr2013, caption = "Estimated indices of proximate determinants of fertility 2013",
+                       style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "tfr2013"))
+tfr2013 <- add_footer_lines(tfr2013, "Data from Nigeria Demographic and Health Survey 2013")
+tfr2013
+```
+
+```{r echo=FALSE, message=FALSE}
+#| echo: false
+#| output: asis
+#| tbl-cap: Estimated indices of proximate determinants of fertility 2008
+#| label: tfr2008
+library(readr)
+tfr2008 <- read_csv("analysis/tfr2008.csv", col_types = cols(Variables = col_character()))
+tfr2008 <- flextable(tfr2008)
+tfr2008 <- set_caption(tfr2008, caption = "Estimated indices of proximate determinants of fertility 2008",
+                       style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "tfr2008"))
+tfr2008 <- add_footer_lines(tfr2008, "Data from Nigeria Demographic and Health Survey 2008")
+tfr2008
+```
+
+```{r echo=FALSE, message=FALSE}
+#| echo: false
+#| output: asis
+#| tbl-cap: Estimated indices of proximate determinants of fertility 2003
+#| label: tfr2003
+library(readr)
+tfr2003 <- read_csv("analysis/tfr2003.csv", col_types = cols(Variables = col_character()))
+tfr2003 <- flextable(tfr2003)
+tfr2003 <- set_caption(tfr2003, caption = "Estimated indices of proximate determinants of fertility 2003",
+                       style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "tfr2003"))
+tfr2003 <- add_footer_lines(tfr2003, "Data from Nigeria Demographic and Health Survey 2003")
+tfr2003
+```
+
+This study also attempts to examine the effects of inputs into Nigeria's family planning program on fertility reduction. The family planning effort index (FEPI) is based on the aggregate of four dimensions of family planning effort (policies, services, evaluation, and method access). Raw scores were converted to percentages and are reported. FEPI increased between 1972 and 1999, then reduced through 2009, before increasing to 41% in 2014. The increase in FEPI to its all-time highest in 1999 corresponds to the lowest survey TFR recorded in Nigeria, 5.11 in 1999 [@nationalpopulationcommission2000]. During this time, access to contraceptives was high at 70.3%, and evaluation of services rendered stood at 81.4% (see Supplementary Information). The FEPI has since been replaced by another measure, the National Composite Index on Family Planning, NCIFP (see Supplementary Information). The most recent NCIFP in 2017 assessed the strategy (score - 62.4%), data (65.5%), quality (62.0%), accountability (39.0%) and equity (58.0%) of family planning in Nigeria. On all measures, the scores in 2017 (composite index - 62.4%) were higher than those in 2014 (composite index - 49.5%).
+
+![Nigeria Family Planning Effort Scores](figures/fp-effort-index){fig-fp-effort-index}
+
+Lastly, the study includes some outcome indicators. The state of planning for new births and incidence of births among the young and aged population are a reflection of policy priorities concerning reproductive options available to women. [@johnson2011]. Among 12.2% of women aged 15-49 years with at least one child, the most recent birth was planned i.e. they wanted to have their last child at the time. There has been no notable increase in the median birth interval. The percentage of births to women less than 18 years of age has steadily reduced from 8.9% in 2003 to 6.0% in 2018. Overall, after an initial increase between 2003 and 2008, the percentage of births to women older than 34 years has remained relatively unchanged.
+
+```{r echo=FALSE, message=FALSE}
+#| echo: false
+#| output: asis
+#| tbl-cap: Some Women Reproductive Options Outcome Indicators
+#| label: outcome
+library(readr)
+outcome <- read_csv("analysis/outcome.csv", col_types = cols(`Outcome Indicator` = col_character()))
+outcome <- flextable(outcome)
+outcome <- set_caption(outcome, caption = "Some Women Reproductive Options Outcome Indicators",
+                       style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "outcome"))
+outcome
+```
+
+## Discussion
+
+This study used the revised Bongaart's model to show contributions of the biological and behavioural determinants of fertility in Nigeria, and the effects of selected socio-economic and geographical variables. We found that postpartum infecundability consistently had the strongest inhibitory effect on fertility rates from 2003 to 2018, closely followed by delayed sexual exposure and sterility. In contrast, abortion had the least inhibitory effect, proceeded by contraception use. Regarding socio-economic and geographical correlates, our study shows that the inhibitory effect of contraception, abortion, delayed sexual exposure were more evident among highly educated and rich women residing in urban areas of Southern Nigeria. Additionally, the recent index for FEPI and NCIFP indicate an increase in family planning program efforts from 2014 to 2017. We also found that fertility levels were highest in the Northwest and lowest in Southwest, and this pattern was consistent from 2003 to 2018.
+
+One of the most significant findings in our study was that postpartum infecundability had the greatest inhibiting effect on fertility rates. A plausible explanation for the dominant inhibiting effect of postpartum infecundability could be the effect of prolonged breastfeeding and postpartum amenorrhea. There is a clear association between the duration and intensity of breastfeeding, the length of postpartum amenorrhea, and postpartum infecundability. For instance, [@bongaarts1983] demonstrated that the risk of conception increases in the absence of breastfeeding after postpartum menstruation resumes. Similar studies conducted in Nigeria [@olowolafe2023] and other sub-Saharan African countries including Zambia [@chola2016], Malawi [@palamuleni2010] and Ethopia [@laelago2019], have also indicated that postpartum infecundability had the greatest inhibiting effect on fertility rates. Recognizing the impact of postpartum infecundability on fertility rates has key policy implications for addressing Nigeria's high fertility rates. Analysis of the effect of education and wealth on postpartum infecundability highlighted a positive correlation between postpartum infecundability and additional educational attainment. This is similar to findings by [@mahjabeen2011], and reflect shorter duration of breastfeeding which is essential to prolong duration of postpartum amenorrhea, and quicker cessation of sexual abstinence after delivery. Asides postpartum infecundability, delayed sexual exposure and sterility were the major contributors to the reduced fertility levels in Nigeria. The contribution of delayed sexual exposure to reduced TFRs in the Southern regions reflects a higher awareness and uptake of contraception, as well as the postponement of the age of first marriage in the Southern region (usually due to education) compared to the Northern region [@dev2019].
+
+Abortion and contraception had the least inhibitory effects on fertility. Unlike previous studies on the proximate determinants of fertility in sub-Saharan Africa [@chola2016; @rutaremwa2015], we were able to estimate the index of abortion in this study. The reduced inhibitory effect of abortion may be attributed to its illegal status in Nigeria. Abortion is only allowed when it is necessary to save a woman's life. [@bankole2015]. Sociocultural and religious norms surrounding induced abortion in Nigeria could also contribute to its diminished impact on fertility rates [@bankole2015]. Increased contraceptive intake is typically associated with reduced fertility rates [@aries1980]. As a result, we initially hypothesized that the intensified national family planning efforts would result in a higher inhibitory effect of contraception on fertility rates. However, our study showed that the use of contraception only accounted for only 18% in fertility reduction in 2018. Similar to our finding, a previous study conducted in Uganda [@moses2007] also found that contraception had the least inhibitory effect on fertility. Both findings contrasts the study by Mahjabeen and Khan [@mahjabeen2011] who found that contraception had the highest impact on reducing fertility, accounting for 51% of the decrease in TFR in Zambia. Potential reasons for the high inhibitory effect of contraception in Zambia include cultural acceptance and availability of contraception, education and awareness about family planning, and government policies and programs promoting contraception use.
+
+The relationship between socio-economic and geographical correlates can be clearly seen in this study. We found that the 5 proximate determinants considered in this study varied with education, wealth, workforce participation and residence. Sexual exposure had a higher inhibitory effect on rural residents than urban residents, probably due to factors such as limited access to family planning services, lower socioeconomic development, cultural and religious beliefs, and reduced health information and awareness. These disparities highlight the need for targeted interventions to improve access to contraception, address socioeconomic challenges, provide health education, and consider cultural and religious contexts in rural communities. Contraception use had a higher inhibitory effect on fertility in urban residents compared to rural residents. One reason could be that urban women are more likely to use contraceptives than are rural women. Another reason could be that women who are highly educated, and lived in urban regions tend to delay marriage and are more likely to use modern methods of contraception [@asa2018]. Postpartum infecundability had lesser inhibitory effects on highly educated, rich urban women. This may be correlated with shorter durations of breastfeeding probably due to the intense work schedules common in urban areas.
+
+The index for FEPI and NCIFP indicate Nigeria's significant strides in improving access to family planning services, and reducing the unmet need for contraception (i.e., a larger proportion of individuals who desire to use contraception have access to it). However, it also suggests that providing accessible reproductive options is not currently a primary policy focus in Nigeria. There is need for continued investment and implementation of effective family planning programs to improve program scores, sustain positive implications and achieve the sustainable development goals.
+
+A major limitation of this study is the reliance on secondary data collected using a cross sectional design study design. Additionally, since the information collected in this study was self-reported, there is risk of responder bias due to cultural beliefs and attitude towards fertility issues. For instance, women tend to omit some of the children they have given birth to, particularly those living in other households and those who have died [@adhikari2010]. Nonetheless, a key strength in our study is that we were able to expand our model to include key contextual factors that affect fertility such as socio-economic status and geographical location that can also significantly influence fertility.
+
+## Conclusion
+
+Out of five proximate determinants considered in this study, postpartum infecundability had the most significant in inhibiting fertility rates. Therefore, we suggest policies that prioritize postpartum health support, raise awareness about postpartum infecundability and its implications for fertility rates, and promote breastfeeding initiatives and family planning programs. These policies should be designed to extend the duration of infecundability, thereby contributing to the reduction of TFRs in Nigeria. We recommend communication and messaging around family planning all require financial resources. It is critical that enough funds are provided to support these efforts.These approaches ought to be specific to the different geopolitical zones since There are varying behavioural and proximate determinants unique to these regions. The table below shows top three recommended strategies for each zone based on findings from our study shows top three recommended strategies for each zone based on findings from our study.
+
+# References {#sec-references}
