@@ -1,0 +1,34 @@
+---
+title: "Capital-Skill Matching, Entrepreneurship and Wages"
+description: "While the credit market and the programs to expand access to finance have focused on expanding access to enterprise capital, they have not paid sufficient attention to the capital-skill matching process."
+
+categories:
+  - Working papers
+
+date: 2020-06-04
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+ 
+format: 
+  html: 
+    fig-cap-location: margin
+
+execute:
+  echo: false
+---
+
+## Abstract
+
+This paper proposes a micro-foundation for analyzing the stylized negative correlation that exists between entrepreneurship rates and wages, and the existence of multiple equilibria. The underlying mechanism is the matching of capital and skills in the capital market through interaction of the required rate of return on capital, the distribution of skills in the population, and the mechanism shifting the skill distribution. The model shows that the stylized observation is driven by a particular matching rule, rather than the general rule, and is not necessarily a manifestation of disequilibrium. We proceed to conduct empirical tests of the implications of the model.
