@@ -144,6 +144,174 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts_2020 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts_2020'] = new List('listing-posts_2020', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts_2019 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts_2019'] = new List('listing-posts_2019', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts_2018 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts_2018'] = new List('listing-posts_2018', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts_2017 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts_2017'] = new List('listing-posts_2017', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts_2016 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts_2016'] = new List('listing-posts_2016', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts_2015 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts_2015'] = new List('listing-posts_2015', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -204,9 +372,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2023</a></li>
   <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2022</a></li>
   <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2021</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2020</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2019</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2018</a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2017</a></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2016</a></li>
+  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">2015</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(11)</span></div><div class="category" data-category="Articles &amp; reports">Articles &amp; reports <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Blog &amp; commentary">Blog &amp; commentary <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Research notes">Research notes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Working papers">Working papers <span class="quarto-category-count">(4)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Articles &amp; reports">Articles &amp; reports <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Blog &amp; commentary">Blog &amp; commentary <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Research notes">Research notes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Working papers">Working papers <span class="quarto-category-count">(4)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -232,45 +406,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="section">2023</h2>
 <div id="listing-posts_2023" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Working papers,Research notes" data-listing-date-sort="1687129200000" data-listing-file-modified-sort="1687408899491" data-listing-date-modified-sort="1687388400000" data-listing-reading-time-sort="15">
-<div class="thumbnail">
-<p><a href="./research/2023/education-mobility-poverty/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./research/2023/education-mobility-poverty/index.html">
-<h3 class="no-anchor listing-title">
-Education, Intergenerational Mobility, and Poverty Dynamics
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Working papers'); return false;">
-Working papers
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Research notes'); return false;">
-Research notes
-</div>
-</div>
-<a href="./research/2023/education-mobility-poverty/index.html">
-<div class="listing-description">
-We consider a closed overlapping-generations economy operating over an infinite discrete time horizon, starting with period 0. Individuals with perfect foresight invest in…<sup></sup><span class="math inline"></span><span class="math inline"></span>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./research/2023/education-mobility-poverty/index.html">
-<div class="listing-date">
-June 19, 2023
-</div>
-<div class="listing-author">
-Olumide Taiwo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Working papers" data-listing-date-sort="1683154800000" data-listing-file-modified-sort="1687184693272" data-listing-date-modified-sort="1687388400000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1683154800000" data-listing-file-modified-sort="1687672201137" data-listing-date-modified-sort="1687647600000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./research/2023/larcs-scoping-review/index.html"> <img src="./research/2023/larcs-scoping-review/figures/larcs-use-map.svg" class="thumbnail-image"> </a></p>
 </div>
@@ -305,37 +441,37 @@ Chidinma Oli, Benedict Nwogu, Edifofon Akpan
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Working papers" data-listing-date-sort="1683154800000" data-listing-file-modified-sort="1687184693289" data-listing-date-modified-sort="1687388400000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="1" data-categories="Blog &amp; commentary" data-listing-date-sort="1672527600000" data-listing-file-modified-sort="1687671747267" data-listing-date-modified-sort="1677625200000" data-listing-reading-time-sort="8">
 <div class="thumbnail">
-<p><a href="./research/2023/tfr-determinants-bongaarts/index.html"> <img src="./research/2023/tfr-determinants-bongaarts/figures/fp-effort-index.svg" class="thumbnail-image"> </a></p>
+<p><a href="./research/2023/labour-employment-elasticity/index.html"> <img src="./research/2023/labour-employment-elasticity/figures/labour-absorption-rate.svg" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
-<a href="./research/2023/tfr-determinants-bongaarts/index.html">
+<a href="./research/2023/labour-employment-elasticity/index.html">
 <h3 class="no-anchor listing-title">
-Biological and Behavioural Determinants of Fertility in Nigeria
+Labour Absorption and Employment Elasticities in Nigeria
 </h3>
 <div class="listing-subtitle">
 
 </div>
 </a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Working papers'); return false;">
-Working papers
+<div class="listing-category" onclick="window.quartoListingCategory('Blog &amp; commentary'); return false;">
+Blog &amp; commentary
 </div>
 </div>
-<a href="./research/2023/tfr-determinants-bongaarts/index.html">
+<a href="./research/2023/labour-employment-elasticity/index.html">
 <div class="listing-description">
-<p>The proximate determinants resulting from demographically observed fertility serve to mediate the influence of culture, socioeconomic conditions, and related background determinants on reproductive behaviour.</p>
+The ultimate goal of every nation is the well-being of its citizens regardless of its…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./research/2023/tfr-determinants-bongaarts/index.html">
+<a href="./research/2023/labour-employment-elasticity/index.html">
 <div class="listing-date">
-May 4, 2023
+January 1, 2023
 </div>
 <div class="listing-author">
-Edifofon Akpan, Chidinma Oli, Abdulafeez Adefabi, Olumide Taiwo
+Olumide Taiwo, Byencit Duncan
 </div>
 </a>
 </div>
@@ -350,42 +486,7 @@ No matching items
 <h2 class="anchored" data-anchor-id="section-1">2022</h2>
 <div id="listing-posts_2022" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Articles &amp; reports" data-listing-date-sort="1683154800000" data-listing-file-modified-sort="1687184693050" data-listing-date-modified-sort="1687388400000" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./research/2022/sokoto-epidemiology-profile/index.html"> <img src="./research/2022/sokoto-epidemiology-profile/figures/road-traffic-accidents.svg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./research/2022/sokoto-epidemiology-profile/index.html">
-<h3 class="no-anchor listing-title">
-The Epidemiological Profile of Sokoto State
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Articles &amp; reports'); return false;">
-Articles &amp; reports
-</div>
-</div>
-<a href="./research/2022/sokoto-epidemiology-profile/index.html">
-<div class="listing-description">
-<p>To assess the health transition in Sokoto State, Nigeria, from a phase of widespread communicable diseases to a phase of receding pandemics, while highlighting the continued significance of communicable diseases as a major cause of mortality..</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./research/2022/sokoto-epidemiology-profile/index.html">
-<div class="listing-date">
-May 4, 2023
-</div>
-<div class="listing-author">
-Chidinma Oli
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Blog &amp; commentary" data-listing-date-sort="1672786800000" data-listing-file-modified-sort="1687410474149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16">
+<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1672786800000" data-listing-file-modified-sort="1687410474149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16">
 <div class="thumbnail">
 <p><a href="./research/2022/policy-relevant-economic/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -420,42 +521,7 @@ Olumide Taiwo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Articles &amp; reports" data-listing-date-sort="1651618800000" data-listing-file-modified-sort="1687410761274" data-listing-date-modified-sort="1687388400000" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./research/2022/capital-enterprise-development/index.html"> <img src="./research/2022/capital-enterprise-development/figures/figure-5.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./research/2022/capital-enterprise-development/index.html">
-<h3 class="no-anchor listing-title">
-Capital-Skill Matching and Enterprise Development
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Articles &amp; reports'); return false;">
-Articles &amp; reports
-</div>
-</div>
-<a href="./research/2022/capital-enterprise-development/index.html">
-<div class="listing-description">
-This paper analyzes an innovative model of entrepreneurship in which enterprise technology is defined by capital and enterprise output and wages are outcomes of a…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./research/2022/capital-enterprise-development/index.html">
-<div class="listing-date">
-May 4, 2022
-</div>
-<div class="listing-author">
-Olumide Taiwo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Working papers" data-listing-date-sort="1651618800000" data-listing-file-modified-sort="1687408899442" data-listing-date-modified-sort="1687388400000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="1" data-categories="Working papers" data-listing-date-sort="1651618800000" data-listing-file-modified-sort="1687408899442" data-listing-date-modified-sort="1687647600000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2022/harris-todaro-model/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -500,37 +566,37 @@ No matching items
 <h2 class="anchored" data-anchor-id="section-2">2021</h2>
 <div id="listing-posts_2021" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1620082800000" data-listing-file-modified-sort="1687208391852" data-listing-date-modified-sort="1687388400000" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1620082800000" data-listing-file-modified-sort="1687669962004" data-listing-date-modified-sort="1683154800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<p><a href="./research/2021/labour-employment-elasticity/index.html"> <img src="./research/2021/labour-employment-elasticity/figures/labour-absorption-rate.svg" class="thumbnail-image"> </a></p>
+<p><a href="./research/2021/tfr-determinants-bongaarts/index.html"> <img src="./research/2021/tfr-determinants-bongaarts/figures/fp-effort-index.svg" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
-<a href="./research/2021/labour-employment-elasticity/index.html">
+<a href="./research/2021/tfr-determinants-bongaarts/index.html">
 <h3 class="no-anchor listing-title">
-Labour Absorption and Employment Elasticities in Nigeria
+Biological and Behavioural Determinants of Fertility in Nigeria
 </h3>
 <div class="listing-subtitle">
 
 </div>
 </a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Blog &amp; commentary'); return false;">
-Blog &amp; commentary
+<div class="listing-category" onclick="window.quartoListingCategory('Working papers'); return false;">
+Working papers
 </div>
 </div>
-<a href="./research/2021/labour-employment-elasticity/index.html">
+<a href="./research/2021/tfr-determinants-bongaarts/index.html">
 <div class="listing-description">
-The ultimate goal of every nation is the well-being of its citizens regardless of its…
+<p>The proximate determinants resulting from demographically observed fertility serve to mediate the influence of culture, socioeconomic conditions, and related background determinants on reproductive behaviour.</p>
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./research/2021/labour-employment-elasticity/index.html">
+<a href="./research/2021/tfr-determinants-bongaarts/index.html">
 <div class="listing-date">
 May 4, 2021
 </div>
 <div class="listing-author">
-Olumide Taiwo
+Edifofon Akpan, Chidinma Oli, Abdulafeez Adefabi, Olumide Taiwo
 </div>
 </a>
 </div>
@@ -570,14 +636,24 @@ Olumide Taiwo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Blog &amp; commentary" data-listing-date-sort="1525388400000" data-listing-file-modified-sort="1687184693034" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">2020</h2>
+<div id="listing-posts_2020" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1589670000000" data-listing-file-modified-sort="1687671628401" data-listing-date-modified-sort="1600297200000" data-listing-reading-time-sort="13">
 <div class="thumbnail">
-<p><a href="./research/2021/medical-tourism-nigeria/index.html"> <img src="./research/2021/medical-tourism-nigeria/figures/medical-tourism-nigeria.png" class="thumbnail-image"> </a></p>
+<p><a href="./research/2020/science-technology-africa/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./research/2021/medical-tourism-nigeria/index.html">
+<a href="./research/2020/science-technology-africa/index.html">
 <h3 class="no-anchor listing-title">
-Medical Tourism, Demographic and Nigeria’s Health System
+Science and Technology in Africa’s Development
 </h3>
 <div class="listing-subtitle">
 
@@ -588,16 +664,16 @@ Medical Tourism, Demographic and Nigeria’s Health System
 Blog &amp; commentary
 </div>
 </div>
-<a href="./research/2021/medical-tourism-nigeria/index.html">
+<a href="./research/2020/science-technology-africa/index.html">
 <div class="listing-description">
-Medical tourism refers to cross-border movement of people to receive medical, dental or surgical care, driven by affordability…
+In a general sense, science and technology refers to the production and application of new knowledge for development. It is the main driver of transformation in every sphere…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./research/2021/medical-tourism-nigeria/index.html">
+<a href="./research/2020/science-technology-africa/index.html">
 <div class="listing-date">
-May 4, 2018
+May 17, 2020
 </div>
 <div class="listing-author">
 Olumide Taiwo
@@ -605,12 +681,67 @@ Olumide Taiwo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Blog &amp; commentary" data-listing-date-sort="1525388400000" data-listing-file-modified-sort="1687184693037" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4">2019</h2>
+<div id="listing-posts_2019" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Articles &amp; reports" data-listing-date-sort="1556924400000" data-listing-file-modified-sort="1687673295957" data-listing-date-modified-sort="1687647600000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<p><a href="./research/2021/sense-nigeria-population/index.html"> <img src="./research/2021/sense-nigeria-population/figures/sense-nigeria-population.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./research/2019/sokoto-epidemiology-profile/index.html"> <img src="./research/2019/sokoto-epidemiology-profile/figures/road-traffic-accidents.svg" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
-<a href="./research/2021/sense-nigeria-population/index.html">
+<a href="./research/2019/sokoto-epidemiology-profile/index.html">
+<h3 class="no-anchor listing-title">
+The Epidemiological Profile of Sokoto State
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Articles &amp; reports'); return false;">
+Articles &amp; reports
+</div>
+</div>
+<a href="./research/2019/sokoto-epidemiology-profile/index.html">
+<div class="listing-description">
+<p>To assess the health transition in Sokoto State, Nigeria, from a phase of widespread communicable diseases to a phase of receding pandemics, while highlighting the continued significance of communicable diseases as a major cause of mortality..</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./research/2019/sokoto-epidemiology-profile/index.html">
+<div class="listing-date">
+May 4, 2019
+</div>
+<div class="listing-author">
+Chidinma Oli, Edifofon Akpan
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-5" class="level2">
+<h2 class="anchored" data-anchor-id="section-5">2018</h2>
+<div id="listing-posts_2018" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1525388400000" data-listing-file-modified-sort="1687184693037" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="./research/2018/sense-nigeria-population/index.html"> <img src="./research/2018/sense-nigeria-population/figures/sense-nigeria-population.jpg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./research/2018/sense-nigeria-population/index.html">
 <h3 class="no-anchor listing-title">
 Making sense of Nigeria’s growing population
 </h3>
@@ -623,16 +754,154 @@ Making sense of Nigeria’s growing population
 Blog &amp; commentary
 </div>
 </div>
-<a href="./research/2021/sense-nigeria-population/index.html">
+<a href="./research/2018/sense-nigeria-population/index.html">
 <div class="listing-description">
 There is currently limited evidence, if any, to support the hysteria that emerged out of the first decade of the 21st century, of the prospective dividends of Africa’s…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./research/2021/sense-nigeria-population/index.html">
+<a href="./research/2018/sense-nigeria-population/index.html">
 <div class="listing-date">
 May 4, 2018
+</div>
+<div class="listing-author">
+Olumide Taiwo
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-6" class="level2">
+<h2 class="anchored" data-anchor-id="section-6">2017</h2>
+<div id="listing-posts_2017" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1504479600000" data-listing-file-modified-sort="1687672807676" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="thumbnail">
+<p><a href="./research/2017/medical-tourism-nigeria/index.html"> <img src="./research/2017/medical-tourism-nigeria/figures/medical-tourism-nigeria.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./research/2017/medical-tourism-nigeria/index.html">
+<h3 class="no-anchor listing-title">
+Medical Tourism, Demographic and Nigeria’s Health System
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Blog &amp; commentary'); return false;">
+Blog &amp; commentary
+</div>
+</div>
+<a href="./research/2017/medical-tourism-nigeria/index.html">
+<div class="listing-description">
+Medical tourism refers to cross-border movement of people to receive medical, dental or surgical care, driven by affordability…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./research/2017/medical-tourism-nigeria/index.html">
+<div class="listing-date">
+September 4, 2017
+</div>
+<div class="listing-author">
+Olumide Taiwo
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-7" class="level2">
+<h2 class="anchored" data-anchor-id="section-7">2016</h2>
+<div id="listing-posts_2016" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Working papers,Research notes" data-listing-date-sort="1459465200000" data-listing-file-modified-sort="1687671601144" data-listing-date-modified-sort="1687129200000" data-listing-reading-time-sort="15">
+<div class="thumbnail">
+<p><a href="./research/2016/education-mobility-poverty/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./research/2016/education-mobility-poverty/index.html">
+<h3 class="no-anchor listing-title">
+Education, Intergenerational Mobility, and Poverty Dynamics
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Working papers'); return false;">
+Working papers
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Research notes'); return false;">
+Research notes
+</div>
+</div>
+<a href="./research/2016/education-mobility-poverty/index.html">
+<div class="listing-description">
+We consider a closed overlapping-generations economy operating over an infinite discrete time horizon, starting with period 0. Individuals with perfect foresight invest in…<sup></sup><span class="math inline"></span><span class="math inline"></span>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./research/2016/education-mobility-poverty/index.html">
+<div class="listing-date">
+April 1, 2016
+</div>
+<div class="listing-author">
+Olumide Taiwo
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-8" class="level2">
+<h2 class="anchored" data-anchor-id="section-8">2015</h2>
+<div id="listing-posts_2015" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Articles &amp; reports" data-listing-date-sort="1430694000000" data-listing-file-modified-sort="1687671597017" data-listing-date-modified-sort="1687647600000" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./research/2015/capital-enterprise-development/index.html"> <img src="./research/2015/capital-enterprise-development/figures/figure-5.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./research/2015/capital-enterprise-development/index.html">
+<h3 class="no-anchor listing-title">
+Capital-Skill Matching and Enterprise Development
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Articles &amp; reports'); return false;">
+Articles &amp; reports
+</div>
+</div>
+<a href="./research/2015/capital-enterprise-development/index.html">
+<div class="listing-description">
+This paper analyzes an innovative model of entrepreneurship in which enterprise technology is defined by capital and enterprise output and wages are outcomes of a…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./research/2015/capital-enterprise-development/index.html">
+<div class="listing-date">
+May 4, 2015
 </div>
 <div class="listing-author">
 Olumide Taiwo

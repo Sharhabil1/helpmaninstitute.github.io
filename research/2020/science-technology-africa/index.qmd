@@ -1,0 +1,94 @@
+---
+title: "Science and Technology in Africa’s Development"
+
+categories:
+  - Blog & commentary
+
+date: 2020-05-17
+date-modified: 2020-09-17
+date-format: "MMM YYYY"
+
+author:
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, FCT Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+execute:
+  echo: false
+---
+
+```{r setup, include=FALSE}
+library(svglite)
+library(flextable)
+library(officer)
+library(officedown)
+knitr::opts_chunk$set(fig.width = 12, fig.height = 10, fig.align = "center",
+                      out.width = "100%", collapse = TRUE, fig.pos = "H", out.extra = "",
+                      ft.tabcolsep=5)
+set_flextable_defaults(font.size = 10,
+                       theme_fun = theme_booktabs,
+                       table.layout = 'autofit',
+                       font.family = "Arial")
+```
+
+In a general sense, science and technology refers to the production and application of new knowledge for development. It is the main driver of transformation in every sphere of society, be it economic, social, or political. Advances in science and technology capabilities are at the heart of economic, demographic, and environmental differences between the developed and developing countries. Indeed, no nation can dream of development without science and technology.
+
+At its 44th session in 1989, the United Nations' General Assembly noted "with great concern that the effect of increasing disparities in scientific and technological capabilities between the industrialized and the developing countries as a whole has been to contribute to a widening of the economic gap between them."[^1] Indeed, this acknowledgment dates back to the creation of the International Council of Scientific Unions (ICSU) in 1931 and has subsequently been essential to the programs and conferences of the United Nations (UN) after its creation in 1945. Early efforts to facilitate the application of science and technology in the less developed countries began with the New York scientific conference on the conservation and utilization of resources in 1949, and continued through the Geneva conference on the application of science and technology for the benefit of the less developed areas in 1963, as well as the Vienna conference on science and technology for development in 1979.
+
+[^1]: Resolution 44/14, Implementation of the Vienna Programme of Action on Science and Technology for Development, Section A of the resolution, End-of-Decade Review of the Vienna Programme of Action on Science and Technology for Development and its Revitalization, 42nd plenary meeting, 26 October 1989. See Official Records of the General Assembly, Forty-fourth Session, Supplement No. 37 (A/44/37), p. 21.
+
+Despite a few, very notable successes in scientific and technological (S&T) output that have been produced within the continent of Africa, it is clear that S&T production is heavily based elsewhere, largely in the global north. One can cite most metrics on the issue to support this characterization, e.g. number of patents registered, scientific journal article submitted, etc. Increasingly, there is an consensus among Africans and Africanists that the continent cannot grow economically without redressing this imbalance. In order to do so, one would do well by understanding the root causes for the poor performance of many African countries in this regard.
+
+## Why doesn't Africa produce more S&T?
+
+A number of factors underlie Africa's low level of S&T production. Many also underlie the continent's low level of development generally, including its colonial history, its generally poor governance, its high rate of conflict, etc. By and large, these 'macro-factors' will be given short-shrift in this paper.[^2] In their place, issue more specific to S&T production will be the focus. In particular, since the responsibility for S&T production (and development, more generally) lies squarely on the shoulders of African governments, the issues and decisions they face will assume an elevated importance.
+
+[^2]: One such issue that has attracted a lot of attention on this issue has been the so-called 'brain-drain', which refers to the exodus of skilled researchers and technicians from the developing world to the developed world. **(See reviews by.... and ...)**. The impact of this immigration on S&T production in many parts of Africa is dramatic **(cite a study)**. However, given that its well-addressed in the academic literature, it will not be an issue that is discussed directly in this study.
+
+On paper, it might appear that African government do a great deal to promulgate the S&T agenda. Countries have issued a number of statements attesting to their commitment to the cause; they have signed treaties like the Lagos Plan of Action, the Abuja Treaty and most recently the Consolidated Plan of Action, etc; they instituted entire ministries tasked with promoting S&T. The reality, however, is quite different than the formal proclamations and rhetoric might suggest. On the whole, African governments do little to prioritize S&T research and its application. The ministries charged with this role are typically minor players in their national governments; they are considered to have relatively low importance and are underfunded accordingly. Other countries lack S&T ministries altogether or have policies that were created a generation ago and geared towards a context which no longer applies.[^3]
+
+[^3]: "A number of African countries formulated their science and technology policies in [the 1970s and 1980s](http://www.nepadst.org/doclibrary/pdfs/ast_cpa_2007.pdf) when development imperatives and technological opportunities were different"
+
+Under-attention of the issue and the under-resourcing of the actors meant to address has lead to a relatively greater foreign influence in the matter. Foreign donors have be able to drive their own S&T agenda, and often, they emphasized 'technology transfer' as a key component of their modus operandi. The idea---which dominated the African independence era of the 1960s and has had lingering effects thereafter---was that the existing stock of scientific knowledge required for economic progress existed in the developed countries and simply needed to be transmitted to the developing countries in order for them to develop. This attitude almost systematically neglected the importance of the building-up of local S&T capacity and local ownership of S&T projects.
+
+The consequences were, to a large degree, negative. A sense of 'knowledge dependence' in Africa has resulted, and, decades after independence, African countries are still largely reliant on the importation of Western technology. Making matters worse, African countries exercise relatively little control in using imported technology towards their own stated aims. Ogbu (2002, 2) expressed this sentiment succinctly by noting:
+
+There is a certain unwitting acceptance of technological determinism among Africans, certainly among many African policy makers. Their tendency is to treat technology as manna from heaven. The technology does not have a social context. And, that the impacts or effects of technology are determined by the technology itself. Yet we know that the direction of development and impacts of any given technology are shaped by social and economic forces embedded in well-crafted science and technology policies.
+
+One manifestation of this 'lack of control' has been a disconnect between S&T research and the private sector industry which could benefit from its knowledge.[^4] For instance, Africa continues to predominantly export primary commodities---like oil, natural gas and minerals---as opposed to products with more 'value-added' to them which require a higher level of S&T sophistication. African development writ large suffers as a result.
+
+[^4]: "[weak or no links](http://www.nepadst.org/doclibrary/pdfs/ast_cpa_2007.pdf) between industry and science and technology institutions, a mismatch between R&D activities and national industrial development strategies and goals"
+
+This policy paper will address a series of interrelated issues. Most prominently, it will ask: why has the Science and Technology agenda not taken off in many African countries, as it has in many non-African countries? In answering this question, a set of seven African and seven non-African countries will be used as case studies (the methodology behind their selection will be addressed in a later chapter.) Both quantitative and more qualitative, historical data will be marshaled to address the question.
+
+Investigating it question will inevitably involve addressing a number of subordinate issues, which can be roughly thought of as falling under one of two 'sets.' One set will deal with education policy, and will touch upon broad questions like 'How clear is the relationship between tertiary school enrollment---and specifically school enrollment in scientific fields---and S&T outcomes?' The second set, albeit one that has significant overlap with the first, will have to do with finance, i.e. expenditure on research and development. This set will address questions such as 'How is R&D expenditure typically allocated between basic, applied and experimental research, etc.?'; and 'Who finances and who performs R&D?'. After establishing an empirical background on these subjects, the paper will transition into more normative questions. These will include 'How much money should a particular government spend on R&D, and how should it allocates this money in doing so?' The aim of the paper is to both discover and disseminate lessons that can be useful to policy makers in promoting the S&T agenda.
+
+Unstated so far has been how the 'level' of S&T will be measured exactly. Such an issue is not trivial; any approach will undoubtedly have its critics. To minimize these criticisms, we use at a range of scientific and technological 'outputs' that might approximate a level of S&T in a given country. These include the number of scientific articles authored by a country's citizens, the number of R&D researchers in country and the number of patents held by its nationals. Of course, these are imperfect 'proxies' and will be utilized only when it is judicious to do so. Furthermore, due to the scanty nature of much of the collected data (that describe both the inputs, i.e. education and finance, and the specified outputs), the analysis will tend to focus on answering a fairly limited set of questions---only those which have reliable empirical backdrop. In this sense, the availability of data will drive much of what is asked about it.
+
+## Case study: Nokia's story
+
+Finland's economic story is one of success and diversification. Initially, its economic structure was geared towards the production of raw materials; its comparative advantages were in iron ore and timber, products which found ready consumers in the economies of Western Europe. Over time, however, the country's developed technologically and, as a result, began to create more sophisticated products, that were higher up on the economic value chain. (That said, a significant part of Finland's economy to this day is raw material production---which suggests that there is still a role for this type of economic activity in highly advanced economies.)
+
+The story of the Finnish company Nokia reflects, in some ways, the story of Finland's economic trajectory. (The company has also been a significant factor in driving Finland's economic trajectory---but that story will not be addressed here.) In its early stages, the company was comprised of three smaller organizations (which had formally merged together but still exercised a degree of independence from each other). Nokia Ltd. produced paper and pulp; Finnish Rubber Works produced rubber boots and tires; and Finnish Cable Works produced electrical wires and cable. For each outfit, crucial technology had been imported from abroad.
+
+The electronics division of the company---which would eventually become central to the business's functioning---was created in 1960. The profits from this venture came slowly and, often, not at all. Nonetheless, the company's leaders were resolute in insisting on its importance; the division enjoyed sizeable monetary investments and contact with the most current technology products on the market. However, it wasn't until the company acquired a number of businesses in the 1970s and 80s that Nokia truly transformed itself from a producer specializing in low-tech goods to one specializing in high-tech goods. In this process, the mobile phone increasingly became the company's focus. One reason why the company was able to adapt (and able to integrate the knowledge base of its recent acquisitions) was because it had been assiduous in making investments in its human capital.
+
+Nokia had invested substantially in the Finnish public school education, helping change the system's orientation to one which emphasized life-long learning. It had created bridges with academia by working with a number of schools to establish 'Nokia University' in the 1980s. The objective of this school was to increase the educational training of its workers: if an employee had a bachelors degree, he was encouraged to get a masters; if he had a masters degree, he was encouraged to aim for doctorate. Employees were also encouraged to go abroad, to work at Nokia's foreign affiliates, where they could acquire a more diverse set of skills than they could in Finland. In all, these efforts paid handsome dividends, helping the company immensely. Over time, however, the nature of the skill production that they encouraged changed. As the company (and the nation it was based in) developed, the skills needed by the business were increasingly seen as 'public goods' and fostered in the public domain, accordingly.
+
+A number of useful lessons follow from Nokia's story. The first is of the importance of a long-term time horizon in business. Had Nokia's leadership insisted on immediate profits from its electronics division after the wing had been established, the company would never have been able to reap the sizable long-run returns it eventually did. One possible reason why the business could afford to have a long-term time horizon was because it had profitable projects in place. These could be used as a safeguard for the company to fall back on, in case the investments in electronics did not pan out, and could be used to subsidize R&D investments before the investments generated returns themselves. Viewed at the issue in this regard, business competitiveness---even if it is not it is directly related to science and technology---might be important in pursuing S&T production, more generally.
+
+The second lesson is of the importance of creating 'synergies' between various actors in a society. Nokia's relationship with Finnish academic institutions was pivotal in raising the level of human capital among its employees---which, in turn, was pivotal in helping transform the company into its modern incarnation. ...The obvious lesson for both businesses and policy makers in developing countries is to strength the linkage between the educational system and the private sector. The details of how this is should be done will undoubtedly vary with context. Nonetheless, private-sector investments in public education; programs encouraging workers to return to school; and curricula geared towards practical, industry-based issues should be considered options. In many cases, these actions would result in a win-win result. Students would be better motivated in school, knowing that, upon graduation, they can get a job using the skills they had just learned; businesses would benefit by having more knowledgeable employees in their ranks.
+
+Resource:
+
+Blomström, M. and Kokko, A. From natural resources to high tech production: the evolution of industrial competitiveness in Sweden and Finland
