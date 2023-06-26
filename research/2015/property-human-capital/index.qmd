@@ -4,7 +4,7 @@ title: " Property Rights and Human Capital"
 categories: 
   - Working papers
 
-date: 2025-06-04
+date: 2015-06-04
 date-modified: today
 date-format: "MMM YYYY"
 
