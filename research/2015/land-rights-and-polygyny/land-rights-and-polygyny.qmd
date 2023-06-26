@@ -1,0 +1,261 @@
+---
+title: "![](resources/hdi_logo.png){width=2.5in}  \n Property Rights and The Marriage Market: A Theory of Land Rights and Polygyny  "
+
+date: 2015-06-04
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+   
+format:
+  docx:
+    default-image-extension: svg
+    reference-doc: resources/hdi-quarto-template-v0001.docx
+    link-citations: true
+  
+  pdf:
+    papersize: a4
+    default-image-extension: pdf
+    link-citations: true
+    linestretch: 1.25
+    geometry:
+    - top=25.4mm
+    - left=25.4mm
+    - right=25.4mm
+    - bottom=25.4mm
+    extra_dependencies: ["flafter"]
+    header-includes: |
+      \usepackage[labelsep=period]{caption}
+     
+editor: visual
+crossref:
+  title-delim: "."
+number-sections: true
+
+toccolor: blue
+toc: true
+toc-depth: 2
+toc-title: "Table of Contents"
+
+#bibliography: references.bib
+#csl: resources/bmj.csl
+---
+
+{{< pagebreak >}}
+
+**Abstract**
+
+This paper studies the effects of property rights on marriage market and the demand for children.
+
+Keywords: Household, Kinship, Family, Preferences, Fertility.
+
+{{< pagebreak >}}
+
+# Introduction
+
+This paper attempts to answer the question: How does land market affect the marriage market in rural developing countries? In the transition from communal to private property rights, how much changes do we expect in the marriage market and in particular in the incidence of polygyny. And how much reduction in polygyny can we expect from the land reform programs going on around the world?
+
+Most of the institutions existing in the developing countries, which are unpopular in the more developed countries, have been traced to missing markets for labor and old age security. The fertility literature identifies these missing markets as the driving force for high fertility in the poor countries (Bergstrom 1994), where children provide both farm labor and provide income to parents in old age. A few studies have also suggested that polygyny is motivated by the need to expand agricultural labor [^1] (Jacoby, 1995), since women labor is productive on the farm. This finding therefore suggests that the development of labor markets and agricultural technological advancements that reduce the demand for female labor should weaken polygyny.
+
+[^1]: This refers to labor markets with high transaction or supervision costs or complete absence of agricultural labor market. Wives' labor is easier to monitor and free of transaction costs.
+
+However, the development of labor markets and the introduction of labor reducing technologies in agriculture over time has not weakened polygyny in the developing countries (Tertilt 2005; Jacoby 1995)[^2].
+
+[^2]: Tertilt (2005) suggests that several countries have imposed laws on polygyny without success, although she was not interested in the motivation for polygyny.
+
+Despite the official ban on polygyny in Cote d'Ivoire and the transformations in agricultural technologies, polygyny rates remain stable.
+
+In this paper, we posit that polygyny is a path to wealth and that land market matters for polygyny. Although still underdeveloped, we claim that old age insurance markets alone cannot sustain polygyny in the way that is observed. To understand the strength of each of the missing markets on polygyny, we analyze the effects of market development on the wealth accumulation objective. Suppose there is a labor market where wage laborers can be hired, but there is no land market so that increase in land can only be obtained by marrying additional wife. The wealth maximixation problem is solved by marrying an additional wife. With the bride price, a man acquires both additional piece of land, generates additional children through the woman, and acquires permanent labor at a price that is cheaper than the labor market price. Thus, the labor market will not clear and will cease to exist. On the other hand, suppose land can be sold and rented but there is no labor market. Additional land has to be purchased, and additional wife has to be bought at the bride price. This introduces a tradeoff into the maximixation problem, and the equilibrium level of polygyny will be lower than when land market is absent. In essence, the land market will enable wealth accumulation and solve household (head) welfare maximixation with less polygyny. Fertility will also be lower with land markets.
+
+With land market and individual property rights, land acquisition is through purchase or rent, and it can be relinquished through sale or transfer (and bequests). On the other hand, where property rights are not defined and there is no land market, land acquisition occurs through marriage, which is the key to expanding family size, and land can be relinquished only by death and bequeath to children.
+
+Pryor (1977 p 118) in his empirical analysis of 36 primitive agricultural societies elicits the importance of land market rather than labor market in explaining the incidence of polygyny. He found a significant inverse relationship between land rentals and polygyny, and observed that societies where land rights are more defined are less polygynous. In his observations, he noted:
+
+```{=tex}
+\begin{quotation}
+"if a man has extra land, in the [polygynous] society his path to wealth lies clearly in the accumulation of wives who will work this extra land; in the [monogamous] society accumulation of wealth cannot occur in this way but through the renting of this land to tenant farmers or the selling of the land to others"
+\end{quotation}
+```
+The main idea of this paper is that the development of individual property rights in land [^3] weakens polygyny, and that it does so through two channels. First, common land tenure encourages large families where land appropriation can be increased with additional wife. Second, demand for wives derive from demand for children for old age security in the absence of formal insurance markets. Since freehold rights enable title holders to generate earnings from land in old age, the incentive for large number of children for old age purpose diminishes, and therefore the derived demand for multiple wives also diminish.
+
+[^3]: This refers to the privatization of land rights and change from the communal system to a private system of asset ownership
+
+# Motivation
+
+''In addition to policies relating to income, prices and consumption smoothing, policies related to institutions and property rights become potentially important when considering intrahousehold allocations, especially once we go beyond the traditional unified household model. A key potential example is land rights. Use rights for women in many sub-Sagaran African economies derive from men. In areas in which use rights are derived from men, there are potential issues as whether women have sufficient incentives to make land-related long-run investments, or whether a lack of clearly defined land rights provide a pro-fertility incentive, as argued by Jack and Pat Caldwell (1987). There is need to pay attention to issues of differential effects on men and women.''
+
+# Stylized Facts
+
+The following are stylized facts that mey lend credence to this hypothesis.
+
+1.  Insecure tenure and appropriation is highly correlated with polygyny.
+
+2.  Polygyny is correlated with high fertility
+
+# Literature and Evidence
+
+Economic analysis of marriage and polygyny was pioneered by Gary Becker (1973, 1974) who suggested that inequality among men or in sex ratios can explain polygyny based on the assumption of diminishing returns from additional spouse in a household. Treating men as unequal, his analysis of polygyny in agricultural societies assumes that men who have large farms will have many wives. However it is unclear whether polygyny is driven by farm size; a plausible causality under private property rights, or that farm size is driven by the number of wives; a similarly plausible causality under communal rights[^4].
+
+[^4]: Econometric analysis of polygyny based on household data do not have the property rights dimension. Singh's (1988) study of 60 agricultural households in Burkina Faso finds that farmers with greater landholding, taken as more wealthy farmers, have more wives. However, land tenure in Burkina Faso remains under customary rights. In the present view, landholding is endogenous to the number of wives, and therefore such study does not shed light on how property rights influence polygyny.
+
+Boserup (1990) suggests how property rights can affect polygyny. Under conditions of land abundance where land rights are unimportant, polygyny is a principal means to creating family wealth and generating large surplus by cultivating more land with unpaid family labor. However, as land gets more scarce due to increased population density land markets become very important. Where land markets exist and additional land can be obtained only by purchase, then if at all, women's agricultural work is less of an economic asset than under common land tenure, and there is less economic motivation for polygyny, which is at most practiced by a small number of rich men.
+
+```{=tex}
+\begin{quotation}
+''Under intensive agricultural systems, small and middle sized landowners
+are likely to be motivated to a smaller family size than are people with ...
+insecure tenure. The source of appeal is that they are less dependent upon
+help from adult children in emergencies and old age because they can
+mortgage, lease or sell land or cultivate with hired labor. They may also
+have an interest in avoiding division of family property among too many
+heirs. People who use long fallow systems in regions with tribal tenure have
+even more motivation for large family size than landless workers. The size
+of the area they can dispose of for cultivation is directly related to the
+size of their family, and most of the work, at least in food production, is
+done by women and children. So a man can become rich by having several wives
+and large numbers of children working for him. Unless he has acquired other
+property a man's security in old age depends on his adult children and adult
+wives, since he cannot mortgage or sell land in which he has only usufruct
+rights. Common land tenure encourages large family size since a large family
+confers a right to additional land''.
+\end{quotation}
+```
+Jacoby (1995) using the Cote d'Ivoire Living Standards Measurement Survey (CILSS) data, finds that men with more land have more wives and attributes this to female productivity in agriculture under the assumption of missing labor market. His analysis does not examine the effects of land market on polygyny and therefore either assumes that individuals have defined property right in land or considers land rights as unimportant, a condition suited to land abundance. However, the frequency of land conflicts and other conditions governing land access in Cote d'Ivoire in late 1980's supports neither land abundance nor individual property rights. Indeed, while his paper showed that female contribution to agricultural labor is an important factor in polygyny, his analysis failed to account for the stability of polygyny despite the decline in contribution of female labor to agriculture during the expansion of export crops.
+
+# Cross-Country Evidence
+
+Whenever the subject of polygyny comes up, the major driving force that readily comes to mind is religion. Tertilt (2005) in her empirical analysis shows that while marrying up to four wives is permitted in Islam, polygyny is limited to a very small subgroup of the population in those countries. Her statistics show that only 1% of men have multiple wives in Iran and the prevelance in Jordan is about 4%. In the Northern African Islamic countries, polygyny is rare. Although recent statistics are not available, data available shows polygyny rates of 2% in Algeria and 8% but fading away in Egypt as of 1950. It is rare in Morocco and Libya. Therefore religion does not explain polygyny that we observe in Sub-saharan Africa where close to 50% of men are in polygynous unions.
+
+In terms of land markets, most of the countries in the Middle East have functioning land markets. Morocco, Libya, Egypt, and Algeria, and other islamic countries of Northern Africa have functioning land markets. In the contrary, in Sub-Saharan Africa, most of land tenure system remains under the customary system[^5].
+
+[^5]: Polygyny data is ontained from the United Nations (1990) and Bankole and Singh (1998). Land Market data are obtained from various sources.
+
+# Marriage in the Less Developed Countries
+
+## Marriage Payments
+
+In societies where property rights are secure and therefore women can inherit property, at marriage, the woman's family endows the new household with a payment referred to as dowry, over which the woman retain control during marriage. I define this dowry in terms of land. This means that individuals in the new family exercise controls rights over portions of land that they own out of the total amount of land owned collectively by the household, and can transact in them. Thus, the partners can bargain in the household and therefore marriage responds to market trends. If the land market becomes more important, that is, rental rates increase, there is no necessary inducement to polygyny since both parties earn from the gains in property income. However, marriage rates will generally be higher (Becker, 1973). If women do not receive dowries upon marriage in such societies, they would lose their right to property when they enter marriage, and therefore women will not marry; an equilibrium that is unsustainable. In societies where property rights are not secure, and therefore women cannot inherit property, at marriage, the husband's family pays a bride-price to the woman's family. However, such marriage endows the household with a piece of land, but neither the man or woman have property right over the land. Otherwise, the woman's property rights status changes through marriage, and that will be unsustainable in a non-polyandrous equilibrium. In essence, the state of property rights determines whether marriage involves bridewealth or dowry payments, with payments going in different directions to ensure that women property right status do not change upon marriage. Divorce under property rights also insures that the woman retains her property (dowry) after the divorce, whereas in the absence of property rights, women do not retain rights over any property since they did not have such right while in marriage.
+
+According to Becker (1993)  and Zhang and Chan (1999), if the rule for the division of output within the marriage is inflexible, so that the share of income of each spouse is not the same as that under the market solution, then an upfront compensatory transfer will be made between the kin of spouses. Using age differences as a measure of the relative share of income in the new household, the payment of positive bride price also means that there will be age gaps between the man and the woman. In similar terms the payment of dowry will also respond to the differences in the ages of the partners and will respond to the intended share of household output between the partners. There is evidence that the older a woman is, the less is the bride price and this evidence supports higher bride price when women ages are lower.
+
+In this paper, bride price represents the difference between the value of household endowment of land resulting from marriage and the share of income that wives receive in the household in equilibrium under common rights. Bride-price can also be interpreted as the only means the bride family can generate income outside of land since they cannot make transactions on land due to absence of secure rights. Thus ability to generate off-farm income in the absence of property rights should reduce bride price payments, and represents a channel through which wage opportunities or the labor market may influence marriage payments. As off-farm opportunities increase due to increased off-farm wage opportunities, the age gap closes, bride price reduces, dowry payment increases (Rao 1993), and the distribution of income in the emerging households become more even. Thus women become less expensive in terms of bride price but more expensive in dowry payments. The reduction in age-gaps also leads to reduction in the rates of polygyny since income sharing between couples is more even and men are less able to extract surplus from women. However if the value of land also appreciates, the reduction in age gap is minimal, since the incentive to marry additional wife in order to acquire more land even grows stronger and therefore minimizes the impact of wage opportunities on marriage (see Becker 1973). There is some evidence that growth in non-farm wage opportunities through schooling increases the value of land by way of those employments taking up some of the society's land and more people demanding for land.
+
+## Age at Marriage
+
+Generally, men marry at relatively younger ages under customary rights than under individual land rights. There are two sources of this phenomenon. First, under insecure property rights, in addition to allocating part of the land they cultivate, parents negotiate land acquisition for their sons from the lineage. Due to uncertainties of inheritance, particularly since land undergoes redistribution, a young man will want to marry, establish the household and aquire land through the father before his death. Second, there are incentives to begin wealth accumulation early since early start implies a wealthier old age.
+
+Under customary rights, a man's welfare depends on his number of wives through two channels. One is the amount of surplus he receives from each wife while each wife takes care of her children from whatever share of income she receives. The other is the transfer payment he receives from grown up sons when he is old. In old age, he must live on transfers from his children since he has no opportunity of earning income from other sources. Therefore the larger his family is, the better for his welfare, and the earlier he begins to have children, the better.
+
+Under secure rights, a young individual can only inherit land from his father. Father's welfare does not depend only on children, since he can always sell or rent the land for some income and live on rent income for the rest of his life after leaving the farm. Unmarried sons do not have the status to acquire land.
+
+## The Marriage Market
+
+Under customary rights, marriage is demand driven rather than supply driven. The forces of demand also implies that age at marriage is driven downward for women where the supply of older women is unable to meet the demand. Although it may exist for men, there is no rule that makes the elder woman to marry before the younger.
+
+If we allow for heterogeneity among women in terms of women abilities, we expect that a man marrying multiple wives under defined rights must care more about both the productive quality of the woman, while under insecure rights, they will only care about her reproductive quality. The reasons are that the woman immediately brings along with her a plot of land for the household. While the motive for marriage under communal tenure is basically children and the land that the woman brings, the motive under private tenure is the woman's productivity.
+
+# The Model
+
+Following Tertilt (2005) I analyze an infinite-horizon, overlapping generations model. People differ by age, gender and property right. No further heterogeneity is needed in order to generate the effects of property rights on marriage. Individuals live for three periods, as children ($\kappa )$, as young adults ($y$), and as old adults ($o$). Only adults make choices. Decisions about marriage are made in both periods of adulthood. When an individual reaches old adulthood, his children enter young adulthood. Thus, an individual in his old adulthood will be alive with his children in young adulthood and his grandchildren (if any) in the children stage. People derive utility from consumption in both adult periods and the number of wives. Consumption in young adulthood depends on his surplus from production during the period. In old adulthood, people do not work but consumes from transfers received from children as well as property income (if any). In addition, they can also marry additional wives. Savings is transfered between periods in the form of farmland investment. The utility function is given by $$
+u(c^{y})+\beta u(c^{o})+\gamma v[(n^{y}+n^{o})]
+$$ {#eq-1}
+
+where $c^{y}$ is his physical consumption from surplus from production during young adulthood, $c^{o}$ is the amount of physical consumption from transfers from children and income from land rentals (if any) in old age, $% n^{y}$ is the number of wives married during young adulthood, and similarly $n^{o}$ is the number of wives married during late adulthood. All women in the marriage market have the same fertility function as in Bergstrom (1994), so that we can model the utility a man derives from children as that from the number of wives. Women are economic goods for three reasons. One, they are producers of home goods and therefore provide a bundle of home services which is subject to diminishing returns. Two, they are producers of chidren who provide old-age security in addition to other forms of satisfaction such as in the area of prestige and control. The third objective is the expansion of household land under insecure property rights. While old-age security concerns are incorporated into old-age consumption from transfers and property income, all other channels through which men benefit from the number of wives they marry and care about the number of children other than for security concerns are assumed inseparable, and are thus taken together into the last term of the utility function. The degree to which men care for these, termed ''homesickness'' is captured by $\gamma .$
+
+Each person begins his life during young adulthood based on the resources that can be obtained from and through the father. Consider an individual in his young adulthood who is making a decision on how many wives to marry.
+
+A piece of land, once acquired, can be put into more productive use with better property rights. A fraction $\delta$ can be cultivated while the remaining fraction $1-\delta$ can be leased out under freehold. There are no rental opportunities from the land under communal rights. In this case, $1-\delta$ may represent the fraction of land that is concurrently rented out while the remainder is cultivated, and may also represent the fraction of time that a plot of land is rented rather than cultivated. Return from cultivated land is given by $F(k)$ where $k$ is the number of plots put into cultivation, and return from leased land is given by $r(k).$ I assume that $% F()$ is a constant returns to scale (CRTS) production function, while $% r(k)=r.k,$ where $r$ is the rental rate.
+
+The amount of land that a young adult receives at startup depends on his number of wives in absence of property rights, but depends only on inheritance or allotment from parent where there is property rights. Whereas titled land undergoes subdivisions, untitled land undergoes redistribution. Sibling size matters under private tenure, but does not matter under communal tenure where land is allocated according to number of wives. In this sense, the number of wives married by the father matters for the amount of land that a  young adult receives under private tenure, while it is not binding under communal tenure since fathers can always negotiate land for their married sons. That is, in the absence of property rights, the amount of land received by a young adult depends on the number of his wives, $% k=n^{y}$ whereas under property rights, the amount of land received by a young adult depends on inheritance he can receive from his father, which depends on the number of wives married by the father, and therefore $k=\frac{ 1}{n^{f}}$ where $n^{f}$ represents the total number of wives married by the father. Generally, marriage during old adulthood does not come with the benefit of increased land, since the individual is considered no longer fit for farmland activities.
+
+At intermediate stages in the development of property rights, people may be able to exercise some limited but incomplete transfer rights, or different degrees of rights on different plots of land. We represent this by the ability to choose values of $\delta$ different from $1$. Therefore, generally, total returns $V(k)$ from $k$ plots of land is given by $$
+V(k)=F(\delta k)+R(1-\delta )k
+$$ {#eq-2} where $F^{\prime }()>0.$
+
+There is a decentralized marriage market where marriage matching takes place. Under secure property rights, women receive dowry from their parents and exercise control rights over their dowries whereas under insecure rights, the bride's family receives a bride-price from the family of the husband and the woman has no property rights in her husband's household. Out of the returns from a plot of land, the woman receives a share α in the home and the bride price is the difference between the value of the return on the plot of land allocated to the household as a result of the marriage less the share she receives in the marriage. It is reasonable to model the marriage market in such a way that payments from the husband's family to the wife's family at marriage are negatively related to the share of the woman in marriage surplus. Therefore the bride price is given by $P=(1-\alpha)F\left(\frac{n^y}{n^y +1}\right)$. As outlined, $\alpha$ rises with age of woman, or alternatively, falls with the age difference between the woman and her husband. That is $\alpha=\alpha(d),$ where $\alpha^\prime(d)<0.$ in line with this, $P=[1-\alpha(d)]F\left(\frac{n^y}{n^y +1}\right)$. This expression ensures that bride price increase with age gap between spouses[^6] .
+
+[^6]: It implies that $\frac{\partial{P}}{\partial{d}}=-\alpha(d)F\left(\frac{n^y}{n^y +1}\right)>0$
+
+Under property rights, the marriage matching ensures that the woman receives a share $\alpha$ in the marriage surplus as outlined above, but the payment is in the reversed order such that instead of the bride's family receiving, they are actually endowing their daughter[^7].\
+Additionally, each woman receives $\frac{n^{y}}{n^{y}+1}$ plot of land to cultivate so that the man is able to keep himself on the farm when young.
+
+[^7]: This is in line with the treatment in Zhang and Chan (1999)
+
+Then, the total surplus that accrues to an individual who marries $n^{y}$ wives during young adulthood is given by $\pi ^{y}=(1-\alpha )V(n^{y})-n^{y}P.$ Ignore for the moment the cost of care for young ones and assume the burden falls on their wives. Substituting for the bride price, the expression becomes $$
+\pi ^{y}=[1-\alpha (d)]V(k)-n^{y}[1-\alpha (d)]F\left( \frac{n^{y}}{n^{y}+1}
+\right)
+$$ {#eq-3} which simplifies into
+
+$$
+\pi ^{y}=[1-\alpha (d)][F(\delta n^{y})+R(1-\delta )k(n^{y})-n^{y}F(\delta )]
+$$ {#eq-4}
+
+There exists a property right level $R=\overline{R}$ at which $p=0,$ which implies that at the level of property rights, $\alpha =1$. This says that women take all the returns from the plot of land, a situation which doesn't seem attainable in marriage and therefore suggests discontinuity at $R=\overline{R}.$ However, it is not impossible to have zero bride price, particularly in societies that use bride price and dowry simultaneously (Zhang and Chan, 1999).
+
+While the above surplus captures the returns from use of land in production, there are also possible gains from trade in land.
+
+In the absence of property rights, I make the simplifying assumption that $k=n$ reflecting the piece of land that accompanies every new marriage. Therefore $$
+\pi ^{y}=(1-\alpha (R^{a}))[V(n,R^{a})-n^{y}V(R^{a})]
+$$ {#eq-5} where $\pi ^{y}$ is the surplus attainable by a young man in his young adult period depending on the number of wives he marries under absent property rights ($R^{a}=autarky$ $rights)$. If a young adult marries just one wife, i.e. if $n=1,$ then he attains zero surplus and the major source of his consumption is the home produced goods of the wife. Do all young men marry more than one wife? If he cares for more than home goods, then he will not marry one wife.
+
+Where there is defined property rights, then the surplus function remains $$
+\pi ^{y}=(1-\alpha (R^{m}))[V(k,R^{m})-n^{y}V(R^{m})]
+$$ {#eq-6} where $k$ is the amount of land that he owns. We assume that access to land is through inheritance from his father or through some endowment by the parents in the amount of $k.$ However generally, the amount of land available to the young adult will depend negatively on the number of wives of his father, and how much the father intends to trade in the rental market for old age consumption $(k^{o})$ but independent on his own number of wives since inheritance do not undergo adjustments. Therefore $k=k(n^{f},k^{o}).$ Following this, it implies that under private rights, $$
+\pi ^{y}=(1-\alpha (R))[V(k(n^{f},k^{o}),R)-n^{y}V(R)]
+$$ {#eq-7} where $k(.,.)$ is decreasing in both arguments.
+
+In the intermediate stages of property rights, the amount of surplus available to a young adult is given by
+
+$$
+\pi ^{y}=(1-\alpha )[\mu (V(n^{y},R)-n^{y}V(R))+(1-\mu
+)(V(k(n^{f},k^{o}),R_{t})-n^{y}V(R))]
+$$ {#eq-8} which simplifies into
+
+$$
+\pi ^{y}=(1-\alpha )\{\mu V(n^{y},R)+(1-\mu )V(k(n^{f},k^{o}),R)-n^{y}V(R)\}
+$$ {#eq-9}
+
+In old age, an individual receives a transfer $\tau$ from each child so that total transfers he receives is given by $rn\tau$ and receives an income $\omega k^{o}$ from property that was not given up. In the absence of private rights, this income is zero. At this stage, an additional wife does not yield additional plot of land but can be cultivated by the new wives. If he marries wives during this period, the cost is $p^{o}=(1-\alpha )V(R).$ Thus the surplus available to an old adult is given by
+
+$$
+\pi ^{o}=\tau .r.n^{y}+(1-\mu )\omega .k_{o}+\mu (1-\alpha
+)[V(n^{o},R)-n^{o}V(R)]
+$$ {#eq-10}
+
+where $\omega (R^{a})=0,$ and $\omega (R^{m})>0.$
+
+Therefore the optimization problem of a young adult can be summarized as $$
+\begin{array}{cc}
+Max: & U(c^{y},c^{o},n^{y},n^{o})=u(c^{y})+\beta u(c^{o})+\gamma
+v[r(n^{y}+n^{o})\text{ }subject\text{ }to: \\ 
+c^{y}\leq & (1-\alpha )[\mu (V(n^{y},R)+(1-\mu
+)V(k(n^{f},k^{o}),R)-n^{y}V(R)]-k^{o}, \\ 
+c^{o}\leq & \tau rn^{y}+(1-\mu )[\omega k_{o}-n^{o}p^{o}]+\mu (1-\alpha
+)[V(k^{o},R)-n^{o}V(R)]
+\end{array}
+$$ {#eq-11}
+
+where $c^{y},c^{o}>0,$ $n^{y},n^{o},k^{o},\omega ,\tau \geq 0,$ and $p^{o}=(1-\alpha )V(R).$ The amount of savings in the young period has been carried into the old adult period in the form of land of value $k^{o}.$ This land can be subject to rent or sold where such rights exist, or given to a new wife to cultivate.
+
+The first condition represents the budget constraint during young adulthood. Consumption is made from the surplus that accrues to him during the period, less the amount of savings which is expressed in terms of the amount of land available to himmexclusively during old adulthood. In old age, his consumption is earned from transfers from children he had during the young adult period plus the rent on the land transferred and exclusively controlled during old adulthood if such rights exist or the amount of surplus earned from cultivating the land with new wives. During the transition to old adulthood, all the children are married and have taken up their respective lands.
+
+## Equilibrium under Failure of Property Rights
+
+Under market economies where property rights fails, $R=R^{a},$ $\mu (R^{a})=1,$and $\omega =0.$ Therefore the optimization problem of the young adult simplifies into $$
+\begin{array}{cc}
+Max: & u(c^{y})+\beta u(c^{o})+\gamma v[r(n^{y}+n^{o})\text{ }subject\text{ }
+to: \\ 
+c^{y}\leq  & (1-\alpha )[V(n^{y},R^{a})-n^{y}V(R^{a})]-k^{o}, \\ 
+c^{o}\leq  & \tau rn^{y}+(1-\alpha )[V(k^{o},R^{a})-n^{o}V(R^{a})]
+\end{array}
+$$ {#eq-12}
