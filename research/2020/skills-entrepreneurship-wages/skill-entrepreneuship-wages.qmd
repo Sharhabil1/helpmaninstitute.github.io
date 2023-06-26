@@ -1,5 +1,5 @@
 ---
-title: "![](resources/hdi_logo.png){width=2.5in}  \n \n Capital-Skill Matching, Entrepreneurship and Wages"
+title: "![](resources/hdi_logo.png){width=2.5in}  \n Capital-Skill Matching, Entrepreneurship and Wages"
 
 subtitle: Working Paper
 
@@ -20,12 +20,7 @@ format:
     default-image-extension: svg
     reference-doc: resources/hdi-quarto-template-v0001.docx
     link-citations: true
-  html:
-    default-image-extension: svg
-    anchor-sections: true
-    toc-location: left
-    fig-cap-location: margin
-    self-contained: true
+    
   pdf:
     papersize: a4
     default-image-extension: pdf
