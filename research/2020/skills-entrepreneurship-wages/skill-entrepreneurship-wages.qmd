@@ -141,7 +141,7 @@ $$
 \tau_{ij} = f_h(h_i,k_j)={\alpha}Ah_i^{\alpha-1}k_j^{1-\alpha} \tag{3b}
 $$
 
-As in standard models, return to capital falls with the level of input. Similarly, τ_ij the cost of skill (which equals return to skill) decreases with the level of skill but increases with the level of technology of the firm, and is the primary source of complementarity in the model. Given the returns, entrepreneur's wage income is given by the sum of profit (return to his labor) and returns to skill, which simplifies to output minus the total cost of capital,
+As in standard models, return to capital falls with the level of input. Similarly, $\tau_{i,j}$ the cost of skill (which equals return to skill) decreases with the level of skill but increases with the level of technology of the firm, and is the primary source of complementarity in the model. Given the returns, entrepreneur's wage income is given by the sum of profit (return to his labor) and returns to skill, which simplifies to output minus the total cost of capital,
 
 $$
 w_{ij} = f(h_i,k_j )-r(h_i,k_j ) k_j=αAh_i^α k_j^{1-\alpha}\tag{3c}
