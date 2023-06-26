@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,10 +19,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -49,19 +48,48 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -75,7 +103,8 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -113,7 +142,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../styles.css">
@@ -130,31 +158,29 @@ div.csl-indent {
     <span class="navbar-title">Helpman Institute</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html" rel="" target="">
+    <a class="nav-link" href="../../../index.html">
  <span class="menu-text">Research</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:info@helpmaninstitute.org" rel="" target=""><i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:info@helpmaninstitute.org"><i class="bi bi-envelope" role="img" aria-label="email">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute" rel="" target=""><i class="bi bi-linkedin" role="img" aria-label="linkedin">
+    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute"><i class="bi bi-linkedin" role="img" aria-label="linkedin">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -162,32 +188,31 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#the-setting" id="toc-the-setting" class="nav-link" data-scroll-target="#the-setting"><span class="header-section-number">2</span> The setting</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="toc-section-number">1</span>  Introduction</a></li>
+  <li><a href="#the-setting" id="toc-the-setting" class="nav-link" data-scroll-target="#the-setting"><span class="toc-section-number">2</span>  The setting</a>
   <ul class="collapse">
-  <li><a href="#the-enterprise-sector" id="toc-the-enterprise-sector" class="nav-link" data-scroll-target="#the-enterprise-sector"><span class="header-section-number">2.1</span> The Enterprise Sector</a></li>
+  <li><a href="#the-enterprise-sector" id="toc-the-enterprise-sector" class="nav-link" data-scroll-target="#the-enterprise-sector"><span class="toc-section-number">2.1</span>  The Enterprise Sector</a></li>
   </ul></li>
-  <li><a href="#enterprise-labor-market" id="toc-enterprise-labor-market" class="nav-link" data-scroll-target="#enterprise-labor-market"><span class="header-section-number">3</span> Enterprise Labor Market</a>
+  <li><a href="#enterprise-labor-market" id="toc-enterprise-labor-market" class="nav-link" data-scroll-target="#enterprise-labor-market"><span class="toc-section-number">3</span>  Enterprise Labor Market</a>
   <ul class="collapse">
-  <li><a href="#structure-of-enterprise-sector" id="toc-structure-of-enterprise-sector" class="nav-link" data-scroll-target="#structure-of-enterprise-sector"><span class="header-section-number">3.1</span> Structure of Enterprise Sector</a></li>
+  <li><a href="#structure-of-enterprise-sector" id="toc-structure-of-enterprise-sector" class="nav-link" data-scroll-target="#structure-of-enterprise-sector"><span class="toc-section-number">3.1</span>  Structure of Enterprise Sector</a></li>
   </ul></li>
-  <li><a href="#a-description-of-the-general-equilibrium" id="toc-a-description-of-the-general-equilibrium" class="nav-link" data-scroll-target="#a-description-of-the-general-equilibrium"><span class="header-section-number">4</span> A Description of the General Equilibrium</a>
+  <li><a href="#a-description-of-the-general-equilibrium" id="toc-a-description-of-the-general-equilibrium" class="nav-link" data-scroll-target="#a-description-of-the-general-equilibrium"><span class="toc-section-number">4</span>  A Description of the General Equilibrium</a>
   <ul class="collapse">
-  <li><a href="#skill-and-capital-mobility" id="toc-skill-and-capital-mobility" class="nav-link" data-scroll-target="#skill-and-capital-mobility"><span class="header-section-number">4.1</span> Skill and Capital Mobility</a></li>
-  <li><a href="#general-equilibrium-dynamics" id="toc-general-equilibrium-dynamics" class="nav-link" data-scroll-target="#general-equilibrium-dynamics"><span class="header-section-number">4.2</span> General Equilibrium Dynamics</a></li>
+  <li><a href="#skill-and-capital-mobility" id="toc-skill-and-capital-mobility" class="nav-link" data-scroll-target="#skill-and-capital-mobility"><span class="toc-section-number">4.1</span>  Skill and Capital Mobility</a></li>
+  <li><a href="#general-equilibrium-dynamics" id="toc-general-equilibrium-dynamics" class="nav-link" data-scroll-target="#general-equilibrium-dynamics"><span class="toc-section-number">4.2</span>  General Equilibrium Dynamics</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="toc-section-number">5</span>  Conclusion</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  
+  <li><a href="#sec-appendix" id="toc-sec-appendix" class="nav-link" data-scroll-target="#sec-appendix">Appendix</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="capital-enterprise-development.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -206,7 +231,7 @@ Capital-Skill Matching and Enterprise Development</h1><button type="button" clas
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Olumide Taiwo </p>
+    Olumide Taiwo 
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -247,39 +272,39 @@ Capital-Skill Matching and Enterprise Development</h1><button type="button" clas
 <div id="fig-figure-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;1. UK Self-Employment. Source: Bank of England Historical Database</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1. UK Self-Employment. Source: Bank of England Historical Database</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-figure-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-2.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;2. Relative Earnings (Self Employment/Paid Employment) in the UK. Source: Robson (1997)</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2. Relative Earnings (Self Employment/Paid Employment) in the UK. Source: Robson (1997)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-figure-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-3.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;3. Average Occupational Male Wages. Source: Occupational Wages around the World (OWW) Database, NBER</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3. Average Occupational Male Wages. Source: Occupational Wages around the World (OWW) Database, NBER</figcaption><p></p>
 </figure>
 </div>
 <p>The consequences for income distribution are borne out in the data. <span class="citation" data-cites="parker1997">Parker (<a href="#ref-parker1997" role="doc-biblioref">1997</a>)</span> demonstrates that income inequality increased in the UK between 1976 and 1991, and that it was largely driven by the self-employed. Their results also show that income inequality among the self-employed was not the result of large numbers of people entering self employment, but mainly by a substantial increase in heterogeneity among the self-employed. In the case of African countries, <a href="#fig-figure-4">Figure&nbsp;4</a> taken from <span class="citation" data-cites="pinkovskiy2010">Pinkovskiy and Sala-i-Martin (<a href="#ref-pinkovskiy2010" role="doc-biblioref">2010</a>)</span> shows that poverty rates, defined as the fraction of the population earning less than $1 per day, began to fall after 1993. <a href="#fig-figure-5">Figure&nbsp;5</a>, taken from the same study, provides standardized income distribution for African countries for 1970, 1990, 2000 and 2006. A comparison of the 1970 and 2006 distributions shows that the proportion of population living below $1 per day decreased after the reforms but the proportion of population trapped in the $1-3 per day bracket has risen from approximately 34% in 1970 to 50% in 2006. In effect, poverty headcount rates decreased but the fraction of the population trapped in low-wage activities increased over the 36-year period. Labor income is the most important component of household income in developing countries; therefore income distribution is closely linked to the labor market.</p>
 <div id="fig-figure-4" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-4.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4. Poverty Headcount Rates. Source: <span class="citation" data-cites="pinkovskiy2010">Pinkovskiy and Sala-i-Martin (<a href="#ref-pinkovskiy2010" role="doc-biblioref">2010</a>)</span></figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4. Poverty Headcount Rates. Source: <span class="citation" data-cites="pinkovskiy2010">Pinkovskiy and Sala-i-Martin (<a href="#ref-pinkovskiy2010" role="doc-biblioref">2010</a>)</span></figcaption><p></p>
 </figure>
 </div>
 <div id="fig-figure-5" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-5.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;5. Income Distribution. Source: <span class="citation" data-cites="pinkovskiy2010">Pinkovskiy and Sala-i-Martin (<a href="#ref-pinkovskiy2010" role="doc-biblioref">2010</a>)</span></figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5. Income Distribution. Source: <span class="citation" data-cites="pinkovskiy2010">Pinkovskiy and Sala-i-Martin (<a href="#ref-pinkovskiy2010" role="doc-biblioref">2010</a>)</span></figcaption><p></p>
 </figure>
 </div>
 <p>Given the proliferation of efforts to expand small-scale enterprises across Africa<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and the incidental expansion of self-employment after the major reforms ended, it appears that most of the workers drawn into self-employment got trapped in low-wage equilibrium.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> <a href="#fig-figure-6">Figure&nbsp;6</a> presents data on lending (interest) rates in African countries from 1980 to 2008, covering the period before and after the major reforms. It is easy to see that interest rates began to rise at the onset of the reforms that began in early 1980s. One of the elements of the reform packages implemented across countries was the requirement that lending institutions must do away with interest rate ceilings and allow them to be set by the market. As a result, interest rates shot up in many countries and the dispersion’s in rates began to increase as interest rates were determined by each country’s economic conditions <span class="citation" data-cites="duru2012">(<a href="#ref-duru2012" role="doc-biblioref">Duru and Kehinde 2012</a>)</span>. Rising cost of operation (largely determined by the cost of capital) forced low-productivity enterprises to exit, leaving only high productivity enterprises in operation. The effect is a transformation of the enterprise sector from low productivity to high productivity. As a result, average earnings rose for employed workers (<a href="#fig-figure-3">Figure&nbsp;3</a>, pre-1993) while the unemployed earned no income, causing the poverty headcount to rise (<a href="#fig-figure-4">Figure&nbsp;4</a>, pre-1993). In the post-reform period, efforts to expand entrepreneurship by lowering the cost of capital stimulated low-productivity enterprises. This brought about lower unemployment but an increase in the fraction of workers engaged in low wage enterprises, which consequently led to lower average wages (<a href="#fig-figure-3">Figure&nbsp;3</a>, post-1993). As a result, poverty headcount decreased, but the population in the low-wage equilibrium grew dramatically (<a href="#fig-figure-4">Figure&nbsp;4</a>, post- 1993). The decrease in earnings following expansion of self employment in the UK is attributable to similar imperfections in the matching of capital with borrower skills. The beneficiaries of the loan guarantee schemes were typically the long-term unemployed who would have been subject to depreciation of their human capital. Therefore, a given stock of capital will be less productive, leading to a decrease in enterprise earnings.</p>
 <div id="fig-figure-6" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-6.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6. Interest Rates in African Countries. Source: Economist Intelligence Unit (EIU) Database. Lending rates by deposit money banks</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6. Interest Rates in African Countries. Source: Economist Intelligence Unit (EIU) Database. Lending rates by deposit money banks</figcaption><p></p>
 </figure>
 </div>
 <p>There have been attempts to explain the decline in productivity and increasing income inequality as self employment increases. One of the explanations is centered on market competition. The idea is that in non-competitive labor markets with excess labor, individuals with high ability would select into wage employment so that those in self employment are generally of low entrepreneurial ability. This hypothesis has been repudiated by evidence. <span class="citation" data-cites="hamilton2000">Hamilton (<a href="#ref-hamilton2000" role="doc-biblioref">2000</a>)</span> examined data on earnings of wage employees and self employed individuals in the United States and found evidence that workers in paid employment earn higher income than workers in self employment. However, he found no evidence to support the hypothesis that the differential is due to selection of low-ability workers into self-employment. Evidence from low- income countries where labor markets are typically thought to be non-competitive also refutes the hypothesis. <span class="citation" data-cites="blau1985">Blau (<a href="#ref-blau1985" role="doc-biblioref">1985</a>)</span> analyzed data from Malaysia and instead found evidence of a weak positive selection <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> into self employment by entrepreneurial ability in urban areas. His finding is supported by evidence from India <strong>(Rosenzweig 1980)</strong>, Thailand (<span class="citation" data-cites="chiswick1977">Chiswick (<a href="#ref-chiswick1977" role="doc-biblioref">1977</a>)</span>; <span class="citation" data-cites="bertrand1980">Bertrand and Squire (<a href="#ref-bertrand1980" role="doc-biblioref">1980</a>)</span>; <strong>Teilhet-Waldorf and Waldorf 1983</strong>), Kenya (<span class="citation" data-cites="house1984">House (<a href="#ref-house1984" role="doc-biblioref">1984</a>)</span>) and Guatemala <strong>(Sumner 1981)</strong> .An alternative explanation for decreasing productivity in the UK offered by <strong>Robson (1997)</strong> is that productivity declined as a result of decrease in the level of capital per self-employed worker. However, <span class="citation" data-cites="barnejee1993">Barnejee and Newman (<a href="#ref-barnejee1993" role="doc-biblioref">1993</a>)</span> cast doubt on the efficacy of this argument. They showed that decrease in average capital is not a sufficient condition for decrease in wages, but productivity and wages are outcomes of the distribution of capital over the underlying set of productive skills. Given an average capital per self employed worker, replacing a distribution that assigns increasingly large amount of capital to more productive workers (a sufficiently skewed distribution) with another distribution that assigns a fixed amount of capital to all workers (a uniform or skill-blind distribution) will lead to decrease in wages. In the latter scenario, capital will be over-employed at the upper end of the skill distribution and under- employed at its lower end, yielding disequilibrium between the cost of capital and its marginal product everywhere in the distribution except at the middle.</p>
@@ -316,21 +341,21 @@ r(k)=f_k;w(k)=f(k)-kf_k-c(k)
 <div id="fig-figure-7" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-7.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7. Output, Interest and Wages.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7. Output, Interest and Wages.</figcaption><p></p>
 </figure>
 </div>
 <p>We demonstrate in in <a href="#fig-figure-8">Figure&nbsp;8</a> the effect of skill upgrade from <span class="math inline">\(s\)</span> to <span class="math inline">\(s'\)</span> reflected by a shift in the parameter <span class="math inline">\(\theta.\)</span> Given capital, skill upgrade shifts the output and rent curves upward but the extent of the shift increases with <span class="math inline">\(k\)</span> in line with assumption b) above. The shift produces two effects. First, the point at which wages become positive shifts to the left reflecting the increase in productivity of skill. However, the shift at this end is small because output increases only by a little while rent also increases by a little; the net effect on <span class="math inline">\(\underline{k}\)</span> may be negligible. Second, the efficient level of adjusted capital shifts to the right in reflection of increased capacity of the worker to utilize a larger quantity of capital given the shift in unmeasured ability. In effect, the feasible range <span class="math inline">\([\underline{k},\overline{k}]\)</span> widens with skill upgrade. However, because the skill cost function depends only on adjusted capital and not on output, it remains unchanged after the skill upgrade; the cost of skill only depends on the relative level of skill and capital along the horizontal axis. Thus the difference between the shift in output and the shift in rent widens as <span class="math inline">\(k\)</span> increases, causing an increasing shift in the wage function. Consider an enterprise with initial adjusted capital of <span class="math inline">\(k_0\)</span> that experienced a skill upgrade. Although adjusted capital decreases nominally from <span class="math inline">\(k_0\)</span> to <span class="math inline">\(k_1\)</span>, wage increases from <span class="math inline">\(w(k_0)\)</span> to <span class="math inline">\(w(k_1)\)</span>. It is also plausible from the rent graph that <span class="math inline">\(r(k_1)&gt;r(k_0)\)</span> In general, an increase in wage is accompanied by increase in rent when driven by skill upgrade (represented by the upward shift in the rent curve) , but is accompanied by a decrease in rent when it is driven by capital upgrade (represented by moving to the right on the horizontal axis).</p>
 <div id="fig-figure-8" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-8.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;8. Effect of Skill Upgrade.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;8. Effect of Skill Upgrade.</figcaption><p></p>
 </figure>
 </div>
 <p>We examine in <a href="#fig-figure-9">Figure&nbsp;9</a> the potential wage trajectory of enterprises with efficient levels of adjusted capital to demonstrate the implication of the earnings and cost structure for enterprise profitability. The vertical axis represents capital while the horizontal axis represents skill. We use the 45 degrees line to represent wage outcomes of optimal matches between skill and capital where skill and capital are commensurate. Because skill and capital are typically measured in very different units and scales which we do not attempt to reconcile, the 45 degrees line reflects <span class="math inline">\(commensurability\)</span> instead of <span class="math inline">\(equality\)</span> of skill and capital. In essence, skill upgrade is matched by corresponding increase in capital as we move along the line so that wages earned by optimal matches increase along the line. <a href="#fig-figure-8">Figure&nbsp;8</a> is connected to <a href="#fig-figure-9">Figure&nbsp;9</a> in the sense that an enterprise with <span class="math inline">\(k&gt;\overline{k}\)</span> lies above the 45 degrees line while an enterprise with <span class="math inline">\(k&lt;\overline{k}\)</span> lies below the line.</p>
 <div id="fig-figure-9" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-9.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;9. Enterprise Wage Trajectory.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;9. Enterprise Wage Trajectory.</figcaption><p></p>
 </figure>
 </div>
 <p>The broken vertical line at <span class="math inline">\(s=s_0\)</span> represents the locus of initial adjusted capital of an enterprise. Consider an enterprise that starts with <span class="math inline">\(k_a\)</span> where the capital is less than commensurate with skill (this translates to a very small value of <span class="math inline">\(k\)</span> in <a href="#fig-figure-8">Figure&nbsp;8</a>. At that level, output is low, the price of skill is low but rent is high, yielding a very low wage. An enterprise that begins at this point will find the cost of capital prohibitive and is unlikely to invest in capital. Because the cost of skill is low, the enterprise may choose to invest in more skills. But the enterprise will not benefit from such investment as it will not raise wages meaningfully: adjusted capital will decrease and rent will increase. The high rate of rent will eat away any increase in output achieved by raising the level of skill. In the absence of any investment, the high rent will drive enterprise wages westward until reaching the point a on the 45 degrees line.</p>
@@ -351,7 +376,7 @@ w(\overline{k})^0 \le w(\overline{k})^0 \ge w_0.
 <div id="fig-figure-10" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-10.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;10. Enterprise Labor Market.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;10. Enterprise Labor Market.</figcaption><p></p>
 </figure>
 </div>
 <p>It is possible to determine the relative slopes of the wage (supply) and rent (demand) curves. Consider a fixed level of skill-adjusted capital and define elasticity as <span class="math inline">\(\varepsilon_{wk} \approx \frac{\partial_w}{\partial_k}.\frac{k}{w}\)</span> where <span class="math inline">\(\frac{\partial_w}{\partial_k}\)</span> is a partial derivative. From <a href="#eq-entreLabour">Equation&nbsp;2</a> of the wage curve is related to elasticity of the rent curve by<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
@@ -376,14 +401,14 @@ V(k) \ge V_0(w_0,r_0)
 <div id="fig-figure-11" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-11.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;11. Increase in Interest rate r</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;11. Increase in Interest rate r</figcaption><p></p>
 </figure>
 </div>
 <p>An increase in alternate wage <span class="math inline">\(w^m\)</span> reduces only the worker’s side of the surplus function, and workers with low entrepreneurial skills will exit from the enterprise sector, leading the enterprise labor supply curve to shift to the left while the demand curve remains unchanged. As shown in <a href="#fig-figure-12">Figure&nbsp;12</a>, skill-adjusted capital falls and equilibrium wage rises. On the other hand, a decrease in <span class="math inline">\(w^m\)</span> raises the workers’ surplus and attracts more workers into entrepreneurship.</p>
 <div id="fig-figure-12" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-12.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;12. Increase in Alternate Wages w</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;12. Increase in Alternate Wages w</figcaption><p></p>
 </figure>
 </div>
 <p>Average skills decrease, and skill-adjusted capital increases, leading to lower equilibrium wages. Thus, an increase in interest rates or alternate wages has the effects of raising average skills and wages in the enterprise sector. This is consistent with the stylized facts: co-movement of interest rates and wages, and co-movement of wages across sectors. But the extent of wage increase and changes in adjusted capital depend on whether the change is driven by wages or interest rates. Changes in relative enterprise wages (ratio of enterprise wages to alternate wages) depends on the ease of entry into the enterprise sector, which depends on the ease of finding capital. If credit markets are well developed so that entry and exit from self employment is unconstrained, then relative enterprise wages will fall and rise faster than in societies with less developed credit markets.</p>
@@ -404,7 +429,7 @@ V(k) \ge V_0(w_0,r_0)
 <div id="fig-figure-13" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/figure-13.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;13. Low interest lending from private sector.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;13. Low interest lending from private sector.</figcaption><p></p>
 </figure>
 </div>
 <p>Suppose instead that vocational or entrepreneurial skill is upgraded. That is, instead of quantitative increase in labor supply we have a qualitative increase in entrepreneurial skills, which shifts the supply curve to the left. In this case, adjusted capital will fall (capital-skill gap will close) and wages will rise. Thus, skill upgrade is more potent than low-cost capital for poverty reduction. Stagnation in production processes with more credit supply has generated increased employment in the enterprise sector but has not made a significant dent on poverty rates. Low-productivity activities are easy to replicate and they generate low returns when matched with low cost capital. Studies relating to Small and Medium-Scale Enterprises show that lack of skills, rather than lack of capital, are responsible for the slow growth of the sector.</p>
@@ -421,47 +446,47 @@ V(k) \ge V_0(w_0,r_0)
 </section>
 <section id="references" class="level1 unnumbered">
 <h1 class="unnumbered">References</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-barnejee1993" class="csl-entry" role="listitem">
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-barnejee1993" class="csl-entry" role="doc-biblioentry">
 Barnejee, Arpita V., and Andrew F. Newman. 1993. <span>“Occupational Choice and the Process of Development.”</span> <em>Journal of Political Economy</em> 101 (2): 274–98.
 </div>
-<div id="ref-bedard2001" class="csl-entry" role="listitem">
+<div id="ref-bedard2001" class="csl-entry" role="doc-biblioentry">
 Bedard, Kelly. 2001. <span>“Human Capital Versus Signaling Models: University Access and High School Dropouts.”</span> <em>Journal of Political Economy</em> 109 (4): 749–75.
 </div>
-<div id="ref-bertrand1980" class="csl-entry" role="listitem">
+<div id="ref-bertrand1980" class="csl-entry" role="doc-biblioentry">
 Bertrand, T., and L. Squire. 1980. <span>“The Relevance of the Dual Economy Model: A Case Study of Thailand.”</span> <em>Oxford Economic Papers</em> 32 (3): 480–511.
 </div>
-<div id="ref-blanchflower2000" class="csl-entry" role="listitem">
+<div id="ref-blanchflower2000" class="csl-entry" role="doc-biblioentry">
 Blanchflower, David G. 2000. <span>“Self-Employment in OECD Countries.”</span> <em>Labour Economics</em> 7 (5): 471–505.
 </div>
-<div id="ref-blau1985" class="csl-entry" role="listitem">
+<div id="ref-blau1985" class="csl-entry" role="doc-biblioentry">
 Blau, David M. 1985. <span>“Self-Employment and Self-Selection in Developing Country Labor Markets.”</span> <em>Southern Economic Journal</em> 52 (2): 351–63.
 </div>
-<div id="ref-chiswick1977" class="csl-entry" role="listitem">
+<div id="ref-chiswick1977" class="csl-entry" role="doc-biblioentry">
 Chiswick, Carmel U. 1977. <span>“On Estimating Earnings Functions for LDCs.”</span> <em>Journal of Development Economics</em> 4 (1): 67–78.
 </div>
-<div id="ref-duru2012" class="csl-entry" role="listitem">
+<div id="ref-duru2012" class="csl-entry" role="doc-biblioentry">
 Duru, M., and L. M. Kehinde. 2012. <span>“Financial Sector Reforms and the Growth of Small and Medium Scale Enterprises (SME) in Nigeria.”</span> <em>Universal Journal of Management and Social Sciences</em> 2 (8): 86–97.
 </div>
-<div id="ref-evans1989" class="csl-entry" role="listitem">
+<div id="ref-evans1989" class="csl-entry" role="doc-biblioentry">
 Evans, David S., and Boyan Jovanovic. 1989. <span>“An Estimated Model of Entrepreneurial Choice Under Liquidity Constraints.”</span> <em>Journal of Political Economy</em> 97 (4): 808–27.
 </div>
-<div id="ref-hamilton2000" class="csl-entry" role="listitem">
+<div id="ref-hamilton2000" class="csl-entry" role="doc-biblioentry">
 Hamilton, Barton H. 2000. <span>“Does Entrepreneurship Pay? An Empirical Analysis of the Returns to Self Employment.”</span> <em>Journal of Political Economy</em> 108 (3): 604–31.
 </div>
-<div id="ref-house1984" class="csl-entry" role="listitem">
+<div id="ref-house1984" class="csl-entry" role="doc-biblioentry">
 House, William J. 1984. <span>“Nairobi’s Informal Sector: Dynamic Entrepreneurs or Surplus Labor?”</span> <em>Economic Development and Cultural Change</em> 32 (2): 277–302.
 </div>
-<div id="ref-parker1996" class="csl-entry" role="listitem">
+<div id="ref-parker1996" class="csl-entry" role="doc-biblioentry">
 Parker, Simon C. 1996. <span>“A Time Series Model of Self-Employment Under Uncertainty.”</span> <em>Economica</em> 63 (251): 459–75.
 </div>
-<div id="ref-parker1997" class="csl-entry" role="listitem">
+<div id="ref-parker1997" class="csl-entry" role="doc-biblioentry">
 ———. 1997. <span>“The Distribution of Self-Employment Income in the United Kingdom, 1976-1991.”</span> <em>Economic Journal</em> 107 (441): 455–66.
 </div>
-<div id="ref-pinkovskiy2010" class="csl-entry" role="listitem">
+<div id="ref-pinkovskiy2010" class="csl-entry" role="doc-biblioentry">
 Pinkovskiy, Maxim, and Xavier Sala-i-Martin. 2010. <span>“African Poverty Is Falling...much Faster Than You Think!”</span> <em>NBER Working Paper</em>, no. 15775.
 </div>
-<div id="ref-yahya2011" class="csl-entry" role="listitem">
+<div id="ref-yahya2011" class="csl-entry" role="doc-biblioentry">
 Yahya, Abdul Z., Chan K. Fatt, Abdul S. Othman, Ismail A. Rahman, and Jarita Moen. 2011. <span>“Management Skills and Entrepreneur Success of Small and Medium Enterprise (SMEs) in the Services Sector.”</span> <em>African Journal of Business Management</em> 5 (26): 10410–18.
 </div>
 </div>
@@ -470,7 +495,7 @@ Yahya, Abdul Z., Chan K. Fatt, Abdul S. Othman, Ismail A. Rahman, and Jarita Moe
 
 
 
-<div id="quarto-appendix" class="default"><section id="sec-appendix" class="level1 appendix unnumbered"><h2 class="anchored quarto-appendix-heading">Appendix</h2><div class="quarto-appendix-contents">
+<div id="quarto-appendix" class="default"><section id="sec-appendix" class="level1 appendix unnumbered"><h2 class="quarto-appendix-heading">Appendix</h2><div class="quarto-appendix-contents">
 
 <section id="appendix-a" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="appendix-a">Appendix A</h3>
@@ -542,23 +567,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -674,92 +685,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
