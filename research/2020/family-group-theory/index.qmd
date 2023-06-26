@@ -1,0 +1,38 @@
+---
+title: "An Economic Theory of Family Groups"
+description: "As a result of market imperfections, the distinction between production and consumption units fizzles and various ownership-consumption possibilities emerge."
+
+categories: 
+  - Working papers
+
+date: 2020-06-12
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+
+execute:
+  echo: false
+---
+
+## Abstract
+
+This paper combines elements of bargaining and evolutionary theories to analyze economic behavior in family networks. The goal of this paper is to reformulate the theory of demand for goods that reflects varying degrees of ownership-production-consumption possibilities.
+
+## PDF links
+
+-   [Paper (preprint) in PDF format](family-group-theory.pdf)
