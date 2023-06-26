@@ -1,0 +1,39 @@
+---
+title: " Property Rights and Human Capital"
+
+categories: 
+  - Working papers
+
+date: 2025-06-04
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+
+execute:
+  echo: false
+---
+
+## Abstract
+
+This paper studies the link between land tenure security and schooling investments in rural areas of developing countries. It shows how an institution that limits physical output can promote investment in human capital and might explain why low productivity growth is accompanied by high rates of schooling investments in Africa. Land shadow values are internalized by markets in private ownership but is redundant under communal tenure. Under private ownership, high ability individuals choose to remain on the farm while those with low abilities migrate into city jobs thereby creating a bad network. The situation is reversed for the communal society where high ability individuals migrate into jobs in the city and create a good network. This paper looks at the issue from the labor market perspective.
+
+Keywords: Household, Kinship, Family, Preferences, Fertility.
+
+## PDF links
+
+-   [Paper (preprint) in PDF format](property-human-capital.pdf)

@@ -1,0 +1,278 @@
+---
+title: "![](resources/hdi_logo.png){width=2.5in}  \n Property Rights and Human Capital "
+
+date: 2015-06-04
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+   
+format:
+  docx:
+    default-image-extension: svg
+    reference-doc: resources/hdi-quarto-template-v0001.docx
+    link-citations: true
+  
+  pdf:
+    papersize: a4
+    default-image-extension: pdf
+    link-citations: true
+    linestretch: 1.25
+    geometry:
+    - top=25.4mm
+    - left=25.4mm
+    - right=25.4mm
+    - bottom=25.4mm
+    extra_dependencies: ["flafter"]
+    header-includes: |
+      \usepackage[labelsep=period]{caption}
+     
+editor: visual
+crossref:
+  title-delim: "."
+number-sections: true
+
+toccolor: blue
+toc: true
+toc-depth: 2
+toc-title: "Table of Contents"
+
+#bibliography: references.bib
+#csl: resources/bmj.csl
+---
+
+{{< pagebreak >}}
+
+**Abstract**
+
+This paper studies the link between land tenure security and schooling investments in rural areas of developing countries. It shows how an institution that limits physical output can promote investment in human capital and might explain why low productivity growth is accompanied by high rates of schooling investments in Africa. Land shadow values are internalized by markets in private ownership but is redundant under communal tenure. Under private ownership, high ability individuals choose to remain on the farm while those with low abilities migrate into city jobs thereby creating a bad network. The situation is reversed for the communal society where high ability individuals migrate into jobs in the city and create a good network. This paper looks at the issue from the labor market perspective.
+
+Keywords: Household, Kinship, Family, Preferences, Fertility.
+
+{{< pagebreak >}}
+
+# Introduction
+
+The paper explores agricultural land tenure security in explaining differences in schooling investments among communities in the developing countries. While private or individual tenure accords individuals the exclusive right to cultivate and transact in land, households under communal ownership possess the right to cultivate land on a non-exclusive basis without the right to transact in the farmland.
+
+The influence of land tenure on agricultural investment has been a subject of detailed research, and the studies have sometimes generated varied conclusions. While some studies conclude that tenure security or privatization of land rights improves agricultural investment, others have showed that the effect is the opposite, and in intemediate cases, some have noted no effect. The choice between farmland investments and schooling may have profound income inequality implications partly because land and human capital are the major forms of wealth in rural households in the developing countries and partly because economic returns to land and human capital change rapidly in a dynamic context (Estudillo et al, 2001). Thus households deploy their abilities and endowments in ways that maximize lifetime earnings and utility. Despite the large amount of literature on tenure security and agricultural investments, the question of how tenure security influences schooling decisions in rural households is yet to receive consideration in the literature. Insecurity of tenure may be perceived as insecurity of returns to agricultural investments and therefore may induce households to invest more in education in which case tenure security will be negatively associated with investment in schooling. On the other hand tenure security may create incentives for higher farmland investments which generates higher incomes that may lead to higher investment in schooling, in which case tenure security will be positively related to schooling. This paper is to my knowledge the first to connect these issues and provide empirical evidence on this question.
+
+Household allocation of resources in land and schooling takes the life cycle into consideration because they also constitute the major means by which households in the poor countries transfer income and smooth consumption across periods of life. Households' revealed preferences in the amount of investment in the assets can be ascribed to optimal portfolio decisions that they make under the prevailing constraints.
+
+Tenure security enhances freedom in the choice of agricultural investments and adoption of innovative techniques and therefore makes large-scale and multiple cropping agriculture possible. Private ownership enables trade in land, use of land for colatteral and assures households of returns to land investment. On the other hand, communal ownership assumes different forms and exhibits varying degrees of freedom depending on historical factors and the impacts of modernization. In the extreme form where land market fails completely, communal ownership under which land undergoes frequent redistribution tends to keep agriculture at subsistence level, particularly where investment decisions are taken at the household level while consumption sharing takes place at the clan or community level, which creates inefficiencies in farmland investments. It seems fairly reasonable to expect outcomes under this system to be different than in situations where investment decisions are taken at the level where consumption sharing takes place.
+
+In order to examine the effects of tenure security on schooling and labor market it is convenient to consider landowning in two classes; those in which individuals have private rights on land and those in which rights are held communally, corresponding to cases of efficiency and complete failure of land markets respectively. This classification makes the labor market implications clearer and generates distinct predictions for migration, education and fertility.
+
+Individual ownership creates two classes of people: the landowners who acquire land by purchase or receive land as gift or whose progenitors privately own land that is passed down through inheritance on the one hand, and the landless wage workers who are more traditionally non-indigenes and in some cases indigenes whose ancestral lineages are landless and have not overcome the hurdles to landowning. Landowners might be able to send their children to school based on the agricultural income effect depending on whether there are enough non-farm incentives to invest in child education while the landless wage workers are not confined to agricultural employment and can easily switch their labor from agricultural wage jobs to non-agricultural wage activities. Depending on local farm labor conditions[^1] . the landless wage workers may value schooling more than landowners in that education raises the equilibrium wage in both farm and non-farm sectors. Farmers will tend to have large families depending on their landowning or farm sizes if there is some failure in the labor market, for example, if there are huge transaction costs in the farm wage sector. In the absence of labor market failures, there will be no necessary link between fertility and farm sizes and therefore there will exist a significant farm wage labor demand. In this sense, farm wage labor demand will pull workers from the non-farm wage sector.
+
+[^1]: Valuation of schooling by households tend to depend on the size and activity of the non-farm wage sector since it serves the link between the community and the outside labor market.
+
+Under communal tenure where land market fails, efficiency of land allocation is a non-trivial issue. Farmland is distributed according to household size, and land transactions are prohibited. Irrespective of the returns to scale, returns to land and labor may well depend on household preferences and endowments. Households that are endowed with more able members might be willing to acquire and cultivate more land, either through rent or purchase, but will not be able to do so. Household factors of production face diminishing returns and households will diversify resources away from an activity when they are not endowed with factors in the ratio that maximizes profits. Utility maximizing agricultural household will typically engage part of its labor in non-farm wage employment given the binding constraint on land. Therefore households will supply more wage labor than under private ownership (see for instance Fafchamps and Gavan, unpublished manuscript). Kin labor is generally available to individual households under communal tenure, since in the general case consumption sharing takes place at clan or community level. This diminishes household demand for farm wage labor. Coupled with household diversification into the wage sector, this generates a large non-farm labor supply. In terms of fertility and child labor issues, an additional child in a household generates some externality for other households in the clan given the cooperative nature of agricultural labor, and as such there is no necessary link between farm size and fertility.
+
+In effect under conditions of functioning labor markets, while private ownership generates a ''thin'' non-farm wage sector, communal tenure induces a ''large'' non-farm wage sector. In a stationary equilibrium wages in both farm and non-farm wage sectors are low due to supply or ''push'' effects under communal tenure but will be both high under private tenure due to demand or ''pull'' effects. Implications for non-farm wage opportunities are such that firms that hire unskilled wage labor will face high wages under private tenure and might not be willing to locate plants in the community. In a dynamic setting the wage sector provides information about the outcomes that should be expected under these circumstances in terms of migration and educational investments.
+
+# Structure of the Economies
+
+The economies of the survey communities support the existence of land and labor markets with failure of land market under communal tenure and admits of the above implications for wages under the market conditions. In addition to the foregoing characterization of the markets, the communities are located in a tropical forest zone characterized by land abundance. In the two-factor trade theory, factor abundance encourages more intense use of the abundant factor and raises the price (and returns) of the other factor. In this case land abundance will therefore encourage more use of land and raise wages but this requires active land and labor markets. Land is fertile and its quality is homogeneous across the communities and there are no significant shocks to agriculture.
+
+## Land Abundance and Wages
+
+Under private ownership structure, land is acquired mainly through inheritance, purchase, and clearing of virgin forest (deforestation), which is accompanied by some payments in kind or in some small amount of money to the community. Land abundance results in low price of land, and landless households who supply labor are able to aquire farmland easily. Farmland rentals are uncommon while sharecropping is non-existent since there are no significant shocks to agriculture. The low prize of land thus strengthens the labor demand ''pull'' effects and further ''thins out'' the off-farm wage sector. Non-indigenes who arrive in the community initially enter the farm wage sector. After a short period they accumulate enough income through the high wages, acquire farmland and set up a farming household. This exit from the wage sector simultaneously raises the demand for farm wage labor and reduces its supply creating excess demand in the farm wage sector which would be offset in equilibrium by labor from the off-farm wage sector. This sequence of labor drift keeps the equilibrium wage high in both farm wage and off-farm wage sectors and suppliers of non-farm wage jobs either move away from the community in search of cheaper labor from neighboring communities or employ labor from neighboring communities. In fact, opportunities for off-farm wage employment are almost non-existent. The few off-farm employers generally hire labor from outside the community.
+
+Under communal ownership of land, there are no transactions in land, and landless households who are mainly immigrants cannot easily acquire land. Although land is similarly priced at very low level as in the private community, community land is divided into tracts identified with specified lineages which are exclusive in their landholding. Since there is no market for land, land abundance and the attendant low price are not internalizable and therefore do not affect the price and distribution of labor in the various segments of the economy. Profit maximizing firms respond to the incentives of low wages and locate non-farm employment opportunities in the community and hire workers from there.
+
+## Wage Sector and Migration
+
+Under private ownership, an individual making a decision to leave the farm may either leave his land to fallow, rent it to the landless to cultivate for some annual rent or sell it outrightly. Except in cases where some viable investments exist on the land or where the land is suitably located (for example located in the vicinity of the dwelling areas as opposed to inside the forest), income from rents or sale are quite negligible. The combined forces of land abundance and the minimal level of risk associated with agriculture obviates the demand for land sharecropping contracts. Where individuals make profits through mere arbitrage on land transactions, such income fizzles in short time since there are no barriers to entering the land market. An individual who leaves the farm is faced with the options of entering the non-farm wage sector (where opportunities really do not exist) or leaving the community to become part of migrant labor. Since land sale is not an attractive option due to the low price, the only other alternative to land fallowing is to cultivate using hired labor. However, since wages are high in the farm-wage sector, there are no gains from substituting own costless labor with an expensive alternative[^2]. Such labor substitution constitutes utility loss to the household since the substitution merely raises input costs at given level of output. This utility loss will therefore tend to keep household labor on the farm. Wages are high in the ''thin'' farm-wage sector while there are no opportunities in the non-farm wage sector.
+
+[^2]: It is sub-optimal for farm households to engage in farm wage employment simultaneously since the additional unit of labor will earn total product of labor on the farm rather than the marginal product if he hires out his own labor and hire labor input to replace the lost unit.
+
+Under communal landholding, the monetary price of land does not enter the calculus, and due to the cooperative nature of farming in the community, there are near costless alternatives to labor on the farm such that there are almost no utility loss on the farm in the event of moving a unit of labor away from the farmland. Opportunities in the farm wage sector are diminished by cooperative labor while the non-farm wage sector is enlarged by household labor moving away from the farmland. It is fairly imaginable that households under communal tenure are often unable to accumulate agricultural surplus, thus making non-farm employment an important source of income and wealth. Households will therefore allocate labor between farm and off-farm employment up to the point where wages in the off-farm sector equates the marginal cost of releasing additional labor from the farm[^3]. In summary, wages are low in the large off-farm sector while the farm wage sector is undermined and driven out by use of farm cooperative labor.
+
+[^3]: The marginal cost of releasing additional labor from the farmland is the marginal productivity of labor on the farm. This calculation must relate to the net productivity of labor from the farm rather than the gross product, accounting for the use of farm product in resource sharing mechanism.
+
+Ability distribution in the communities follow naturally from the nature of the factors engineering the movement into and out of the farm and wage sectors. In the communal economy where households are unable to accumulate agricultural surplus, more able individuals will leave the farmland and enter the non-farm wage sector while those with low ability will remain on the farm. Decline in off-farm wage due to labor growth will further induce the high ability individuals to migrate into the city. Thus the city network will be made up of individuals with high ability, and individuals who subsequently migrate to the city would be entering a good network. On the other hand, in the private ownership economy, while land fertility complements labor on the farm, its abundance makes acquisition quite easy. Individuals who leave the farm will not enter the farm wage sector since this merely results in utility loss to the household. High ability individuals who may be able to earn high wages in the farm wage sector are lured back to the farm by the incentive of earning the total product of labor instead of its marginal product. Individuals with higher ability deforest virgin land and retain ownership over the tract so deforested. The farmland possibilities in essence holds back high ability individuals and individuals who leave the farm are the low ability individuals. As they are unable to compete in the farm wage sector, these migrate away from the community into the low paying unskilled jobs in the city and end up in bad job and skill networks.
+
+There is ample evidence in the private societies that generally people who stay off the farm are just lazy. This confirms that they are people of low abilities. When they leave the farm, they engage mainly in lobbying jobs and follow politicians or engage in low-paying jobs around the state.
+
+## Farming, Polygyny and Fertility
+
+An important issue in agrarian societies is the link between farmland and fertility. Communal labor sharing arrangements take place among households in the clan which is the level at which consumption sharing takes place. Under the cooperative labor arrangement, households make requests on other households in the same clan for cooperative labor. Since fertility decisions are taken at the household level rather than at clan level, household fertility should not necessarily be linked with size of farmland due to the externality that an additional child generates for all households in the clan. A study of fertility in the community showed that the amount of land owned by clans are not correlated with mean fertility in the clan. Indeed, while numerous children are seen as a means of acquiring more land, there is no consciousness in the community of having numerous children in order to have many hands on the farm (Obono, 2001). Therefore while polygyny and fertility are not induced by farm labor demand, they are positively related to the size of farmland. Migrant labor in this community are more likely to be from the off-farm pool, who move into job markets outside the community to take advantage of differential wage opportunities. Since these individuals are not simultaneously engaged on the farm, we expect that migration will be more permanent with occasional visits to the community.
+
+In the private village economy, polygyny and fertility are linked with farmland not as a result of labor market failures since the labor market is functioning, but seems more of a response to the high cost of hired labor, which is a market response to the low price of land as described in the preceding section. The wage sectors are ''thinly'' populated and individuals who supply labor, mainly non-indigenes, receive high wages. In response to the high level of wages, there is evidence from the community that households with small farmlands typically solely engage household labor, while richer households (in terms of amount of land they own) hire wage labor in order to cultivate beyond the strength of the household.
+
+## Consumption Sharing and Kin Networks
+
+A key structural difference between the communities is the extent to which kinship affiliation determines households' access to productive resources. While individual households retain full ownership rights over their land in the private community, access to land is regulated at the clan level under communal tenure.
+
+Consumption smoothing mechanisms and income sharing under cooperative resource ownership is notably associated with relatively cohesive kin networks. Local networks provide the basis and support to city networks. A growing body of literature has documented the importance of networks in job markets[^4] in developing countries (Munshi and Luke, 2003; Barr et al, 1999). Although there are no differences in employment opportunities in the cities on the basis of community of origin, variations in the quality of networks are sources of remarkable differences in the rate at which job opportunities are accessible and therefore constitutes a significant determinand of the returns to investment in skills. With good networks, individuals are able to access information about opportunities that bad networks are unable to access.
+
+[^4]: This is explained by job market imperfections and transaction costs. Although the labor market is functioning, it is imperfect
+
+From another perspective of the cost of education, strong networks in communities might lower the cost of education either by means of community efforts in assisting school construction projects[^5] or through the channel of kin or clan members contributions to the cost of child schooling either directly in monetary contributions or through the avenue of cooperative labor obviating child labor[^6] . While the cost of schooling factor will strengthen the returns to skill acquisition factor, I emphasize the role of incentives and therefore will not attempt to isolate the cost effect differently from the returns effect.
+
+[^5]: It is uncertain if community efforts will influence schooling cost in terms of the cost of tuition. All the schools in the cooperative community were built by the community and later handed over to the government whereas schooling projects were initiated by the christian missionaries in the private community.
+
+[^6]: Child labor income is an important component of oportunity cost of child education in the developing countries. Extended kinship provides a safety net in this respect through cooperative labor.
+
+# Model of Labor Supply and Schooling
+
+The objective of this section is to illustrate two things. First, I intend to show that households under communal tenure are more likely to engage in non-farm employment than households under private tenure. Driven by non-trivial inefficiencies in land allocation, utility maximizing communal households are more likely to share household labor between farm and off-farm activities. Once that is achieved, the second objective is to show that, given the low market price of land, high ability individuals will choose to remain on the farm and individuals with low ability leave the farm under private tenure whereas individuals with high ability are the ones who leave the farm under communal tenure, leaving the low ability individuals on the farm . Having established these outcomes, migration and schooling outcomes will be explained naturally by the quality of networks that outmigrants find themselves in the city. High ability individuals make up or enter into good city networks while low ability ones end up in bad networks. Moreover, individuals are more likely to hear about an opening in skilled jobs if he has many skilled people in his network and more essentially will invest in skills if he has a network through which he can access the job and reap the returns to his investment. This generates a lower expected return to skill acquisition for individuals from bad networks, making them less likely to invest in education (Anderberg and Anderson, 2003).
+
+## Household Labor Supply Decisions
+
+The rural economy consists of two sectors; the farmland sector and the non-farm wage sector. Each household is endowed with an amount of land $k_h$ and household labor $l_{h}.$ Farm production inputs are land and labor and production exhibits constant returns to scale. In each community, households make their labor supply decisions, landowners make their labor demand and the labor market clears. Each household may allocate a fraction $% f_{i}$ of household labor on household farm and the remaining $1-f_{i}$ in the non-farm wage sector. We rule out the possibility of a household supplying wage labor and hiring laborers at the same time. Since communal households are allocated farmland on the basis of size we assume a fixed amount of land per capita for households in the communal society but alow it to vary under market ownership.We rule out the possibility of a household supplying wage labor and hiring laborers at the same time. Since communal households are allocated farmland on the basis of size we assume a fixed amount of land per capita for households in the communal society but alow it to vary under market ownership.
+
+Production function follows the constant returns to scale Cobb-Douglas form. Income from farm activities is given by $y_{f}=k^{\alpha }(f$ $l)^{1-\alpha },$ normalizing the price of output $p=1$ while income from non-farm employment is $y_{n}=w(1-f)l$ where $w$ is the wage rate per unit of time. The wage rate is taken as given by individual households. Therefore total household income is given by the expression:
+
+$$ y=k^\alpha (f \space{} l)^{1-\alpha} + w(1-f)l $$ {#eq-1} assume utility is linear in income and each household maximizes total income from its allocation of labor resources. Maximizing $y$ with respect to $f$ yields the first order condition that requires
+
+$$
+(1-\alpha)k^{ck} (f\space{} l)^{\alpha} = w
+$$ {#eq-2}
+
+Solving this equation completely and making the substitution $c=\frac{k}{l}$ gives the solution
+
+$$
+f=1-\alpha\omega^{\frac{1}{\alpha}}c
+$$ {#eq-3}
+
+where $c$ is the amount of land per capita for the household.
+
+Thus the fraction of household labor employed on the farm is an increasing function of the amount of land per capita available to the household, and it decreases with the level of wages in the non-farm sector. Under communal ownership household land per capita is fixed at $c=\pi$. We can understand the outcomes more fully by examining household responses to variations in the parameters of the above equation.
+
+Under communal rights, increase or decrease in wages translate into labor allocations directly since there are no means of adjusting $c$. Labor supply elasticity with respect to wage is given by
+
+$$
+\xi_w= \frac{\partial{logf}} {\partial{logw}} = -\frac{1}{\alpha}
+$$ {#eq-4}
+
+If wages increase households supply more off-farm labor and vice versa. Under private ownership, landholding adjustment can more or less than compensate changes in wages on account of land abundance and the market. Given little or absence of shocks to agriculture, the elasticity of labor supply depends on the ease with which landholding can be adjusted in response to changes in wages.
+
+Labor supply is unitarily elastic with respect to changes in landholding per capita, that is,
+
+$$
+\xi_c=\frac{\partial{logf}}{\partial{logc}}=1
+$$ {#eq-5}
+
+If the amount of landholding doubles, given household size and wage, then the fraction of household labor that goes into the farm doubles at the profit mazimization allocation. Thus under private ownership where landowning per capita can be adjusted, for given wage rate in the non-farm sector, household will put more of its labor on the farm in as much as it can cultivate more farmlands and might increase it until $f$ reaches $1$. To cultivate beyond its strength a household would hire wage workers.
+
+At the optimal labor allocation just examined, the relationship between the marginal product of labor (MPL) on the farmland and wage in the non-farm sector is given by the following equation:
+
+$$
+MPL=\frac{\partial{y}}{\partial{t}} = (1-\alpha)k^\alpha(f\space l)^{-\alpha}f
+$$ {#eq-6}
+
+and by substituting for $w$ from the first order condition in the above equation we obtain:
+
+$$
+MLP=w\space f \iff \frac{MPL}{f}=w
+$$ {#eq-7}
+
+which implies that at optimal household labor allocation, the marginal product of labor expressed per unit of time of labor employed on the farmland equates the wage rate in the non-farm sector.
+
+## Individual Abilities and Career Choice
+
+Given the household labor supply decision, this section identifies who works on the farmland and who goes into the wage sector. Here individuals are endowed with ability $\omega _{i}$ which has a distribution in the household. For simplicity let $\omega \subset[0,1]$. The factors of production remain land and labor. However, labor productivity is a measure function of ability i.e. $l=l(\omega )$ where $l^{\prime }(\omega )>0$ and household income depends on the deployment of its abilities. Farm production function is constant in returns to scale. Households make their decisions on the basis of expected wages in the non-farm sector, which depends on the abilities deployed away from the farm. In each community, households make their labor supply decisions, landowners and non-farm employers make their labor demand and the labor market clears. Normalize household labor to one unit. Income from farm production is given by $y_f=k^{\alpha}(l(\omega))^{1-\alpha}$while non-farm income is $y_n=wl(\omega^\prime)$, where $l(\omega )$ and $l(\omega ^{\prime })$ are ability adjusted labor allocations to the farm and wage sectors respectively, where $\omega \cup \omega ^{\prime }=\left[ 0,1\right] ,$ and $w=w(\omega^\prime)$ is the wage rate that individuals with ability level $\omega ^{\prime }$ can earn. From the structure, if $\omega$ rises, $\omega^\prime$must necessary fall. Total household income is thus
+
+$$
+y=y_f + y_n = k^\alpha(l(\omega))^{1-\alpha} + \omega(\omega{\prime})l(\omega{\prime)}
+$$ {#eq-8}
+
+When the farm income is expressed in per capita terms we have
+
+$$
+y=\left(\frac{k}{l(\omega)}\right)^\alpha  l(\omega) + \omega(\omega^\prime)l(\omega^\prime)
+$$ {#eq-9}
+
+Land per capita is given by $c(\omega)= \frac{k}{l(\omega)+l(\omega^\prime)}$, therefore substituting $k=c(\omega)[l(\omega)+l(\omega^\prime)]$ in the above equation gives
+
+$$
+y= \left(\frac{c(\omega)[l(\omega)+l(\omega^\prime)]}{l(\omega)}\right)^\alpha l(\omega)+ \omega(\omega^\prime)l(\omega^\prime)
+$$ {#eq-10}
+
+$$
+y=\{c(\omega)[1+\delta(\omega)]\}^\alpha l(\omega) + \omega(\omega^\prime)l(\omega^\prime)
+$$ {#eq-11}
+
+by making the substitution $\frac{l(\omega^\prime)}{l(\omega =)}= \delta(\omega) \in(0,\infty).$ The expression provides household income as a function of the distribution of household ability endowment in the farm and wage sectors where $c^\prime(\omega)<0, \delta^\prime(\omega)<0,\omega^\prime(\omega^\prime)<0,l^\prime(\omega)>0, and\space l^\prime(\omega^\prime)<0$. The function $\delta(\omega)$ is theratio of ability adjusted labor productivity in the complement set toability adjusted productivity at the chosen set. Thus if $\omega$ is low ability, then the complement set is high ability and therefore the ratio of productivity can be very large whereas for the reverse case the ratio will be very small.
+
+Differentiating the total income with respect to ability engaged on the farm we obtain the following expression:
+
+$$
+\frac{dy}{d\omega}= \left[\frac{\alpha lc^\alpha}{(1+\delta)^{1-\alpha}}\right] \delta^\prime + \left[\frac{\alpha l(1+\delta)^\alpha}{c^{1-\alpha}} \right]c^\prime +[c(1+\delta)]^\alpha l^\prime(\omega) + l\omega^\prime(\omega^\prime) + \omega l^\prime(\omega^\prime)
+$$ {#eq-12}
+
+This expression is difficult to solve for the value of $\omega$ that sets it to zero. However, the sign of the expression can indicate on which side of the optimum we are at given levels of $\omega$. We know that if $\frac{dy}{d\omega}$ is positive for all values of $\omega$, then the household should employ the high ability on the farmland since income is not maximized yet. On the other hand, if the expression is negative for all values of $\omega$, then households should employ its low abilities on the farmland and deploy the higher abilities to off-farm activities since household income is maximixed at low levels of $\omega$ deployed to the farm. The first expression is negative since $\delta^\prime(\omega) <0.$ Likewise, the last two expressions are negative because they are functions of $\omega^\prime$ which are being differentiated with respect to $\omega$. The third is positive since differentiating $l(\omega)$ with respect to $\omega$ is positive. However the sign of the second term depends on whether $c^\prime(\omega)<0$, or $c^\prime(\omega)>0$ or $c^\prime(\omega)=0$. That is, whether household land per capita is positively or negatively or completely unrelated to ability.
+
+The major difference between the two communities is that while household farmland is ability biased under market ownership, it is population (headcount) biased in the communal society. Therefore we will expect that $c^\prime(\omega)$ is essentially positive under market ownership but is zero under communal landholding.
+
+When the above expression is simplified we obtain the following:
+
+$$
+\frac{dy}{d\omega}= \alpha lc^\alpha(1+\delta)^\alpha \left[\frac{\delta^\prime}{(1+\delta)} + \frac{c^\prime}{c} + \frac{l^\prime}{\alpha l} \right] + l(\omega^\prime) \omega^\prime(\omega^\prime) + \omega(\omega^\prime)l^\prime(\omega^\prime)
+$$ {#eq-13}
+
+The terms$\frac{\delta^\prime}{1+\delta}$ and $\frac{l^\prime}{\alpha l}$ in the expression represent the decline in labor productivity and growth in labor efficiency respectively as ability increases. Since these are opposing forces we may safely assume that they cancel out since households are efficient in deploying their abilities. Under this assumption we are left with only the growth of land per capita in the household as ability increases in the large parenthesis. The growth of land per capita in response to improvement in ability is an obvious reality where market for land exists in a land abundant society whereas such growth is unlikely under communal system. Simplifying further under the assumption, the expression becomes
+
+$$
+\frac{dy}{d\omega} = \alpha lc^\alpha (1+\delta)^\alpha \frac{c^\prime}{c} + l(\omega^\prime) \space \omega^\prime(\omega^\prime)+ \omega(\omega^\prime)l^\prime(\omega^\prime)
+$$ {#eq-14}
+
+Under the communal system, $\frac{c^\prime}{c}=0$ and thus the first term disappears leaving us with the last two terms which are both negative. The implication here is that the slope of the income function is negative in ability for all values of $\omega$ . Therefore households welfare improves when household members with low abilities are left on the farm while the more able members engage in non-wage employment. Under the market ownership system where $\frac{c^\prime}{c}>0$ i.e where the amount of land per capita can grow positively in the household the first term is positive. Notice that the coefficient of $\frac{c^\prime}{c}$ is $\alpha y f$, that is, land share of total farm output. Soil natural fertility as it exists in the forest zone raises the productivity of land relative to labor and might raise the value of $\alpha$. If wage rates are time related rather than ability related then the middle term will be zero. The assumption of a smooth ability function also makes the last term really small. In effect given the parameters of the model, the first term dominates the expression and therefore the resulting expression may be positive, requiring welfare maximizing households to invest the best of their ability on the farmland.
+
+## Migration, Networks and Schooling
+
+In this section I conceptualize the cost of education in three components and therefore quantify the cost in three terms. The first component is the clear influence of ability on schooling, that is, more able people generally attend school and end up being more educated while the less able ones achieve less education and often drop out. This is the private cost which is inversely related to ability. The next is the influence of migration which brings about frequent contacts with outsiders and determines exposure to diffusion of ideas. The last is the network effect which raises the returns to schooling on one hand and lowers the cost of schooling on the other.
+
+# Schooling and Credit Constraints
+
+One major factor to think about is the role of credit constraints in financing schooling. The suggestion in this paper is that these constraints are most eased by network effects and will therefore be less binding under the communal system than under private ownership.
+
+# Predictions at the Individual level
+
+Some predictions at the individual level include the following: (under construction and review)
+
+1.  Size of farmland is expected to be negatively related to schooling under general circumstances.
+
+2.  Farm households have large families while non-farm households have small families under private ownership. Under communal ownership, such distinctions are less likely.
+
+3.  Indigenes are likely to have more education relative to non-indigenes under communal tenure while we expect the reverse situation under private ownership. This arises from the absorption possibilities into landowning under private ownership that attracts high ability individuals and the fact that more able individuals are more likely to get out of the farm under communal tenure.
+
+4.  Members of communal tenure are more likely to get education than those under private ownership. I expect this to hold for both genders. While women do not own land under communal tenure, they are free under private ownership and thus are subject to the same considerations as men.
+
+5.  Migration is permanent under communal ownership while it is the regular back-and-forth type under private ownership.
+
+6.  Child Labor is more likely under private ownership that communal type.
+
+# Empirical Strategy
+
+The main regression equation for this paper is: (under construction......)
+
+$Y_{ijcv}=Q_{ijcv}\delta + X_{jcv}\beta + Z_{cv}\pi + \mu_v + \mathcal{E}_{ijcv}$
+
+where Y$_{ijcv}$ is the years of schooling attained by individual i of household j of clan $c$ from community v, $Q_{ijcv}$ is a set of observable individual characteristics, X$_{jcv}$ is a vector of household characteristics (e.g. farming, network relations and other characteristics), Z$_{cv}$ is a set of clan level characteristics distinct from the X$_{ijcv}$% 's in that they affect Y$_{ijcv}$ but not other household behaviors conditioned on $Y_{ijcv}$; $\delta$, $\beta$and $\pi$ are unknown parameters, $\mu _{v}$ is a community fixed effect - an unmeasured determinant of schooling that is fixed within village, such as the cost of acquiring land, and $\varepsilon _{ijcv}$ is a nonsystematic error term that reflects unmeasured determinants that vary over households such that E$(\varepsilon_{ijcv}|Q_{ijcv} \space X_{ijcv}, Z_{cv}, {\mu_v})=0.$
+
+The main LHS variable is years of schooling, which represents the amount of schooling attained by individuals. The RHS variables include Size of family farmland; instrumentable by year of arrival of the lineage in the community, size of own farmland, Scale of Farming - Subsistence or Cash Cropping, Indigene Status, Community effect - communal or private tenure effects, Individual Characteristics, Parent Characteristics, Household structure and other household characteristics.
+
+An instrument for the cost of education is farm wage labor for respective ages. This influences the ease with which an individual can leave the farm without constituting a utility loss to the household.
+
+# Estimation Issues
+
+On education and ability, non-indigenes might self-select in terms of where they reside. Therefore what we observe in terms of the differences in education between foreigners in the two areas might be both influence of selection and response to incentives after arriving. We observe that the composition of non-indigenes in these communities do not display any kind of trend as most of the businesses in these communities are owned by non-indigenes. However, considering the differences in the possibilities of landowning, non-indigenes might self select into the communities such that the more able migrants sort themselves into the private community while the less able ones choose the communal society where they will only engage in wage labor. It is also observed that immigrants are from the localities nearest to these communities. On this ground, there is a difference between the immigrants so long as there are systematic differences between the communities of origin.
+
+Measurement of agricultural output under communal tenure and comparing this to output under private ownership is required. It has to be the case that output is really lower under communal than private ownership.
+
+Need data on cohorts about changes in opportunities for off-farm employment and see how those changes affect investment in education. Comparison between older men and younger ones is necessary.
+
+Variation of household size and farmland is also an issue. Two households of same size but in different clans may end up with relatively different amount of farmland depending on the amout of farmland that the clan owns.
