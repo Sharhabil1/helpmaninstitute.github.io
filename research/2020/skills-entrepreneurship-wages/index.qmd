@@ -32,3 +32,7 @@ execute:
 ## Abstract
 
 This paper proposes a micro-foundation for analyzing the stylized negative correlation that exists between entrepreneurship rates and wages, and the existence of multiple equilibria. The underlying mechanism is the matching of capital and skills in the capital market through interaction of the required rate of return on capital, the distribution of skills in the population, and the mechanism shifting the skill distribution. The model shows that the stylized observation is driven by a particular matching rule, rather than the general rule, and is not necessarily a manifestation of disequilibrium. We proceed to conduct empirical tests of the implications of the model.
+
+# PDF links
+
+-   [Paper (preprint) in PDF format](skill-entrepreneurship-wages.pdf)
