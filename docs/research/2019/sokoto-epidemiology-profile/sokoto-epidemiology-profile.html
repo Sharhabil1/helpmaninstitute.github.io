@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,10 +20,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -50,19 +49,48 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -76,7 +104,8 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -131,31 +160,29 @@ div.csl-indent {
     <span class="navbar-title">Helpman Institute</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html" rel="" target="">
+    <a class="nav-link" href="../../../index.html">
  <span class="menu-text">Research</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:info@helpmaninstitute.org" rel="" target=""><i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:info@helpmaninstitute.org"><i class="bi bi-envelope" role="img" aria-label="email">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute" rel="" target=""><i class="bi bi-linkedin" role="img" aria-label="linkedin">
+    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute"><i class="bi bi-linkedin" role="img" aria-label="linkedin">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -163,33 +190,32 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">1</span> Summary</a></li>
-  <li><a href="#background-and-context" id="toc-background-and-context" class="nav-link" data-scroll-target="#background-and-context"><span class="header-section-number">2</span> Background and Context</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">1</span>  Summary</a></li>
+  <li><a href="#background-and-context" id="toc-background-and-context" class="nav-link" data-scroll-target="#background-and-context"><span class="toc-section-number">2</span>  Background and Context</a>
   <ul class="collapse">
-  <li><a href="#introduction-and-purpose" id="toc-introduction-and-purpose" class="nav-link" data-scroll-target="#introduction-and-purpose"><span class="header-section-number">2.1</span> Introduction and Purpose</a></li>
-  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources"><span class="header-section-number">2.2</span> Data Sources</a></li>
-  <li><a href="#state-context" id="toc-state-context" class="nav-link" data-scroll-target="#state-context"><span class="header-section-number">2.3</span> State Context</a></li>
+  <li><a href="#introduction-and-purpose" id="toc-introduction-and-purpose" class="nav-link" data-scroll-target="#introduction-and-purpose"><span class="toc-section-number">2.1</span>  Introduction and Purpose</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources"><span class="toc-section-number">2.2</span>  Data Sources</a></li>
+  <li><a href="#state-context" id="toc-state-context" class="nav-link" data-scroll-target="#state-context"><span class="toc-section-number">2.3</span>  State Context</a></li>
   </ul></li>
-  <li><a href="#demographic-and-epidemiological-transitions" id="toc-demographic-and-epidemiological-transitions" class="nav-link" data-scroll-target="#demographic-and-epidemiological-transitions"><span class="header-section-number">3</span> Demographic and Epidemiological Transitions</a></li>
-  <li><a href="#causes-of-death-and-illness" id="toc-causes-of-death-and-illness" class="nav-link" data-scroll-target="#causes-of-death-and-illness"><span class="header-section-number">4</span> Causes of Death and Illness</a>
+  <li><a href="#demographic-and-epidemiological-transitions" id="toc-demographic-and-epidemiological-transitions" class="nav-link" data-scroll-target="#demographic-and-epidemiological-transitions"><span class="toc-section-number">3</span>  Demographic and Epidemiological Transitions</a></li>
+  <li><a href="#causes-of-death-and-illness" id="toc-causes-of-death-and-illness" class="nav-link" data-scroll-target="#causes-of-death-and-illness"><span class="toc-section-number">4</span>  Causes of Death and Illness</a>
   <ul class="collapse">
-  <li><a href="#infectious-and-parasitic-diseases" id="toc-infectious-and-parasitic-diseases" class="nav-link" data-scroll-target="#infectious-and-parasitic-diseases"><span class="header-section-number">4.1</span> Infectious and Parasitic Diseases</a></li>
-  <li><a href="#maternal-reproductive-health" id="toc-maternal-reproductive-health" class="nav-link" data-scroll-target="#maternal-reproductive-health"><span class="header-section-number">4.2</span> Maternal &amp; Reproductive Health</a></li>
-  <li><a href="#nutritional-deficiencies" id="toc-nutritional-deficiencies" class="nav-link" data-scroll-target="#nutritional-deficiencies"><span class="header-section-number">4.3</span> Nutritional Deficiencies</a></li>
-  <li><a href="#noncommunicable-diseases" id="toc-noncommunicable-diseases" class="nav-link" data-scroll-target="#noncommunicable-diseases"><span class="header-section-number">4.4</span> Noncommunicable Diseases</a></li>
-  <li><a href="#injuries-and-accidents" id="toc-injuries-and-accidents" class="nav-link" data-scroll-target="#injuries-and-accidents"><span class="header-section-number">4.5</span> Injuries and Accidents</a></li>
+  <li><a href="#infectious-and-parasitic-diseases" id="toc-infectious-and-parasitic-diseases" class="nav-link" data-scroll-target="#infectious-and-parasitic-diseases"><span class="toc-section-number">4.1</span>  Infectious and Parasitic Diseases</a></li>
+  <li><a href="#maternal-reproductive-health" id="toc-maternal-reproductive-health" class="nav-link" data-scroll-target="#maternal-reproductive-health"><span class="toc-section-number">4.2</span>  Maternal &amp; Reproductive Health</a></li>
+  <li><a href="#nutritional-deficiencies" id="toc-nutritional-deficiencies" class="nav-link" data-scroll-target="#nutritional-deficiencies"><span class="toc-section-number">4.3</span>  Nutritional Deficiencies</a></li>
+  <li><a href="#noncommunicable-diseases" id="toc-noncommunicable-diseases" class="nav-link" data-scroll-target="#noncommunicable-diseases"><span class="toc-section-number">4.4</span>  Noncommunicable Diseases</a></li>
+  <li><a href="#injuries-and-accidents" id="toc-injuries-and-accidents" class="nav-link" data-scroll-target="#injuries-and-accidents"><span class="toc-section-number">4.5</span>  Injuries and Accidents</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="toc-section-number">5</span>  Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="toc-section-number">6</span>  References</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="sokoto-epidemiology-profile.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -209,7 +235,7 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
   <div class="quarto-title-meta-heading">Affiliations</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Chidinma Oli </p>
+    Chidinma Oli 
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -217,7 +243,7 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
           </p>
       </div>
       <div class="quarto-title-meta-contents">
-    <p class="author">Edifofon Akpan </p>
+    Edifofon Akpan 
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -279,7 +305,7 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div id="fig-sokoto-location" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/sokoto-location.jpg" class="img-fluid figure-img" width="660"></p>
-<figcaption class="figure-caption">Figure&nbsp;1. Location of Sokoto State in Nigeria and Local Government Areas. Source: Albert, 2015.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1. Location of Sokoto State in Nigeria and Local Government Areas. Source: Albert, 2015.</figcaption><p></p>
 </figure>
 </div>
 <p>The population structure of Sokoto is typical of an actively growing state. Children under 15 years accounts for 40.7% of the population making the population generally young <span class="citation" data-cites="unitedstatesagencyforinternationaldevelopment2018">[<a href="#ref-unitedstatesagencyforinternationaldevelopment2018" role="doc-biblioref">7</a>]</span>. This youthful age structure has enormous implications for future socioeconomic development, as most youth are not yet part of the workforce, placing a heavy burden on the working age population (urban – 58.8%; rural – 54.3%) <span class="citation" data-cites="unitedstatesagencyforinternationaldevelopment2018">[<a href="#ref-unitedstatesagencyforinternationaldevelopment2018" role="doc-biblioref">7</a>]</span>. It also constrains the availability and accessibility of basic health and education services. In addition, as the young-aged reach working age, the number of available jobs may not match the number in need. The average dependency ratio is 80% (71.9% in urban areas and 84.3% in rural areas). This relatively high dependency ratio places a greater burden on the working-age people. However, it is an improvement as it is a decline from 101.7% in 2006 <span class="citation" data-cites="unitedstatesagencyforinternationaldevelopment2018">[<a href="#ref-unitedstatesagencyforinternationaldevelopment2018" role="doc-biblioref">7</a>]</span>.</p>
@@ -290,14 +316,14 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 
-<div class="tabwid"><style>.cl-389bccbe{table-layout:auto;}.cl-389001ea{font-family:'Arial';font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-389490de{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-389490f2{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-3894a74a{background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a754{background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a755{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a75e{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a75f{background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a768{background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a769{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-389bccbe"><caption style="margin:0pt;text-align:center;border-bottom: 0.00pt solid transparent;border-top: 0.00pt solid transparent;border-left: 0.00pt solid transparent;border-right: 0.00pt solid transparent;padding-top:3pt;padding-bottom:3pt;padding-left:3pt;padding-right:3pt;line-height: 1;background-color:transparent;"><p>Distribution of 8 Notifiable Diseases (1977, 1980 &amp; 2016)</p></caption><thead><tr style="overflow-wrap:break-word;"><th class="cl-3894a74a"><p class="cl-389490de"><span class="cl-389001ea">Disease</span></p></th><th class="cl-3894a754"><p class="cl-389490f2"><span class="cl-389001ea">Prevalence 1977(%)</span></p></th><th class="cl-3894a754"><p class="cl-389490f2"><span class="cl-389001ea">Prevalence 1980(%)</span></p></th><th class="cl-3894a754"><p class="cl-389490f2"><span class="cl-389001ea">Prevalence 2016(%)</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Measles</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">40.0</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">47.1</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">0.97</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Pneumonia</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">8.9</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">18.5</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">12.20</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Meningitis</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">32.3</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">3.4</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">2.00</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Malaria</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">15.1</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">2.4</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">39.80</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Tetanus</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">0.8</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">8.7</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">0.50</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Diarrhea (all types)</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">0.8</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">2.4</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">8.10</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a75f"><p class="cl-389490de"><span class="cl-389001ea">Tuberculosis</span></p></td><td class="cl-3894a768"><p class="cl-389490f2"><span class="cl-389001ea">1.7</span></p></td><td class="cl-3894a768"><p class="cl-389490f2"><span class="cl-389001ea">15.5</span></p></td><td class="cl-3894a768"><p class="cl-389490f2"><span class="cl-389001ea">36.60</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td colspan="4" class="cl-3894a769"><p class="cl-389490de"><span class="cl-389001ea">Source: World Bank, 1985; Sokoto State Health Development plan-II, 2016</span></p></td></tr></tfoot></table></div>
+<div class="tabwid"><style>.cl-389bccbe{table-layout:auto;}.cl-389001ea{font-family:'Arial';font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-389490de{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-389490f2{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-3894a74a{background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a754{background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a755{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a75e{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a75f{background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a768{background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3894a769{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-389bccbe"><caption style="margin:0pt;text-align:center;border-bottom: 0.00pt solid transparent;border-top: 0.00pt solid transparent;border-left: 0.00pt solid transparent;border-right: 0.00pt solid transparent;padding-top:3pt;padding-bottom:3pt;padding-left:3pt;padding-right:3pt;line-height: 1;background-color:transparent;">Distribution of 8 Notifiable Diseases (1977, 1980 &amp; 2016)</caption><thead><tr style="overflow-wrap:break-word;"><th class="cl-3894a74a"><p class="cl-389490de"><span class="cl-389001ea">Disease</span></p></th><th class="cl-3894a754"><p class="cl-389490f2"><span class="cl-389001ea">Prevalence 1977(%)</span></p></th><th class="cl-3894a754"><p class="cl-389490f2"><span class="cl-389001ea">Prevalence 1980(%)</span></p></th><th class="cl-3894a754"><p class="cl-389490f2"><span class="cl-389001ea">Prevalence 2016(%)</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Measles</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">40.0</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">47.1</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">0.97</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Pneumonia</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">8.9</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">18.5</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">12.20</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Meningitis</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">32.3</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">3.4</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">2.00</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Malaria</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">15.1</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">2.4</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">39.80</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Tetanus</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">0.8</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">8.7</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">0.50</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a755"><p class="cl-389490de"><span class="cl-389001ea">Diarrhea (all types)</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">0.8</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">2.4</span></p></td><td class="cl-3894a75e"><p class="cl-389490f2"><span class="cl-389001ea">8.10</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3894a75f"><p class="cl-389490de"><span class="cl-389001ea">Tuberculosis</span></p></td><td class="cl-3894a768"><p class="cl-389490f2"><span class="cl-389001ea">1.7</span></p></td><td class="cl-3894a768"><p class="cl-389490f2"><span class="cl-389001ea">15.5</span></p></td><td class="cl-3894a768"><p class="cl-389490f2"><span class="cl-389001ea">36.60</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td colspan="4" class="cl-3894a769"><p class="cl-389490de"><span class="cl-389001ea">Source: World Bank, 1985; Sokoto State Health Development plan-II, 2016</span></p></td></tr></tfoot></table></div>
 </div>
 </div>
 <p>The resulting demographic transition with its changing age of death and the existence of large numbers of people afflicted with chronic degenerative disease (rather than life-threatening infectious disease), is important for planning health services and medical training; which is the current focus of the burden of disease approach <span class="citation" data-cites="jean-marie2019">[<a href="#ref-jean-marie2019" role="doc-biblioref">13</a>]</span> shows a time trend of diseases in Sokoto State. The mortality pattern in Sokoto has taken a different array. As at 1980, Measles was the leading cause of death due to communicable disease, followed by pneumonia, tuberculosis and tetanus <span class="citation" data-cites="bankStaffAppraisalReport1985">[<a href="#ref-bankStaffAppraisalReport1985" role="doc-biblioref">8</a>]</span>. Mortality due to measles, Meningitis and Tetanus have substantially reduced over the years; adherence to health policies and mass immunization campaign have contributed immensely to the effectiveness in curbing these diseases. By 2016, Malaria, tuberculosis; Pneumonia and Diarrhea are taking the lead <span class="citation" data-cites="ministryofhealthSokotoStateHealth2016">[<a href="#ref-ministryofhealthSokotoStateHealth2016" role="doc-biblioref">2</a>]</span>.</p>
 <div id="fig-proportional-mortality-sokoto" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/proportional-mortality-sokoto.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;2. Proportional Mortality in Sokoto (2016). Source: Sokoto State Health Development Plan-II, 2016.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2. Proportional Mortality in Sokoto (2016). Source: Sokoto State Health Development Plan-II, 2016.</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -314,7 +340,7 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div id="fig-hiv-prevalence-sokoto" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/hiv-prevalence-sokoto.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;3. HIV Prevalence Trends in Sokoto state (1991-2018). Source: Nigeria ANC Surveillance Report 2010; National Aids Indicator Survey, 2019.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3. HIV Prevalence Trends in Sokoto state (1991-2018). Source: Nigeria ANC Surveillance Report 2010; National Aids Indicator Survey, 2019.</figcaption><p></p>
 </figure>
 </div>
 <p>New infections are primarily from key populations , especially female sex workers and their partners in the general population <span class="citation" data-cites="nationalagencyforthecontrolofaid2019">[<a href="#ref-nationalagencyforthecontrolofaid2019" role="doc-biblioref">18</a>]</span>. The HIV prevalence in the urban areas is lower than the rural areas in Sokoto State. In these rural towns and villages, risk is driven by variations in sexual behaviors such as casual, transactional and sex work; with female sex workers ranking high as the source of new infections Beyond behavioral risk factors, environmental and systemic factors also constitute risks for HIV infection. Transfusion of infected blood and blood products and poor handling and disposal of highly infectious wastes generated in healthcare settings increase the risk for HIV transmission <span class="citation" data-cites="nationalagencyforthecontrolofaid2019">[<a href="#ref-nationalagencyforthecontrolofaid2019" role="doc-biblioref">18</a>]</span>.</p>
@@ -329,13 +355,13 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div id="fig-mycobacterium-specie-distribution" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/mycobacterium-specie-distribution.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4. Distribution of Mycobacterium specie causing tuberculosis. Source: Garba &amp; Galadima, 2004.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4. Distribution of Mycobacterium specie causing tuberculosis. Source: Garba &amp; Galadima, 2004.</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-tuberculosis-cases-sokoto" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/tuberculosis-cases-sokoto.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;5. TB positivity rate in Sokoto 2006-2013. Source: National Tuberculosis and Leprosy Control Program, 2006-2013.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5. TB positivity rate in Sokoto 2006-2013. Source: National Tuberculosis and Leprosy Control Program, 2006-2013.</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -348,7 +374,7 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div id="fig-leprosy-cases-sokoto" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/leprosy-cases-sokoto.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6. Trend of Registered Leprosy cases in Sokoto State. Source: National Tuberculosis and Control Program, 2009-2013.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6. Trend of Registered Leprosy cases in Sokoto State. Source: National Tuberculosis and Control Program, 2009-2013.</figcaption><p></p>
 </figure>
 </div>
 <p>The WHO disability leprosy grading system has been in use for years. Its main application has been used as an indicator for early case detection/reporting <span class="citation" data-cites="wimbrandsma2003">[<a href="#ref-wimbrandsma2003" role="doc-biblioref">33</a>]</span>. This grading system varies from 0 to 2; with 2 being the most severe. The rate of WHO Grade 2 disability decreased significantly from 19% to 9% during a one-year interval from 2011-2012. This falling disability rate indicates that new cases were increasingly diagnosed before they developed visible deformities. Thus, representing an improved promptness in case detection. Crude death rate due to leprosy has being fluctuating from 4.7 per 100,000 in 2010, 3.1 per 100, 000 in 2011 and 5.5 per 100,000 in 2012. This variation in the number of deaths may be indicative of an unstable treatment regimen. Efforts ought to be put in place to ensure this is effective <span class="citation" data-cites="federalministryofhealthNationalTuberculosisLeprosy2013 federalministryofhealthNationalTuberculosisLeprosy2009 federalministryofhealthNationalTuberculosisLeprosy2011">[<a href="#ref-federalministryofhealthNationalTuberculosisLeprosy2013" role="doc-biblioref">23</a>,<a href="#ref-federalministryofhealthNationalTuberculosisLeprosy2009" role="doc-biblioref">31</a>,<a href="#ref-federalministryofhealthNationalTuberculosisLeprosy2011" role="doc-biblioref">32</a>]</span>.</p>
@@ -363,13 +389,13 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div id="fig-malaria-cases-sokoto" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/malaria-cases-sokoto.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7. Malaria cases in Sokoto State. Source: National Bureau Statistics, 2015.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7. Malaria cases in Sokoto State. Source: National Bureau Statistics, 2015.</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-malaria-deaths-sokoto" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/malaria-deaths-sokoto.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;8. Malaria Deaths in Sokoto State (2006-2016). Source: WHO Global Malaria Program Estimates, 2015.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;8. Malaria Deaths in Sokoto State (2006-2016). Source: WHO Global Malaria Program Estimates, 2015.</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -380,7 +406,7 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div id="fig-diarrhea-prevalence-children" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/diarrhea-prevalence-children.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;9. Diarrhea prevalence in children under five 2008-2013. Source: NDHS, 2013</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;9. Diarrhea prevalence in children under five 2008-2013. Source: NDHS, 2013</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -393,7 +419,7 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div id="fig-schistosomiasis-prevalence-children" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/schistosomiasis-prevalence-children.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;10. Schistosomiasis prevalence in children Source: Kabiru et al., 2013.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;10. Schistosomiasis prevalence in children Source: Kabiru et al., 2013.</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -417,7 +443,7 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div id="fig-maternal-mortality-causes" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/maternal-mortality-causes.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;11. Causes of Maternal Deaths Sokoto - 2016. Source: Sokoto State Health Development Plan-II, 2016</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;11. Causes of Maternal Deaths Sokoto - 2016. Source: Sokoto State Health Development Plan-II, 2016</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -469,13 +495,13 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div id="fig-substance-abuse-prevalence-sokoto" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/substance-abuse-sokoto.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;12. Prevalence of substance abuse in Sokoto State (2008-2013). Source: Federal Neuro-Psychiatric Hospital Kware, Sokoto, 2014.</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;12. Prevalence of substance abuse in Sokoto State (2008-2013). Source: Federal Neuro-Psychiatric Hospital Kware, Sokoto, 2014.</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-substance-abuse-prevalence-nigeria" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/substance-abuse-nigeria.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;13. Prevalence of Substance Abuse in Sokoto 2018. Source: Drug use in Nigeria, 2018</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;13. Prevalence of Substance Abuse in Sokoto 2018. Source: Drug use in Nigeria, 2018</figcaption><p></p>
 </figure>
 </div>
 <p>The prevalence of drug use in the North-West zone is estimated at 12% of the population. The use of cannabis and non-medical use of opioids (tramadol, codeine, morphine) and cough syrups (containing codeine or dextromethorphan) are also the most common in this zone <span class="citation" data-cites="nationalbureauofstatistics2017">[<a href="#ref-nationalbureauofstatistics2017" role="doc-biblioref">16</a>]</span>. A qualitative study was conducted to examine the abuse of cough syrup as a new trend in drug abuse among the youth in five (5) Northwestern States of Nigeria. The results show that 33% claimed to source the substances from chemists and pharmacies, 36% claimed to acquire the substance from Drug dealers (retail), while 23% claimed they obtained the substance from Drug dealers (Wholesale) <span class="citation" data-cites="nasiru2015">[<a href="#ref-nasiru2015" role="doc-biblioref">81</a>]</span>.</p>
@@ -487,7 +513,7 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 <div id="fig-road-traffic-accidents" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/road-traffic-accidents.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;14. Mortality and Morbidity rates of RTA (2010-2013). Source: National Bureau of Statistics, 2014</figcaption>
+<p></p><figcaption class="figure-caption">Figure&nbsp;14. Mortality and Morbidity rates of RTA (2010-2013). Source: National Bureau of Statistics, 2014</figcaption><p></p>
 </figure>
 </div>
 <p>The number of deaths as a result of road traffic accidents increased by 6.2% (2010-2013) with a simultaneous increase to 2.2% injured persons within the same time interval <span class="citation" data-cites="statisticsSocioEconomicStatistics2014">[<a href="#ref-statisticsSocioEconomicStatistics2014" role="doc-biblioref">83</a>]</span>. This could be as a result of flouting traffic rules and regulations, poor use of seat belts by motorists, outright refusal to use seat belts and an influx of alternatives to vehicles such as motorcycles and tricycles. Small Arms and Light Weapons (SALWs) enable and extend violence which has enormous public health consequences too. Within a ten-year interval of 2003-2013, Sokoto state had a prevalence of 0.07% SALWs, with 14% fatality, and peak age range of 26–35 years being affected. The most common types of injuries were wounds, systemic organ injuries and fractures. Brain trauma, though not very common had 75% mortality while systemic organ injury had 24.6% mortality <span class="citation" data-cites="okolo2016">[<a href="#ref-okolo2016" role="doc-biblioref">84</a>]</span>.</p>
@@ -506,257 +532,257 @@ The Epidemiological Profile of Sokoto State</h1><button type="button" class="btn
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">6 References</h2><div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-centersfordiseasecontrolandprevention2012" class="csl-entry" role="listitem">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">6 References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-centersfordiseasecontrolandprevention2012" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">1 </div><div class="csl-right-inline">Centers for Disease Control and Prevention (U.S.). Public Health Practice Program Office. <em>Principles of epidemiology: An <span>Introduction</span> to <span>Applied Epidemiology</span> and <span>Biostatistics</span>.</em> 2012. <a href="https://stacks.cdc.gov/view/cdc/11200">https://stacks.cdc.gov/view/cdc/11200</a></div>
 </div>
-<div id="ref-ministryofhealthSokotoStateHealth2016" class="csl-entry" role="listitem">
+<div id="ref-ministryofhealthSokotoStateHealth2016" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">2 </div><div class="csl-right-inline">Ministry of Health, Sokoto. <span><em>Sokoto State Health Development Plan-II</em></span>. 2016.</div>
 </div>
-<div id="ref-ango2014" class="csl-entry" role="listitem">
+<div id="ref-ango2014" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">3 </div><div class="csl-right-inline">Ango AK, Ibrahim SA, Yakubu AA, <em>et al.</em> <span><em>Determination of Socio-Economic Factors Influencing Youth Rural-Urban Migration in Sokoto State, Nigeria</em></span>. <em>Journal of Human Ecology</em> 2014;<strong>45</strong>:223–31. doi:<a href="https://doi.org/10.1080/09709274.2014.11906695">10.1080/09709274.2014.11906695</a></div>
 </div>
-<div id="ref-nationalpopulationcommission2006" class="csl-entry" role="listitem">
+<div id="ref-nationalpopulationcommission2006" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">4 </div><div class="csl-right-inline">National Population Commission. National <span>Population Census</span>. <em>Abuja, Nigeria: National Population Commission</em> 2006;<strong>422</strong>.</div>
 </div>
-<div id="ref-measureevaluationMalariaImplementationAssessment2017" class="csl-entry" role="listitem">
+<div id="ref-measureevaluationMalariaImplementationAssessment2017" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">5 </div><div class="csl-right-inline">MEASURE Evaluation, National Malaria Elimination Programme (NMEP), and the President’s Malaria Initiative (PMI/Nigeria). <span class="nocase">Malaria implementation assessment in four Nigerian states: Full report</span>. <span>Chapel Hill, North Carolina, USA</span>: : <span>MEASURE Evaluation, NMEP, and PMI/Nigeria</span> 2017. </div>
 </div>
-<div id="ref-lambo2015" class="csl-entry" role="listitem">
+<div id="ref-lambo2015" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">6 </div><div class="csl-right-inline">Lambo A. <em>Islam and the <span>Development</span> of <span>Medicine</span> in <span>Nigeria</span>: <span>Lessons</span> from the <span>Sokoto Caliphate</span></em>. 2015. <a href="https://www.africabib.org/htp.php?RID=406633746">https://www.africabib.org/htp.php?RID=406633746</a></div>
 </div>
-<div id="ref-unitedstatesagencyforinternationaldevelopment2018" class="csl-entry" role="listitem">
+<div id="ref-unitedstatesagencyforinternationaldevelopment2018" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">7 </div><div class="csl-right-inline">United States Agency for International Development. Sokoto <span>State Household Healthcare Expenditure</span> and <span>Utilization Survey</span>. <span>Bethseda:MD</span>: : <span>Health Finance &amp; Governance Project, Abt Associates Inc.</span> 2018. </div>
 </div>
-<div id="ref-bankStaffAppraisalReport1985" class="csl-entry" role="listitem">
+<div id="ref-bankStaffAppraisalReport1985" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">8 </div><div class="csl-right-inline">World Bank. Staff <span>Appraisal Report</span>: <span>Nigeria Sokoto Health Project</span>. 1985. <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/964151468110346959/nigeria-sokoto-health-project">https://documents.worldbank.org/en/publication/documents-reports/documentdetail/964151468110346959/nigeria-sokoto-health-project</a></div>
 </div>
-<div id="ref-gupte2001" class="csl-entry" role="listitem">
+<div id="ref-gupte2001" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">9 </div><div class="csl-right-inline">Gupte MD, Ramachandran V, Mutatkar RK. Epidemiological profile of <span>India</span>: Historical and contemporary perspectives. <em>Journal of Biosciences</em> 2001;<strong>26</strong>:437–64. doi:<a href="https://doi.org/10.1007/BF02704746">10.1007/BF02704746</a></div>
 </div>
-<div id="ref-omran2001" class="csl-entry" role="listitem">
+<div id="ref-omran2001" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">10 </div><div class="csl-right-inline">Omran AR. The <span>Epidemiologic Transition</span>: <span>A Theory</span> of the <span>Epidemiology</span> of <span>Population Change</span>: <span><em>The Epidemiologic Transition</em></span>. <em>Milbank Quarterly</em> 2001;<strong>83</strong>:731–57. doi:<a href="https://doi.org/10.1111/j.1468-0009.2005.00398.x">10.1111/j.1468-0009.2005.00398.x</a></div>
 </div>
-<div id="ref-nationalpopulationcommission2019" class="csl-entry" role="listitem">
+<div id="ref-nationalpopulationcommission2019" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">11 </div><div class="csl-right-inline">Commission NP, International ICF. Nigeria <span>Demographic</span> and <span>Health Survey</span> 2018. 2019.<a href="https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf">https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf</a></div>
 </div>
-<div id="ref-olshansky1986" class="csl-entry" role="listitem">
+<div id="ref-olshansky1986" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">12 </div><div class="csl-right-inline">Olshansky SJ, Ault AB. The fourth stage of the epidemiologic transition: The age of delayed degenerative diseases. <em>The Milbank Quarterly</em> 1986;<strong>64</strong>:355–91.</div>
 </div>
-<div id="ref-jean-marie2019" class="csl-entry" role="listitem">
+<div id="ref-jean-marie2019" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">13 </div><div class="csl-right-inline">Jean-Marie R. Epidemiological <span>Transition</span>. Published Online First: 2019.<a href="https://u.demog.berkeley.edu/~jrw/Biblio/Eprints/%20P-S/robine.2003_epidemiological.transition.pdf">https://u.demog.berkeley.edu/~jrw/Biblio/Eprints/%20P-S/robine.2003_epidemiological.transition.pdf</a></div>
 </div>
-<div id="ref-wang2019" class="csl-entry" role="listitem">
+<div id="ref-wang2019" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">14 </div><div class="csl-right-inline">Wang P, Li Z, Jones A, <em>et al.</em> Discordance between lifestyle-related health behaviors and beliefs of urban mainland <span>Chinese</span>: <span>A</span> questionnaire study with implications for targeting health education. <em>AIMS Public Health</em> 2019;<strong>6</strong>:49–66. doi:<a href="https://doi.org/10.3934/publichealth.2019.1.49">10.3934/publichealth.2019.1.49</a></div>
 </div>
-<div id="ref-instituteforhealthmetricsandevaluation2010" class="csl-entry" role="listitem">
+<div id="ref-instituteforhealthmetricsandevaluation2010" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">15 </div><div class="csl-right-inline">Institute for Health Metrics and Evaluation. Global <span>Burden</span> of <span>Diseases</span>, <span>Injuries</span>, and <span>Risk Factors Study</span>. <span>Seattle, WA</span>: : <span>Institute for Health Metrics and Evaluation</span> 2010. </div>
 </div>
-<div id="ref-nationalbureauofstatistics2017" class="csl-entry" role="listitem">
+<div id="ref-nationalbureauofstatistics2017" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">16 </div><div class="csl-right-inline">National Bureau of Statistics, United Nations Children’s Fund. Multiple <span>Indicator Cluster Survey</span> 2016-17, <span>Survey Findings Report</span>. 2017.<a href="https://www.unicef.org/nigeria/sites/unicef.org.nigeria/files/2018-09/Nigeria-MICS-2016-17.pdf">https://www.unicef.org/nigeria/sites/unicef.org.nigeria/files/2018-09/Nigeria-MICS-2016-17.pdf</a></div>
 </div>
-<div id="ref-worldhealthorganization2018" class="csl-entry" role="listitem">
+<div id="ref-worldhealthorganization2018" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">17 </div><div class="csl-right-inline">World Health Organization. Factsheet: <span>World Health Organization</span> - <span>Noncommunicable Diseases</span> (<span>NCD</span>) <span>Country Profiles</span>. <span>United States</span> of <span>America</span>. 2018.<a href="https://apps.who.int/iris/handle/10665/274512">https://apps.who.int/iris/handle/10665/274512</a></div>
 </div>
-<div id="ref-nationalagencyforthecontrolofaid2019" class="csl-entry" role="listitem">
+<div id="ref-nationalagencyforthecontrolofaid2019" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">18 </div><div class="csl-right-inline">Control of AIDS NA for the. <span>REVISED NATIONAL HIV AND AIDS STRATEGIC FRAMEWORK</span> 2019-2021 <span>NACA Nigeria</span>. 2019.<a href="https://naca.gov.ng/wp-content/uploads/2022/03/National-HIV-and-AIDS-Strategic-Framework-2021-2025-Final.pdf">https://naca.gov.ng/wp-content/uploads/2022/03/National-HIV-and-AIDS-Strategic-Framework-2021-2025-Final.pdf</a></div>
 </div>
-<div id="ref-nationalaidsandstiscontrolprogrammefederalministryofhealth2014" class="csl-entry" role="listitem">
+<div id="ref-nationalaidsandstiscontrolprogrammefederalministryofhealth2014" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">19 </div><div class="csl-right-inline">National AIDS and STIs Control Programme, Federal Ministry of Health. 2014 <span>Annual Report</span> on <span>HIV</span>/<span>AIDS Health Sector Response</span> in <span>Nigeria</span>. <span>Abuja, Nigeria</span>: : <span>National AIDS and STIs Control Programme, Federal Ministry of Health</span> 2014. </div>
 </div>
-<div id="ref-federalministryofhealthNationalHIVSeroprevalenceSentinel2010" class="csl-entry" role="listitem">
+<div id="ref-federalministryofhealthNationalHIVSeroprevalenceSentinel2010" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">20 </div><div class="csl-right-inline">Federal Ministry of Health. National HIVSero-prevalence sentinel survey among pregnant women attending antenatal clinics in nigeria. <span>Abuja, Nigeria</span>: : <span>Federal Ministry of Health</span> 2010. </div>
 </div>
-<div id="ref-garba2005" class="csl-entry" role="listitem">
+<div id="ref-garba2005" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">21 </div><div class="csl-right-inline">Garba H, Ahmed H, Galadima M. Characterisation of mycobacterium isolated from cases of tuberculosis in humans in <span>Sokoto State</span>, <span>Nigeria</span>. <em>Nigerian Veterinary Journal</em> 2005;<strong>25</strong>:30–4. doi:<a href="https://doi.org/10.4314/nvj.v25i1.3463">10.4314/nvj.v25i1.3463</a></div>
 </div>
-<div id="ref-federalministryofhealthNationalTuberculosisLeprosy2007" class="csl-entry" role="listitem">
+<div id="ref-federalministryofhealthNationalTuberculosisLeprosy2007" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">22 </div><div class="csl-right-inline">Federal Ministry of Health. National <span>Tuberculosis</span> &amp; <span>Leprosy Control Programme</span>: 2006 <span>Annual Report</span>. <span>Abuja, Nigeria</span>: : <span>Federal Ministry of Health</span> 2007. </div>
 </div>
-<div id="ref-federalministryofhealthNationalTuberculosisLeprosy2013" class="csl-entry" role="listitem">
+<div id="ref-federalministryofhealthNationalTuberculosisLeprosy2013" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">23 </div><div class="csl-right-inline">Federal Ministry of Health. National <span>Tuberculosis</span> &amp; <span>Leprosy Control Programme</span>. <span>Abuja, Nigeria</span>: 2013. </div>
 </div>
-<div id="ref-abiola2010" class="csl-entry" role="listitem">
+<div id="ref-abiola2010" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">24 </div><div class="csl-right-inline">Abiola OA, Shehu MT, Sani YM, <em>et al.</em> Epidemiology of hiv-tuberculosis co-infection among patients on anti-retroviral therapy <span class="nocase">inSokoto</span> state, <span>Nigeria</span>. <em>Sahel Medical Journal</em> 2010;<strong>12</strong>. doi:<a href="https://doi.org/10.4314/smj2.v12i3.55680">10.4314/smj2.v12i3.55680</a></div>
 </div>
-<div id="ref-hivAIDSReportExecutive2008" class="csl-entry" role="listitem">
+<div id="ref-hivAIDSReportExecutive2008" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">25 </div><div class="csl-right-inline">HIV UNP on, AIDS. <span>AIDS Report</span>: <span>Executive Summary</span>. 2008. </div>
 </div>
-<div id="ref-isaac2016" class="csl-entry" role="listitem">
+<div id="ref-isaac2016" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">26 </div><div class="csl-right-inline">Isaac IZ, R. T. J, F. P. U, <em>et al.</em> Tuberculosis and <span>HIV</span>/<span>AIDS Co-Infection Rate</span> among <span>Tuberculosis Patients</span> in <span>Sokoto TB Centre</span>, <span>North Western Nigeria</span>. <em>BJMLS</em> 2016;<strong>1</strong>:40–6.</div>
 </div>
-<div id="ref-imoru2018" class="csl-entry" role="listitem">
+<div id="ref-imoru2018" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">27 </div><div class="csl-right-inline">Imoru M, Bala A, Marafa A. Prevalence rates of <span>HIV</span>, <span>HBsAg</span> and <span>HCV</span> co-infections among tuberculosis patients in <span>Sokoto Metropolis</span>, <span>Northwest Nigeria</span>. <em>Sri Lankan Journal of Infectious Diseases</em> 2018;<strong>8</strong>:84. doi:<a href="https://doi.org/10.4038/sljid.v8i2.8219">10.4038/sljid.v8i2.8219</a></div>
 </div>
-<div id="ref-worldhealthorganizationLeprosy2019" class="csl-entry" role="listitem">
+<div id="ref-worldhealthorganizationLeprosy2019" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">28 </div><div class="csl-right-inline">World Health Organization. Leprosy. 2019.<a href="https://www.who.int/news-room/fact-sheets/detail/leprosy">https://www.who.int/news-room/fact-sheets/detail/leprosy</a> (accessed 22 May 2023).</div>
 </div>
-<div id="ref-jan2019" class="csl-entry" role="listitem">
+<div id="ref-jan2019" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">29 </div><div class="csl-right-inline">Jan HR, Eliane I, Cairns W, <em>et al.</em> <em>International <span>Textbook</span> of <span>Leprosy</span></em>. 2019. <a href="https://internationaltextbookofleprosy.org/">https://internationaltextbookofleprosy.org/</a></div>
 </div>
-<div id="ref-ogbeiwi2005" class="csl-entry" role="listitem">
+<div id="ref-ogbeiwi2005" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">30 </div><div class="csl-right-inline">Ogbeiwi I. Progress towards the <span>Elimination</span> of <span>Leprosy</span> in <span>Nigeria</span>: <span>A Review</span> of the <span>Role</span> of <span>Policy Implementation</span> and <span>Operational Factors</span>. <em>Leprosy Review</em> 2005;<strong>76</strong>:65–76.</div>
 </div>
-<div id="ref-federalministryofhealthNationalTuberculosisLeprosy2009" class="csl-entry" role="listitem">
+<div id="ref-federalministryofhealthNationalTuberculosisLeprosy2009" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">31 </div><div class="csl-right-inline">Federal Ministry of Health. National <span>Tuberculosis</span> &amp; <span>Leprosy Control Programme</span>: 2008 <span>Annual Report</span>. <span>Abuja, Nigeria</span>: : <span>Federal Ministry of Health</span> 2009. </div>
 </div>
-<div id="ref-federalministryofhealthNationalTuberculosisLeprosy2011" class="csl-entry" role="listitem">
+<div id="ref-federalministryofhealthNationalTuberculosisLeprosy2011" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">32 </div><div class="csl-right-inline">Federal Ministry of Health. National <span>Tuberculosis</span> and <span>Leprosy Control Programme</span>: 2011 <span>Annual Report</span>. <span>Abuja, Nigeria</span>: : <span>Federal Ministry of Health</span> 2011. <a href="https://www.hfgproject.org/wp-content/uploads/2015/02/Nigeria-National-Strategic-Plan-for-Tuberculosis-and-Leprosy-Control_2010-2015.pdf">https://www.hfgproject.org/wp-content/uploads/2015/02/Nigeria-National-Strategic-Plan-for-Tuberculosis-and-Leprosy-Control_2010-2015.pdf</a></div>
 </div>
-<div id="ref-wimbrandsma2003" class="csl-entry" role="listitem">
+<div id="ref-wimbrandsma2003" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">33 </div><div class="csl-right-inline">Wim Brandsma J, Brakel WH van. <span>WHO</span> disability grading: Operational definitions. <em>Leprosy Review</em> 2003;<strong>74</strong>:366–73. doi:<a href="https://doi.org/10.47276/lr.74.4.366">10.47276/lr.74.4.366</a></div>
 </div>
-<div id="ref-who2005" class="csl-entry" role="listitem">
+<div id="ref-who2005" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">34 </div><div class="csl-right-inline">WHO, UNICEF and UNICEF and others. World malaria report 2005. <em>World Health Organization and UNICEF, Geneva</em> 2005.</div>
 </div>
-<div id="ref-abdullahi2009" class="csl-entry" role="listitem">
+<div id="ref-abdullahi2009" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">35 </div><div class="csl-right-inline">Abdullahi K, Abubakar U, Adamu T, <em>et al.</em> Malaria in <span>Sokoto</span>, <span>North Western Nigeria</span>. <em>African Journal of Biotechnology</em> 2009;<strong>8</strong>. doi:<a href="https://doi.org/10.4314/ajb.v8i24.68803">10.4314/ajb.v8i24.68803</a></div>
 </div>
-<div id="ref-owoeye2018" class="csl-entry" role="listitem">
+<div id="ref-owoeye2018" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">36 </div><div class="csl-right-inline">Owoeye DO, Akinyemi JO, Yusuf OB. Decomposition of changes in malaria prevalence amongst under-five children in <span>Nigeria</span>. <em>MalariaWorld Journal</em> 2018;<strong>9</strong>:3.</div>
 </div>
-<div id="ref-nationalmalariaeliminationprogrammeNationalBureauStatistics2016" class="csl-entry" role="listitem">
+<div id="ref-nationalmalariaeliminationprogrammeNationalBureauStatistics2016" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">37 </div><div class="csl-right-inline">Programme NME, Commission NP. National <span>Bureau</span> of <span>Statistics</span>, and <span>ICF International</span> (2016) <span>Nigeria Malaria Indicator Survey</span> 2015. <span>Abuja, Nigeria</span>: : <span>National Bureau of Statistics and ICF International</span> 2016. </div>
 </div>
-<div id="ref-Ajumobi2015" class="csl-entry" role="listitem">
+<div id="ref-Ajumobi2015" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">38 </div><div class="csl-right-inline">Ajumobi O, Sabitu K, Nguku P, <em>et al.</em> Performance of an <span>HRP-2</span> rapid diagnostic test in nigerian children less than 5 years of age. <em>The American Journal of Tropical Medicine and Hygiene</em> 2015;<strong>92</strong>:828–33. doi:<a href="https://doi.org/10.4269/ajtmh.13-0558">10.4269/ajtmh.13-0558</a></div>
 </div>
-<div id="ref-wongsrichanalai2007" class="csl-entry" role="listitem">
+<div id="ref-wongsrichanalai2007" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">39 </div><div class="csl-right-inline">Wongsrichanalai C <em>et al.</em> A review of malaria diagnostic tools: Microscopy and rapid diagnostic test (RDT). <em>American Society of Tropical Medicine and Hygiene</em> Published Online First: 2007.<a href="https://www.ncbi.nlm.nih.gov/books/NBK1695/">https://www.ncbi.nlm.nih.gov/books/NBK1695/</a></div>
 </div>
-<div id="ref-dairo2017" class="csl-entry" role="listitem">
+<div id="ref-dairo2017" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">40 </div><div class="csl-right-inline">Dairo MD, Ibrahim TF, Salawu AT. Prevalence and determinants of diarrhoea among infants in selected primary health centres in <span>Kaduna</span> north local government area, <span>Nigeria</span>. <em>The Pan African Medical Journal</em> 2017;<strong>28</strong>:109. doi:<a href="https://doi.org/10.11604/pamj.2017.28.109.8152">10.11604/pamj.2017.28.109.8152</a></div>
 </div>
-<div id="ref-alkali2015" class="csl-entry" role="listitem">
+<div id="ref-alkali2015" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">41 </div><div class="csl-right-inline">Alkali BR, Daneji AI, Magaji AA, <em>et al.</em> Clinical <span>Symptoms</span> of <span>Human Rotavirus Infection Observed</span> in <span>Children</span> in <span>Sokoto</span>, <span>Nigeria</span>. <em>Advances in Virology</em> 2015;<strong>2015</strong>:890957. doi:<a href="https://doi.org/10.1155/2015/890957">10.1155/2015/890957</a></div>
 </div>
-<div id="ref-nationalpopulationcommission2014" class="csl-entry" role="listitem">
+<div id="ref-nationalpopulationcommission2014" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">42 </div><div class="csl-right-inline">Commission NP, International I. Nigeria <span>Demographic</span> and <span>Health Survey</span> 2013. 2014.<a href="https://dhsprogram.com/pubs/pdf/fr293/fr293.pdf">https://dhsprogram.com/pubs/pdf/fr293/fr293.pdf</a></div>
 </div>
-<div id="ref-karagiannis-voules2015" class="csl-entry" role="listitem">
+<div id="ref-karagiannis-voules2015" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">43 </div><div class="csl-right-inline">Karagiannis-Voules D-A, Biedermann P, Ekpo UF, <em>et al.</em> Spatial and temporal distribution of soil-transmitted helminth infection in sub-<span>Saharan Africa</span>: A systematic review and geostatistical meta-analysis. <em>The Lancet Infectious Diseases</em> 2015;<strong>15</strong>:74–84. doi:<a href="https://doi.org/10.1016/S1473-3099(14)71004-7">10.1016/S1473-3099(14)71004-7</a></div>
 </div>
-<div id="ref-tierney2004" class="csl-entry" role="listitem">
+<div id="ref-tierney2004" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">44 </div><div class="csl-right-inline">Tierney ML, Stephen Jr JM, Maxine AP. <em>Current <span>Medical Diagnosis</span> and <span>Treatment</span></em>. 43rd edition. <span>McGraw-Hill/Appleton &amp; Lange</span> 2004. <a href="https://www.amazon.com/Current-Medical-Diagnosis-Treatment-2004/dp/0071417435">https://www.amazon.com/Current-Medical-Diagnosis-Treatment-2004/dp/0071417435</a></div>
 </div>
-<div id="ref-singh2016" class="csl-entry" role="listitem">
+<div id="ref-singh2016" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">45 </div><div class="csl-right-inline">Singh K, Muddasiru D, Singh J. Current status of schistosomiasis in <span>Sokoto</span>, <span>Nigeria</span>. <em>Parasite Epidemiology and Control</em> 2016;<strong>1</strong>:239–44. doi:<a href="https://doi.org/10.1016/j.parepi.2016.08.003">10.1016/j.parepi.2016.08.003</a></div>
 </div>
-<div id="ref-nnoruka2006" class="csl-entry" role="listitem">
+<div id="ref-nnoruka2006" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">46 </div><div class="csl-right-inline">Nnoruka VC, Anya AO, Okafor FC. Epidemilogical studies of urinary of schistosomiasis in <span>Imo</span> state:<span>III</span>. <span class="nocase">Physico-chemical</span> characteristics of transmission sites in the <span>North-West</span>. <em>Nigerian Journal of Parasitology</em> 2006;<strong>23</strong>:119–24. doi:<a href="https://doi.org/10.4314/njpar.v23i1.37791">10.4314/njpar.v23i1.37791</a></div>
 </div>
-<div id="ref-ozumba1989" class="csl-entry" role="listitem">
+<div id="ref-ozumba1989" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">47 </div><div class="csl-right-inline">Ozumba NA, Christensen NO, Nwosu AB, <em>et al.</em> Endemicity, focality and seasonality of transmission of human schistosomiasis in <span>Amagunze Village</span>, eastern <span>Nigeria</span>. <em>Journal of Helminthology</em> 1989;<strong>63</strong>:206–12. doi:<a href="https://doi.org/10.1017/s0022149x00008993">10.1017/s0022149x00008993</a></div>
 </div>
-<div id="ref-kabiru2013" class="csl-entry" role="listitem">
+<div id="ref-kabiru2013" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">48 </div><div class="csl-right-inline">Kabiru M, Ekeh EI, Aziah I, <em>et al.</em> Prevalence and <span>Intensity</span> of <span>Schistosoma Haematobium Infection</span>: <span>A Community Based Survey</span> among <span>School Children</span> and <span>Adult</span> in <span>Wamakko Town</span>, <span>Sokoto State</span>, <span>Nigeria</span>. <em>International Journal of Tropical Medicine &amp; Public Health</em> 2013;<strong>2</strong>:12–21.</div>
 </div>
-<div id="ref-pukuma2008" class="csl-entry" role="listitem">
+<div id="ref-pukuma2008" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">49 </div><div class="csl-right-inline">Pukuma MS, Musa SP. Prevalence of urinary schistosomiasis among residents of <span>Waduku</span> in <span>Lamurde Local Government Area</span> of <span>Adamawa</span>. <em>Nigerian Journal of Parasitology</em> 2008;<strong>28</strong>:65–8. doi:<a href="https://doi.org/10.4314/njpar.v28i2.37877">10.4314/njpar.v28i2.37877</a></div>
 </div>
-<div id="ref-adetokunboh2015" class="csl-entry" role="listitem">
+<div id="ref-adetokunboh2015" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">50 </div><div class="csl-right-inline">Adetokunboh O. The <span>Epidemiological Trend</span> of <span>Poliovirus</span> in <span>Nigeria</span> (2009). <em>International Journal of Epidemiology</em> 2015;<strong>44</strong>:i68–8. doi:<a href="https://doi.org/10.1093/ije/dyv097.249">10.1093/ije/dyv097.249</a></div>
 </div>
-<div id="ref-WHO2015" class="csl-entry" role="listitem">
+<div id="ref-WHO2015" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">51 </div><div class="csl-right-inline">Global <span>Polio</span> <span>Eradication</span> <span>Initiative</span>: Annual report 2015: Eradication within reach. <a href="https://www.who.int/publications-detail-redirect/WHO-POLIO-16.01">https://www.who.int/publications-detail-redirect/WHO-POLIO-16.01</a></div>
 </div>
-<div id="ref-worldhealthorganizationPolioEradication2018" class="csl-entry" role="listitem">
+<div id="ref-worldhealthorganizationPolioEradication2018" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">52 </div><div class="csl-right-inline">World Health Organization. Polio <span>Eradication</span>. <span>Geneva</span>: 2018. </div>
 </div>
-<div id="ref-worldhealthorganizationThreeYearsCase2019" class="csl-entry" role="listitem">
+<div id="ref-worldhealthorganizationThreeYearsCase2019" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">53 </div><div class="csl-right-inline">World Health Organization. Three years without a case of wild polio virus, <span>Government</span> of <span>Nigeria</span> warns against complacency. WHO | Regional Office for Africa. 2019.</div>
 </div>
-<div id="ref-who2017" class="csl-entry" role="listitem">
+<div id="ref-who2017" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">54 </div><div class="csl-right-inline">World Health Organization. Global <span>Polio Eradication Initiative</span> (<span>GPEI</span>) <span>Status Report</span>. <span>Geneva, Switzerland</span>: 2017. </div>
 </div>
-<div id="ref-funk2014" class="csl-entry" role="listitem">
+<div id="ref-funk2014" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">55 </div><div class="csl-right-inline">Funk A, Uadiale K, Kamau C, <em>et al.</em> Sequential <span>Outbreaks Due</span> to a <span>New Strain</span> of <span>Neisseria Meningitidis Serogroup C</span> in <span>Northern Nigeria</span>, 2013-14. <em>PLoS Currents</em> 2014;<strong>6</strong>. doi:<a href="https://doi.org/10.1371/currents.outbreaks.b50c2aaf1032b3ccade0fca0b63ee518">10.1371/currents.outbreaks.b50c2aaf1032b3ccade0fca0b63ee518</a></div>
 </div>
-<div id="ref-statisticsNigeriaMultipleIndicator2011" class="csl-entry" role="listitem">
+<div id="ref-statisticsNigeriaMultipleIndicator2011" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">56 </div><div class="csl-right-inline">Statistics NB of. Nigeria <span>Multiple Indicator Cluster Survey</span> 2011. 2011.<a href="https://www.unicef.org/nigeria/reports/nigeria-multiple-indicator-cluster-survey-mics-2011">https://www.unicef.org/nigeria/reports/nigeria-multiple-indicator-cluster-survey-mics-2011</a></div>
 </div>
-<div id="ref-sessionScientificProgramUSICON2017" class="csl-entry" role="listitem">
+<div id="ref-sessionScientificProgramUSICON2017" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">57 </div><div class="csl-right-inline">Sessions. Scientific abstracts - <span>USICON</span> 2017. <em>Indian Journal of Urology</em> 2017;<strong>33</strong>:S43–178.</div>
 </div>
-<div id="ref-saadalla2018" class="csl-entry" role="listitem">
+<div id="ref-saadalla2018" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">58 </div><div class="csl-right-inline">Saadalla AM, Mirghani HO. Psychosocial <span>Impact Among Sudanese Women</span> with <span>Vesico-Vaginal Fistula</span>. <em>Psychology and Behavioral Sciences</em> 2018;<strong>6</strong>:122. doi:<a href="https://doi.org/10.11648/j.pbs.20170606.11">10.11648/j.pbs.20170606.11</a></div>
 </div>
-<div id="ref-ibrahim2000" class="csl-entry" role="listitem">
+<div id="ref-ibrahim2000" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">59 </div><div class="csl-right-inline">Ibrahim T, Sadiq AU, Daniel SO. Characteristics of <span>VVF</span> patients as seen at the specialist hospital <span>Sokoto</span>, <span>Nigeria</span>. <em>West African journal of medicine</em> 2000;<strong>19</strong>:59–63.</div>
 </div>
-<div id="ref-black2013" class="csl-entry" role="listitem">
+<div id="ref-black2013" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">60 </div><div class="csl-right-inline">Black RE, Victora CG, Walker SP, <em>et al.</em> Maternal and <span>Child Undernutrition</span> and <span>Overweight</span> in <span>Low-Income</span> and <span>Middle-Income Countries</span>. <em>Lancet</em> 2013;<strong>382</strong>:427–51. doi:<a href="https://doi.org/10.1016/s0140-6736(13)60937-x">10.1016/s0140-6736(13)60937-x</a></div>
 </div>
-<div id="ref-cunha2018" class="csl-entry" role="listitem">
+<div id="ref-cunha2018" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">61 </div><div class="csl-right-inline">Cunha MPL, Marques RC, Dórea JG. Child <span>Nutritional Status</span> in the <span>Changing Socioeconomic Region</span> of the <span>Northern Amazon</span>, <span>Brazil</span>. <em>International Journal of Environmental Research and Public Health</em> 2018;<strong>15</strong>:15. doi:<a href="https://doi.org/10.3390/ijerph15010015">10.3390/ijerph15010015</a></div>
 </div>
-<div id="ref-nationalbureauofstatistics2018" class="csl-entry" role="listitem">
+<div id="ref-nationalbureauofstatistics2018" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">62 </div><div class="csl-right-inline">National Bureau of Statistics, United Nations Children’s Fund. Nigeria <span>Multiple Indicator Cluster Survey</span> 2016-17 <span>Report</span>. <span>Abuja, Nigeria</span>: : <span>National Bureau of Statistics and United Nations Children’s Fund</span> 2018. </div>
 </div>
-<div id="ref-WHOAfrican2017" class="csl-entry" role="listitem">
+<div id="ref-WHOAfrican2017" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">63 </div><div class="csl-right-inline">World Health Organization. Nutrtion in <span>WHO African Region-2017</span>. <span>Brazzeville</span>: 2017. </div>
 </div>
-<div id="ref-worldhealthorganizationNoncommunicableDiseasesCountry2018" class="csl-entry" role="listitem">
+<div id="ref-worldhealthorganizationNoncommunicableDiseasesCountry2018" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">64 </div><div class="csl-right-inline">World Health Organization. <em>Noncommunicable diseases country profiles 2018</em>. <span>World Health Organization</span> 2018. <a href="https://apps.who.int/iris/handle/10665/274512">https://apps.who.int/iris/handle/10665/274512</a></div>
 </div>
-<div id="ref-cybercom2016" class="csl-entry" role="listitem">
+<div id="ref-cybercom2016" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">65 </div><div class="csl-right-inline">Cybercom. Non-<span>Communicable</span> <span>Diseases</span>/<span>FEB</span> 2016. Sida. 2016.<a href="https://www.sida.se/en/publications/non-communicable-diseases-feb-2016">https://www.sida.se/en/publications/non-communicable-diseases-feb-2016</a></div>
 </div>
-<div id="ref-adamu2014" class="csl-entry" role="listitem">
+<div id="ref-adamu2014" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">66 </div><div class="csl-right-inline">Adamu H, Makusidi AM, Liman HM, <em>et al.</em> Prevalence of <span>Obesity</span>, <span>Diabetes Type</span> 2 and <span>Hypertension</span> among a <span>Sampled Population</span> from <span>Sokoto Metropolis-Nigeria</span>. <em>British Journal of Medicine and Medical Research</em> 2014;<strong>4</strong>:2065–80. doi:<a href="https://doi.org/10.9734/BJMMR/2014/7540">10.9734/BJMMR/2014/7540</a></div>
 </div>
-<div id="ref-nationalbureauofstatistics2012" class="csl-entry" role="listitem">
+<div id="ref-nationalbureauofstatistics2012" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">67 </div><div class="csl-right-inline">National Bureau of Statistics. Annual <span>Abstract</span> of <span>Statistics</span>, 2012. <span>Abuja, Nigeria</span>: : <span>National Bureau of Statistics</span> 2012. </div>
 </div>
-<div id="ref-anas2017" class="csl-entry" role="listitem">
+<div id="ref-anas2017" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">68 </div><div class="csl-right-inline">Anas, Salisu B, Abubakar S, <em>et al.</em> Prevalence of <span>Diabetes Mellitus</span> and <span>Its Risk Factors</span> among the <span>Suburban Population</span> of <span>Northwest Nigeria</span>. <em>Sahel Medical Journal</em> 2017;<strong>20</strong>:168–72.</div>
 </div>
-<div id="ref-sabir2017" class="csl-entry" role="listitem">
+<div id="ref-sabir2017" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">69 </div><div class="csl-right-inline">Sabir A, Isezuo SA, Ohwovoriole AE. Prevalence of diabetes mellitus and its risk factors among the suburban population of northwest nigeria. <em>Sahel Medical Journal</em> 2017;<strong>20</strong>:168–73.</div>
 </div>
-<div id="ref-king1998" class="csl-entry" role="listitem">
+<div id="ref-king1998" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">70 </div><div class="csl-right-inline">King H, Aubert RE, Herman WH. Global burden of diabetes, 1995-2025: Prevalence, numerical estimates, and projections. <em>Diabetes Care</em> 1998;<strong>21</strong>:1414–31. doi:<a href="https://doi.org/10.2337/diacare.21.9.1414">10.2337/diacare.21.9.1414</a></div>
 </div>
-<div id="ref-worldhealthorganizationDiabetesMellitusReport1985" class="csl-entry" role="listitem">
+<div id="ref-worldhealthorganizationDiabetesMellitusReport1985" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">71 </div><div class="csl-right-inline">World Health Organization. Diabetes mellitus : Report of a <span>WHO</span> study group. <span>Geneva, Switzerland</span>: 1985. <a href="https://apps.who.int/iris/handle/10665/39592">https://apps.who.int/iris/handle/10665/39592</a></div>
 </div>
-<div id="ref-sabir2013" class="csl-entry" role="listitem">
+<div id="ref-sabir2013" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">72 </div><div class="csl-right-inline">Sabir A, Ohwovoriole A, Isezuo S, <em>et al.</em> Type 2 diabetes mellitus and its risk factors among the rural <span>Fulanis</span> of northern <span>Nigeria</span>. <em>Annals of African Medicine</em> 2013;<strong>12</strong>:217. doi:<a href="https://doi.org/10.4103/1596-3519.122689">10.4103/1596-3519.122689</a></div>
 </div>
-<div id="ref-InternationalDiabetesFoundation2014" class="csl-entry" role="listitem">
+<div id="ref-InternationalDiabetesFoundation2014" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">73 </div><div class="csl-right-inline">International Diabetes Federation. <em>IDF diabetes atlas</em>. 6th ed. Brussels, Belgium: 2014. <a href="https://diabetesatlas.org/atlas/sixth-edition/">https://diabetesatlas.org/atlas/sixth-edition/</a></div>
 </div>
-<div id="ref-sabir2011" class="csl-entry" role="listitem">
+<div id="ref-sabir2011" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">74 </div><div class="csl-right-inline">Sabir A, Isezuo S, Ohwovoriole A. Dysglycaemia and its risk factors in an urban fulani population of northern nigeria. <em>West African journal of medicine</em> 2011;<strong>30</strong>.</div>
 </div>
-<div id="ref-sobngwi2002" class="csl-entry" role="listitem">
+<div id="ref-sobngwi2002" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">75 </div><div class="csl-right-inline">Sobngwi E, Mbanya J, Unwin C, <em>et al.</em> Physical <span>Activity</span> and <span>Its Relationship</span> with <span>Obesity</span>, <span>Hypertension</span> and <span>Diabetes</span> in <span>Urban</span> and <span>Rural Cameroon</span>. <em>International journal of obesity</em> 2002;<strong>26</strong>:1009–16. doi:<a href="https://doi.org/10.1038/sj.ijo.0802008">10.1038/sj.ijo.0802008</a></div>
 </div>
-<div id="ref-Mandong2019" class="csl-entry" role="listitem">
+<div id="ref-Mandong2019" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">76 </div><div class="csl-right-inline">Mandong BM, Manasseh AN, Ayuba DM, <em>et al.</em> Burden of <span>Cancer</span> in <span>Plateau State</span>, <span>Central Nigeria</span>: <span>A</span> 27-<span>Year Report</span> from a <span>Tertiary Hospital-Based Cancer Registry</span>. <em>Journal of Advances in Medicine and Medical Research</em> 2019;<strong>28</strong>:1–11. doi:<a href="https://doi.org/10.9734/jammr/2018/v28i1130038">10.9734/jammr/2018/v28i1130038</a></div>
 </div>
-<div id="ref-kumar2015" class="csl-entry" role="listitem">
+<div id="ref-kumar2015" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">77 </div><div class="csl-right-inline">Kumar V, Abbas AK, Aster JC. <em>Cancer <span>Epidemiology</span>. <span>Robbins</span> and <span>Cotran Pathologic Basis</span> of <span>Disease</span></em>. 2015. <a href="https://www.researchgate.net/publication/309663244_Robbins_and_Cotran_Pathologic_Basis_of_Disease">https://www.researchgate.net/publication/309663244_Robbins_and_Cotran_Pathologic_Basis_of_Disease</a></div>
 </div>
-<div id="ref-malami2007" class="csl-entry" role="listitem">
+<div id="ref-malami2007" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">78 </div><div class="csl-right-inline">Malami SA, Pindiga HU, Abimiku BA, <em>et al.</em> A <span>Descriptive Retrospective Study</span> of the <span>Pattern</span> of <span>Malignant Diseases</span> in <span>Sokoto</span>, <span>North Western Nigeria</span> (1999-2004). <em>Journal of Medical Sciences(Faisalabad)</em> 2007;<strong>7</strong>:1033–8. doi:<a href="https://doi.org/10.3923/jms.2007.1033.1038">10.3923/jms.2007.1033.1038</a></div>
 </div>
-<div id="ref-mukadas2009" class="csl-entry" role="listitem">
+<div id="ref-mukadas2009" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">79 </div><div class="csl-right-inline">Mukadas AO, Misbau UNMJ2009;50:55-. Incidence and <span>Patterns</span> of <span>Cardiovascular Disease</span> in <span>North Western Nigeria</span>. <em>Nigerian Medical Journal</em> 2009;<strong>50</strong>:55–7.</div>
 </div>
-<div id="ref-kaoje2017" class="csl-entry" role="listitem">
+<div id="ref-kaoje2017" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">80 </div><div class="csl-right-inline">Kaoje AU, Sabir AA, Jimoh AO, <em>et al.</em> Modifiable <span>Cardiovascular Disease Risk Factors</span> among <span>Residents</span> of <span>Sokoto Metropolis</span>, <span>Nigeria</span>. 2017.</div>
 </div>
-<div id="ref-nasiru2015" class="csl-entry" role="listitem">
+<div id="ref-nasiru2015" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">81 </div><div class="csl-right-inline">Nasiru BS. <em>Perceptions of <span>Youth</span> in <span>Substance Abuse</span> in <span>Sokoto</span>, <span>Sokoto State</span>, <span>Nigeria</span></em>. 2015.<a href="http://197.255.68.203/handle/123456789/8177">http://197.255.68.203/handle/123456789/8177</a></div>
 </div>
-<div id="ref-nwadiaro2000" class="csl-entry" role="listitem">
+<div id="ref-nwadiaro2000" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">82 </div><div class="csl-right-inline">Nwadiaro HC, Yiltok SJ, Kidmas AT. Immediate <span>Mass Casualty Management</span> in <span>Jos University Teaching Hospital</span>: <span>A Successful Trial</span> of <span>Jos Protocol</span>. <em>West African journal of medicine</em> 2000;<strong>19</strong>:230–4.</div>
 </div>
-<div id="ref-statisticsSocioEconomicStatistics2014" class="csl-entry" role="listitem">
+<div id="ref-statisticsSocioEconomicStatistics2014" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">83 </div><div class="csl-right-inline">Statistics NB of. Socio-<span>Economic Statistics</span>. 2014.<a href="https://nigeria.opendataforafrica.org/iynrgrf/socioeconomic-statistics">https://nigeria.opendataforafrica.org/iynrgrf/socioeconomic-statistics</a></div>
 </div>
-<div id="ref-okolo2016" class="csl-entry" role="listitem">
+<div id="ref-okolo2016" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">84 </div><div class="csl-right-inline">Okolo C, Okolo NC. 345 <span>The Public Health Implications</span> of <span>Small Arms</span> and <span>Light Weapons</span> (<span>Salws</span>) <span>Injuries</span> in <span>Sokoto State</span>, <span>North West</span>, <span>Nigeria</span>. <em>Injury Prevention</em> 2016;<strong>22</strong>:A126–7. doi:<a href="https://doi.org/10.1136/injuryprev-2016-042156.345">10.1136/injuryprev-2016-042156.345</a></div>
 </div>
 </div></section></div></main> <!-- /main -->
@@ -787,23 +813,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -919,92 +931,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

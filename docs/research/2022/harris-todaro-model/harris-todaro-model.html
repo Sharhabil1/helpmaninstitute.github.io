@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,10 +19,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -49,19 +48,48 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -75,7 +103,8 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -113,7 +142,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../styles.css">
@@ -130,31 +158,29 @@ div.csl-indent {
     <span class="navbar-title">Helpman Institute</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html" rel="" target="">
+    <a class="nav-link" href="../../../index.html">
  <span class="menu-text">Research</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:info@helpmaninstitute.org" rel="" target=""><i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:info@helpmaninstitute.org"><i class="bi bi-envelope" role="img" aria-label="email">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute" rel="" target=""><i class="bi bi-linkedin" role="img" aria-label="linkedin">
+    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute"><i class="bi bi-linkedin" role="img" aria-label="linkedin">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -162,33 +188,32 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#history-of-the-urban-sector" id="toc-history-of-the-urban-sector" class="nav-link" data-scroll-target="#history-of-the-urban-sector"><span class="header-section-number">2</span> History of the Urban Sector</a></li>
-  <li><a href="#the-basic-model" id="toc-the-basic-model" class="nav-link" data-scroll-target="#the-basic-model"><span class="header-section-number">3</span> The Basic Model</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="toc-section-number">1</span>  Introduction</a></li>
+  <li><a href="#history-of-the-urban-sector" id="toc-history-of-the-urban-sector" class="nav-link" data-scroll-target="#history-of-the-urban-sector"><span class="toc-section-number">2</span>  History of the Urban Sector</a></li>
+  <li><a href="#the-basic-model" id="toc-the-basic-model" class="nav-link" data-scroll-target="#the-basic-model"><span class="toc-section-number">3</span>  The Basic Model</a>
   <ul class="collapse">
-  <li><a href="#labor-endowment" id="toc-labor-endowment" class="nav-link" data-scroll-target="#labor-endowment"><span class="header-section-number">3.1</span> Labor Endowment</a></li>
-  <li><a href="#expected-wages" id="toc-expected-wages" class="nav-link" data-scroll-target="#expected-wages"><span class="header-section-number">3.2</span> Expected Wages</a></li>
-  <li><a href="#equilibrium" id="toc-equilibrium" class="nav-link" data-scroll-target="#equilibrium"><span class="header-section-number">3.3</span> Equilibrium</a></li>
-  <li><a href="#urban-unemployment-in-equilibrium" id="toc-urban-unemployment-in-equilibrium" class="nav-link" data-scroll-target="#urban-unemployment-in-equilibrium"><span class="header-section-number">3.4</span> Urban Unemployment in Equilibrium</a></li>
-  <li><a href="#minimum-wage-and-unemployment" id="toc-minimum-wage-and-unemployment" class="nav-link" data-scroll-target="#minimum-wage-and-unemployment"><span class="header-section-number">3.5</span> Minimum Wage and Unemployment</a></li>
+  <li><a href="#labor-endowment" id="toc-labor-endowment" class="nav-link" data-scroll-target="#labor-endowment"><span class="toc-section-number">3.1</span>  Labor Endowment</a></li>
+  <li><a href="#expected-wages" id="toc-expected-wages" class="nav-link" data-scroll-target="#expected-wages"><span class="toc-section-number">3.2</span>  Expected Wages</a></li>
+  <li><a href="#equilibrium" id="toc-equilibrium" class="nav-link" data-scroll-target="#equilibrium"><span class="toc-section-number">3.3</span>  Equilibrium</a></li>
+  <li><a href="#urban-unemployment-in-equilibrium" id="toc-urban-unemployment-in-equilibrium" class="nav-link" data-scroll-target="#urban-unemployment-in-equilibrium"><span class="toc-section-number">3.4</span>  Urban Unemployment in Equilibrium</a></li>
+  <li><a href="#minimum-wage-and-unemployment" id="toc-minimum-wage-and-unemployment" class="nav-link" data-scroll-target="#minimum-wage-and-unemployment"><span class="toc-section-number">3.5</span>  Minimum Wage and Unemployment</a></li>
   </ul></li>
-  <li><a href="#policy-implications" id="toc-policy-implications" class="nav-link" data-scroll-target="#policy-implications"><span class="header-section-number">4</span> Policy Implications</a>
+  <li><a href="#policy-implications" id="toc-policy-implications" class="nav-link" data-scroll-target="#policy-implications"><span class="toc-section-number">4</span>  Policy Implications</a>
   <ul class="collapse">
-  <li><a href="#value-chains-in-agriculture" id="toc-value-chains-in-agriculture" class="nav-link" data-scroll-target="#value-chains-in-agriculture"><span class="header-section-number">4.1</span> Value Chains in Agriculture</a></li>
-  <li><a href="#access-to-financial-services" id="toc-access-to-financial-services" class="nav-link" data-scroll-target="#access-to-financial-services"><span class="header-section-number">4.2</span> Access to Financial Services</a></li>
-  <li><a href="#skill-development" id="toc-skill-development" class="nav-link" data-scroll-target="#skill-development"><span class="header-section-number">4.3</span> Skill Development</a></li>
-  <li><a href="#rural-population-growth" id="toc-rural-population-growth" class="nav-link" data-scroll-target="#rural-population-growth"><span class="header-section-number">4.4</span> Rural Population Growth</a></li>
+  <li><a href="#value-chains-in-agriculture" id="toc-value-chains-in-agriculture" class="nav-link" data-scroll-target="#value-chains-in-agriculture"><span class="toc-section-number">4.1</span>  Value Chains in Agriculture</a></li>
+  <li><a href="#access-to-financial-services" id="toc-access-to-financial-services" class="nav-link" data-scroll-target="#access-to-financial-services"><span class="toc-section-number">4.2</span>  Access to Financial Services</a></li>
+  <li><a href="#skill-development" id="toc-skill-development" class="nav-link" data-scroll-target="#skill-development"><span class="toc-section-number">4.3</span>  Skill Development</a></li>
+  <li><a href="#rural-population-growth" id="toc-rural-population-growth" class="nav-link" data-scroll-target="#rural-population-growth"><span class="toc-section-number">4.4</span>  Rural Population Growth</a></li>
   </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5</span> <strong>References</strong></a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="toc-section-number">5</span>  <strong>References</strong></a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="harris-todaro-model.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -207,7 +232,7 @@ Unemployment and Wages in Less Developed Countries: Updating Harris-Todaro Model
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Olumide Taiwo </p>
+    Olumide Taiwo 
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -409,98 +434,98 @@ V(W^e_U-W_R)/V(W_R-W^\alpha_U) = N_U/(\overline{N}-N_U)
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">5 References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-andalon2008" class="csl-entry" role="listitem">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">5 References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-andalon2008" class="csl-entry" role="doc-biblioentry">
 Andalon, M., and C. Pages. 2008. <span>“Minimum Wages in Kenya.”</span> <em>IZA Discussion Papers</em>, no. 3390.
 </div>
-<div id="ref-arai2003" class="csl-entry" role="listitem">
+<div id="ref-arai2003" class="csl-entry" role="doc-biblioentry">
 Arai, M. 2003. <span>“Wages, Profits, and Capital Intensity: Evidence from Matched Worker-Firm Data.”</span> <em>Journal of Labor Economics</em> 21 (3): 593–618.
 </div>
-<div id="ref-brozen1962" class="csl-entry" role="listitem">
+<div id="ref-brozen1962" class="csl-entry" role="doc-biblioentry">
 Brozen, Y. 1962. <span>“Minimum Wage Rates and Household Workers.”</span> <em>Journal of Law and Economics</em> 5: 103–9.
 </div>
-<div id="ref-calvo1978" class="csl-entry" role="listitem">
+<div id="ref-calvo1978" class="csl-entry" role="doc-biblioentry">
 Calvo, G. A. 1978. <span>“Urban Unemployment and Wage Determination in LDC’s: Trade Unions in the Harris-Todaro Model.”</span> <em>International Economic Review</em> 19 (1): 65–81.
 </div>
-<div id="ref-comola2010" class="csl-entry" role="listitem">
+<div id="ref-comola2010" class="csl-entry" role="doc-biblioentry">
 Comola, M., and Luiz de Mello. 2010. <span>“How Does Decentralized Minimum Wage Setting Affect Employment and Informality?”</span>
 </div>
-<div id="ref-corden1975" class="csl-entry" role="listitem">
+<div id="ref-corden1975" class="csl-entry" role="doc-biblioentry">
 Corden, W. M., and R. Findlay. 1975. <span>“Urban Unemployment, Intersectoral Capital Mobility and Development Policy.”</span> <em>Economica</em> 42 (165): 59–78.
 </div>
-<div id="ref-demel2012" class="csl-entry" role="listitem">
+<div id="ref-demel2012" class="csl-entry" role="doc-biblioentry">
 De Mel, S., D. McKenzie, and C. Woodruff. 2012. <span>“The Demand for, and Consequences of Formalizing Among Informal Firms in Sri Lanka.”</span> Policy Research Working Paper 5991, The World Bank.
 </div>
-<div id="ref-fafchamps1999" class="csl-entry" role="listitem">
+<div id="ref-fafchamps1999" class="csl-entry" role="doc-biblioentry">
 Fafchamps, M. 1999. <span>“Networks, Communities, and Markets in Sub-Saharan Africa: Implications for Firm Growth and Investment.”</span> Center for the Study of African Economies, Department of Economics, Oxford University.
 </div>
-<div id="ref-fields1975" class="csl-entry" role="listitem">
+<div id="ref-fields1975" class="csl-entry" role="doc-biblioentry">
 Fields, Gary S. 1975. <span>“Rural-Urban Migration, Urban Unemployment and Underemployment, and Job Search Activity in LDCs.”</span> <em>Journal of Development Economics</em> 2: 165–87.
 </div>
-<div id="ref-fields1990" class="csl-entry" role="listitem">
+<div id="ref-fields1990" class="csl-entry" role="doc-biblioentry">
 ———. 1990. <span>“Labor Market Modeling and the Urban Informal Sector: Theory and Evidence.”</span> In <em>The Informal Sector Revisited</em>, edited by David Turnham, Bernard Salomé, and Antoine Schwarz. Paris: Development Centre of the Organization for Economic Co-Operation; Development.
 </div>
-<div id="ref-fields2005" class="csl-entry" role="listitem">
+<div id="ref-fields2005" class="csl-entry" role="doc-biblioentry">
 ———. 2005. <span>“A Guide to Multisector Labor Market Models.”</span> 0505. Social Protection Discussion Papers; Human Development Networks, The World Bank.
 </div>
-<div id="ref-fiszbein1992" class="csl-entry" role="listitem">
+<div id="ref-fiszbein1992" class="csl-entry" role="doc-biblioentry">
 Fiszbein, A. 1992. <span>“<span class="nocase">Do workers in the informal sector benefit from cuts in the minimum wage?</span>”</span> Policy Research Working Paper Series 826. The World Bank.
 </div>
-<div id="ref-fluitman2001" class="csl-entry" role="listitem">
+<div id="ref-fluitman2001" class="csl-entry" role="doc-biblioentry">
 Fluitman, F. 2001. <span>“Working, but Not Well: Notes on the Nature and Extent of Employment Problems in Sub-Saharan Africa.”</span> International Labor Office, Italy.
 </div>
-<div id="ref-gindling2002" class="csl-entry" role="listitem">
+<div id="ref-gindling2002" class="csl-entry" role="doc-biblioentry">
 Gindling, T. H., and K. Terrell. 2002. <span>“The Effects of Minimum Wages on the Formal and Informal Sector: Evidence from Costa Rica.”</span>
 </div>
-<div id="ref-harris1970" class="csl-entry" role="listitem">
+<div id="ref-harris1970" class="csl-entry" role="doc-biblioentry">
 Harris, John R., and Michael P. Todaro. 1970. <span>“Migration, Unemployment and Development: A Two-Sector Analysis.”</span> <em>American Economic Review</em> 60 (1): 126–42.
 </div>
-<div id="ref-hart1971" class="csl-entry" role="listitem">
+<div id="ref-hart1971" class="csl-entry" role="doc-biblioentry">
 Hart, K. 1971. <span>“Informal Income Opportunities and Urban Employment in Ghana.”</span> In <em>Third World Employment: Problems and Strategy</em>, edited by R. et al. Jolly. Hamondsworth: Penguin.
 </div>
-<div id="ref-islam2000" class="csl-entry" role="listitem">
+<div id="ref-islam2000" class="csl-entry" role="doc-biblioentry">
 Islam, I., and S. Nazara. 2000. <span>“Minimum Wage and the Welfare of Indonesian Workers.”</span> 3. Occasional Discussion Paper Series; International Labor Organization, Jakarta Office.
 </div>
-<div id="ref-jamal1988" class="csl-entry" role="listitem">
+<div id="ref-jamal1988" class="csl-entry" role="doc-biblioentry">
 Jamal, V., and J. Weeks. 1988. <span>“The Vanishing Rural-Urban Premium in Sub-Saharan Africa.”</span> <em>International Labour Review</em> 127 (3): 271–92.
 </div>
-<div id="ref-jones1997" class="csl-entry" role="listitem">
+<div id="ref-jones1997" class="csl-entry" role="doc-biblioentry">
 Jones, P. 1997. <span>“The Impact of Minimum Wage Legislation in Developing Countries Where Coverage Is Incomplete.”</span> Working Paper WPS 98/2. Center for the Study of African Economies.
 </div>
-<div id="ref-lewis1954" class="csl-entry" role="listitem">
+<div id="ref-lewis1954" class="csl-entry" role="doc-biblioentry">
 Lewis, W. Arthur. 1954. <span>“Economic Development with Unlimited Supplies of Labour.”</span> <em>Manchester School</em> 22: 139–91.
 </div>
-<div id="ref-macharia2003" class="csl-entry" role="listitem">
+<div id="ref-macharia2003" class="csl-entry" role="doc-biblioentry">
 Macharia, K. 2003. <span>“Migration in Kenya and Its Impact on the Labor Market.”</span>
 </div>
-<div id="ref-mbowa2012" class="csl-entry" role="listitem">
+<div id="ref-mbowa2012" class="csl-entry" role="doc-biblioentry">
 Mbowa, S., I. Shinyekwa, and M. M. Lwanga. 2012. <span>“Dairy Sector Reforms and Transformation in Uganda Since the 1990s.”</span>
 </div>
-<div id="ref-mckenzie2007" class="csl-entry" role="listitem">
+<div id="ref-mckenzie2007" class="csl-entry" role="doc-biblioentry">
 McKenzie, D., and Y. S. Sakho. 2007. <span>“Does It Pay Firms to Register for Taxes? The Impact of Formality on Firm Profitability.”</span> Policy Research Working Paper 4449, The World Bank.
 </div>
-<div id="ref-ilo2008" class="csl-entry" role="listitem">
+<div id="ref-ilo2008" class="csl-entry" role="doc-biblioentry">
 Organization, International Labor. 2008. <span>“Skills for Improved Productivity, Employment Growth and Development.”</span> Report V of the International Labor Conference, 97th Session, 2008.
 </div>
-<div id="ref-reed2010" class="csl-entry" role="listitem">
+<div id="ref-reed2010" class="csl-entry" role="doc-biblioentry">
 Reed, H., C. S. Andrzejewski, and M. J. White. 2010. <span>“Men’s and Women’s Migration in Coastal Ghana: An Event History Analysis.”</span> <em>Demographic Research</em> 22: 771–812.
 </div>
-<div id="ref-sommers2007" class="csl-entry" role="listitem">
+<div id="ref-sommers2007" class="csl-entry" role="doc-biblioentry">
 Sommers, M. 2007. <span>“West Africa’s Youth Employment Challenge: The Case of Guinea, Liberia, Sierra Leone, and Côte d’ivoire.”</span>
 </div>
-<div id="ref-tauchen1981" class="csl-entry" role="listitem">
+<div id="ref-tauchen1981" class="csl-entry" role="doc-biblioentry">
 Tauchen, G. E. 1981. <span>“Some Evidence on Cross-Sector Effects of the Minimum Wage.”</span> <em>Journal of Political Economy</em> 89 (3): 529–47.
 </div>
-<div id="ref-todaro1969" class="csl-entry" role="listitem">
+<div id="ref-todaro1969" class="csl-entry" role="doc-biblioentry">
 Todaro, Michael P. 1969. <span>“A Model of Labor Migration and Urban Unemployment in Less Developed Countries.”</span> <em>American Economic Review</em> 39: 138–48.
 </div>
-<div id="ref-viren2005" class="csl-entry" role="listitem">
+<div id="ref-viren2005" class="csl-entry" role="doc-biblioentry">
 Viren, M. 2005. <span>“Why Do Capital Intensive Companies Pay Higher Wages?”</span> Bank of Finland Research Discussion Papers 5/2005.
 </div>
-<div id="ref-welch1973" class="csl-entry" role="listitem">
+<div id="ref-welch1973" class="csl-entry" role="doc-biblioentry">
 Welch, F. 1973. <span>“Minimum Wage Legislation in the United States.”</span> <em>The Rand Corporation Rand Paper Series</em>, no. P-5145.
 </div>
-<div id="ref-zhao1999" class="csl-entry" role="listitem">
+<div id="ref-zhao1999" class="csl-entry" role="doc-biblioentry">
 Zhao, Y. 1999. <span>“Leaving the Countryside: Rural-to-Urban Migration Decisions in China.”</span> <em>American Economic Review</em> 89 (2): 281–86.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
@@ -568,23 +593,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -700,92 +711,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
