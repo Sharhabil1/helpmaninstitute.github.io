@@ -1,0 +1,194 @@
+---
+# Use the title below for MS Word or PDF documents
+title: "![](resources/hdi_logo.png){width=2.5in} \n \n Why Has Unemployment Risen in Nigeria?"
+
+subtitle: Working Paper
+
+author:
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+    
+format:
+  pdf:
+    papersize: a4
+    default-image-extension: pdf
+    link-citations: true
+    linestretch: 1.25
+    geometry:
+    - top=25.4mm
+    - left=25.4mm
+    - right=25.4mm
+    - bottom=25.4mm
+    extra_dependencies: ['flafter']
+    header-includes: |
+      \usepackage[labelsep=period]{caption}
+      
+#filters:
+# - authors-block
+
+editor: visual
+crossref:
+  title-delim: '.'
+number-sections: true
+
+toccolor: blue
+toc: true
+toc-depth: 2
+toc-title: 'Table of Contents'
+
+#bibliography: references.bib
+#csl: resources/bmj.csl
+---
+
+```{r setup, include=FALSE}
+library(flextable)
+library(officer)
+library(officedown)
+library(readr)
+knitr::opts_chunk$set(warning = FALSE, fig.width = 12, fig.height = 10, fig.align = "center",
+                      out.width = "100%", collapse = TRUE, fig.pos = "H", out.extra = "",
+                      ft.tabcolsep=5)
+set_flextable_defaults(font.size = 10,
+                       theme_fun = theme_booktabs,
+                       table.layout = 'autofit',
+                       font.family = "Arial")
+```
+
+{{< pagebreak >}}
+
+**Abstract**
+
+The Harris-Todaro (1970) model was greatly influenced by observations from Kenya at the time that one of the authors was a visiting professor at a Kenyan university. The central idea that made the paper famous is the implication of their model, that the answer to urban unemployment is rural development. In this paper, I will draw data from Nigerian over the period 1999-2006 during which rural agricultural productivity and food security were central to government policy[^1] to illustrate how the model fits the data. Two things should happen if we were living in the Harris and Todaro (1970) world: massive return migration to rural agriculture and falling urban unemployment rates. The data validates the former but refutes the latter.
+
+[^1]: During this period, the government launched a vast number of initiatives ranging from land reform to subsidized fertilizer and extension services. But the most notable among the initiatives was the Presidential Initiative (PI), designed to advance farmers' knowledge of farm technology and best practices. The main pillars of the initiative are (1) farmers and private sector participation in developing agricultural development programs, (2) support for enhanced inputs and technology, (3) extension services that provide farmers with knowledge of idiosyncratic farm characteristics and requirements, and (4) advances in harvesting and product processing technology.
+
+{{< pagebreak >}}
+
+# Introduction
+
+The predictions of the Harris-Todaro (!970) model, written at the time when urban unemployment in former colonial states was a new phenomenon, was that the solution to urban unemployment is not creation of more urban jobs, but creating jobs in rural agriculture in the form of rural development schemes. Four decades later, the model is still being discussed as a policy tool in development circles. In this paper, I use data from Nigeria to analyze urban unemployment and its response to rural development programs. Evidence shows that urban-rural migration indeed occurred as a result of the programs. However, urban unemployment did not fall, but increased.
+
+# Employment and Earnings
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+#| echo: false
+#| tbl-cap: Earnings and  Employment in Nigeria 1999-2006
+Table1 <- read_csv("analysis/Table1.csv", col_types = cols(Year = col_character()))
+Table1 <- flextable(Table1)
+Table1 <- set_caption(Table1, caption = "Table 1: Earnings and  Employment in Nigeria 1999-2006",
+                       style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "Table1"))
+Table1 <- add_footer_lines(Table1, "Source: Adapted from Haywood and Teal (2010),")
+Table1 <- add_footer_lines(Table1, "Original Data from General Houseehold Surveys (GHS) 1999-2006")
+Table1
+```
+
+Table 1 summarizes earnings and employment in Nigeria over the period using data from the general Household Surveys (GHS). In Panel I, average monthly earnings in family agriculture, most of which takes place in rural areas, nearly doubled (increased by 94 percent) between 1999 and 2006 from NGN4,573 to NGN8,851, compared to 49 percent increase in self employment earnings and 25 percent increase in wage employment earnings. More importantly, in Panel II, the ratio of wage employment earnings to agricultural earnings fell from 2.2 to 1.4 while the ratio of self employment earnings to agricultural earnings fell from 1.3 to 1.0 over the period. In effect, the urban-rural wage differential fell sharply over the period. We also observe that the ratio of agricultural wage to the minimum wage did not change in any meaningful way. Wage employment has become harder to obtain due to retrenchments in the public sector and privatization of government-owned enterprises that has led to disappearance of large employers. The hope that job losses due to those exercises would be compensated by entry of new industries has not materialized.
+
+The distribution of the labor force in Panel III shows that the share of the workforce engaged in agriculture rose sharply from 42 percent to 51 percent while the share of non-agricultural self employment fell slightly from 33 percent to 31 percent and the share of wage employment fell significantly from 20 percent to 14 percent. These statistics confirm that the distribution of employment is responsive to change in relative wages. Panel IV shows that education level of workers rose in all categories of employment, reflecting expansion of school enrolment over the years. However the years of education of wage employment workers increased by more than other categories, signifying that the most educated workers increasingly sort into wage employment.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+#| echo: false
+#| tbl-cap: Employment Type as Percentage of Population, Excluding those in Full-Time Education
+#| label: Table2
+Table2 <- read_csv("analysis/Table2.csv", col_types = cols(Characteristics = col_character()))
+Table2 <- flextable(Table2)
+Table2 <- set_caption(Table2, caption = "Table 2: Employment Type as Percentage of Population, 
+                    Excluding those in Full-Time Education",
+                      style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "Table2"))
+Table2 <- add_footer_lines(Table2, "Source: Adapted from Haywood and Teal (2010)")
+Table2 <- delete_part(Table2, part = "header")
+Table2 <- add_header_row(Table2, top = FALSE, values = c("Characteristics", "URBAN", "RURAL"), colwidths = c(1,3,3))
+Table2 <- colformat_num(Table2, i = 1,  part = "body", big.mark = "", digits=0)
+Table2 <- theme_booktabs(Table2) 
+Table2 <- align(Table2, i = 1, j = 2:7, align = "center", part = "header")
+Table2
+```
+
+The shift in workforce distribution is disaggregated by sector and age groups in Table 2. The shift toward agriculture is notable both in the rural and urban areas where agricultural activities take place in the peripheries. As percentage of the population aged 15-65 (rather than the labor force) the proportion employed in family agriculture increased from 8 percent to 11 percent in urban areas and from 41 percent to 47 percent in rural areas. Non-agricultural self employment rates remain unchanged both in rural and urban areas while wage employment shrank in both areas. The fraction of the working-age population that is not in the labor force stayed the same in urban areas but declined slightly in rural areas from 30 percent to 28 percent.
+
+The picture is more dramatic among the youth population aged 15-25 who are new entrants to the labor market. The share of the urban population engaged in wage employment dropped from 14 percent to 9 percent; self employment dropped from 28 percent to 24 percent, while the share engaged in family agriculture increased very slightly from 4 percent to 6 percent. Also, the share of urban youth population that is out of the labor force rose from 31 percent to 38 percent, suggesting that a larger fraction of the youth population have given up on the search for employment and are perhaps unwilling to engage in farming or ill-equipped for self-employment. The trend in urban areas is reversed among the rural youth population. The proportion engaged in rural agriculture nearly doubled (from 17 percent to 31 percent) and self employment increased slightly from 10 percent to 12 percent as wage employment dropped precipitously from 15 percent to 3 percent over the period. Although the proportion of rural youth that is out of the labor market is about 10 percent higher than among urban youth, the proportion decreased over the period from 48 percent to 45 percent. In summary, the statistics in Table 2 show that as wage employment becomes hard to find, and more workers are in general returning to the growing agricultural sector, new entrants to urban labor market are taking up self employment at lower rates and are instead exiting the labor market at higher rates, while new entrants in rural areas are taking up self employment and agriculture at higher rates and the rate of exit from the labor force is declining.
+
+# Unemployment
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+#| echo: false
+#| tbl-cap: Distribution of Unemployed Persons by Education, Age and Gender
+#| label: Table3
+library(readr)
+Table3 <- read_csv("analysis/Table3.csv", col_types = cols(Characteristics = col_character()))
+Table3 <- flextable(Table3)
+Table3 <- set_caption(Table3, caption = "Table 3: Distribution of Unemployed Persons by Education, Age and Gender",
+                      style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "Table3"))
+Table3 <- add_footer_lines(Table3, "Source: National Bureau of Statistics, GHS/LFS, 2003-2007")
+Table3 <- delete_part(Table3, part = "header")
+Table3 <- add_header_row(Table3, top = FALSE, values = c("Characteristics", "URBAN", "RURAL"), colwidths = c(1,3,3))
+Table3 <- colformat_num(Table3, i = 1,  part = "body", big.mark = "", digits=0)
+Table3 <- theme_booktabs(Table3) 
+Table3 <- align(Table3, i = 1, j = 2:7, align = "center", part = "header")
+Table3
+```
+
+Table 3 presents the distribution of unemployed persons by age group, education and gender beginning from 2003 because data from previous years are not available. The education statistics show that the share of urban unemployed persons that have no education tripled between 2003 and 2006, rising from 10 percent to 33 percent while the shares decreased or stayed the same for other categories. The age group statistics show that older workers (age 25-59) account for the dramatic increase of the share of unemployed persons attributed to the uneducated category. In the rural areas, the share of rural unemployed workers with no schooling rose from 54 percent to 60 percent over the same period and youth unemployment is solely responsible for this increase. These statistics suggest that uneducated older workers account for increase in urban unemployment while uneducated youth account for increase in rural unemployment.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+#| echo: false
+#| tbl-cap: Unemployment Rates By Age and Sector
+#| label: Table4
+library(readr)
+Table4 <- read_csv("analysis/Table4.csv", col_types = cols(Characteristics = col_character()))
+Table4 <- flextable(Table4)
+Table4 <- set_caption(Table4, caption = "Table 4: Unemployment Rates By Age and Sector",
+                      style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "Table4"))
+Table4 <- add_footer_lines(Table4, "Source: National Bureau of Statistics,")
+Table4 <- add_footer_lines(Table4, "General Household Survey Report (1999-2008)")
+Table4 <- delete_part(Table4, part = "header")
+Table4 <- add_header_row(Table4, top = FALSE, values = c("Characteristics", "ALL GROUPS", "AGES 15 - 24"), colwidths = c(1,4,4))
+Table4 <- colformat_num(Table4, i = 1,  part = "body", big.mark = "", digits=0)
+Table4 <- theme_booktabs(Table4) 
+Table4 <- align(Table4, i = 1, j = 2:7, align = "center", part = "header")
+Table4
+```
+
+While Table 3 presents the distribution of unemployed persons, Table 4 presents actual unemployment rates by sector and age group. Overall, while urban unemployment rate increased slightly from 8 percent in 1999 to 10 percent in 2006, rural unemployment nearly doubled from 8 percent to 15 percent over the same period. Among the youth, while urban unemployment has stayed fairly just above 30 percent over the period but increases from 30 percent in 1999 to 32 percent in 2006, rural unemployment rate more than tripled from 9 percent to 30 percent.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+#| echo: false
+#| tbl-cap: Unemployment Rates By Age, Education and Sector
+#| label: Table5
+library(readr)
+Table5 <- read_csv("analysis/Table5.csv", col_types = cols(Characteristics = col_character()))
+Table5 <- flextable(Table5)
+Table5 <- set_caption(Table5, caption = "Table 5: Unemployment Rates By Age, Education and Sector",
+                      style = "Table Caption", autonum = run_autonum(seq_id = "tab", bkm = "Table5"))
+Table5 <- add_footer_lines(Table5, "Source: National Bureau of Statistics,") 
+Table5 <- add_footer_lines(Table5, "2011 Annual Socioeconomic Report")
+Table5 <- add_footer_lines(Table5, "2010 Annual Abstract of Statistics")
+Table5 <- delete_part(Table5, part = "header")
+Table5 <- add_header_row(Table5, top = FALSE, values = c("Characteristics", "URBAN", "RURAL"), colwidths = c(1,3,3))
+Table5 <- colformat_num(Table5, i = 1,  part = "body", big.mark = "", digits=0)
+Table5 <- theme_booktabs(Table5) 
+Table5 <- align(Table5, i = 1, j = 2:7, align = "center", part = "header")
+Table5
+```
+
+Table 5 disaggregates unemployment rates by age, education and sector for the period 2009-2011. The statistics show that youth unemployment is the driver of unemployment in both rural and urban areas, it is evident that the increase in youth unemployment is driven by workers with none or low levels of schooling.
+
+# Synthesis
+
+The focus on agricultural development and food security by policymakers between 1999 and 2006 yielded a dramatic growth in agricultural earnings that closed the urban-rural wage gap. In fulfillment of Harris and Todaro (1970)'s prediction, employment distribution shifted toward agriculture. However, the data reveals two outcomes that contradict the model. First, urban unemployment rates did not fall; instead, it rose from 8 percent to 10 percent in the aggregate. Second, rural unemployment doubled over the period when wage employment and self employment earnings were both higher than the agricultural wage but agricultural wage was rising. These anomalies need to be explained.
+
+The decrease in urban wage gap incentivized return to agriculture and slowed down rural-urban migration. Urban workers who returned to agriculture had skills to engage in technologically-driven agriculture that the young rural workers did not possess. The only option available to the youth workers was to work as sporadic laborers on farms. These workers consider themselves as unemployed in surveys. As this process continued, rural unemployment among the low skill young workers continued to rise as more skilled workers returned to agriculture. This is coupled with the disincentive for rural-urban migration and entry of new workers into the rural labor market. Thus, expansion of employment in agriculture can occur simultaneously with rising rural unemployment (driven by unskilled youth), self employment for those who find the means and slowing down of rural-urban migration.
+
+In the urban sector, new entrants who do not find wage jobs stack up in the queue for job search while staying unemployed, leading to increase in urban unemployment. As new arrivals enter the queue, existing workers realize decreasing chances of securing wage employment, and as a result, they turn to self employment or return to agriculture. The growth of agricultural wage faster than the growth of self employment induced more workers to move into agriculture than self employment.
+
+The proportion of rural youths who choose to remain in the labor force has risen over the years. If these contribute to unemployment, then they can partially explain why rural unemployment rate increased over the period. On the other hand, the proportion of urban youths remaining in the labor force has decreased. If these initially contributed to unemployment, then unemployment rates should partially decrease. However, discouraged workers ultimately enter self employment or return to agriculture.
+
+The labor market continues to follow the hierarchical model; the wage employment sector is most preferred and the most skilled workers find a job there. Workers who are unable to find a job either join the queue or continue to search for a job while remaining unemployed, work in the informal sector or return to rural agriculture. The skill requirement is correlated with earnings, which implies that formal wage employment requires the highest skills, followed by self employment, and then rural agriculture.
