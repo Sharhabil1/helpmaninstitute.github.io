@@ -1,0 +1,39 @@
+---
+title: "Why Has Unemployment Risen in Nigeria?"
+description: "This paper confirms increased migration to rural agriculture but challenges the expected decline in urban unemployment rates."
+categories: 
+  - Working papers
+
+date: 2016-06-04
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+
+execute:
+  echo: false
+---
+
+## Abstract
+
+The Harris-Todaro (1970) model was greatly influenced by observations from Kenya at the time that one of the authors was a visiting professor at a Kenyan university. The central idea that made the paper famous is the implication of their model, that the answer to urban unemployment is rural development. In this paper, I will draw data from Nigerian over the period 1999-2006 during which rural agricultural productivity and food security were central to government policy[^1] to illustrate how the model fits the data. Two things should happen if we were living in the Harris and Todaro (1970) world: massive return migration to rural agriculture and falling urban unemployment rates. The data validates the former but refutes the latter.
+
+[^1]: During this period, the government launched a vast number of initiatives ranging from land reform to subsidized fertilizer and extension services. But the most notable among the initiatives was the Presidential Initiative (PI), designed to advance farmers' knowledge of farm technology and best practices. The main pillars of the initiative are (1) farmers and private sector participation in developing agricultural development programs, (2) support for enhanced inputs and technology, (3) extension services that provide farmers with knowledge of idiosyncratic farm characteristics and requirements, and (4) advances in harvesting and product processing technology.
+
+## PDF links
+
+-   [Paper (preprint) in PDF format](unemployment-rise-nigeria.pdf)
