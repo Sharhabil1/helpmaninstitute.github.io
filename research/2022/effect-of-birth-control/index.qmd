@@ -1,0 +1,47 @@
+---
+title: "Implications of Birth Control Methods on Fertility and Wellbeing of Women: Evidence from Rural Households in Nigeria"
+
+image: "figures/figure.png"
+
+categories:
+  - Working paper
+
+date: 2022-06-18
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: QUADRI, Umar Faruq
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: fquadri@helpmaninstitute.org 
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, FCT Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+
+execute:
+  echo: false
+---
+
+## Abstract
+
+This study examined the effect of birth control use on the fertility and wellbeing of rural households in Nigeria. Secondary data from Nigeria Demographic and Health Survey for 2008 and 2013 were used in the study. The data was analyzed using descriptive statistics and the ordinary least squares (OLS) method. The results show that knowledge of birth control methods is high in rural areas (85%), however, contraceptive prevalence rate is still low (15%) and most women still do not intend to use birth control. The most common birth control method used is injections, pills, withdrawal and condoms. Majority of the women (62.1%) were found to have normal health and wellbeing as seen by their BMI. In addition, we found that wealth index, birth control use, region and occupation were all significantly related to fertility rate. The results further revealed that there has been a little decline in fertility rate over time, which could be attributed to use of birth control. The study further revealed that there has been an improvement in the level of wellbeing in rural Nigeria over time. This study concludes that increased use of birth control is key to curbing the issue of high fertility rates which goes further to improve the wellbeing of the woman.
+
+**KEY WORDS: Fertility, Birth Control, Wellbeing, Body Mass Index, and OLS**
+
+**JEL CODE: J13, C21, I31**
+
+## Key figures
+
+![Conceptual Framework](figures/figure.png){alt="Conceptual Framework" width="311"}
+
+## PDF links
+
+-   [See Articles in PDF format](effect-of-birth-control.pdf)
