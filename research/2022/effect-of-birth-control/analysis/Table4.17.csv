@@ -1,0 +1,35 @@
+Variables,Coefficient,Standard Error,t- value
+Age of respondent,0.2268***,0.0014,165.67
+Age of household head  ,-0.0015,0.0009,-1.61
+Marital status,,,
+Living with partner  ,-0.2403***,0.063,-3.81
+Widowed     ,-0.8839***,0.0555,-15.92
+Divorced  ,-1.2841***,0.0842,-15.26
+No longer living together/separated  ,-1.0468***,0.0829,-12.63
+Use of Birth Control Methods,-0.0507*,0.030688,-1.65
+Educational level,,,
+Primary,-0.0005,0.0281,-0.02
+Secondary,-0.5975***,0.0319,-18.71
+Higher ,-0.5028***,0.0553,-27.17
+Occupation,,,
+Professional/technical/managerial  ,-0.1697***,0.0611,-2.78
+Clerical     ,0.0926,0.158,0.59
+Sales  ,0.3478***,0.0255,13.62
+Agricultural self-employed  ,0.3939***,0.1255,3.14
+Agricultural - employee  ,0.2483***,0.032,7.76
+Household and domestic  ,-0.3956,0.2913,-1.36
+Services  ,0.0941*,0.054,1.74
+Skilled manual  ,0.1857***,0.036,5.16
+Unskilled manual  ,0.5173,0.3227,1.6
+Wealth index,,,
+middle  ,-0.0901***,0.0274,-3.29
+rich  ,-0.4498***,0.0306,-14.68
+Region,,,
+North East ,0.5974***,0.0333412,17.92
+  North West ,0.6554***,0.0328365,19.96
+  South East ,-0.0005,0.0410943,-0.01
+South South,0.0903**,0.0376007,2.4
+South west,-0.4273***,0.0377885,-11.31
+Time,,,
+2013,-0.0728***,0.0207164,-3.51
+Constant,-2.932,-2.9321,-58.69
