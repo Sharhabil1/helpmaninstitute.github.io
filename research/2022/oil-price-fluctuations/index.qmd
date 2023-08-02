@@ -1,0 +1,46 @@
+---
+title: "Oil Price Fluctuations and Current Account Deficits Mediating Roles of Institutional Quality in Nigeria: A nonlinear ARDL Approach"
+description: "Poor institutional quality in the oil industry or the general political system such as corruption, poor regulatory frameworks, is hinder the country from fully optimizing the benefits associated with increasing global oil prices."
+
+categories: 
+  - Working papers
+
+date: 2022-06-12
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: QUADRI, Umar Faruq
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: fquadri@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+
+execute:
+  echo: false
+---
+
+## Abstract
+
+The paper employs a NARDL to analyze the degree of asymmetry in the relationship between current account and oil price, with a mediating effect of the institutional role in Nigeria. The series employed in the study are obtained largely from the database of World Bank's (WDI), and covers 1981 to 2021. In conclusions, we found that any form of shocks in oil price and nominal exchange rate exert significant impact on the country's current account balances both in the short run and long run in Nigeria. In addition, poor institutional quality in the oil industry such as corruption, poor regulatory frameworks, hinders the country from fully optimizing the benefits associated with increasing global oil prices. Finally, a long run asymmetry is discovered in the nexus of current account-oil price with mediating role of institutions in Nigeria. Thus, we recommend that the PIA should be implemented carefully and strategically in an effort to remove all undue bottlenecks and bureaucracies to support Nigeria's economic growth through attracting in and providing investment possibilities for both domestic and international investors, and thereby enhances the current account balance.
+
+Keywords: NARDL, ARDL, Current Account balances, Oil price, Asymmetry.
+
+Article Classification: F32, Q43, C32, P45
+
+## Key figure
+
+![Stability Test - Cummulative Effect of LNOILP on LNCAD1](figures/stability-test-figure-4.png)
+
+## PDF links
+
+-   [Paper (preprint) in PDF format](oil-price-fluctuations.pdf)

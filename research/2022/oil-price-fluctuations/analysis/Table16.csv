@@ -1,0 +1,12 @@
+lnCAD-lnOILP,Coeff,F-stat,P>F
+Long run -effect (+),9.285,5.752,0.023
+Long run-effect (-),-16.497,5.64,0.024
+Long-Run Asymmetry,,3.951*,0.056
+Short-Run Asymmetry,,1.59,0.217
+Cointegration test,,6.3766,-4.1016
+Model Diagnostics,,,
+Portmanteau test,,10.65,0.874
+Breusch/Pagan,,1.24,0.2654
+Ramsey RESET      ,,0.9454,0.4325
+Jarque-Bera test          ,,2.847,0.2409
+,,,
