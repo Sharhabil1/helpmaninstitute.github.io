@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,77 +19,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -103,8 +41,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -138,16 +75,18 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -158,29 +97,31 @@ div.csl-indent {
     <span class="navbar-title">Helpman Institute</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:info@helpmaninstitute.org"><i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:info@helpmaninstitute.org" rel="" target=""><i class="bi bi-envelope" role="img" aria-label="email">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute"><i class="bi bi-linkedin" role="img" aria-label="linkedin">
+    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute" rel="" target=""><i class="bi bi-linkedin" role="img" aria-label="linkedin">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -188,35 +129,33 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="toc-section-number">1</span>  Introduction</a></li>
-  <li><a href="#literature-and-background" id="toc-literature-and-background" class="nav-link" data-scroll-target="#literature-and-background"><span class="toc-section-number">2</span>  Literature and background</a></li>
-  <li><a href="#the-basic-environment" id="toc-the-basic-environment" class="nav-link" data-scroll-target="#the-basic-environment"><span class="toc-section-number">3</span>  The basic environment</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#literature-and-background" id="toc-literature-and-background" class="nav-link" data-scroll-target="#literature-and-background"><span class="header-section-number">2</span> Literature and background</a></li>
+  <li><a href="#the-basic-environment" id="toc-the-basic-environment" class="nav-link" data-scroll-target="#the-basic-environment"><span class="header-section-number">3</span> The basic environment</a>
   <ul class="collapse">
-  <li><a href="#the-auctioneer-walrasian-allocation" id="toc-the-auctioneer-walrasian-allocation" class="nav-link" data-scroll-target="#the-auctioneer-walrasian-allocation"><span class="toc-section-number">3.1</span>  The Auctioneer Walrasian Allocation</a></li>
-  <li><a href="#comparative-statics-the-cost-of-capital-μ" id="toc-comparative-statics-the-cost-of-capital-μ" class="nav-link" data-scroll-target="#comparative-statics-the-cost-of-capital-μ"><span class="toc-section-number">3.2</span>  Comparative Statics: The cost of capital μ</a></li>
-  <li><a href="#decentralized-equilibrium-with-random-matching-and-exogenous-cost-of-capital" id="toc-decentralized-equilibrium-with-random-matching-and-exogenous-cost-of-capital" class="nav-link" data-scroll-target="#decentralized-equilibrium-with-random-matching-and-exogenous-cost-of-capital"><span class="toc-section-number">3.3</span>  Decentralized equilibrium with random matching and exogenous cost of capital</a></li>
-  <li><a href="#decentralized-equilibrium-with-endogenous-cost-of-capital" id="toc-decentralized-equilibrium-with-endogenous-cost-of-capital" class="nav-link" data-scroll-target="#decentralized-equilibrium-with-endogenous-cost-of-capital"><span class="toc-section-number">3.4</span>  Decentralized equilibrium with endogenous cost of capital</a></li>
+  <li><a href="#the-auctioneer-walrasian-allocation" id="toc-the-auctioneer-walrasian-allocation" class="nav-link" data-scroll-target="#the-auctioneer-walrasian-allocation"><span class="header-section-number">3.1</span> The Auctioneer Walrasian Allocation</a></li>
+  <li><a href="#comparative-statics-the-cost-of-capital-μ" id="toc-comparative-statics-the-cost-of-capital-μ" class="nav-link" data-scroll-target="#comparative-statics-the-cost-of-capital-μ"><span class="header-section-number">3.2</span> Comparative Statics: The cost of capital μ</a></li>
+  <li><a href="#decentralized-equilibrium-with-random-matching-and-exogenous-cost-of-capital" id="toc-decentralized-equilibrium-with-random-matching-and-exogenous-cost-of-capital" class="nav-link" data-scroll-target="#decentralized-equilibrium-with-random-matching-and-exogenous-cost-of-capital"><span class="header-section-number">3.3</span> Decentralized equilibrium with random matching and exogenous cost of capital</a></li>
+  <li><a href="#decentralized-equilibrium-with-endogenous-cost-of-capital" id="toc-decentralized-equilibrium-with-endogenous-cost-of-capital" class="nav-link" data-scroll-target="#decentralized-equilibrium-with-endogenous-cost-of-capital"><span class="header-section-number">3.4</span> Decentralized equilibrium with endogenous cost of capital</a></li>
   </ul></li>
-  <li><a href="#empirical-tests-of-models" id="toc-empirical-tests-of-models" class="nav-link" data-scroll-target="#empirical-tests-of-models"><span class="toc-section-number">4</span>  Empirical tests of models</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="toc-section-number">5</span>  References</a></li>
+  <li><a href="#empirical-tests-of-models" id="toc-empirical-tests-of-models" class="nav-link" data-scroll-target="#empirical-tests-of-models"><span class="header-section-number">4</span> Empirical tests of models</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5</span> References</a></li>
   </ul>
-</nav>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="skill-entrepreneurship-wages.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="skill-entrepreneurship-wages.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><img src="resources/hdi_logo.png" class="img-fluid" style="width:2.5in"><br>
-Capital-Skill Matching, Entrepreneurship and Wages</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title"><img src="resources/hdi_logo.png" class="img-fluid" style="width:2.5in"><br>
+Capital-Skill Matching, Entrepreneurship and Wages</h1>
 <p class="subtitle lead">Working Paper</p>
 </div>
 
@@ -226,7 +165,7 @@ Capital-Skill Matching, Entrepreneurship and Wages</h1><button type="button" cla
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    Olumide Taiwo 
+    <p class="author">Olumide Taiwo </p>
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -415,17 +354,15 @@ w_{ij} = \underbrace{\alpha A h_i^\alpha \bar{k}^{1-\alpha}}_{Q} + \underbrace{(
 
 
 
-<!-- -->
-
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">5 References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-allen2005capital" class="csl-entry" role="doc-biblioentry">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">5 References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-allen2005capital" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1 </div><div class="csl-right-inline">Allen RC. Capital accumulation, technological change, and the distribution of income during the british industrial revolution. Department of Economics, University of Oxford 2005. </div>
 </div>
-<div id="ref-roy2013economic" class="csl-entry" role="doc-biblioentry">
+<div id="ref-roy2013economic" class="csl-entry" role="listitem">
 <div class="csl-left-margin">2 </div><div class="csl-right-inline">Roy N, Seshadri A. Economic development and the organization of production. 2013.</div>
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
@@ -467,9 +404,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -505,57 +456,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
-  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -585,6 +485,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -623,326 +609,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "![](resources/hdi_logo.png){width=2.5in}  \n Capital-Skill Matching, Entrepreneurship and Wages"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> Working Paper</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Olumide Taiwo</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliations:</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">      - ref: hdi</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    attributes:</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">      corresponding: true</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    email: otaiwo@helpmaninstitute.org</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">affiliations:</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">  - id: hdi</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">    name: Helpman Development Institute, Abuja, Nigeria.</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">  docx:</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">    default-image-extension: svg</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">    reference-doc: resources/hdi-quarto-template-v0001.docx</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">    link-citations: true</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf:</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">    papersize: a4</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">    default-image-extension: pdf</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">    link-citations: true</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">    linestretch: 1.25</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">    geometry:</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co">    - top=25.4mm</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co">    - left=25.4mm</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="co">    - right=25.4mm</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">    - bottom=25.4mm</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co">    extra_dependencies: ["flafter"]</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="co">    header-includes: |</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="co">      \usepackage[labelsep=period]{caption}</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co">      </span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co">#filters:</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="co"># - authors-block</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="an">crossref:</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co">  title-delim: "."</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="an">number-sections:</span><span class="co"> true</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="co">tocgm +r: blue h</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 2</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="an">toc-title:</span><span class="co"> "Table of Contents"</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> references.bib</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="an">csl:</span><span class="co"> resources/bmj.csl</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, include=FALSE}</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flextable)</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(officer)</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(officedown)</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">fig.width =</span> <span class="dv">12</span>, <span class="at">fig.height =</span> <span class="dv">10</span>, <span class="at">fig.align =</span> <span class="st">"center"</span>,</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>                      <span class="at">out.width =</span> <span class="st">"100%"</span>, <span class="at">collapse =</span> <span class="cn">TRUE</span>, <span class="at">fig.pos =</span> <span class="st">"H"</span>, <span class="at">out.extra =</span> <span class="st">""</span>,</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>                      <span class="at">ft.tabcolsep=</span><span class="dv">5</span>)</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">set_flextable_defaults</span>(<span class="at">font.size =</span> <span class="dv">10</span>, </span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>                       <span class="at">theme_fun =</span> theme_booktabs, </span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>                       <span class="at">table.layout =</span> <span class="st">'autofit'</span>,</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>                       <span class="at">font.family =</span> <span class="st">"Arial"</span>)</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>{{&lt; pagebreak &gt;}}</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>**ABSTRACT**</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>This paper proposes a micro-foundation for analyzing the stylized negative correlation that exists between entrepreneurship rates and wages, and the existence of multiple equilibria. The underlying mechanism is the matching of capital and skills in the capital market through interaction of the required rate of return on capital, the distribution of skills in the population, and the mechanism shifting the skill distribution. The model shows that the stylized observation is driven by a particular matching rule, rather than the general rule, and is not necessarily a manifestation of disequilibrium. We proceed to conduct empirical tests of the implications of the model.</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>It is now a stylized fact, based on empirical evidence from different parts of the world that earnings decrease as self-employment rates increase. Blanchflower (2000) examined data from 22 OECD countries including the United States for the period 1966-1996 and found evidence that growth of self-employment is associated with reduction in growth of Gross Domestic Product (GDP). **Figure 1** taken from Parker (1996) shows that self-employment as a fraction of total employment rose dramatically in the United Kingdom from 8% in 1979 to 14% in 1991 as a result of the self-employment expansion programs implemented by Margaret Thatcher's government [^1]. Associated with this trend, as **Figure 2** taken from Robson (1997) shows, relative self-employment income -- the ratio of self-employment income to wage employment income -- in the UK fell sharply from 1.85 in 1979 to less than 1.4 in 1991. The consequences for income distribution are borne out in the data. Parker (1997) demonstrates that income inequality increased in the UK between 1976 and 1991, and that it was largely driven by the self-employed. Their results also show that income inequality among the self-employed was not the result of large numbers of people entering self-employment, but mainly by a substantial increase in heterogeneity among the self-employed.</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>Although many factors have been advanced for expansion of self-employment, the government initiatives were undoubtedly central. In order to combat high unemployment that persisted into the late 1970s, the British government under Margaret Thatcher created several initiatives aimed at supporting self-employment beginning from 1981. These initiatives include the Enterprise Allowance Scheme which provided guaranteed income of GBP40 per week to unemployed people that set up an enterprise, the Loan Guarantee Scheme through which the government provided the security that lenders usually require in order to facilitate lending to viable small businesses that may lack access to finance, and the Business Expansion Scheme that aimed to provide investment opportunities for investors.</span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>In the case of African countries, **Figure 3** based on data from the Occupational Wages Database collated at the NBER, shows the trend of average occupational wages for African countries from 1985 to 2000 for all non-agricultural occupations as defined by the International Labor Organization (ILO). Major reforms in most countries began in mid-1980s and ended around early to mid-1990s. The figure shows that wages began to fall shortly after the end of major reforms around 1993. **Figure 4** taken from Pinkovskiy and Sala-i-Martin (2010) shows that poverty rates, defined as the fraction of the population earning less than \$1 per day, began to fall after 1993. **Figure 5**, taken from the same study, provides standardized income distribution for African countries for 1970, 1990, 2000 and 2006. A comparison of the 1970 and 2006 distributions shows that the proportion of population living below \$1 per day decreased after the reforms but the proportion of population trapped in the \$1-3 per day bracket has risen from approximately 34% in 1970 to 50% in 2006. In effect, poverty headcount rates decreased but the fraction of the population trapped in low-wage activities increased over the 36-year period. Labor income is the most important component of household income in developing countries; therefore income distribution is closely linked to the labor market. Given the proliferation of efforts to expand small-scale enterprises across Africa <span class="ot">[^2]</span> and the incidental expansion of self-employment after the major reforms ended, it appears that most of the workers drawn into self-employment got trapped in low-wage equilibrium. <span class="ot">[^3]</span></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="ot">[^2]: </span>These efforts came in many forms. There were pressures on lending institutions to reduce interest rates, leading to development of enterprise finance initiatives by commercial banks and other financial institutions. Some assistance also came in the form of credit guarantees. These efforts drew a large number among the unemployed workers into entrepreneurship.</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="ot">[^3]: </span>Governments in Africa and other developing countries implemented low-cost capital schemes during 1970s and early 1980 and the outcomes were self-defeating. Earnings plunged, default rates rose and poverty rates arising from very low wages skyrocketed. The self-defeating growth of higher employment and lower wages following increased supply of low-cost capital could be attributed to several factors. First, an exogenous decrease in the cost of capital will result in lower average skills and therefore reduce enterprise productivity. Output produced by low-tech enterprises is typically non-tradable and only subject to demand for domestic consumption. In countries where imported goods are favored over domestic products due to either preferences or quality issues, low-tech enterprise output growth is associated with product glut and low prices. Second, other than capital requirement, there is free-entry into the sector and low-tech production systems can easily be replicated. Free entry ensures that output prices and therefore earnings are driven to razor-thin competitive levels. The absence of institutional barriers and coordination failures make price regulations impossible. Third, an increased supply of capital that is not driven by skills will have different implications than supply shift that is driven by skills. Increased supply of capital that is driven by skill upgrade moves the enterprise sector toward more productive enterprises and leads to higher wages. On the other hand, an increase in the supply of capital without efficient matching leads to lower wages and reduction in enterprise efficiency levels.</span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>There have been attempts to explain the decline in wages and increasing income inequality as self-employment increases. One of the explanations is centered on market competition. The idea is that in non-competitive labor markets with excess labor, individuals with high ability would select into wage employment so that those in self-employment are generally of low entrepreneurial ability. This hypothesis has been repudiated by evidence. Hamilton (2000) examined data on earnings of wage employees and self-employed individuals in the United States and found evidence that workers in paid employment earn higher income than workers in self-employment. However, he found no evidence to support the hypothesis that the differential is due to selection of low-ability workers into self-employment. Evidence from low-income countries where labor markets are typically thought to be non-competitive also refutes the hypothesis. Blau (1985) analysed data from Malaysia and found evidence of a weak positive selection <span class="ot">[^4]</span> into self-employment by entrepreneurial ability in urban areas. His finding is supported by evidence from India (Rosenzweig 1980), Thailand (Chiswick 1977; Bertrand and Squire 1980; Teilhet-Waldorf and Waldorf 1983), Kenya (House 1984) and Guatemala (Sumner 1981).</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="ot">[^4]: </span>Expectation of positive selection on ability into wage employment in non-competitive labor markets is based on the assumption that individuals with high ability are likely to be selected by employers. In non-clearing markets, employers subject job candidates to series of tests <span class="sc">\-</span>- written, oral and situation-room types of experiences <span class="sc">\-</span>- in order to select the most able candidates. Because these opportunities are limited, individuals with the highest abilities are often drawn into wage employment at least for the first few years of their careers. However, the sample of workers who seek wage employment may not be representative of the labor force. Indeed, if individuals with the highest levels of ability choose not to seek wage employment, then positive selection on ability into wage employment among job-seekers will not translate into positive selection on ability for the entire labor force.</span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>An alternative explanation for decreasing productivity in the UK offered by Robson (1997) is that productivity declined as a result of decrease in the level of capital per self-employed worker. However, Barnejee and Newman (1993) cast doubt on the efficacy of this argument. They showed that decrease in average capital is not a sufficient condition for decrease in wages, but productivity and wages are outcomes of the distribution of capital over the underlying set of productive skills. Given an average capital per self-employed worker, replacing a distribution that assigns increasingly large amount of capital to more productive workers with another distribution that assigns a fixed amount of capital to all workers could lead to decrease in wages due to disequilibrium between the cost of capital and its marginal product everywhere in the distribution except perhaps for the median worker.</span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>In this paper, we emphasize the centrality of skill-capital matching in enterprise formation in explaining the observation. The central thesis is that the underlying matching of capital and borrowers kills matters more than the average level of capital employed in self-employment.<span class="ot">[^5]</span> The hypothesis is that while the credit market and the programs to expand access to finance have focused on expanding access to enterprise capital, they have not paid sufficient attention to the capital-skill matching process.</span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ot">[^5]: </span>The deficit of attention to skill and capital matching is not surprising. It is always assumed, and taken for granted, that the credit market is capable of creating efficient matches between capital and skill in the formation of enterprises. But there are noteworthy grounds to believe that this is not always the case. The practice in the credit market to screen borrowers on the basis of perception of information asymmetry rather than on the basis of borrowers' productivity implies that high productivity individuals lacking collateral may be denied access to entrepreneurship capital.</span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="fu"># Literature and background</span></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>Research examining the negative correlation between self-employment rates and wages is limited to cross-country analysis, and most of the country-level analyses are focused on a few developed countries. Poschke (2011) analyzed data from the Global Entrepreneurship Monitor (GEM) surveys and observed a negative correlation between entrepreneurship rates and per-capita income across countries, as well as a positive correlation between firm size and per-capita income. Gollin (2007), citing data from the International Labor Organization (ILO) Yearbook of Labor Statistics, demonstrates using cross-section data that entrepreneur-workforce ratio (used as a proxy for the rate of self-employment and entrepreneurship) falls as income per capita grows. In the data, the ratio was as low as 0.02 in the US and as high as 0.80 in Nigeria and Bangladesh during 1988-1993. Blanchflower (2000) examined data from 22 OECD countries including the United States for the period 1966-1996 and found evidence that growth of self-employment was associated with reduction in growth of Gross Domestic Product (GDP). Lucas (1978) examined data from US history and observed that average firm size increased with per-capita income during 1900-1970, owing to decrease in the proportion of small enterprises. Gollin (2007) also presented data showing that the ratio of entrepreneurs to total workforce in manufacturing fell as income per-capita grew in Japan. Thus, self-employment rates fall and small enterprises disappear as per-capita income rises.</span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>In explaining the US experience, Lucas (1978) proposed a model of occupational choice in which individuals endowed with heterogeneous ability can choose wage employment or self-employment, and a threshold of ability is required to be successful in entrepreneurship. In equilibrium, individuals with ability above the threshold who would earn more rents than in wage work will choose entrepreneurship while the others will be wage workers. As capital per worker grows, wages would rise relative to managerial rents, and more people would choose wage work, leading to decrease in entrepreneurship rates, larger firm sizes and higher income. However, there are several challeges to this explanation. First, while empirical evidence from the US shows that firm sizes increased with income per capita, the principal implication of the model in Lucas (1978) that connected the theory to empirics -- that wages grew more than profits during the period of capital accumulation, inducing managers to give up their jobs in order to become workers -- was not empirically tested. Existing empirical estimates of the relationship between wages and profits during a period of capital accumulation do not support the model. <span class="co">[</span><span class="ot">@allen2005capital</span><span class="co">]</span> analyzed data collected during the British industrial revolution and found that GDP per worker rose by 37 percent between 1800 and 1840. However during the period, real wages was stagnant while the profit rate doubled. Second, in the absence of data on self-employment exit rates, it is difficult to rule out other interpretations. Third, <span class="co">[</span><span class="ot">@roy2013economic</span><span class="co">]</span> proposed a different model to analyze the distribution of firm sizes and entrepreneurship. Their analysis suggests that the implications of Lucas (1978) would be different if the model accounted for endogeneity of schooling decision and allow returns to entrepreneur's schooling to accrue as profit. In addition, they offered an entirely different but plausible explanation for the negative correlation between income per capita and entrepreneurship rates. They note that entry barriers in terms of managerial talent and other requirements for entrepreneurship are more stringent in high income countries than in low income countries; the more selective process in the developed countries would mean that many prospective entrepreneurs would be unable to start a business but work for wages. If the rules become more stringent over time, they may also explain the within-country correlation. Notably, the paper does not address the role of capital markets.</span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>In characterizing the Japanese experience, Gollin (2007) accounted for the phenomenon on the basis of productivity differences across low income and high income countries. In his model, people with entrepreneurial ability above a certain threshold $z_u$ choose entrepreneurial work; those with entrepreneurial ability below a lower threshold $z_L$ choose wage employment while those with ability within the interval between the two thresholds $z∈<span class="co">[</span><span class="ot">z_L,z_u </span><span class="co">]</span>$ choose self-employment and share their time among entrepreneurship and wage employment. Together with size constraint on self-employment firms, which makes them small, a closing of the threshold interval ensures a negative correlation between firm sizes and self-employment. While Gollin focused on the role of entrepreneurial ability (or managerial talent), he made no reference to the behavior of the capitalists.</span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>Research on firm size distribution in African countries, which has recently emerged due in large part to availability of firm-level surveys, demonstrate the role of markets, especially capital markets. Sandefur (2010) analyzed data from Ghanaian manufacturing sector and observed that average firm size decreased by about 50 percent between 1987 and 2003, and further that the distribution of firm size was more (right) skewed in 2003 than in 1987. Firms with less than 10 employees accounted for 76 percent of total number of firms and 19 percent of total employment in 1987. By 2003, the numbers rose to 85 percent and 35 percent respectively. On the other hand, firms with 100 or more employees accounted for 2.9 percent of total number of firms and 54 percent of employment in 2003. By 2003, the numbers were 1 percent and 34 percent respectively. Indeed, the share of employment in firms with less than five employees tripled during the period, showing that the urban labor market is increasingly dominated by non-agricultural self-employment. Using data from the same sector, Lanker (2012) shows that firm size has significant influence on earnings, and that the effect is stronger in self-employment than in wage employment (although the effect in self-employment is notably driven by individual time-invariant characteristics). Together, this body of evidence implies that enterprise real wages are being substantially driven by microenterprises in Ghana over the period, consistent with income distribution data showing that most people who enter self-employment are trapped in low-wage equilibrium. Other studies based on data from Ghana and other African countries fail to support the hypothesis that small firms grow to become large. Instead, the body of evidence shows that small firms remain small, or die, and big firms are "born big" (Sandefur 2010). Thus firm dynamics exhibit signs of multiple equilibria.</span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>While there is arguably a role for both labor and capital markets in explaining this pattern of firm dynamics, the role of the labor market is very limited. Expansion and contraction of wage employment, synonymous with rising and falling wages respectively, will pull or push workers out of and into self-employment respectively. Once workers are sorted into the employment sectors, the dynamics of enterprise growth and the sorting of firms into equilibria are henceforth matters for the capital market and its interaction with entrepreneurial skill distribution. Using data from a sample of African countries' enterprise surveys, Sandefur (2010) shows that capital-labor ratio, productivity and wages increase with firm size (consistent with Lucas 1978), while implied cost of capital (computed as the required rate of return on capital) decreases with firm size. Biesebroeck (2005) also observed that credit availability is strongly correlated with productivity in a sample of enterprises from a number of African countries. In effect, less productive firms have lower access to credit, thus ensuring that larger, more productive firms face lower costs of capital. Other evidence suggests substantial selection by firms into equilibrium, and that credit constraints induce a permanent effect on firm size distribution (see Sandefur 2010). These suggest an important role for credit markets.</span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>However, there is also a body of research showing the influence of skill in the credit markets. Acemoglu (1996) shows that increase in skill makes investment in capital more attractive by raising its returns. This demand for capital by firms with higher skill pushes up the cost of capital so that the remaining firms end up working with lower capital to skill ratios. In essence, smaller firms end up with lower capital per worker and higher cost of capital as a result of endogeneity of the cost of capital to the stock and distribution of skills. The foregoing suggests that firm dynamics and multiplicity of equilibria are outcomes of interaction between the cost of capital and the distribution of skill in the population. In the next section, we present a model of capital-skill matching in the entrepreneurial market that incorporates these salient features. We analyze equilibrium allocations and compare them under different rues of matching, while incorporating the labor market effect in form of the mechanisms responsible for shifting the skill distribution. Thereafter we derive testable implications that we take to the data.</span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="fu"># The basic environment</span></span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>This paper builds on Acemoglu (1996) and Lucas (1978). In particular, we invoke the link between entrepreneur's skill (composite talent) and the "span of control" presented by Lucas (1978) in order to make the model suitable for analyzing firm size dynamics. We consider an enterprise sector that is populated by two types of agents: a fixed number of risk-neutral entrepreneurs, indexed by subscript i, who require capital to build enterprises and a fixed number of risk-neutral capitalists, indexed by $j.$ Entrepreneurs differ from one another only in terms of skill $h_i$ which is measured in the domain <span class="sc">\[</span>0,1<span class="sc">\]</span>. Similarly, each capitalist possesses only one unit of capital of size $k_j$ which is also measured in the domain <span class="sc">\[</span>0,1<span class="sc">\]</span>. This allows a continuum of equal measure of both types of agents. <span class="ot">[^6]</span> We assume, consistent with these findings that the level of enterprise technology corresponds to the size of capital; a low-technology enterprise is defined by a small size of capital and a high-technology enterprise is characterized a large size of capital. Decisions are made in two periods. At period $t=0,$ entrepreneurs choose their skill levels and capitalists match their capital with entrepreneur's skill. At $t=1,$ production takes place and output is divided between the entrepreneurs, who own the enterprises, and the capitalists.</span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="ot">[^6]: </span>Soderbom (2011) concludes that large firms use more productive technologies than small firms and Sandefur (2010) shows that capital per worker increases by firm size in the Ghanaian data, equivalent to capital increasing by size of enterprise in the case of one-person enterprise.</span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>We adopt a generalized production function whose shape and characteristics are properly parameterized. The production function for an enterprise is given by</span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>y_{ij}=f(h_i,k_j)=Ah_i^{\alpha}k_j^{1-\alpha} \tag{1}</span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>where $α∈(0,1)$ determines the shape of the production function and all the other properties. The entrepreneur is endowed with a unit of labor all of which he supplies to the enterprise. Since labor is fixed, it does not appear as an input in the production function. For all intents and purposes, the production function in equation (1) is a one-worker-one-enterprise version of the neoclassical production function. Entrepreneurs maximize expected profits conditional on the set of prices. The variable inputs earn their marginal products while enterprise profits are paid to the entrepreneur as wages <span class="ot">[^7]</span>. Capital is paid rent (or the required rate of return) and skill is paid its return, which is interpreted as the cost of effort in learning the use of (incremental) capital or the cost of working with incremental technology. The zero-profit condition in the case implies that the entrepreneur goes home with the return to skill. The entrepreneur's utility is additive and separable in consumption and skill, and is given by</span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="ot">[^7]: </span>This is consistent with the practice where the profits of the enterprise are considered as earnings of the entrepreneur. The only difference is that we separate returns to labor from returns to skill in the model.</span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>V(c_i,h_i )=c_i \frac {1}{δ_i} * h_i^{1-Γ}⁄(1-Γ) \tag{2}</span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>where $\Gamma &gt;0,$ and $c_i,$ his consumption, is equal to his total income (return to skill plus profit) as there is no consumption after period $t=1.$ The parameter $δ_i$ measures the relative disutility of skill acquisition by the entrepreneur. We assume that the distribution of $δ_i$ across entrepreneurs is common knowledge at the time of investment. In this paper, we consider the equilibrium under various matching schemes, beginning with the simple Walrasian allocation and moving on to consider other matching mechanisms, and comparing the outcomes to the Walrasian mechanism. In doing so, our objective is to examine the dynamics of entrepreneurship and wages that emerge under each matching rule.</span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Auctioneer Walrasian Allocation</span></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>Under frictionless Walrasian markets managed by an auctioneer, the equilibrium matching of capital and entrepreneur's skill will be one-to-one according to their corresponding rankings in the unit interval. That is, high tech capital will be matched with high entrepreneurial skill and the most skilled entrepreneur will be matched with the largest size of capital. In this market, all agents are paid their marginal products:</span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>r_{ij} = f_k(h_i,k_j)=(1-\alpha)Ah_i^{\alpha}k_j^{-\alpha} \tag{3a}</span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>\tau_{ij} = f_h(h_i,k_j)={\alpha}Ah_i^{\alpha-1}k_j^{1-\alpha} \tag{3b}</span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>As in standard models, return to capital falls with the level of input. Similarly, $\tau_{i,j}$ the cost of skill (which equals return to skill) decreases with the level of skill but increases with the level of technology of the firm, and is the primary source of complementarity in the model. Given the returns, entrepreneur's wage income is given by the sum of profit (return to his labor) and returns to skill, which simplifies to output minus the total cost of capital,</span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>w_{ij} = f(h_i,k_j )-r(h_i,k_j ) k_j=αAh_i^α k_j^{1-\alpha}\tag{3c}</span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>In the Walrasian equilibrium, it must be the case that the marginal product of capital is equal to the capitalist's required rate of return on capital, that is, ${(1-\alpha)}Ah_i^{\alpha}k_j^{-\alpha}=\mu$ . The solution of the equation yields the capital-skill ratio given by the expression:</span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>k_{ij} = k_j/h_i=<span class="co">[</span><span class="ot">{(1-\alpha)}A/\mu</span><span class="co">]</span>^{1/\alpha} \tag{4}</span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>In equilibrium, all enterprises exhibit constant ratio of capital to skill, and both entrepreneurs and capitalists have no incentive to break up a match once it is formed. The optimal level of skill acquired by the entrepreneur is obtained by maximizing his utility in equation (2) subject to the condition that $c_i=w_ij=αAh_i^α k_j^{1-α}.$ The utility maximization process yields:</span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>{\alpha}^2Ah_i^{\alpha-1}k_j^{1-\alpha}=h_i^{-\Gamma}/\delta \tag{5}</span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>Substituting (4) into (5), the optimal acquisition of skill by the entrepreneur is given by:</span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>h_i=<span class="co">[</span><span class="ot">{\mu}/({1-\alpha})^{{1-\alpha}/\alpha}{\alpha}^{-2}{\delta}^{-1}A^{-1/\alpha}</span><span class="co">]</span>^{1/\Gamma} \tag{6}</span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>the matching level of capital is given by equation (4).</span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>Under this matching technology, all firms face identical cost of skills (the cost of learning the use of incremental addition to capital or alternatively the cost of the learning required to use new technology), and are therefore able to take advantage of them without anyone falling behind or getting ahead of others. In effect, all firms benefit similarly from technological improvements. The constancy of capital-skill ratio in this equilibrium implies that output and wages increase progressively with the level of technology (or capital) while the costs of capital and skill remain constant for all levels of skill.</span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>**Proposition 1**</span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>There exists a unique Walrasian equilibrium where the skill investments are given by equation (6) and all enterprises have a constant capital to skill ratio given by equation (4).</span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>The equilibrium allocation is Pareto optimal.</span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>The rate of return on skill is independent of the relative disutility of skill acquisition δ.</span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="fu">## Comparative Statics: The cost of capital μ</span></span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>We re-write the equilibrium outcomes in equations (3b), (6), (4), and (3c) respectively as:</span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>\tau_{ij}=w_{ij}/h_i={\alpha}A^{1/\alpha}({1-\alpha})^{(1-\alpha)/\alpha}\mu^{-(1-\alpha)/\alpha}=L {\cdot} \mu^{-(1-\alpha)/\alpha} \tag{7a}</span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>h_i=\alpha^{-2/\Gamma}\delta^{-1/\Gamma}\delta^{-1/\Gamma}{(1-\alpha)}^{-(1-\alpha)/\alpha\Gamma}A^{-1/\alpha\Gamma}\mu^{(1-\alpha)/\alpha\Gamma}=M {\cdot}\mu^{(1-\alpha)/\alpha\Gamma} \tag{7b}</span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>k_i={\alpha}^{-2/\Gamma}{\delta}^{-1/\Gamma}{(1-\alpha)}^{(\Gamma-1+\alpha)/\Gamma\alpha}A^{(\Gamma-1)/\alpha\Gamma}\mu^{(1-\alpha-\Gamma)/\alpha\Gamma}=N{\cdot}\mu^{(1-\Gamma)(1-\alpha)/\alpha\Gamma-1} \tag{7c}</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>w_i={\alpha}^{1-2/\Gamma}{\delta}^{-1/\Gamma}{(1-\alpha)}^{-(1-\Gamma)(1-\alpha)/\alpha\Gamma}A^{(\Gamma-1)/\alpha\Gamma}\mu^{(1-\Gamma)(1-\alpha)/\alpha\Gamma}=O{\cdot}\mu^{(1-\Gamma)(1-\alpha)/\alpha\Gamma} \tag{7d}</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>From the above equations, an equilibrium with higher required rate of return to capital is associated with a higher level of skill $(∂h_i⁄∂μ&gt;0)$ and lower ratio of wages to skills $(∂τ_ij⁄∂μ&lt;0),$ which is equivalent to lower rate of return to skills. Although the matching capital increases $(∂k_i⁄∂μ&gt;0),$ it does so less than skill because $(1-Γ)(1-α)⁄αΓ-1&lt;(1-α)⁄αΓ$ for any $Γ&gt;0.$ Thus, the capital-skill ratio decreases (observe also from (4) that $(∂κ_ij⁄∂μ&lt;0),$ wages increase in absolute terms but decreases in relative (to skill) terms. In effect, as the required rate of return to capital increases, there is over investment skills, which reduces the capital-skill ratio and drives down returns to investment in skills. Given that $∂^2 κ_ij⁄∂μ^2 &gt;0$ from equation (4), the capital-skill ratio decreases and the capital deficit widens rapidly as the cost of capital increases. This outcome is inefficient because entrepreneurs with skill below a threshold will not find capital while capital sizes larger than threshold will lie idle.</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>We have assumed in the preceding analysis that the stock of capital supplied to the enterprise market is fixed, and does not increase with the cost of capital. Suppose the stock of capital is variable in order to allow the capital-skill ratio remain fixed at the constant rate $k_{ij}=\bar{k}.$ Then the equilibrium described by equation (4) and equation (6) is restored with the effect that capital and skill distribution both shift upwards, leading to higher output. However, wages do not respond to changes in the cost of capital.</span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>**Proposition 2**</span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Suppose the required rate of return to capital is an increasing function of the stock of capital $μ=μ(K)$ in the Walrasian auctioneering market and the capital-skill ratio is constant $κ_ij=κ ̅.$ Then wages are non-responsive to the cost of capital.</span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>The equilibrium allocation is Pareto optimal.</span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>In the transition described in proposition 2, the increase in equilibrium level of skill could be the outcome of two processes: (1) a general increase in the level of skills compared to the market with lower cost of capital, or (2) a mechanism that sorts low-skill workers, who would not be able to generate the higher required rate of return on capital, out of the entrepreneurship market. This sorting could be into wage employment during increasing wages, or sorting into unemployment. While the former mechanism does not provide any insight into how the rate of entrepreneurship changes with wage levels, the latter presents a case of negative correlation between the rate of entrepreneurship and wages conditional on flexible enterprise capital stock.</span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="fu">## Decentralized equilibrium with random matching and exogenous cost of capital</span></span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>We now replace the Walrasian auctioneer with other mechanisms of matching entrepreneurs with capitalists. We first examine a decentralized equilibrium with random matching. In this case, entrepreneurs and capitalists still make their investment decisions at time $t=0$ and engage in production in period $t=1,$ but capitalists and entrepreneurs are allocated to each other through a random matching technology. Entrepreneurs do not know which capitalist they will match with, neither do capitalists know which entrepreneur they will be matched with. An entrepreneur is equally likely to be matched with any capitalist, and so is a capitalist equally likely to be matched with any entrepreneur. In effect, the entrepreneur assumes that he faces a production function of the form $f(h_i,<span class="sc">\{</span>k_j<span class="sc">\}</span>)=Ah_i^{\alpha}{\int}k_j^{1-\alpha}P(j)dj$ while the capitalist assumes that the production function is $f(<span class="sc">\{</span>h_i<span class="sc">\}</span>,k_j)=A({\int}h_i^{\alpha}p(i)di)k_j^{1-\alpha}$ where $p(j)$ and $p(i)$ are the probabilities of matching with capitalist $j$ and entrepreneur $i$ respectively. The expected returns to inputs are</span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>r_{ij}=f_k(<span class="sc">\{</span>h_i<span class="sc">\}</span>,k_j)=({1-\alpha})A({\int}h_i^{\alpha}p(i)di)k_j^{\alpha} \tag{8a}</span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>\tau_{ij}=f_h(h_i(h_i,<span class="sc">\{</span>k_j<span class="sc">\}</span>)={\alpha}Ah_i^{(\alpha-1)}({\int}k_j^{1-\alpha}p(j)dj) \tag{8b}</span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>and entrepreneur's wage income is given by (labor earnings plus skill premium)</span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>w_{ij}=f(h_i,<span class="sc">\{</span>k_j<span class="sc">\}</span>)-f_k(<span class="sc">\{</span>h_i<span class="sc">\}</span>,k_j)<span class="sc">\{</span>k_j<span class="sc">\}</span>=Ah_i^{\alpha}({\int}k_j^{1-\alpha}p(j)dj)-{(1-\alpha)}A({\int}h_i^{\alpha}p(i)di)k_j^{1-\alpha} \tag {8c}</span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>The equilibrium outcome of this matching problem depends on assumptions about the choices of capitalists and entrepreneurs in the investment stage. However, the natural equilibrium where capitalists choose the same investment and entrepreneurs choose identical level of skill is not very insightful or different from the Walrasian equilibrium.</span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="fu">### The case of uniform distribution of capital and exogenous cost of capital</span></span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>Consider the specific case where all capitalists choose the same size of capital, so that $k_j=k ̅,$ but skills vary across entrepreneurs. This scenario is relevant in order to analyze the functioning of capital markets where programs allocate flat amount of capital to entrepreneurs. Although all entrepreneurs receive equal allocation of capital, the amount of capital offered in the market is the level of capital that will be commensurate for the median entrepreneur in the Walrasian market. In this particular case, ${\int}k_j^{1-\alpha}p(j)dj={\bar{k}^{1-\alpha}}{\int}p(j)dj={\bar{k}^{1-\alpha}}$, and the returns to factor inputs are</span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>r_{ij}=f_k(<span class="sc">\{</span>h_i<span class="sc">\}</span>,\bar{k})={(1-\alpha})A({\int}h_i^{\alpha}p(i)di){\bar{k}^{-\alpha}} \tag{9a}</span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>\tau_{ij}=f_h(h_i,{\bar{k}})={\alpha}Ah_i^{\alpha-1}\bar{k}^{1-\alpha} \tag{9b}</span>
-<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>while entrepreneur's total income is given by</span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>w_{ij}={\alpha}Ah_i^{\alpha}\bar{k}^{1-\alpha}+({1-\alpha})A(h_i^{\alpha}-{\int}h_i^{\alpha}p(i)di)\bar{k}^{1-\alpha} \tag{9c}</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>Given a required rate of return to capital of μ, the equilibrium condition in the decentralized equilibrium is given by $({1-\alpha})A({\int}h_i^{\alpha}p(i)di){\bar{k}^{-\alpha}}=\mu$. The solution to this equation yields the expression:</span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>{\bar{k}}/h_i=<span class="co">[</span><span class="ot">({1-{\alpha}})A/\mu</span><span class="co">]</span>^{1/{\alpha}}<span class="co">[</span><span class="ot">({\int}h_i^{\alpha}p(i)di)/h_i^{\alpha}</span><span class="co">]</span>^{1/\alpha} \tag{10}</span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>In comparison with the Walrasian equilibrium, the ratio of capital to skill is no longer constant, but depends on the skill of the individual subscript i and the distribution of skill in the entire market through the ratio $({\int}h_i^{\alpha}p(i)di)/h_i^{\alpha}$. Entrepreneurs with skill higher than the average in the population of entrepreneurs would have capital to skill ratio that is lower than the Walrasian outcome while entrepreneurs with skill lower than the average would have capital to skill ratio that is higher than the Walrasian level, and the capital-skill gap would widen the father the entrepreneur's skill is away from the average. This is not surprising; it is rather expected from a uniform distribution of capital over a range of skills.</span>
-<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>To observe how wages are affected by the distribution of skill, (9c) can be re-written as</span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>w_{ij} = \underbrace{\alpha A h_i^\alpha \bar{k}^{1-\alpha}}_{Q} + \underbrace{(1-\alpha) A h_i^\alpha \bar{k}^{1-\alpha} \left[1 - \frac{\left(\int h_i^\alpha p(i) \, di\right)}{h_i^\alpha}\right]}_{R} \tag{9c}</span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>which is a sum of two parts Q and R. Under the Walrasian auctioneer, entrepreneurs with skill higher than (lower than) the average are matched with capital higher than (lower than) the average so that $(h_i⋚h ̅⟺k_j⋚k ̅ ).$ Under the matching rule under consideration here, every entrepreneur is matched with a constant size of capital, leading wage to decrease (increase) in wages for above-average (below-average) workers through Q in equation (9c) relative to the Walrasian outcome in equation (3c). However, there is another effect through the second term. Wages also increase because $({\int}h_i^{\alpha}p(i)di)/h_i&lt; 1$ (decreases because $({\int}h_i^{\alpha}p(i)di)/h_i^{\alpha} &gt;1)$ through R for entrepreneurs with skills higher than (lower than) the average person. In essence, the net effect of switching from the Walrasian auctioneer to a random matching with uniform distribution of capital on wages depends on the relativity of these changes based on the shape of skill distribution.</span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>Consider a skill distribution that is skewed to the right. The gap between skill and capital will be large for the highly skilled, thus reducing the value of Q substantially. For the second component R, the value of $({\int}h_i^{\alpha}p(i)di)h_i$ will be smaller than one but close to one so that the right hand side contributes little by way of increase. On a net basis, wages will fall for the highly skilled entrepreneur under the uniform distribution of capital relative to the Walrasian equilibrium. With regards to the low-skill entrepreneur, although Q increases substantially, the increase is more than offset by the large negative value of R induced by a large value of $({\int}h_i^{\alpha}p(i)di)/h_i &gt;1$, leading to lower wages relative to the Walrasian equilibrium. Thus, wages are lower for both high-skill and low-skill individuals under a random matching and uniform distribution of capital than under the Walrasian allocation.</span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>If, on the other hand, skill distribution is sufficiently skewed to the left, the capital-skill gap for the highly skilled entrepreneur is lower relative to the case under the right-skewed distribution but is still larger relative to the Walrasian allocation. So, Q will be lower than under the Walrasian auctioneering outcome. However, the second component will increase significantly because $({\int}h_i^{\alpha}p(i)di)/h_i^{\alpha}$ will be small. On a net basis, wages will increase for the skilled entrepreneur under the uniform distribution of capital relative to the Walrasian equilibrium. For the low-skill entrepreneur, Q will increase substantially relative to the Walrasian allocation and the value of $({\int}h_i^{\alpha}p(i)di)/h_i^{\alpha}$ will be close to one so that the right hand side contributes little by way of decrease. On a net basis, wages will also increase for the low-skilled entrepreneur under the uniform distribution of capital relative to the Walrasian equilibrium. Indeed, as noted at the beginning of this subsection, the finding that different shapes of skill distribution yield different wages for the same worker is driven by sensitivity of the (uniform) level of capital to the median level of skill.</span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>It is important to characterize this outcome further. The ratio of wage to skill, or the return to (or cost of) skills, obtained by substituting (10) into (9b) yields the following expression:</span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>\tau_{ij} = \underbrace{\left( \alpha A \left<span class="co">[</span><span class="ot"> \left(1-\alpha\right) \frac{A}{\mu} \right</span><span class="co">]</span>^{\frac{1-\alpha}{\alpha}} \right)}_{\tau_W} + \underbrace{\left( \left[ \frac{\int h_i^{\alpha} p(i)di}{h_i^{\alpha}} \right]^{\frac{1-\alpha}{\alpha}} \right)}_{\tau_M} \tag{11}</span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>which is a product of the constant cost of skills under Walrasian allocation (τ_W ) and a multiplier represented by $(τ_M ).$ Thus, the cost of skills diverges by level of skill relative to the population average. The first observation from equation (11) is that, regardless of the skill distribution, $({\int}h_i^{\alpha}p(i)di)/h_i&gt;1$ for low-skill entrepreneurs and $({\int}h_i^{\alpha}p(i)di&lt;1$ for high-skilled entrepreneurs. Therefore, compared to the Walrasian equilibrium, the cost of skill (re return to skill) is higher for entrepreneurs with skills below the average and lower for entrepreneurs with skills above the population average. In effect, the cost of skills (return to skills) rises for low-skill entrepreneurs and falls for high skill entrepreneurs if we replace the Walrasian equilibrium with the decentralized equilibrium with uniform distribution of capital and random matching. The second observation is that return to skill rises for both high-skilled and low-skilled entrepreneurs as we move from a right-skewed distribution to a left-skewed distribution of skills because $({\int}h_i^{\alpha}p(i)di)$ increases as a result. In effect, return to skills rises for everyone as the average level of skill rises in the population. When the two factors are combined, the low-skilled entrepreneurs benefit more in terms of return to skill under a left-skewed distribution than a right skewed distribution. This captures a form of social returns to skill that has been emphasized by Acemoglu (1996) -- see page 787 of the article.</span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>Why are wages higher under uniform distribution of capital compared to the Walrasian efficient allocation rule when skill distribution is left-skewed but lower when skill distribution is right-skewed? Given that the cost of capital is exogenous, there are two explanatory factors. One, the amount of capital supplied to the market rises with the median level of skill, so that capital per entrepreneur is higher under the left-skewed skill distribution than under the right-skewed distribution. "As the cost of education falls for a group of workers, the stock of skill in the economy increases, and firms want to increase their capital (p.787)" Thus, low-skill entrepreneurs benefit in terms of higher levels of capital induced by the high level of median skill when skill distribution is left-skewed than they would be allocated under the Walrasian rule. Second, a right-skewed skill distribution yields little for the low-skill entrepreneur in terms of capital increase with the change of rule, and any such benefit from capital is outweighed by the decrease in returns to skill, leading to lower wages. For high-skilled entrepreneurs, reduction in return to skills associated with the right-skewed distribution is reinforced by large reduction in capital.</span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>**Proposition 3**</span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Suppose the matching technology allocates capital uniformly to entrepreneurs, $k_j=k ̅(h ̈ ),$ where $h ̈∈ {(h^L,h^H)}$ is the level of skill chosen by entrepreneurs.</span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>The equilibrium with $h ̈=h^H$ where capital to skill ratio is given by equation (10) is efficient and wages given by equation (9c) is preferred to the Walrasian equilibrium described by equation (6) and equation (4).</span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>The equilibrium with $h ̈=h^L$ where capital to skill ratio is given by equation (10) is inefficient and wages given byequation (9c) is worse than the Walrasian equilibrium described by (7f).</span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>The foregoing implies that when the stock of capital is flexible under random matching with uniform distribution of capital so that average capital increases with average (median) level of skill, entrepreneurs earn higher wages when the population of entrepreneurs is high-skilled on average and lower wages when the population is low-skilled. This scenario leads to multiple equilibria where wages are lower than the Walrasian equilibrium in the equilibrium with $h ̈=h^L$and are higher in the equilibrium with $h ̈=h^H$ whereas the cost of capital, capital-skill ratio and cost of skill are constant and the same as the Walrasian equilibrium.</span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="fu">## Decentralized equilibrium with endogenous cost of capital</span></span>
-<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>We discard the assumption of uniform distribution of capital and consider the case where matching is random (large number of lenders and borrowers) and the required rate of return on capital is a decreasing function of entrepreneur's skill. That is, $μ=μ(h_i ).$ For simplicity, we assume that $μ=θ⁄h_i$ . Solving $({1-\alpha}A({\int}h_i^{\alpha}p(i)p(i)di)k_j^{-\alpha}={\theta}/h_i$ yields</span>
-<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>\frac{k_j}{h_i} = \left(\frac{(1-\alpha) A}{\theta}\right)^{\frac{1}{\alpha}} \left(\frac{\left(\int h_i^{\alpha} p(i) \, di\right)}{(h_i^{\alpha}) \cdot h_i}\right)^{\frac{1}{\alpha}} \tag{12}</span>
-<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>In this case, the capital to skill ratio is determined by the entrepreneur's both relative and absolute levels of skill. A high-skill entrepreneur in a population with high average level of skill will have very high capital to skill ratio relative to the Walrasian outcome, while a low-skill entrepreneur in a population of entrepreneurs with low average skill will have very low capital to skill ratio relative to the Walrasian rule. In the former, the high average skill will attract high levels of capital that are typically cheaper to administer, and the entrepreneur's high skill will further reduce the cost of capital thereby enabling him to demand large size of capital. In the latter case, the low average skill attracts low level of capital, which is typically more costly. The entrepreneur's own low skill level further raises the cost, ensuring that his demand for capital will be low. Otherwise, a high-skill entrepreneur in a population with low average skill and a low-skill entrepreneur in a population with high average skill may have similar ratios of capital to skill. The capital-skill ratio will be the most dispersed among the matching rules considered so far. Because larger sizes of loan are typically less expensive to administer in reality relative to small loans, this is likely to mirror the system in well-developed credit markets. An analysis of equation (12) shows that the allocation is characterized by an indefinite number of equilibria. Suppose, instead, that such unique equilibrium level of skill exists. From equation (12), although $({\int}h_i^{\alpha}p(i)di)/h_i^{\alpha}=1$, the resulting capital skill ratio which simplifies to $k_j/h_i=<span class="co">[</span><span class="ot">{(1-\alpha)}A/\theta</span><span class="co">]</span>^{1/{\alpha}}$ depends on the level of skill. Because this is not the same for everyone who chooses the same level of skill, then there is no unique equilibrium. The problem could be modified if the cost of capital is a step function. In that case, there could be up to twice as many equilibria as the number of steps once we incorporate skill distribution. It is possible that the standard credit market has a matching technology that generates a finite number of equilibria, each with unique realization of wages and constant capital-skills ratio.</span>
-<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="fu"># Empirical tests of models</span></span>
-<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>The following are testable implications of the model:</span>
-<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>In general, the level of skill (or demand for skill) increases with the required rate of return on capital. Thus, the model predicts a stronger correlation between skills and the cost of capital than between skills and wages.</span>
-<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Return to skill (wage-to-skill ratio) falls with the required rate of return on capital when enterprise capital stock is fixed but remains unchanged when the stock of capital increases with the required rate of return on capital.</span>
-<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>A negative correlation between wages and the rate of entrepreneurship arises in a general equilibrium context when skill growth is driven by sorting of low-skill workers out of entrepreneurship rather than through increased demand for skills. Thus, the negative relationship between the rate of entrepreneurship and wages does not always hold.</span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>It is not necessary that self-employment rates decrease in order to achieve higher enterprise wages; only the distribution of skills need to be sufficiently left-skewed.</span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>Skill-blind (uniform-distribution) credit programs with exogenous cost of capital are not inherently destined to generate low wages; amount of capital only needs to be sensitive to skill distribution such that it increases with the median level of skill in the population.</span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a><span class="ss">6.  </span>Skill assessment and ordering of groups to generate skewed skill distribution becomes a crucial necessity for uniform-distribution capital programs to generate high wages.</span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="ss">7.  </span>Under uniform distribution of capital and fixed required rates of return to capital, multiple equilibria of high and low wages can emerge to the extent that skill distribution is not uni-modal.</span>
-<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="fu"># References</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</script>
 </div> <!-- /content -->
 
 
