@@ -2,6 +2,8 @@
 # Use the title below for MS Word or PDF documents
 title: "![](resources/hdi_logo.png){width=2.5in}  \n Implications of Birth Control Methods on Fertility and Wellbeing of Women: Evidence from Rural Households in Nigeria"
 
+subtitle: Working papers
+
 date: 2022-06-18
 date-modified: today
 date-format: "MMM YYYY"

@@ -4,7 +4,7 @@ title: "Implications of Birth Control Methods on Fertility and Wellbeing of Wome
 image: "figures/figure.png"
 
 categories:
-  - Working paper
+  - Working papers
 
 date: 2022-06-18
 date-modified: today
