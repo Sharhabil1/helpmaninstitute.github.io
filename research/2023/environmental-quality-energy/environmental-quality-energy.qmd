@@ -168,7 +168,7 @@ where $y_{it}$ is environmental quality for economy i at time t; $α_{ij}$ repre
 
 $$
 Δy_{it} = μ_i + δ_i(y_{i,t-1} - θ_i x_{i,t-1} + δ_i^{-1} n_i \overline{y_t} + δ_i^{-1} φ_i \overline{x_t} 
-$$ 
+$$
 
 $$
 + \Sigma_{j-1}^{p-1}ϕ_ij Δy_{i,t-j} + \Sigma_{j-0}^{q-1}α_ij Δx_{i,t-j}  + \Sigma_{j-0}^{p-1}τ_{ik} Δ\overline y_{t-j} + \Sigma_{j-0}^{q-1}Δ_{ik} φ\overline x_{t-j} + ε_{it} \tag{6}
@@ -204,7 +204,7 @@ $$
 
 $$
 ΔCA_{i,t} = λ_i+λ_i CA_{i,t-1} + λ_i \overline {CA_{t-1}} + \Sigma_{l=0}^p λ_{il} Δ\overline{CA_{t-1}} + \Sigma_{l=0}^pλ_{il} Δ CA_{i,t-1}+μ_{it} \tag{11}
-$$ 
+$$
 
 where $λ_i$, $CA_{i,t-1}$, $Δ CA_{i,t}$, $\overline {CA_{t-1}}$ and $Δ\overline{CA_{t-1}}$ denotes the intercept, the cross-sectional units, its, first difference, its mean values, and the cross-sectional units' first difference, in that order.
 
