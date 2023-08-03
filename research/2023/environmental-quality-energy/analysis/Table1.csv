@@ -1,0 +1,9 @@
+Variables and Definitions,Description
+EQ - Environmental Quality,"Captured with carbon emissions (CO2) measured in 
+kilo tonnes*"
+RGDP - Real Gross Domestic Product ,Captured with GDP (US$ Billion 2015 constant)
+ENC - Energy use,Captured with fossil fuel energy consumed per capita (EN)
+GCI - Gross Capital Investment,Proxied with gross capital formation
+TOP - Trade Openness,Captured with trade in % of GDP
+REQ - Regulatory Quality,Captured with quality of regulations (in Percentile Rank)
+ENC*TOP ,Captured with multiplication energy consumption and trade openness
