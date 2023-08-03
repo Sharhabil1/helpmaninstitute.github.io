@@ -1,0 +1,50 @@
+---
+title: "Assessing the role of Trade on the Nexus between Environmental Quality and Energy Use: Evidence from Sub-Saharan Africa"
+description: "This study, which includes 35 selected economies in Sub-Saharan Africa divided into 20 low-income countries (LICs) and 15 middle-income countries (MICs), examines the moderating influence of trade on the nexus between energy use and environmental quality between 1996 and 2020."
+
+categories: 
+  - Working papers
+
+date: 2023-07-02
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: QUADRI, Umar Faruq
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: fquadri@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+
+execute:
+  echo: false
+---
+
+## Abstract
+
+In spite of the overwhelming evidence linking the energy use and environmental quality, the part played by international trade in the relationship has not been thoroughly studied, particularly in Sub-Saharan Africa. This study, which includes 35 selected economies in Sub-Saharan Africa divided into 20 low-income countries (LICs) and 15 middle-income countries (MICs), examines the moderating influence of trade on the nexus between energy use and environmental quality between 1996 and 2020. In this regard, the cross-sectional augmented autoregressive distributed lag (CS-ARDL) along with pooled mean group (PMG) estimator was employed. The results showed that, especially in MICs, energy use has an unfavorable consequence on the quality of the environment. It also demonstrated that trade's effectiveness considerably reduces the damaging effects of energy use on the environment. We suggest that the newly signed and ratified African Continental Free Trade Agreement (AfCFTA) outline a number of ways that State Parties are required to deepen the links between the AfCFTA and the environment, with an emphasis on practical strategies and tactics.
+
+JEL Classifications: Q43, F13, C23, Q58
+
+Keywords: Energy Use, Environmental Quality, trade, CS_ARDL, AfCFTA
+
+## Key figure
+
+::: {layout-ncol="2"}
+![Average RGDP, Energy Use and Carbon Emissions in Sub-Saharan Africa (1996--2020)](figures/rgdp-energy-carbon-i.png){fig-align="left"}
+
+![](figures/rgdp-energy-carbon-ii.png){fig-align="right"}
+:::
+
+## PDF links
+
+-   [Paper (preprint) in PDF format](environmental-quality-energy.pdf)
