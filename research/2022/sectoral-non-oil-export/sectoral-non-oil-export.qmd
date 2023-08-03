@@ -1,7 +1,7 @@
 ---
 title: "![](resources/hdi_logo.png){width=2in}  \n Non-Oil Sectoral Export: Implications for Nigeria’s Economic Growth"
 
-subtitle: Working Paper
+subtitle: Working papers
 
 date: 2022-06-12
 date-modified: today
