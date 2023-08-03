@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,77 +19,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -103,8 +41,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -138,16 +75,18 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -158,29 +97,31 @@ div.csl-indent {
     <span class="navbar-title">Helpman Institute</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:info@helpmaninstitute.org"><i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:info@helpmaninstitute.org" rel="" target=""><i class="bi bi-envelope" role="img" aria-label="email">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute"><i class="bi bi-linkedin" role="img" aria-label="linkedin">
+    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute" rel="" target=""><i class="bi bi-linkedin" role="img" aria-label="linkedin">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -188,42 +129,40 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="toc-section-number">1</span>  Introduction</a></li>
-  <li><a href="#history-of-the-urban-sector" id="toc-history-of-the-urban-sector" class="nav-link" data-scroll-target="#history-of-the-urban-sector"><span class="toc-section-number">2</span>  History of the Urban Sector</a></li>
-  <li><a href="#the-basic-model" id="toc-the-basic-model" class="nav-link" data-scroll-target="#the-basic-model"><span class="toc-section-number">3</span>  The Basic Model</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#history-of-the-urban-sector" id="toc-history-of-the-urban-sector" class="nav-link" data-scroll-target="#history-of-the-urban-sector"><span class="header-section-number">2</span> History of the Urban Sector</a></li>
+  <li><a href="#the-basic-model" id="toc-the-basic-model" class="nav-link" data-scroll-target="#the-basic-model"><span class="header-section-number">3</span> The Basic Model</a>
   <ul class="collapse">
-  <li><a href="#labor-endowment" id="toc-labor-endowment" class="nav-link" data-scroll-target="#labor-endowment"><span class="toc-section-number">3.1</span>  Labor Endowment</a></li>
-  <li><a href="#expected-wages" id="toc-expected-wages" class="nav-link" data-scroll-target="#expected-wages"><span class="toc-section-number">3.2</span>  Expected Wages</a></li>
-  <li><a href="#equilibrium" id="toc-equilibrium" class="nav-link" data-scroll-target="#equilibrium"><span class="toc-section-number">3.3</span>  Equilibrium</a></li>
-  <li><a href="#urban-unemployment-in-equilibrium" id="toc-urban-unemployment-in-equilibrium" class="nav-link" data-scroll-target="#urban-unemployment-in-equilibrium"><span class="toc-section-number">3.4</span>  Urban Unemployment in Equilibrium</a></li>
-  <li><a href="#minimum-wage-and-unemployment" id="toc-minimum-wage-and-unemployment" class="nav-link" data-scroll-target="#minimum-wage-and-unemployment"><span class="toc-section-number">3.5</span>  Minimum Wage and Unemployment</a></li>
+  <li><a href="#labor-endowment" id="toc-labor-endowment" class="nav-link" data-scroll-target="#labor-endowment"><span class="header-section-number">3.1</span> Labor Endowment</a></li>
+  <li><a href="#expected-wages" id="toc-expected-wages" class="nav-link" data-scroll-target="#expected-wages"><span class="header-section-number">3.2</span> Expected Wages</a></li>
+  <li><a href="#equilibrium" id="toc-equilibrium" class="nav-link" data-scroll-target="#equilibrium"><span class="header-section-number">3.3</span> Equilibrium</a></li>
+  <li><a href="#urban-unemployment-in-equilibrium" id="toc-urban-unemployment-in-equilibrium" class="nav-link" data-scroll-target="#urban-unemployment-in-equilibrium"><span class="header-section-number">3.4</span> Urban Unemployment in Equilibrium</a></li>
+  <li><a href="#minimum-wage-and-unemployment" id="toc-minimum-wage-and-unemployment" class="nav-link" data-scroll-target="#minimum-wage-and-unemployment"><span class="header-section-number">3.5</span> Minimum Wage and Unemployment</a></li>
   </ul></li>
-  <li><a href="#policy-implications" id="toc-policy-implications" class="nav-link" data-scroll-target="#policy-implications"><span class="toc-section-number">4</span>  Policy Implications</a>
+  <li><a href="#policy-implications" id="toc-policy-implications" class="nav-link" data-scroll-target="#policy-implications"><span class="header-section-number">4</span> Policy Implications</a>
   <ul class="collapse">
-  <li><a href="#value-chains-in-agriculture" id="toc-value-chains-in-agriculture" class="nav-link" data-scroll-target="#value-chains-in-agriculture"><span class="toc-section-number">4.1</span>  Value Chains in Agriculture</a></li>
-  <li><a href="#access-to-financial-services" id="toc-access-to-financial-services" class="nav-link" data-scroll-target="#access-to-financial-services"><span class="toc-section-number">4.2</span>  Access to Financial Services</a></li>
-  <li><a href="#skill-development" id="toc-skill-development" class="nav-link" data-scroll-target="#skill-development"><span class="toc-section-number">4.3</span>  Skill Development</a></li>
-  <li><a href="#rural-population-growth" id="toc-rural-population-growth" class="nav-link" data-scroll-target="#rural-population-growth"><span class="toc-section-number">4.4</span>  Rural Population Growth</a></li>
+  <li><a href="#value-chains-in-agriculture" id="toc-value-chains-in-agriculture" class="nav-link" data-scroll-target="#value-chains-in-agriculture"><span class="header-section-number">4.1</span> Value Chains in Agriculture</a></li>
+  <li><a href="#access-to-financial-services" id="toc-access-to-financial-services" class="nav-link" data-scroll-target="#access-to-financial-services"><span class="header-section-number">4.2</span> Access to Financial Services</a></li>
+  <li><a href="#skill-development" id="toc-skill-development" class="nav-link" data-scroll-target="#skill-development"><span class="header-section-number">4.3</span> Skill Development</a></li>
+  <li><a href="#rural-population-growth" id="toc-rural-population-growth" class="nav-link" data-scroll-target="#rural-population-growth"><span class="header-section-number">4.4</span> Rural Population Growth</a></li>
   </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="toc-section-number">5</span>  <strong>References</strong></a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5</span> <strong>References</strong></a></li>
   </ul>
-</nav>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="harris-todaro-model.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><img src="resources/hdi_logo.png" class="img-fluid" style="width:2.5in"><br>
-Unemployment and Wages in Less Developed Countries: Updating Harris-Todaro Model with Urban Informal Sector</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title"><img src="resources/hdi_logo.png" class="img-fluid" style="width:2.5in"><br>
+Unemployment and Wages in Less Developed Countries: Updating Harris-Todaro Model with Urban Informal Sector</h1>
 </div>
 
 
@@ -232,7 +171,7 @@ Unemployment and Wages in Less Developed Countries: Updating Harris-Todaro Model
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    Olumide Taiwo 
+    <p class="author">Olumide Taiwo </p>
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -254,7 +193,7 @@ Unemployment and Wages in Less Developed Countries: Updating Harris-Todaro Model
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">Jul 2023</p>
+      <p class="date-modified">Aug 2023</p>
     </div>
   </div>
     
@@ -428,104 +367,102 @@ V(W^e_U-W_R)/V(W_R-W^\alpha_U) = N_U/(\overline{N}-N_U)
 
 
 
-<!-- -->
-
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">5 References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-andalon2008" class="csl-entry" role="doc-biblioentry">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">5 References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-andalon2008" class="csl-entry" role="listitem">
 Andalon, M., and C. Pages. 2008. <span>“Minimum Wages in Kenya.”</span> <em>IZA Discussion Papers</em>, no. 3390.
 </div>
-<div id="ref-arai2003" class="csl-entry" role="doc-biblioentry">
+<div id="ref-arai2003" class="csl-entry" role="listitem">
 Arai, M. 2003. <span>“Wages, Profits, and Capital Intensity: Evidence from Matched Worker-Firm Data.”</span> <em>Journal of Labor Economics</em> 21 (3): 593–618.
 </div>
-<div id="ref-brozen1962" class="csl-entry" role="doc-biblioentry">
+<div id="ref-brozen1962" class="csl-entry" role="listitem">
 Brozen, Y. 1962. <span>“Minimum Wage Rates and Household Workers.”</span> <em>Journal of Law and Economics</em> 5: 103–9.
 </div>
-<div id="ref-calvo1978" class="csl-entry" role="doc-biblioentry">
+<div id="ref-calvo1978" class="csl-entry" role="listitem">
 Calvo, G. A. 1978. <span>“Urban Unemployment and Wage Determination in LDC’s: Trade Unions in the Harris-Todaro Model.”</span> <em>International Economic Review</em> 19 (1): 65–81.
 </div>
-<div id="ref-comola2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-comola2010" class="csl-entry" role="listitem">
 Comola, M., and Luiz de Mello. 2010. <span>“How Does Decentralized Minimum Wage Setting Affect Employment and Informality?”</span>
 </div>
-<div id="ref-corden1975" class="csl-entry" role="doc-biblioentry">
+<div id="ref-corden1975" class="csl-entry" role="listitem">
 Corden, W. M., and R. Findlay. 1975. <span>“Urban Unemployment, Intersectoral Capital Mobility and Development Policy.”</span> <em>Economica</em> 42 (165): 59–78.
 </div>
-<div id="ref-demel2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-demel2012" class="csl-entry" role="listitem">
 De Mel, S., D. McKenzie, and C. Woodruff. 2012. <span>“The Demand for, and Consequences of Formalizing Among Informal Firms in Sri Lanka.”</span> Policy Research Working Paper 5991, The World Bank.
 </div>
-<div id="ref-fafchamps1999" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fafchamps1999" class="csl-entry" role="listitem">
 Fafchamps, M. 1999. <span>“Networks, Communities, and Markets in Sub-Saharan Africa: Implications for Firm Growth and Investment.”</span> Center for the Study of African Economies, Department of Economics, Oxford University.
 </div>
-<div id="ref-fields1975" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fields1975" class="csl-entry" role="listitem">
 Fields, Gary S. 1975. <span>“Rural-Urban Migration, Urban Unemployment and Underemployment, and Job Search Activity in LDCs.”</span> <em>Journal of Development Economics</em> 2: 165–87.
 </div>
-<div id="ref-fields1990" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fields1990" class="csl-entry" role="listitem">
 ———. 1990. <span>“Labor Market Modeling and the Urban Informal Sector: Theory and Evidence.”</span> In <em>The Informal Sector Revisited</em>, edited by David Turnham, Bernard Salomé, and Antoine Schwarz. Paris: Development Centre of the Organization for Economic Co-Operation; Development.
 </div>
-<div id="ref-fields2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fields2005" class="csl-entry" role="listitem">
 ———. 2005. <span>“A Guide to Multisector Labor Market Models.”</span> 0505. Social Protection Discussion Papers; Human Development Networks, The World Bank.
 </div>
-<div id="ref-fiszbein1992" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fiszbein1992" class="csl-entry" role="listitem">
 Fiszbein, A. 1992. <span>“<span class="nocase">Do workers in the informal sector benefit from cuts in the minimum wage?</span>”</span> Policy Research Working Paper Series 826. The World Bank.
 </div>
-<div id="ref-fluitman2001" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fluitman2001" class="csl-entry" role="listitem">
 Fluitman, F. 2001. <span>“Working, but Not Well: Notes on the Nature and Extent of Employment Problems in Sub-Saharan Africa.”</span> International Labor Office, Italy.
 </div>
-<div id="ref-gindling2002" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gindling2002" class="csl-entry" role="listitem">
 Gindling, T. H., and K. Terrell. 2002. <span>“The Effects of Minimum Wages on the Formal and Informal Sector: Evidence from Costa Rica.”</span>
 </div>
-<div id="ref-harris1970" class="csl-entry" role="doc-biblioentry">
+<div id="ref-harris1970" class="csl-entry" role="listitem">
 Harris, John R., and Michael P. Todaro. 1970. <span>“Migration, Unemployment and Development: A Two-Sector Analysis.”</span> <em>American Economic Review</em> 60 (1): 126–42.
 </div>
-<div id="ref-hart1971" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hart1971" class="csl-entry" role="listitem">
 Hart, K. 1971. <span>“Informal Income Opportunities and Urban Employment in Ghana.”</span> In <em>Third World Employment: Problems and Strategy</em>, edited by R. et al. Jolly. Hamondsworth: Penguin.
 </div>
-<div id="ref-islam2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-islam2000" class="csl-entry" role="listitem">
 Islam, I., and S. Nazara. 2000. <span>“Minimum Wage and the Welfare of Indonesian Workers.”</span> 3. Occasional Discussion Paper Series; International Labor Organization, Jakarta Office.
 </div>
-<div id="ref-jamal1988" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jamal1988" class="csl-entry" role="listitem">
 Jamal, V., and J. Weeks. 1988. <span>“The Vanishing Rural-Urban Premium in Sub-Saharan Africa.”</span> <em>International Labour Review</em> 127 (3): 271–92.
 </div>
-<div id="ref-jones1997" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jones1997" class="csl-entry" role="listitem">
 Jones, P. 1997. <span>“The Impact of Minimum Wage Legislation in Developing Countries Where Coverage Is Incomplete.”</span> Working Paper WPS 98/2. Center for the Study of African Economies.
 </div>
-<div id="ref-lewis1954" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lewis1954" class="csl-entry" role="listitem">
 Lewis, W. Arthur. 1954. <span>“Economic Development with Unlimited Supplies of Labour.”</span> <em>Manchester School</em> 22: 139–91.
 </div>
-<div id="ref-macharia2003" class="csl-entry" role="doc-biblioentry">
+<div id="ref-macharia2003" class="csl-entry" role="listitem">
 Macharia, K. 2003. <span>“Migration in Kenya and Its Impact on the Labor Market.”</span>
 </div>
-<div id="ref-mbowa2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mbowa2012" class="csl-entry" role="listitem">
 Mbowa, S., I. Shinyekwa, and M. M. Lwanga. 2012. <span>“Dairy Sector Reforms and Transformation in Uganda Since the 1990s.”</span>
 </div>
-<div id="ref-mckenzie2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mckenzie2007" class="csl-entry" role="listitem">
 McKenzie, D., and Y. S. Sakho. 2007. <span>“Does It Pay Firms to Register for Taxes? The Impact of Formality on Firm Profitability.”</span> Policy Research Working Paper 4449, The World Bank.
 </div>
-<div id="ref-ilo2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ilo2008" class="csl-entry" role="listitem">
 Organization, International Labor. 2008. <span>“Skills for Improved Productivity, Employment Growth and Development.”</span> Report V of the International Labor Conference, 97th Session, 2008.
 </div>
-<div id="ref-reed2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-reed2010" class="csl-entry" role="listitem">
 Reed, H., C. S. Andrzejewski, and M. J. White. 2010. <span>“Men’s and Women’s Migration in Coastal Ghana: An Event History Analysis.”</span> <em>Demographic Research</em> 22: 771–812.
 </div>
-<div id="ref-sommers2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-sommers2007" class="csl-entry" role="listitem">
 Sommers, M. 2007. <span>“West Africa’s Youth Employment Challenge: The Case of Guinea, Liberia, Sierra Leone, and Côte d’ivoire.”</span>
 </div>
-<div id="ref-tauchen1981" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tauchen1981" class="csl-entry" role="listitem">
 Tauchen, G. E. 1981. <span>“Some Evidence on Cross-Sector Effects of the Minimum Wage.”</span> <em>Journal of Political Economy</em> 89 (3): 529–47.
 </div>
-<div id="ref-todaro1969" class="csl-entry" role="doc-biblioentry">
+<div id="ref-todaro1969" class="csl-entry" role="listitem">
 Todaro, Michael P. 1969. <span>“A Model of Labor Migration and Urban Unemployment in Less Developed Countries.”</span> <em>American Economic Review</em> 39: 138–48.
 </div>
-<div id="ref-viren2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-viren2005" class="csl-entry" role="listitem">
 Viren, M. 2005. <span>“Why Do Capital Intensive Companies Pay Higher Wages?”</span> Bank of Finland Research Discussion Papers 5/2005.
 </div>
-<div id="ref-welch1973" class="csl-entry" role="doc-biblioentry">
+<div id="ref-welch1973" class="csl-entry" role="listitem">
 Welch, F. 1973. <span>“Minimum Wage Legislation in the United States.”</span> <em>The Rand Corporation Rand Paper Series</em>, no. P-5145.
 </div>
-<div id="ref-zhao1999" class="csl-entry" role="doc-biblioentry">
+<div id="ref-zhao1999" class="csl-entry" role="listitem">
 Zhao, Y. 1999. <span>“Leaving the Countryside: Rural-to-Urban Migration Decisions in China.”</span> <em>American Economic Review</em> 89 (2): 281–86.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
@@ -593,9 +530,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -631,57 +582,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
-  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -711,6 +611,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -749,357 +735,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "![](resources/hdi_logo.png){width=2.5in}  \n  Unemployment and Wages in Less Developed Countries: Updating Harris-Todaro Model with Urban Informal Sector"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2022-05-04</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date-modified:</span><span class="co"> today</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> "MMM YYYY"</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Olumide Taiwo</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliations:</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">      - ref: hdi</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    attributes:</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">      corresponding: true</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">    email: otaiwo@helpmaninstitute.org</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="an">affiliations:</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">  - id: hdi</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">    name: Helpman Development Institute, Abuja, Nigeria.</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">   </span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf:</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">    papersize: a4</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">    default-image-extension: pdf</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">    link-citations: true</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">    linestretch: 1.25</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">    geometry:</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">    - top=25.4mm</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">    - left=25.4mm</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">    - right=25.4mm</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co">    - bottom=25.4mm</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co">    extra_dependencies: ["flafter"]</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="co">    header-includes: |</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">      \usepackage[labelsep=period]{caption}</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="an">crossref:</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co">  title-delim: "."</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="an">number-sections:</span><span class="co"> true</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="an">toccolor:</span><span class="co"> blue</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 2</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="an">toc-title:</span><span class="co"> "Table of Contents"</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> references.bib</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="co">#csl: resources/bmj.csl</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>{{&lt; pagebreak &gt;}}</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>**Abstract**</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>The @harris1970 model of urban unemployment remains one of the historically insightful tools for analyzing urban unemployment problems in less developed countries (LDCs): a politically determined urban minimum wage set above rural agricultural wage draws rural workers into urban unemployment. Unfortunately, the urban informal sector that has become the largest employer of labor in the recent history of developing countries and its dynamics were largely underdeveloped at the time that the model was written. It is therefore not surprising that recent tests of the relationship between minimum wage and urban unemployment in different developing country settings demonstrate a failing of the model's prediction. In this paper, I make two main extensions to the model: I include an urban informal flexible-wage sector and allow for both rural-urban and urban-rural migration; and link rural wage to the size of rural labor. The urban sector is divided into the formal and the informal segments by the minimum wage and urban unemployment is driven by both rural-urban migrants and urban non-migrants. These extensions to the model yield three new insights: (1) an increase in minimum wage is not a precondition for rural-urban migration, (2) urban unemployment is driven largely by wage comparisons between the urban formal and informal sectors, and (3) urban unemployment is largely voluntary. The implication of the model is straightforward: the best strategy to reduce urban unemployment is to develop the urban informal sector. I discuss some policy choices.</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>{{&lt; pagebreak &gt;}}</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>The model of migration developed by @harris1970 presents an articulate analysis of the impact of minimum wage<span class="ot">[^1]</span> on urban unemployment in developing countries where urban sectors are covered by government regulations but rural sectors are not. As a result of a politically determined minimum wage, a formal urban wage is inflexible to labor supply and a rural-urban wage differential continues to draw workers from rural agriculture to the cities. The urban modern sector is of limited size and many migrant workers are unable to secure employment in the sector and therefore become unemployed. The powerful implication of the model is that job creation in urban sector would draw more workers into urban sector than available urban jobs and thereby raise urban unemployment. As a result, the solution to urban unemployment is rural development.</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>The conventional wisdom among economists that minimum wage creates excess labor especially among low-wage workers has greatly influenced economic policy and continues to be held as a proximate cause of unemployment in developing countries. The main idea is that a legislated wage floor set above market-clearing wage in a labor market induces excess supply of labor and creates unemployment. Although this idea emerged from analyzing a unified standard labor market that is entirely covered by regulations, the idea has been extended to multisector labor markets where some sectors may not be covered by labor regulations.</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>However, the central insight of the model, that minimum wage causes urban unemployment, has not held up under scrutiny. Empirical studies conclude that minimum wage only shifts the distribution of urban employment between the formal and informal sectors. @jones1997 analyzed employment data from Ghana and found that minimum wage policies during the 1970s and 1980s led to reduction of formal sector jobs and increase in informal sector jobs. She concludes that a large portion of workers displaced from the formal sector found employment in the informal sector. @islam2000 analyzed data from Indonesia and found no convincing evidence of a negative relationship between minimum wage and total urban employment. @gindling2002 examined the effects of minimum wage on employment of full-time and part-time workers in Costa Rica. They found that in response to increase in minimum wage, employers convert some part-time workers to full-time and lay off others, and those who are laid off move on to find work in the informal sector <span class="co">[</span><span class="ot">@andalon2008</span><span class="co">]</span>. analyzed data from Kenya and found that non-agricultural wage is indeed sensitive to minimum wage regulations while agricultural wage is not. Their results show that an increase in the minimum wage reduces the share of formal employment but is accompanied by at least an offsetting increase in the share of informal employment. @comola2010 analyzed the impact of the minimum wage on employment in Indonesia taking advantage of a decentralized minimum wage policy. They found that an increase in the ratio of minimum wage to the mean wage is associated with a net increase in employment and the explanation is that job losses in the formal sector are compensated by greater job gains in the informal sector. This phenomenon is not new as similar shifts of employment from regulated to unregulated sectors have been established in the United States. @brozen1962 found evidence that increase in minimum wage coincide largely with increase in the proportion of workers engaged in domestic and farm employment, sectors that are not covered by minimum wage legislation. @welch1973 finds that minimum wage tends to force teenagers out of covered employment into uncovered employment. @tauchen1981 finds that workers that are no longer employed in the covered sectors as a result of minimum wage contribute to labor supply in uncovered sectors.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>The central role of urban-rural wage gap in migration decisions has also not held up under empirical examination. Indeed, evidence shows that urban-rural wage premium is neither necessary nor sufficient for urban migration. @jamal1988 observe that rural-urban migration in African countries actually accelerated in spite of vanishing urban-rural wage differential in the 1970s and 1980s. They demonstrate that urban migration continued despite diminishing security and stability of urban employment.<span class="ot">[^2]</span> Following from the observed pattern of income distribution in the 1970s and 1980s, they argue that the important comparison is not between urban and rural wages but between income groups within rural and urban sectors. <span class="co">[</span><span class="ot">@macharia2003 [p. 1</span><span class="co">]</span> sheds light on this finding while examining the history of urban migration in Kenya since the 1970s. She argues that "people migrating to the urban areas have continued to do so even when the hopes of getting white or blue collar jobs were vanishing." Evidence from China also cast doubt on the hypothesis that wage differentials drive migration. A large urban-rural wage differential had developed as a result of restrictions on urban migration that was part of Chinese history. Due to the incentive provided by the wage differential, it is expected under Harris-Todaro's hypothesis, that urban migration would surge after the controls were eliminated. To the contrary, evidence provided by @zhao1999 shows that majority of rural workers and rural Chinese families did not engage in migration, and individuals who migrate only engage in circular migration instead of permanent migration. The author concludes that rural land management was part of the explanations for this observation.</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ot">[^2]: </span>Stability of earning streams in urban jobs traditionally makes urban jobs more desirable than rural agricultural employment as the latter is vulnerable to the vagaries of weather and natural disasters. However the reforms that commenced since the 1980s induced layoffs and eroded public sector job stability in many developing countries. Jobs in the private sectors are also no longer stable as in the pre-reform era.</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>With these major pillars chipped away, the model becomes less of a prevailing framework for analyzing unemployment problems in less developed countries. Having influenced policy thoughts and debates in development circles since 1970, the model is somewhat obsolete and less likely to inspire precise answers to questions relating to contemporary unemployment as it did in the 1970s. The major failing of the model arises from lack of awareness about the dynamics of the urban informal sector, which has become the largest employer of labor in the recent history of developing countries.<span class="ot">[^3]</span></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ot">[^3]: </span>In defense of the authors, the informal sector had not become pronounced at the time their model was written. The urban informal sector did not receive attention until @hart1971 invented the term while studying urban employment in Ghana.</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>In this paper, I extend the @harris1970 model in ways that are consistent with contemporary dynamics and derive implications from a new model. In addition to the urban formal sector, I include an active urban informal sector where wages are flexible and are below the minimum wage. I also allow for return migration from urban to rural areas in response to wage adjustments. I assume there is no surplus labor in rural agriculture and that workers in the sector earn wages that amount to the average or "shared" product.<span class="ot">[^4]</span> An expected urban wage that is higher than the rural wage induces workers to migrate to urban areas in search of higher wage opportunities. Workers in urban areas may be employed in the formal sector, employed in the informal sector, or unemployed. I ignore on-the-job search and consider as unemployed those individuals actively seeking employment but without jobs presently.<span class="ot">[^5]</span></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="ot">[^4]: </span>The view that earnings in agriculture are best described as shared output was first suggested by <span class="co">[</span><span class="ot">@lewis1954</span><span class="co">]</span> and emphasized by other authors such as <span class="co">[</span><span class="ot">@fields2005</span><span class="co">]</span>. Although individuals have different levels of productivity, actual wage do not reflect this.</span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="ot">[^5]: </span>This classification relies on self-reporting. An individual who self-reports to be unemployed might be engaged in some activities but is actively seeking a job in the formal sector. Other workers engaged in informal activities may also be seeking job opportunities in the formal sector. But as long as these workers are not actively seeking employment, they are classified as informally employed.</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>The size of rural labor exerts two offsetting effects on the agricultural wage. Farm output increases as more workers are employed but the average output decreases as the output-sharing group grows. While an individual's contribution to output faces diminishing returns, contribution to the output-sharing group does not. Therefore, as rural labor increases, average product diminishes and rural wage decreases.<span class="ot">[^6]</span> Rural-urban migration is based on comparison of rural</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="ot">[^6]: </span>Through this medium, rural population pressure induces urban migration by driving rural earnings downward. The differentiation between marginal product and average product for many workers constitutes a "push" which guarantees that a large number of workers would easily migrate to urban areas.</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>agricultural wage and expected urban wage which is a sum of the products of urban wages and the respective probabilities of employment in urban subsectors. Thus, migration from rural agriculture is driven by both rural wage "push" and urban wage "pull". Similarly, urban workers make migration decisions based on comparison of average urban wage and rural wage. These extensions yield four implications: (1) rural-to-urban migration and urban unemployment may both increase without an increase in urban minimum wage, (2) urban unemployment is driven by urban formal-informal wage premium and is largely voluntary, (3) outcomes under rural development are not pareto-optimal, and (4) urban unemployment falls and rural welfare improves as the urban wage premium decreases. I discuss several policy choices of which developing the urban informal sector is the pareto-optimal option.</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="fu"># History of the Urban Sector</span></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>A study of labor markets in developing countries begins with the dual labor market model advanced by <span class="co">[</span><span class="ot">@lewis1954</span><span class="co">]</span>. In an economy consisting of rural subsistence and urban capitalist sectors, the subsistence sector is less desirable, and workers, independent of their level of skills prefer to work in the urban capitalist sector. The basis of duality lies in the possibility that a worker can earn different wage depending on the sector where the job is located. Migration and employment choice are therefore driven by the urban-rural wage premium. Although nominal wage in the capitalist sector is higher than the wage in rural agriculture, real wages are in effect equal in both sectors and there was no unemployment. In effect, urban migration is driven by illusion or what @harris1970 referred to as the "bright lights" effect. Lewis wrote his model at a time that preceded the emergence of the urban informal sector. The structure was soon modified by early researchers who argued that the two-sector model designed in the pre-independence era was inadequate to describe labor markets after the independence movements of the early 1960s. At that time, a large number of people who were previously restricted to the rural areas in the 1950s found their ways to the urban areas, creating widespread unemployment and underemployment in urban areas.</span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>@todaro1969 contended that Lewis' model, where unskilled workers migrate directly from a low productivity rural job to a higher productivity urban industrial job, was not compatible with the evidence. He extended Lewis' model by adding a third sector, an urban traditional sector, where unskilled rural migrants in search of urban industrial jobs spent a certain period of time before they eventually obtain their desired employment in the modern sector. The urban traditional sector consisted of the unemployed, the underemployed and the sporadically employed workers. @harris1970 adapted the general model in @todaro1969 to analyze the East African context in which unskilled rural migrants not hired in urban capitalist sector were classified as openly unemployed. Their model suggests that rather than urban job creation, rural development that leads to increase in agricultural wage was the key to eliminating urban unemployment. According to @fields2005, the government of Kenya followed the model in the 1970s and put in place an integrated rural development program which took the form resettlement programs dubbed "Back to Land" or "Turudi Mashambani" in Kiswahili. Urban migrants were resettled into productive agricultural areas parts of which were previously held by white farmers. Urban unemployment in Kenya did indeed fall and urban population growth declined as a result of the programs.</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>However, evidence from Kenya shows that urban migration did not diminish; many of the migrants simply moved away from the major cities (Nairobi and Mombassa) into secondary cities or towns such as Nanyuki and Nyahururu <span class="co">[</span><span class="ot">@macharia2003</span><span class="co">]</span>. Within a short time, by mid 1970s, continued movement of population into resettlement areas started to induce downward pressure on rural wages and induced migration into new cities.</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>Urban sectors in developing countries have undergone several changes since the 1970s to such an extent that the two-sector model of @harris1970 is inadequate to describe the dynamics of urban unemployment. There are several dimensions to this. First, large-scale free and compulsory primary schooling and to some extent secondary schooling, vocational training, apprenticeship, skill-development and literacy programs have all contributed to raising the level of education in the developing countries. Because formal education is generally not rewarded in rural activities, the tendency has been for these workers to migrate to urban areas. This situation is due in part to the inertia in the education system after independence. In most countries, rather than redesigning the education sector, the education system in the post-independence period continued to emphasize the skills needed for jobs in white-collar positions as in the colonial period <span class="co">[</span><span class="ot">@macharia2003</span><span class="co">]</span>. Second, a combination of slow growth of the formal wage sector and growing labor force has led to expansion of the informal sector over the years. For instance, statistics from 1997 employment surveys cited by **Fluitman** (2009, p.14-15) show that 89% and 81% of the labor force are engaged in the informal sector in Ghana and Uganda respectively. The report on the Ghana Living Standard Measurement (LSMS) survey conducted in 2005/06 puts the figure at 84%. Similar surveys from Cameroon reported 85% of labor force in the informal sector. In the Kenyan case, @fluitman2001 <span class="co">[</span><span class="ot">p. 19</span><span class="co">]</span> reports</span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "In Kenya, total, formal sector wage employment increased by half a million between 1982 and 1996, that is, from just over 1 million to 1.6 million. However, over the same period, the country's labour force grew by around half a million people per year. According to the country's Economic Survey, measured informal sector employment increased dramatically from 185,000 in 1982 to 2,707,000, or 63 per cent of all registered employment in 1996. The share of public sector in all registered employment in Kenya dropped from 36 per cent in the mid-1970s to 16 per cent in 1996."</span></span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>The informal sector is heterogeneous both in terms of employment and skills. There are at least four types of workers. The first type is the unskilled worker who is essentially shut out of the skill-driven formal wage sector and is not seeking a job in the sector. The jobs that unskilled workers are typically employed to do in the formal sector firms are presently outsourced to entrepreneurs in the informal sector. It is uncommon to find cleaners, gardeners and drivers on the payroll of formal firms since the late 1990s. Although the end-users of their services are formal firms, earnings of these workers are domiciled in the informal sector and their conditions of employment are typically not better than those of other unskilled informal workers.<span class="ot">[^7]</span></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="ot">[^7]: </span>The subcontracting relationships taking place in African countries after the reforms are characteristically different from those that existed in the Asian countries in the 1980s. While the Asian types were aimed at lowering the costs of production of manufactures in the era of export-led growth, those taking place in African countries are essentially for services of unskilled workers in the growing services sector. Firms sub-contract these jobs in order to evade minimum wage laws and other labor regulations that may require paying more wage than they are willing to offer.</span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>Sometimes they actually fare worse. The second type of worker is the semi-skilled or skilled worker who is probably seeking a job in the formal sector but is spending time waiting for the desired opportunity, which is unlikely to arrive. Typically, workers in this category eventually create their own employment or work in a family enterprise. The third type is the worker who chooses to be his own master. This worker could be in the formal sector but chooses to exploit his entrepreneurial skill and opportunities as an independent person. The fourth type of worker differs slightly from the third worker in that he has had some experience in the formal sector but is disengaged from the formal sector due to the reforms, retirement or employer's bankruptcy. In effect, the informal sector comprises employers, regular employees, casual laborers and the individual self employed workers.</span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>These developments have led to transformation of the nature of activities that urban informal sector workers engage in. Writing in the 1960s, @todaro1969 noted<span class="ot">[^8]</span> that the urban traditional sector consisted largely of</span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="ot">[^8]: </span>Actually, the author merely quoted <span class="co">[</span><span class="ot">@lewis1954</span><span class="co">]</span> description of the urban traditional sector. His reference to a 1954 description when writing in 1969 was likely a demonstration of his obliviousness of the dynamics of the informal sector.</span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "the urban in-migrant who, instead of doing absolutely nothing, joins Bombay's army of underemployed bootblacks or Delhi's throngs of self-appointed (and tippable) parking directors, or who becomes an extra, redundant salesman in the yard goods stall of the cousin, who according to custom, is going to have to provide him with bed and board anyway" (@todaro1969 </span><span class="co">[</span><span class="ot">p. 139</span><span class="co">]</span><span class="at">).</span></span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>In contrast to this description, the current urban informal sector is a domain of diverse enterprises of varying scales covering a wide range of activities, and is expected to be the major employment sector in low income countries. Citing the case of African countries, @sommers2007 wrote</span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "The so-called informal sector is, by far, Africa's predominant economic sector. Two in three working Africans work there and it is growing at an estimated overall rate of 7% per year. More than 90% of all future jobs in Africa are expected to reside within the informal sector. It constitutes 'the everyday environment' for at least half of all Sub-Saharan Africans. Also known as the 'popular economy,' among many other things, it is claimed to be 'the only option for young people who want to work' in Africa."</span></span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>Contemporary realities in labor markets underscore the need to change the assumption regarding the average migrant worker from that of @harris1970. The uneducated woman who migrates to the urban center looking for a job in the capitalist or modern sector in earlier models is shut out of the formal wage sector in present-day labor markets and therefore falls short of the "representative" status. Jobs in the urban formal sectors are more intensively rationed on the basis of education and skills to the extent that uneducated migrant workers cannot get into them and are therefore limited to the informal sector.</span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>@harris1970 did not explicitly state their belief regarding the nature of unemployment. However, their analysis seemed to reflect an implicit assumption that unemployment is entirely involuntary: workers who migrate to cities in search of modern jobs either obtained the jobs they desired or had nothing to do. The case is different in contemporary urban sectors where an informal sector exists: workers unable to obtain modern jobs could engage in informal activities albeit at a wage and in conditions that are perhaps lower and less desirable than the modern sector. It is plausible that unemployment in this case would be at least partly voluntary.<span class="ot">[^9]</span> In order to capture these issues, a central feature of the model is to distinguish between voluntary and involuntary urban unemployment.</span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="ot">[^9]: </span>More importantly, because the average migrant worker is more educated now than in the 1970s, a possibility exists that he or she is unlikely to engage in informal activities that uneducated workers are willing to do. This leads to the possibility of voluntary unemployment where workers hold out and continue to find jobs at wages they are willing to accept.</span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>Other researchers have modified or extended the @harris1970 model to highlight various issues. @corden1975 examine intersectoral mobility of capital; @calvo1978 examines the role of trade unions; @fields1975 examined the possibility of preferential hiring of workers in urban sector on the basis of education and the role of distance to job centers in the likelihood of obtaining a job in the formal sector. I am not aware of previous attempts to examine the issues that I raise in this paper.</span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="fu"># The Basic Model</span></span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>I make two important extensions to the @harris1970 model. First, I divide the urban sector into a formal sector and an informal sector and assume that workers can move between the subsectors, which differ in two important respects. First, the formal sector is the sphere of activities that are regulated while the informal sector is outside regulation.<span class="ot">[^10]</span> Second, technology in the formal subsector is more capital intensive (and has a higher capital-labor ratio) than the informal subsector. The two factors -- regulation and capital -- reinforce each other in the sorting of firms and economic activities into the sectors.<span class="ot">[^11]</span> As a result of differences in capital-labor ratio, wages are higher in the formal sector than the informal sector.<span class="ot">[^12]</span> Rural agricultural wage may be higher or lower than urban informal wage; however, I maintain the assumption that rural wage is lower than the urban formal wage.</span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="ot">[^10]: </span>Using the terminology of early US literature on minimum wage @brozen1962; @welch1973; @tauchen1981 this separation into formal and informal sectors is in effect a separation into covered and uncovered sectors. By this classification, all public sector employments are formal since they are covered by government regulations. Thus, all informal activities are part of the private sector. Individuals straddling both formal and informal sectors are counted as employed in the formal sector. Typically, the formal employment is designated as the primary employment.</span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="ot">[^11]: </span>Firms and enterprises sort into formal and informal sector depending on a combination of the costs and benefits related to both capital and regulation. A firm with high levels of capital will choose formality because the benefits of formalizing -- the protection and other benefits that come with formality -- exceed the costs. A firm with low level of capital will be discouraged from formalizing because the costs are daunting compared to the benefits.</span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="ot">[^12]: </span>Empirical evidence supports this assumption. @arai2003 and @viren2005 provide evidence of a positive relationship between capital-labor ratio and wages.</span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>To keep the model tractable and consistent with the evidence, I separate formal wage and the informal wage by the minimum wage and postulate that increase in the minimum wage shifts some workers from the formal sector to the informal sector. This partition is justifiable on many grounds. First, there is the possibility that an increase in the minimum wage simply induces some firms to move part of their operations where the marginal value product of labor is less than the minimum wage to the informal sector where they could pay below the minimum wage. In this way, an increase in minimum wage simply shifts larger segments of the production process and employment from the formal sector to the informal sector. This happens generally through subcontracting and outsourcing, two concepts that are becoming increasingly common. Second, an increase in the minimum wage can induce layoffs; it is possible that employers in the formal sector fire some workers as they downsize in order to remain profitable while complying with the minimum wage law. By virtue of labor regulation, these workers would be paid terminal compensations that they could subsequently invest in informal self employment. Third, many researchers including @fields1990 have argued that urban informal sectors consist of an "easy-entry" segment where wages are very low (perhaps lower than the minimum wage) and an "upper-tier" segment where wages are comparable with formal wages (perhaps higher than the minimum wage). The partitioning on the basis of the minimum wage adopted in this paper thus creates a window in the formal sector where workers are unlikely to receive compensation in the event of a layoff. However, since these firms are not regulated and do not need to comply with minimum wage laws, it is unlikely that increase in the minimum wage will cause them to lay off workers.<span class="ot">[^13]</span> Since these firms do not have to raise wages in line with regulations, increase in the minimum wage would gradually shift these firms from the formal sector to the informal sector.<span class="ot">[^14]</span></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="ot">[^13]: </span>It is unlikely that informal firms in this category will increase wages in order to prevent their workers from moving to the formal sector where wages are now higher. The reason is that increase in minimum wage is likely to result in layoffs from the formal sector.</span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="ot">[^14]: </span>In addition, there is anecdotal evidence that the heavy burdens of formality in some countries such as Cameroun cause registered firms to disappear from city blocks into homesteads. This would also suggest some redistribution of firms from formal to informal sectors on account of tightening regulations.</span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>A more dynamic justification for partitioning the urban sector on the basis of minimum wage emerges when rural-urban migration is brought into the picture. More often, migration from rural sector to the urban formal sector is a two-step process. Most of the workers arriving in urban areas do not have the required skills and are unlikely to be able to compete for formal jobs. As a result, they are more likely to engage in informal activities while acquiring the skills for formal jobs. An increase in the minimum wage intensifies competition for formal jobs, raises the level of education or skills required for employment and consequently increases the length of time required to acquire the skills. As a result, the duration of waiting in the informal sector increases and consequently the rate of transition from informal to formal sector decreases. Ultimately, the size of informal sector increases relative to the formal sector.</span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>While increase in minimum wage raises formal wage and reduces the size of the formal sector, I assume that standard economic wisdom holds: increase in labor supply to the informal sector reduces the income of workers there.<span class="ot">[^15]</span></span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="ot">[^15]: </span>There are possible exceptions to this conventional wisdom. First, in relation to subcontracting, the average worker in the informal sector may earn a lower wage ex-post due to the administrative costs of subcontracting. While the formal firm has a valuation of the worker's marginal product and is willing to keep the wage unchanged, the cost of transferring the operations to a subcontractor will on balance reduce the actual wage paid to the worker<span class="sc">\[</span>1<span class="sc">\]</span>. In this respect, the extent to which informal wage falls in response to an increase in the minimum wage depends on the costs and limits of subcontracting. In the absence of these costs, it is unlikely that informal wage decreases. Second, workers who enter the informal sector to invest their severance compensations are more likely to contribute to raising informal wages because of the capital they bring with them. Third, informal sector wage may rise if workers in the formal sector are the main buyers of the goods produced in the informal sector and their income elasticity of demand for informal output is relatively large <span class="co">[</span><span class="ot">@fiszbein1992</span><span class="co">]</span>. Fourth, minimum wage increase may be associated with increase in informal wage if the legislation is induced by factors that are external to the economy. In the case of mineral exporting countries, an increase in the world price of the natural resource may lead to expansion of the formal sector concurrently with an increase in minimum wage. The informal sector benefits both through a decrease in labor supply and increased demand for its output. Informal wage may fall for another reason -- the influx of migrant workers from the rural areas. However, I demonstrate in this paper that rural-urban migration is not substantially linked to minimum wage increase.</span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>Next, I allow for urban-to-rural migration<span class="ot">[^16]</span> in addition to rural-urban migration that is already allowed in @harris1970. That is, rural-to-urban migration may not only slow down but may also be reversed. I define urban excess labor as the part of the urban labor force that is not employed in either formal or informal sectors. Excess labor either remains unemployed in the urban sector or returns to the rural sector.</span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="ot">[^16]: </span>Urban to rural migration is commonly referred to as return migration.</span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>In the rural sector, the continuous pressure of rural labor force on the wage creates a pool of workers whose reservation wages exceed the rural wage. This pool of workers constitutes excess rural labor that would migrate to urban areas once the condition is met. They also have the option of returning to rural areas depending on movement of wages. I assume that, in general, workers who are unable to obtain employment in the urban formal sector can work in the urban informal sector, migrate to rural agriculture or join the urban unemployment and job-search pool. I also assume that workers are rational; individuals prefer a higher wage employment to a lower wage employment.</span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>However, there is a pool of workers that @harris1970 <span class="co">[</span><span class="ot">p. 127</span><span class="co">]</span> referred to as "permanently urban proletariat without ties to the rural sector" (pp. 127).<span class="ot">[^17]</span> As a result of decades of rural-urban migration beginning in the 1970s, a set of workers exist whose parents and perhaps grandparents were born in the cities. These individuals may be aware of their rural ancestral origin and may sometimes visit in the company of their parents, but they are unlikely to leave the city for the countryside. @harris1970 ignored unemployment among this set of workers perhaps because of their focus on rural-urban migration. Their focus on migrant workers seemed reasonable at the time of writing their model because urban migration was a relatively new phenomenon. It is not likely that rural development will move these workers from urban areas; they are likely to remain unemployed and continue to seek urban jobs even when urban unemployment is high. They could move into urban informal sector as formal employment turns into something of a long shot.</span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="ot">[^17]: </span>Indeed, it is unlikely that the resettlement programs in Kenya had any effect on these workers.</span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="fu">## Labor Endowment</span></span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>The rural sector is predominantly agricultural while the urban sectors are engaged in production of a non-agricultural output. Rural and urban sectors are each endowed with a fixed amount of labor that is allocated between their subsectors, including unemployment. The distribution of labor is as follows:</span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>N_A + N_{RE} + N_R</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(1)}</span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>N_F + N_I + N_{UE} = N_U </span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(2)}</span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>N_R + N_U = \overline{N}_R + \overline{N}_U = \overline{N} </span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(3)}</span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>where $N_A$ represents labor engaged in rural agriculture, $N_{RE}$ represents rural excess labor (those who will migrate to urban areas), and $N_R$ represents rural labor. Likewise, $N_F$ represents labor employed in urban formal sector, $N_I$ represents labor employed in urban informal sector, $N_{UE}$ represents urban excess labor (those who will migrate to rural areas and those who will remain in urban unemployment) and $N_U$ is urban labor. $\overline{N}_R$ is rural labor endowment, $\overline{N}_U$ is urban labor endowment, and $\overline{N}$ is total labor endowment.</span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="fu">## Expected Wages</span></span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>Rural agricultural wage denoted $W_R$ represents the average or "shared" product in agriculture. Urban formal and informal wages given by $W_F$ and $W_l$ respectively are valued in terms of marginal product. If the marginal product of an urban formal worker falls below the minimum wage, the firm subcontracts the work to the informal sector. The main assumption is that, $W_F \ge$ $\overline{W}_M \ge$ $W_l$ where $\overline{W}_M$ is the minimum wage.</span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>I distinguish between the urban wage that enters the decision process of a rural worker who is considering urban migration and the urban wage that is taken into consideration by an individual who is unemployed in the city. A rural worker considering migration estimates an expected urban wage using the distribution of urban employment. Urban expected wage is given by the expression</span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>$$W^e_U = \frac{N_F}{N_U}W_F + \frac{N_I}{N_U}W_I$$ {#eq-(4)}</span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>The presence of the informal sector in (4) diminishes the effect of the minimum wage on migration. For simplicity assume that there is no excess demand for labor in the formal sector so that $W_F = \overline{W}_M$Then equation (4) implies that $W^E_U = \frac{N_F}{N_U}\overline{W}_M + \frac{N_I}{N_U}W_I$ As the share of formal sector in urban labor market $\left(\frac{N_F}{N_U}\right)$ diminishes, urban expected wage approximates informal sector wage and the role of the minimum wage fizzles in migration decision. This is particularly important in developing countries where an estimated 80 to 85 percent of urban employment is generated in the informal sector. @macharia2003 <span class="co">[</span><span class="ot">p. 1</span><span class="co">]</span> captures this idea by noting that</span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>*.. with the proliferation of the informal economy in the 1980s and 1990s, migrants who were entrepreneurial still had hopes in the urban areas. This was so, mainly because of the expectations of higher numbers of people who would become consumers of products they hoped to make and sell in the urban areas. Thus, it is not simply the "hope for employment in the urban areas that pulls people to the urban areas but also the hope of venturing in an economic activity in the informal sector!*</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>Indeed, from equation (4), sufficiently (high) low earnings in the informal sector or high rates of urban unemployment are (incentives) disincentives for rural-urban migration as they drive urban expected wage (upward) downward. This is the case even when the urban minimum wage is unchanged. However, rural-urban migration could continue unabated as rural population pressure depresses the rural wage further below the urban informal wage.</span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>There is another kind of expected wage that enters the decision of the urban unemployed worker who is contemplating whether to remain in the city of return to the rural sector. Once a worker is in the city, the distribution of urban employment does not matter for evaluation of urban wages. To the worker, expected (weighted average) urban wage is given by<span class="ot">[^18]</span></span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="ot">[^18]: </span>In this equation, &nbsp;may also be interpreted as the likelihood that an individual finds employment in the formal sector, which reflects the difficulty of access to formal jobs. Thus, there is a strong positive correlation between &nbsp;and &nbsp;that is described in the next section.</span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>$$W^\alpha_U = \alpha W_F + (1 - \alpha)W_I$$ {#eq-(5)}</span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>where $\alpha$ is the formal sector share of urban employment or the probability that the urban employed worker is in the formal sector. Notice that the coefficients in equation (4) are the shares of urban total labor while the coefficients in equation (5) are the shares of urban employment. In the presence of urban unemployment, the latter shares are larger than the former, yielding $W^\alpha_U &gt; W^e_U$ .</span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="fu">## Equilibrium</span></span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>Empirical literature shows that reverse migration had become part of normal life since the 1970s not merely for the elderly who return home to retire but also for young and middle age individuals <span class="co">[</span><span class="ot">@reed2010</span><span class="co">]</span>. Therefore an equivalent of equation (9) of @harris1970 is inadequate to describe the equilibrium when faced with return migration<span class="ot">[^19]</span>. Instead of writing two equations, one for rural-to-urban and another for urban-to-rural migrations, I first derive the component of excess labor that would migrate from urban to rural sector and then obtain an equilibrium by equating the rural-to-urban migration and urban-to-rural migration components. The remaining part of this section builds on the framework proposed by <span class="co">[</span><span class="ot">@fields1975</span><span class="co">]</span>.</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="ot">[^19]: </span>Consider an urban-rural migration time derivative &nbsp;that simply interchanges the rural and urban components of @harris1970 equation (9). Equilibrium conditions would be obtained by equating the two migration streams. Doing so will result in an indeterminate system.</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>The urban formal sector is the prime sector of interest for most workers.<span class="ot">[^20]</span> Inasmuch as nearly everyone likes to work there, access to jobs in the sector is limited. Individuals who are unable to obtain a job can choose one of three strategies: continue to queue or search for a job opening while remaining unemployed; find work in the informal sector; or return to the rural sector. The labor market exhibits a hierarchy of sectors where difficulty of access to a job decreases in order from the formal sector, the informal sector and the rural sector. I reflect the ease of access to jobs in the formal sector by the parameter $\theta$, subject to $0 \le\theta \le 1$, which decreases as employment in the formal sector becomes harder to obtain. The hierarchical nature of employment choice implies that as $\theta$ decreases, larger factions of the labor force move into the states below the formal sector. An urban worker computes an expected formal wage by multiplying the formal wage by the chance of entry as $\theta W_F$.</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="ot">[^20]: </span>There are some, although in the minority, new entrants to the labor market who do not seek a formal paid job but enter directly into the informal sector. It is plausible to assume that these workers have analyzed the market and have learnt that they would only be able to work in the informal sector.</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>Given this structure, the representative urban worker can be in one of four states. I measure the probability of being in each state by a simple function $V(X)$ that depends linearly on its argument subject to the conditions $X\ge0, V(0) = 0, V'(X)&gt;0$ and $0\le V(X) \le1$ The sorting of the urban worker into states and the corresponding probabilities are as follows:</span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>U1: Employed in the formal sector.</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>U2: Remain unemployed and queue or search for formal employment. To make this choice, it must be that $\theta W_F \ge W_I$ The probability of being in this state is thus measured by $V(\theta W_F -W_I)$.</span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>U3: Accept employment in the urban informal sector. For this choice, it must be the case that $\theta W_F \le W_I \ge W_R$. The probability of being in this state is measured by $V(W_I - W_R)$.</span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>U4: Remain unemployed or join the return migrant pool. To be here, the condition $W_R \ge W^\alpha_U$ must be satisfied. The probability of being in this state is measured by $V(W_R - W^\alpha_U)$.</span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>The description of employment states yields a hierarchy of urban subsectors in which $\theta$ plays the role of a sorting parameter. As formal employment becomes competitive, individuals who do not obtain formal employment move into state U2 to queue or continue to search for formal jobs while remaining unemployed. A positive formal-informal expected wage gap $(\theta W_F -W_I)$ provides the incentive to remain in this state as the average unemployed worker's (expected) reservation wage exceeds the informal wage. As $\theta$ diminishes further and the expected wage premium disappears, the average unemployed worker becomes discouraged at formal job search and exits from unemployment to informal employment in state U3. That is, as formal employment becomes harder to find, in the absence of unemployment benefits, the worker finds it rational to accept an informal employment that he would otherwise reject. A further decrease in $\theta$ arising from further tightening of the formal employment sector pushes more workers from U1 into U2 and from U2 into U3 (the informal sector) and leads to further decrease in the informal wage until it falls below the rural wage $(W_I &lt; W_R)$, an occurrence which creates a disincentive to remain in urban informal employment. However, because formal employment is now tightened than ever, the average worker moves to state U4, the pool of unemployed urban proletariat who are discouraged and no longer looking for job and other workers that are willing to move to the rural sector once the condition is met. Potential return migrant workers in this group have a reservation wage that is equivalent to the rural wage, and remains in that state as long as $W^\alpha_U \ge W_R$. Such worker returns to the rural sector when $W^\alpha_U &lt; W_R$.<span class="ot">[^21]</span></span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="ot">[^21]: </span>The parameter can also reflect the way workers in each group measure their likelihood of obtaining formal employment. The distribution of urban labor force therefore reflects self-selection among workers. For example, if education plays a role in formal employment, as it does, conditional on unemployment, an educated worker may be more likely to sort into U2 than the uneducated worker. The reason is that the educated worker will have a higher assessment of &nbsp;than the uneducated worker. There are two mechanisms that can bring about this sorting. First, individuals may be driven by peer comparison. Unemployed college graduates are likely to be seeking jobs that are comparable to their peers' in the formal sector. Second, an educated worker is more likely to value employment in terms of lifetime earnings; a strategy of temporary unemployment spell that is succeeded by high wage employment for the remainder of lifetime is preferred to a strategy of low wage employment over the entire lifetime. Estimates of lifetime earnings under the former would have to fall significantly to the level of the latter before the educated worker would accept informal employment immediately</span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="in">    The formal sector is not large enough to employ all workers seeking employment there. The job selection process is therefore non-random and allows for discrimination among workers on the basis of skills. Workers arrive at the urban labor market with education which they present as a signal of their skills but employers possess a mechanism by which they make workers to reveal their skills and hire workers whose revealed skills match the desired skills. The revelation mechanism involves employers putting job candidates through written and oral skill tests that allow workers to reveal their skills. It is thus plausible that unemployed educated workers may incorrectly consider themselves as "comparable" to peers employed in the formal sector. Whereas workers acquire education as a signal (means of obtaining formal employment), employers in non-clearing labor markets devise several strategies to extract information about true productivity and hire the most productive workers conditional on signal. This incorrect comparison may induce the unemployed to continue to seek jobs that are comparable with their peers and consider jobs paying lower wages as inferior.</span></span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>The notion that a worker who does not find a formal job has the option of informal employment in U3 but chooses to remain unemployed in U2 implies that urban unemployment is at least partly voluntary.<span class="ot">[^22]</span> The distribution of urban unemployment between voluntary and involuntary components will depend on factors that determine the extent of informal employment opportunities.<span class="ot">[^23]</span></span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ot">[^22]: </span>The notion could also apply to workers in U4 who should return to rural areas if they choose to remain in the city. However, I assume that these workers return to rural areas following the wage incentives.</span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="ot">[^23]: </span>These opportunities will be limited in countries where there are strict laws regulating property rights, street trading, squatting and the use of public places and the environment. In those settings unemployment will be largely involuntary. The reverse is of course the case in developing countries where such laws do not exist, or they exist but are not enforced.</span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>According to the definition, excess urban labor is the sum of labor in groups U2 and U4. Multiplying the measure of workers in the groups by total urban labor, excess urban labor is thus given by</span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>N_{UE}= N_U<span class="co">[</span><span class="ot">V(\theta W_F - W_I) + V(W_R - W^\alpha_U)</span><span class="co">]</span></span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(6)}</span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>where $N_UV(\theta W_F - W_I)$ is the size of labor in U2 and $N_UV(W_R - W^\alpha_U)$ is the size of labor in U4.</span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>I now turn to the rural sector where a worker can either work in rural agriculture or migrate to the urban sector. I assume, in line with @harris1970 that all rural workers engage in agriculture and are part of the output-sharing group.<span class="ot">[^24]</span> I assume that rather than staying unemployed in the village, workers whose reservation wages exceed the rural wage would migrate to the city.<span class="ot">[^25]</span> The distribution of workers into employment and migration is given by</span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="ot">[^24]: </span>Typically, the fraction of the rural population that declares open unemployment is very negligible.</span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="ot">[^25]: &nbsp;</span>Inclusion of a separate group of rural unemployed workers does not add any insight to the discussion.</span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>R1: Work in rural agriculture if $W^e_U \le W_R$</span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>R2: Migrate to the urban sector if $W^e_U \ge W_R$ The probability of migrating is measured by $V(W^e_U - W_R)$.</span>
-<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>Rural excess labor, all of which migrate to urban sector, is given by</span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>N_{RE} = N_RV(W^e_U - W_R)</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(7)}</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>Equations (6) and (7) provide the basis for analyzing the migration equilibrium. Equilibrium is attained when the flow of rural-urban migrants is balanced by the flow of urban-rural migrants. By making the migrating component of equation (6) equal to equation (7), the equilibrium is obtained from</span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>N_UV(W_R-W^\alpha_U) = N_RV(W^e_U - W_R)</span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(8)}</span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>Rearranging the terms of equation (8) and substituting $N_R = \overline{N}-N_U$, I obtain the migration equilibrium condition</span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>V(W^e_U-W_R)/V(W_R-W^\alpha_U) = N_U/(\overline{N}-N_U)</span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(9)}</span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>Equation (9) yields insights that are similar to @harris1970. A rural development program that leads to an increase in rural wage $W_R$, conditional on all else, will reduce the left side by both reducing the numerator and increasing the denominator. To maintain equilibrium, the right side must also decrease by reducing the size of the urban labor. On the other hand, suppose wage increases or more jobs are created in the urban sector. This leads to increase in the left side by increasing the numerator and reducing the denominator. In response, more workers move to the city as the right side increases.<span class="ot">[^26]</span></span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="ot">[^26]: </span><span class="sc">\[</span>1<span class="sc">\]</span> The main policy conclusions reached by @harris1970 can also be reached in this setting. Reading from the left side of equation (9), the net flow of workers between the rural sector and the urban sector differ under different regimes. In response to an increase in rural wage, the incentive to migrate among rural workers (captured in the numerator) decreases by exactly the same extent as the incentive for return migration among urban workers (captured in the denominator) increases. In effect, an additional job that becomes available in the rural sector (which reduces the incentive to migrate) is matched by exactly an urban worker that returns to the rural sector. This results in a decrease in urban unemployment. On the other hand, in response to an increase in urban formal wage, the incentive for urban migration among rural workers (captured by the numerator) increases by more than the incentive for return migration among urban unemployed workers (captured by the denominator) decreases. Interpreted along the same line, an additional job that is created in urban sector (which reduces incentive for return migration) is matched by more than one rural-urban migrant worker. Since only one worker can have the job, the unmatched migrant worker(s) will add to the urban unemployment pool.</span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="fu">## Urban Unemployment in Equilibrium</span></span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>I now compare urban unemployment outcome under different strategies by examining their effects on both voluntary and involuntary components of urban unemployment.</span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>Consider the case of a marginal increase in agricultural wage from $W_R$ to $W_R$' following which urban labor force decreases from $N_U$ to $N_U$' The resulting urban unemployed labor is given by</span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>{N_{UE}}'= \underbrace{N_UV(\theta W_F-W_I)}_{\text{unchanged}} + \underbrace{{N_U}'V({W_R}'-W^\alpha_U)- N_UV(W_R-W^\alpha_U)}_{\text{offset}}</span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(10)}</span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>Because unemployed workers in US2 are driven by the difference between expected formal wage and the informal wage, the measure of workers in the state is not affected by increase in rural wage.<span class="ot">[^27]</span> Because ${N_U}'&lt;N_U$ and $V({W_R}'-W^\alpha_U)&gt;V(W_R-W^\alpha_U)$, the second component of (10) will generate an offset, thus clearing unemployment in US4. However, these gains are limited and temporary. As these workers return to the farm, rural agricultural wage would fall relative to expected urban wage and induce a new round of urban migration, which will ultimately raise the level of urban unemployment again. The experience in Kenya in the 1970s, where return migrants sooner than later began to move back to cities provides evidence in this regard.<span class="ot">[^28]</span></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="ot">[^27]: </span>Workers who move from the urban informal sector to rural sector as a result of the increase in agricultural wage do not contribute to the urban unemployment metric as they simply move from urban employment into rural employment. Rather, the change in urban unemployment is driven solely by return to rural agriculture among workers in state US4.</span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="ot">[^28]: </span>The efficacy of rural development as the cure for urban unemployment is further challenged by the extent of education. The urban bias among educated population could mean that unemployment is dominantly of the voluntary type where returning to the village is not an option.</span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>Next, consider an increase in urban formal wage from $W_F$ to ${W_F}^*$ that increases the size of urban labor from $N_U$ to ${N_U}^*$ . As more workers move from other states into US1 as a result of the wage increase, two other things happen. First, increase in formal wage widens the expected wage premium gap and draws more workers from the informal sector US3 and the unemployed pool US4 into job search in US2. Second, the increase in urban formal wage raises expected urban wage $W^e_U$ and induces urban migration. In this case, the resulting urban unemployed labor following from equation (6) is given by</span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>{N_{UE}}^* = \underbrace{{N_U}^*V(\theta {W_F}^*-W_I)-N_UV(\theta W_F-W_I)}_{\text{increase}} + \underbrace{{N_U}^*V(W_R-{W_U^{\alpha}}^*)-N_UV(W_R-W^\alpha_U)}_{\text{offset}}</span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(11)}</span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>where the first part measures the change in US2 and the second term measures the change in US4. Because ${N_U}^*&gt; N_U, {W_F}^*&gt;W_F$, and $V({W^{\alpha}_U}^*-W_R)&gt;V(W^\alpha_U-W_R)$, the first part increases as formal wage increases while the terms of the second part are offsetting. The size of US4, the state that is home to the involuntarily unemployed, increases through migration from rural areas and decreases through movement of workers into states US1 to US3. In effect, increase in urban formal wage increases voluntary urban unemployment while offsetting involuntary unemployment. Overall, urban unemployment increases.</span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>As a third option, consider an increase in urban informal wage from $W_I$ to ${W_I}^{\wedge{}}$ that leads to an increase in urban labor force from $N_U$ to ${N_U}^{\wedge{}}$. The increase in urban labor force is driven by increase in expected urban wage $W^a_U$ arising from increase in informal wage. There are two distinct effects of this event. First, increase in $W_I$ leads to reduction of the urban formal-informal wage premium and provides incentive for workers in US2 to accept informal employment, thereby reducing voluntary unemployment. Second, increase in $W_I$ also induces unemployed workers in US4 who had been discouraged by low informal wage to enter the urban informal sector. Rural workers migrate from rural agriculture directly into the informal sector and thus do not contribute to unemployment. The resulting urban unemployed labor is given by</span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>{N_{UE}}^{\wedge{}} = \underbrace{{N_U}^{\wedge{}}V(\theta W_F-{W_I}^{\wedge{}})-N_UV(\theta W_F-W_I)}_{\text{offset}} + \underbrace{{N_U}^{\wedge{}}V(W_R-{W^\alpha_U}^{\wedge{}})-N_UV(W_R-W^\alpha_U)}_{\text{offset}}</span>
-<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(12)}</span>
-<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>Because ${N_U}^{\wedge{}} &gt;N_U, V(\theta W_F-{W_I}^{\wedge{}}) &lt; V(\theta W_F-W_I)$ and $V(W_R-{W^\alpha_U}^{\wedge{}})&lt;V(W_R-W^\alpha_U)$, both elements of (12) are offsets. In effect, increase in urban informal wage clears both voluntary and involuntary urban unemployment. This is achievable because while drawing workers who have been unemployed in urban areas due to the formal-informal wage premium into the informal sector (reducing unemployment at the top), it also provides opportunities for the unemployed potential return migrants. Earnings in rural agriculture will rise as workers migrate to urban informal sector until equilibrating wages are obtained. Under this strategy, average earnings are highest and overall unemployment is lowest, yielding the highest level of welfare achievable.</span>
-<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="fu">## Minimum Wage and Unemployment</span></span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>From the foregoing analysis, the most important determinant of urban unemployment is the formal sector-informal sector wage premium. To evaluate the importance of the minimum wage, let $W_F = \overline{W}_M + X$ and $W_I = \overline{W}_M-Y$, where $X$ represents some form of efficiency wage premium and $Y$ is the difference between informal wage and the minimum wage. Therefore, the formal-informal wage premium can be decomposed into</span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>\theta W_F- W_I = (\theta X+Y)-(1-\theta)\overline{W}_M</span>
-<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(13)}</span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>Consider an increase of $\Delta\overline{W}_M$ in the minimum wage. Conditional on $W_F$ and $W_I$, an increase in $\overline{W}_M$ reduces the value of $X$ and increases the value of $Y$ one-for-one so that and $\Delta Y=\Delta\overline{W}_M$. Plugging these values into equation (13) yields</span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>\Delta(\theta W_F-W_I) = (-\theta\Delta\overline{W}_M + \Delta\overline{W}_M)-(1-\theta)\Delta\overline{W}_M=0</span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>$$ {#eq-(14)}</span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>Thus, increase in minimum wage has no effect on unemployment. Unemployment depends only on the wage difference between the formal and informal sector, and the minimum wage is irrelevant. An increase in minimum wage only redistributes urban employment by increasing the relative size of the informal sector. This is consistent with the literature cited in the introduction section of this paper that changing the minimum wage has no effect on unemployment.</span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="fu"># Policy Implications</span></span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>The voluntary component of urban unemployment should be the primary focus of policy. Because these workers are driven by the gap between formal and informal wages, policies aimed at reducing unemployment must be aimed at closing the gap. From the preceding analysis, voluntary unemployment remains unchanged under a strategy of rural development, increases under the strategy of urban formal job creation but decreases under the strategy of development and job creation in the informal sector. Direct interventions in informal sector setting are not realistic. For example, government cannot simply pass a law mandating informal entrepreneurs to increase wages or hire more workers because the informal sector is outside of government regulations. It is also not feasible for government to directly raise informal wage by raising its own employees' wages; indeed, that will produce the opposite effect. An expansion of the government sector has the same effect as job creation in the formal sector, and results in higher urban unemployment.</span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>One strategy for developing the informal sector that has been much talked about is the idea of formal registration. Intuitively, this strategy has the potential effect of enabling informal firms to gain access to larger customer base and thus become more profitable. The underlying conventional wisdom is that more profitable firms would be able to expand their businesses and hire more workers, thus reducing unemployment. However, empirical evidence suggests that only a few firms experience increase in profits after formalization and the benefits for job creation are far-fetched. A recent study by @demel2012 measured the impact of formalization on informal firms in Sri Lanka. Separating the sample into treatment and control groups, they found that provision of information on how to register formally and reimbursing the cost of formalization did not incentivize registration. However, formal registration increased when the firms were offered stronger monetary incentives; larger fraction of informal firms registered as the monetary incentives were increased. Results from follow-up surveys examining the benefits of formalization show that firms which formalized recorded higher profits, the impact which the authors found is attributable to a few firms that experienced substantial growth. Indeed, they found the distribution of profits almost identical for both treatment and control groups. They also examined the channels through which the benefits accrued and found "increased advertising and use of receipt books, but no increases in receipt of government contracts, use of bank accounts or loans, or participation in government programs (p.2)." Another study by @mckenzie2007 on formalization (tax registration) in Bolivia found that registration increased profits for the mid-size firms in their sample (2-5 employees) but reduced profits for both the smaller and the larger firms. They found that the main benefit of registration appeared to be an increase in the customer base as a result of their ability to issue tax receipts. They found no evidence that registration provides increased access to finance. They conclude that "very small firms are too small to benefit from issuing tax receipts, while owners of large informal firms have high ability and can achieve a large customer base through their own business skills." Given a very limited effect of formalization on profits, it is rather far-fetched to expect an employment effect.</span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a><span class="fu">## Value Chains in Agriculture</span></span>
-<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>One of the notable differences between advanced countries and less developed countries is that the chain of intermediaries between the farmer and the consumer is much longer in the latter than in the former.<span class="ot">[^29]</span> Therefore, development of the value chain in agriculture presents the most viable opportunity for mass employment generation for rural and urban, skilled and unskilled workers, in addition to contributing to structural change. Because most of the off-farm nodes in the chain are located in urban areas, they represent potential sources of urban informal employment. The dairy sector in Uganda is one of the places where the concept of value-chain development has been successfully adopted. According to @mbowa2012, since the 1990s, development of the value chain has spurred income growth for about 700,000 dairy farming households, and in addition, has led to job creation for farm input dealers, dairy equipment dealers, dairy ingredient dealers, raw milk traders, milk transporters, mini-dairies, large-scale milk processors, as well as distributors. The International Labor Organization (ILO) value chain development intervention in Sri Lanka implemented between 2005 and 2009 dubbed "Enterprise for Pro-poor Growth (Enter-Growth)"<span class="ot">[^30]</span> was aimed at boosting micro and small enterprises in the flower growing value chain. The intervention impacted about 52,000 micro and small enterprises and resulted in an estimated tripling of household income and 15% increase in employment in businesses in the districts where the intervention took place.</span>
-<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a><span class="ot">[^29]: </span>Using the example of grain, @fafchamps1999 observes that "In a typical Western country, grain is purchased from farmers by a large corporation, e.g., Cargill, processed in the corporation facilities, and sold to supermarkets and agribusinesses, who sell to final consumers. There are very few intermediaries between producer and consumer, and the size of each individual market transaction is very large. In contrast, grain in Africa is first purchased from a myriad of small farmers by collecting agents, assembled for shipment by a rural wholesaler, purchased by an urban wholesaler or processor, to be sold to retailers and, finally, micro-retailers. (p.7)</span>
-<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="ot">[^30]: </span>Details can be accessed at http://www.ilo.org/wcmsp5/groups/public/\-\--ed_emp/\-\--emp_ent/\-\--ifp_seed/documents/publication/wcms_175475.pdf</span>
-<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="fu">## Access to Financial Services</span></span>
-<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>To support the potential of value chain development, policymakers should consider incentives for financial institutions to deliver financial services to the underserved segments of the society. One of the main setbacks for lenders is that they do not have information about individuals outside of wage employment. Policymakers can help by implementing sound national identification and registration systems upon which consumer and credit information systems can be developed. Thus, a potentially sound program for employment generation should begin with a registration system that brings everyone into a formal system in a move that is akin to "formalizing the individuals." Next step is to focus on enterprise finance for the underserved segments, which is in tandem with the development value chains in agriculture.<span class="ot">[^31]</span> One of the secondary benefits of expansion of enterprise capital is that it is likely to induce high-entrepreneur individuals to move from low-wage formal employment (where their entrepreneurial abilities are poorly rewarded) into job creation in the informal sector. Countries where the financial system is more inclusive will have enhanced capacities to generate informal employment.</span>
-<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="ot">[^31]: </span>The Comprehensive Africa Agriculture Development Program (CAADP) of the New Partnership for Africa Development (NEPAD) designates value chains in agriculture and access to financial services as one of the core strategies under Pillar II.</span>
-<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a><span class="fu">## Skill Development</span></span>
-<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>In the absence of unemployment benefits in most developing countries, open unemployment is hardly an attractive option, particularly for unskilled workers. As a result, underemployment becomes a more important issue for workers with little or no education than unemployment. Indeed, contemporary labor market lexicon tends to apply the concept of unemployment in reference to college or vocational training graduates and underemployment in reference to unskilled workers.</span>
-<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>Unskilled workers have little access to support networks compared to educated workers and are driven into doing something by all means.<span class="ot">[^32]</span> These workers also lack skills. Thus, in addition to developing value chains, training and skill development programs must be developed by means of training workers for the needs of the economy. Policymakers should emphasize moving away from general education to more specific skill-oriented training. Efforts to incorporate vocational training early in the education process might create interests in other forms of employment beside white-collar or blue-collar jobs. The International Labor Organization @ilo2008 <span class="co">[</span><span class="ot">p. v</span><span class="co">]</span> defines effective skill development programs as those "which connect education to technical training, technical training to labor market entry and labor market entry to workplace and lifelong learning."</span>
-<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="ot">[^32]: </span>There has been an argument about whether to classify individuals engaged in peasant activities such as street hawking and sporadic labor in urban areas as informally employed or to consider them as unemployed. There is now a consensus that those individuals are simply underemployed. Peasant activity is considered a form of employment for two reasons. First, an individual selling one stick of pen at a time is considered as working because a market exists for the retail activity: there are individuals who are unable to purchase a box of pen at a time but are only able to buy one stick at a time. The same applies to petty retail traders. Second, individuals would prefer to do those types of work rather than doing nothing because they can demonstrate to their urban support network that they are making effort to work. This is akin to work test in unemployment insurance in advanced societies.</span>
-<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a><span class="fu">## Rural Population Growth</span></span>
-<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>It is a stylized fact that natural population growth in rural areas far exceeds the urban rates due largely to differentials in birth rates. Population pressure on rural wages is therefore one of the push factors in urban migration. It is also the case that education, which has become the primary determinant of employment in urban formal sector and mostly available in urban areas, has increased over the years in developing countries. This section analyzes the role of these two concepts on urban unemployment.</span>
-<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>I showed in section 3.3 that as larger fractions of the population are educated, the value of increases on average, so that the urban wage gap increases and therefore voluntary urban unemployment increases. Increase in urban unemployment leads to increase in urban average wage $W^a_U$ but reduction in urban expected wage $W^e_U$. Increase in urban average wage reverses urban-rural migration and increases the rate of unemployment in U4. However, the net effect of increase in education on urban unemployment depends on the rate of population growth, which exerts pressure on the rural wage. A comparison of the relative rates of growth is therefore important.</span>
-<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>If population growth exceeds the rate of growth of educated workforce, then the rural wage $W_R$ falls faster than the rate at which expected urban wage $W^e_U$ falls and average urban wage $W^a_U$increases. In expectation, the income gap between rural and urban worker rises, leading to increase in rural-urban migration and decrease in urban-rural migration. In effect, urban unemployment becomes inflated. On the other hand, if population growth is slower than the rate of growth of education, then the rural wage $W_R$ falls at a slower rate than the rate at which expected urban wage $W^e_U$ falls and average urban wage $W^a_U$ increases. The consequence is that rural-urban migration slows down and urban-rural migration also slows down. The growth of education supply is inevitable in the 21^st^ century and cannot be scaled down. As a result, the urban unemployment problem would require interventions to reduce rural fertility and population growth.</span>
-<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="fu"># **References**</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</script>
 </div> <!-- /content -->
 
 

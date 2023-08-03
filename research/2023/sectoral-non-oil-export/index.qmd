@@ -47,4 +47,4 @@ Keywords: Non-oil sectoral export, economic growth and ARDL
 
 ## PDF links
 
--   [Paper (preprint) in PDF format](sector-non-oil-export.pdf)
+-   [Paper (preprint) in PDF format](sectoral-non-oil-export.pdf)
