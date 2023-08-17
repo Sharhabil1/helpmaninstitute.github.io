@@ -1,0 +1,45 @@
+---
+title: "Macroeconomic Implications of Healthcare Financing Reforms: A Computable General Equilibrium (CGE) Analysis of Nigeria"
+
+image: "figures/figure2.2.png"
+
+categories:
+  - Working papers
+
+date: 2022-06-18
+date-modified: today
+date-format: "MMM YYYY"
+
+author:
+  - name: QUADRI, Umar Faruq
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: fquadri@helpmaninstitute.org 
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, FCT Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+
+execute:
+  echo: false
+---
+
+## Abstract
+
+This study is conceptualized on the backdrop that Nigeria continues to have a poor level of health development and falls short of the health benchmark when compared to nations at a comparable level of development. The main objective of the research is to investigate the macroeconomic implications of potential reforms in the healthcare financing in Nigeria. Thus, to achieve the specific objectives of the study, the dynamic CGE model will be used for this study to specifically model the health sector as being divided into non-government healthcare, government primary healthcare, and government other healthcare, and the dataset to be employed in the study is exclusively from the 2018 Nigeria Social Accounting Matrix (SAM) follows IFPRI’s Standard Nexus SAM approach by focusing on consistency, comparability, and transparency of data. Consequently, the study is anticipated to add to the body of knowledge on healthcare policy evaluation in Nigeria.
+
+
+
+## Key figures
+
+![](figures/figure2.2.png)
+
+## PDF links
+
+-   [See Articles in PDF format](Macroeconomic-Implications-Healthcare.pdf)
