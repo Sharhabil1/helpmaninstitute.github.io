@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="QUADRI, Umar Faruq">
+
+<title>Helpman Institute - 
+Macroeconomic Implications of Healthcare Financing Reforms: A Computable General Equilibrium (CGE) Analysis of Nigeria</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Helpman Institute</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:info@helpmaninstitute.org" rel="" target=""><i class="bi bi-envelope" role="img" aria-label="email">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute" rel="" target=""><i class="bi bi-linkedin" role="img" aria-label="linkedin">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
+  <ul class="collapse">
+  <li><a href="#aim-and-objectives-of-the-study" id="toc-aim-and-objectives-of-the-study" class="nav-link" data-scroll-target="#aim-and-objectives-of-the-study"><span class="header-section-number">1.1</span> Aim and objectives of the study</a></li>
+  <li><a href="#justification-of-the-study" id="toc-justification-of-the-study" class="nav-link" data-scroll-target="#justification-of-the-study"><span class="header-section-number">1.2</span> Justification of the Study</a></li>
+  </ul></li>
+  <li><a href="#literature-review" id="toc-literature-review" class="nav-link" data-scroll-target="#literature-review"><span class="header-section-number">2</span> Literature Review</a>
+  <ul class="collapse">
+  <li><a href="#empirical-literature-review" id="toc-empirical-literature-review" class="nav-link" data-scroll-target="#empirical-literature-review"><span class="header-section-number">2.1</span> Empirical Literature Review</a></li>
+  <li><a href="#theoretical-review." id="toc-theoretical-review." class="nav-link" data-scroll-target="#theoretical-review."><span class="header-section-number">2.2</span> Theoretical Review.</a></li>
+  </ul></li>
+  <li><a href="#an-overview-of-health-sector-reforms-in-nigeria-since-1999" id="toc-an-overview-of-health-sector-reforms-in-nigeria-since-1999" class="nav-link" data-scroll-target="#an-overview-of-health-sector-reforms-in-nigeria-since-1999"><span class="header-section-number">3</span> An Overview of Health Sector Reforms in Nigeria Since 1999</a></li>
+  <li><a href="#research-methodology" id="toc-research-methodology" class="nav-link" data-scroll-target="#research-methodology"><span class="header-section-number">4</span> Research Methodology</a>
+  <ul class="collapse">
+  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1"><span class="header-section-number">4.1</span> Introduction</a></li>
+  <li><a href="#data-sources-and-description" id="toc-data-sources-and-description" class="nav-link" data-scroll-target="#data-sources-and-description"><span class="header-section-number">4.2</span> Data Sources and Description</a></li>
+  <li><a href="#analyticaltheoretical-framework" id="toc-analyticaltheoretical-framework" class="nav-link" data-scroll-target="#analyticaltheoretical-framework"><span class="header-section-number">4.3</span> Analytical/Theoretical Framework</a></li>
+  <li><a href="#estimation-technique" id="toc-estimation-technique" class="nav-link" data-scroll-target="#estimation-technique"><span class="header-section-number">4.4</span> Estimation Technique</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Macroeconomic-Implications-Healthcare.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><img src="resources/hdi_logo.png" class="img-fluid" style="width:2.5in"><br>
+Macroeconomic Implications of Healthcare Financing Reforms: A Computable General Equilibrium (CGE) Analysis of Nigeria</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">QUADRI, Umar Faruq </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Helpman Development Institute, Abuja, Nigeria.
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Jun 2022</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">Jan 2024</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<div style="page-break-after: always;"></div>
+<p><strong>Abstract</strong></p>
+<p>This study is conceptualized on the backdrop that Nigeria continues to have a poor level of health development and falls short of the health benchmark when compared to nations at a comparable level of development. The main objective of the research is to investigate the macroeconomic implications of potential reforms in the healthcare financing in Nigeria. Thus, to achieve the specific objectives of the study, the dynamic CGE model will be used for this study to specifically model the health sector as being divided into non-government healthcare, government primary healthcare, and government other healthcare, and the dataset to be employed in the study is exclusively from the 2018 Nigeria Social Accounting Matrix (SAM) follows IFPRI’s Standard Nexus SAM approach by focusing on consistency, comparability, and transparency of data. Consequently, the study is anticipated to add to the body of knowledge on healthcare policy evaluation in Nigeria.</p>
+<div style="page-break-after: always;"></div>
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>There is a perception that if adequate investments are not made to safeguard population health, neither economic nor social progress can be guaranteed nor sustained <strong>Benjamin, 2016</strong>.For instance, Fogel claims that from the late 18th century onwards, improvements in nutritional condition and the elimination of many communicable diseases allowed Britain to achieve an early industrial breakthrough. <strong>Fogel, 1991</strong>. Because it boosts productivity, develops people’s capacities, increases savings and investments, and encourages moral behavior, good health supports growth. On the other hand, economic growth can help with funding environmental, health, and sanitation programs for screening, immunization, and education <strong>Mills &amp; Shillcutt, 2004</strong>.</p>
+<p>Similarly, social progress, particularly in the area of education, has been linked to an improvement in health status due to better nutrition and reproductive health. This might not always happen, though, as not all macroeconomic reforms will necessarily benefit the general populace. Scholars have demonstrated that some economically viable policies, most notably structural adjustment policies, have had terrible effects on health <span class="citation" data-cites="muiu2002">(<a href="#ref-muiu2002" role="doc-biblioref">Muiu 2002</a>)</span>. Since the colonial era, the Nigerian government has introduced a number of changes intended to improve the delivery of healthcare in the nation, guided by the realization of the reciprocal relationship between health and macroeconomic growth. However, many Nigerians do not have access to organized health care. The fact that health indicators have gotten worse over time is more concerning. Nigeria was placed 187th out of 191 nations in the <strong>WHO, 2000</strong>, and not much has improved since then. From 85 per 1000 live births in 1982 to 87 in 1990 to 93 in 1991 to 100 in 2003 <span class="citation" data-cites="npc2003">(<a href="#ref-npc2003" role="doc-biblioref">NPC 2003</a>)</span>. infant mortality rates have been declining. The Federal Ministry of Health recorded 110 fatalities for every 1,000 live births in 2007. According to <strong>WHO, 2008</strong>. there are 1100 maternal deaths for every 100,000 live births. In 2007, the average life expectancy at birth was 49 years.</p>
+<p>MeNigeria continues to have a poor level of health development and falls well short of the health benchmark when compared to nations at a comparable level of development. For instance, infant and under-five mortality rates in Nigeria are greater than those in Egypt and Malaysia at 189 and 97 per 1000 live births, respectively. <strong>WHO, 2008</strong>. Nigeria’s life expectancy in 2007 was 49, which is lower than Egypt’s and Malaysia’s, respectively, of 68 and 72 years <strong>WHO,2008</strong>. The health sector is beset by problems such as fragmented service delivery, inadequate and insufficient funding, deficient infrastructure, unequal personnel distribution, and ineffective coordination between key actors. These issues have become so concerning that it is necessary to examine Nigeria’s health sector changes from 1946 to 2007 in order to determine why they did not provide the anticipated results.</p>
+<p>The global trend toward healthcare reform is essential for people’s wealth as well as for their health. According to[<strong>Bloom &amp; Canning, 2005; Bloom et al., 2004; Fogel, 2004;</strong> <span class="citation" data-cites="bank2004">World (<a href="#ref-bank2004" role="doc-biblioref">2004</a>)</span> ), the health sector is a key contributor to economic growth and typically represents a sizeable portion of the overall economy. Therefore, healthcare reforms affect the economy both directly and indirectly through their influence on health. However, these broader macroeconomic consequences are rarely taken into account. The general equilibrium outputs of the economy’s transmission mechanisms through wages, rents, factor demand and supply, foreign exchange rates, and sectoral shares in production are referred to as the broader macroeconomic effects. These outcomes then affect aggregate changes at the macro level. Growth rates in the GDP, private and public consumption, investment, imports and exports, and national poverty rates are some of the macroeconomic developments. There is some literature on the relationship between health and economic growth, but only one study <span class="citation" data-cites="rutten2004">Rutten (<a href="#ref-rutten2004" role="doc-biblioref">2004</a>)</span> focuses on the effects of policy changes in the health sector on the entire economy and is located in the United Kingdom. In a comparable study that attempted to evaluate Botswana’s healthcare policy, the emphasis was on government initiatives meant to lessen the consequences of HIV/AIDS <span class="citation" data-cites="dixon2004">(<a href="#ref-dixon2004" role="doc-biblioref">Dixon, McDonald, and Roberts 2004</a>)</span>.</p>
+<p>The macro level changes include growth rates in the GDP, private and public consumption, investment, imports and exports, and national poverty levels. There is limited literature that examines health as a factor influencing economic growth, but only one study <span class="citation" data-cites="rutten2004">Rutten (<a href="#ref-rutten2004" role="doc-biblioref">2004</a>)</span> deals with the economy-wide impact of policy changes in the health sector and is based in the United Kingdom. In a comparable study that attempted to evaluate Botswana’s healthcare policy, the emphasis was on government initiatives meant to lessen the consequences of HIV/AIDS <span class="citation" data-cites="dixon2004">(<a href="#ref-dixon2004" role="doc-biblioref">Dixon, McDonald, and Roberts 2004</a>)</span></p>
+<section id="aim-and-objectives-of-the-study" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="aim-and-objectives-of-the-study"><span class="header-section-number">1.1</span> Aim and objectives of the study</h2>
+<p>The main objective of the research is to investigate the macroeconomic implications of potential reforms to Nigeria’s healthcare financing plans. The study’s specific objectives are:</p>
+<ol type="i">
+<li><p>To develop a health-focused Nigeria Social Accounting Matrix (SAM), with a disaggregated health sector and labour inputs, to capture the demand and supply-side impacts of healthcare financing reforms.</p></li>
+<li><p>To design a dynamic CGE model for Nigeria calibrated from the health-focussed SAM.</p></li>
+<li><p>To design healthcare financing reform scenarios to mirror the creation of fiscal space for health in Nigeria.</p></li>
+<li><p>To simulate the impact of government efforts to create fiscal space for health in a dynamic CGE model and predict the impacts on the aggregate economic fundamentals</p></li>
+<li><p>To conduct a Scenario Analysis of how policies aimed at improving healthcare financing compare.</p></li>
+</ol>
+</section>
+<section id="justification-of-the-study" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="justification-of-the-study"><span class="header-section-number">1.2</span> Justification of the Study</h2>
+<p>In two key areas, the study is anticipated to add to the body of knowledge on healthcare policy evaluation. First off, the study’s use of CGE modeling to assess healthcare financing reforms in Nigeria represents a shift away from a restricted internal focus on the health sector and toward broader national implications. The macroeconomic evaluation of the effects of health policy in Nigeria has hardly ever employed the static model with highly decomposed sectors, households, and labor. Therefore, it is intended that the model will explicitly detail the potential effects of the healthcare financing policies on the macroeconomic indicators, the structure of the economy, and the decline in poverty rates.</p>
+<p>Second, because the study is being conducted in a developing nation, there are lessons to be learned about the overall macroeconomic effects of healthcare reform policies for low- and middle-income nations. To my knowledge, only (Kabajulizi, 2016, and <span class="citation" data-cites="rutten2004">Rutten (<a href="#ref-rutten2004" role="doc-biblioref">2004</a>)</span>) have explicitly modeled the effects of healthcare policy on the entire economy using dynamic and static computable general equilibrium models, respectively. While the study by <strong>Kabajulizi, 2016</strong> , was conducted in Nigeria, where the economic effects of healthcare policy changes are likely to be similar to those of Nigeria, the study by <span class="citation" data-cites="rutten2004">Rutten (<a href="#ref-rutten2004" role="doc-biblioref">2004</a>)</span> was conducted in the United Kingdom, where the economic effects of healthcare policy changes are likely to differ from those of developing countries. For instance, Nigeria’s informal economy employs a sizable number of people. The Nigerian model aims to represent the effects of the informal sector on the wage structure, the sector output mix, and poverty rates in the nation.</p>
+</section>
+</section>
+<section id="literature-review" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Literature Review</h1>
+<section id="empirical-literature-review" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="empirical-literature-review"><span class="header-section-number">2.1</span> Empirical Literature Review</h2>
+<p><strong>Nitesh, John &amp; Mitu (2013)</strong> attempted Modeling Health in a CGE Framework using India as a case study in their paper for the Partnership for Economic Policy (PEP). This study simulated the consequences of full tariff liberalization in the presence, partial withdrawal, and absence of health subsidies using a CGE framework. This study’s main finding is that full health subsidies minimize overall inequity by giving rural households an advantage over urban ones. Withholding health benefits causes domestic poverty to be redistributed, driving down wages in the agriculture sector, the main source of income for rural people. In this approach, health is viewed as a type of human capital that is the subject of a household’s choice function. Thus, this paper is an early attempt to include health in a framework of general equilibrium. Health is viewed as an investment good in this paradigm. It implies that, on the one hand, households decide to buy medications and medical care (i.e., invest in health) because they result in a certain increase in productivity. Businesses reward this increased production by paying healthy workers more in the job market. However, this investment in health also entails a direct cost (such as the price of medications or fees for medical consultations) that is either fully covered by the household, fully covered by the government, or (probably the most likely scenario) paid in part by households and partially by the government.</p>
+<p>For the EU countries, <strong>Inge &amp; Denise (2003)</strong> used CGE analysis to model the health-related advantages of environmental policies and their feedback effects. This research examines the significance of the feedback effects of the health-related advantages of an environmental policy using GEM-E3, a computable general equilibrium model for the EU countries. Three possible pathways for feedback are allowed by the modeling framework used in GEM-E3: a decline in medical costs, an increase in consumers’ free time, and an increase in labor productivity in the manufacturing sectors. The findings demonstrate that a more accurate assessment of the effects of environmental regulations on private consumption and employment may be made through the explicit modeling of the health-related effects of air pollution on consumers and producers. The effects of the feedback, however, are minimal when compared to the typical GEM-E3 model, where the health-related advantages are assessed ex-post.</p>
+<p>A recursive dynamic computable general equilibrium (CGE) model calibrated from a health-focused Social Accounting Matrix (SAM) was used by <strong>Judith Kabajulizi (2016)</strong> in her research paper Macroeconomic implications of Healthcare Financing reforms: a computable general equilibrium analysis of Nigeria to evaluate the effects of healthcare financing reform policies. The prioritizing of the health sector, earmarked taxes for health, and aid for health are examined as three sources of budgetary space for health. Results indicated that increasing funding for the health sector from any of the three sources of fiscal space for health, along with anticipated improvements in population health, leads to faster GDP growth rates and lower levels of poverty. While the aid for health strategy led to the greatest reduction in poverty, the tax for health policy produced the highest GDP growth rates. To fulfill the goals of the Nigeria Vision 2040, the government needs therefore enhance funding for the health sector. The following four categories can be used to group the key lessons for developing and implementing CGE in the fields of health and healthcare. To properly reflect the delayed effects of changes in health and healthcare policy on the economy, the model must first be dynamic. Second, to reflect the distinctive nature (in terms of skill composition) of the healthcare sector labor and to capture the response of various labor types to changes in health status, labor should be decomposed by skill level in the factor markets. Thirdly, because resource claims on the health sector vary depending on the type of care, the SAM’s health sector account should be broken down to reflect the study topic, such as by levels of care or treatments. Fourth, as much as the data allow, the household sector should be segmented into relatively homogenous categories in order to properly assess the welfare impact of a particular healthcare policy. The purpose of this study is to fill in research gaps by creating a dynamic CGE model for Nigeria calibrated using a social accounting matrix that is centered on the health sector but is disaggregated, as well as to report the effects of healthcare finance reforms on the entire economy.</p>
+</section>
+<section id="theoretical-review." class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="theoretical-review."><span class="header-section-number">2.2</span> Theoretical Review.</h2>
+<p>The Walrasian General Economic Equilibrium theory, which views the economy as a collection of individuals interacting in many markets for an equal number of commodities under a specific set of baseline endowments and income distribution, is where the unique characteristics of general equilibrium modeling originate. Each agent in this situation determines his or her own supply or demand behavior by maximizing his or her own utility, profit, or cost goals.</p>
+<p>According to the Arrow-Debreau theorem, the economy is made up of a group of agents, providers and demanders, who engage in trade on a number of markets for an equal number of goods. Each agent in this situation is a price taker since the market, not the agent, determines the prices. By maximizing his own utility, profit, or cost objectives, each agent defines his own supply or demand behavior. The Arrow-Debreau theorem simply asserts that there exists a set of prices that, under general circumstances, bring supply and demand quantities into equilibrium and satisfy each agent individually. It has been established that a discrete equation with a double-singular structure has a solution by applying the Brouwer and Kakutani fixed point theorem to the problem.</p>
+<p>In that it implements a kind of iterative process around a fixed point where the equilibrium vector of prices sits, the Brouwer and Kakutani theorem is constructive. The aforementioned theory was transformed into an operational model via the computed general equilibrium (CGE) model, which was later applied to dynamic analysis as well.</p>
+</section>
+</section>
+<section id="an-overview-of-health-sector-reforms-in-nigeria-since-1999" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> An Overview of Health Sector Reforms in Nigeria Since 1999</h1>
+<p>Following the aspirations of the Nigerian people, successive civilian administrations have started health sector reform programs since the country’s democratization in 1999. The implementation of the first 57 phases of the Chief Olusegun Obasanjo administration’s comprehensive health sector reform, which covered the years 2004 through 2007, began in 2003. The main goals of the reform were to enhance Nigerians’ health and break the vicious cycle of underdevelopment, illness, and poverty. The National Economic and Empowerment Development Strategy (NEEDS), the nation’s main macroeconomic framework, contained the reform of the health sector.</p>
+<p>Thus, the period 2004 – 2007, saw a reform agenda articulated for the health sector, which aimed at:</p>
+<ul>
+<li><p>Improving the stewardship role of government;</p></li>
+<li><p>strengthening the national health system and its management;</p></li>
+<li><p>reducing the burden of disease; improving health resources and their management;</p></li>
+<li><p>improving access to quality health services;</p></li>
+<li><p>improving consumer awareness and community involvement, and</p></li>
+<li><p>promoting effective partnership collaboration and coordination <strong>FMOH, 2004</strong>.</p></li>
+</ul>
+<p>Governance is one of the key problems with health sector change. The primary criticism leveled at Nigeria’s health system governance has been the absence of a coordinated response to pressing demands in the health sector. The inadequate articulation of the duties and responsibilities of key players is just one of a number of limitations and difficulties that have seriously impeded the role of government. The duties that the municipal, state, and federal governments must play in the country’s healthcare delivery system are not specified by the constitution <strong>FMOH, 2004</strong>. This was a significant oversight for the health sector in Nigeria, as the local government serves as the principal implementer of primary healthcare under a three-tiered structure. Additionally, the clear roles and duties of the private sector were missing. Due to this situation, resources were wasted, redundant work was done more than once, and efforts that could have been used elsewhere instead were duplicated. The Federal Government created a structure to direct and coordinate investments and actions by the three tiers of government, the corporate sector, donors, and other stakeholders in response to the criticism.</p>
+<p>The topic of obtaining sustainable financing for health care was the focus of the Nigerian health sectors’ most notable reform. Nigeria’s health industry is financed through a combination of public budget, social and private health insurance, outside funding, and individual out-of-pocket expenses. The 1990s saw relatively modest levels of health spending despite a wide range of funding sources. Despite an increase in the federal government’s recurrent health budget from 1996 to 1998 and 1999 to 2000, the evidence at hand suggests that the majority of this expenditure was on staff <span class="citation" data-cites="who2002">WHO (<a href="#ref-who2002" role="doc-biblioref">2002</a>)</span>. Recurrent health expenditures were 2.55% in 1996, 2.96% in 1997, 2.99% in 1998, 1.95% in 1999, and 2.5% in 2000 <strong>CBN, 2000</strong> as a proportion of all government recurrent expenditures. Government spending on health, as a percentage of GDP, fell from 2.2% in 2000 <strong>WHO,2003</strong> to 1.3% in 2003 <strong>UNDP, 2006</strong> according to UNDP.</p>
+<p>Nigeria’s government proportion of overall health spending decreased from 29.1% in 1999 to 25.5% in 2003, falling below many other African nations, including those that share a similar World Bank classification of low-income economies <strong>WHO, 2006</strong>. Public investment on health was less than <span class="math inline">\(\$5\)</span> per person nationwide and as low as <span class="math inline">\(\$2\)</span> in some regions, significantly below the $34 that the WHO recommends for low-income countries <strong>(WHO, 2002)</strong>.Spending on private health was 3.7% of the <strong>UNDP, 2006</strong>. Between 1998 and 2002, household out-of-pocket spending had an average of 64.5%. <strong>WHO, 2008</strong>. TThis demonstrates that the cost of healthcare was relatively high for households.<strong>WHO, 2008</strong> estimates that 12% of households spent more than a quarter of their entire household income on health care, and that 4% of households spent more than half.</p>
+<p>The government launched a number of initiatives in an effort to address the low per capita funding for health. The federal government has significantly boosted its funding for health care since 2003 as a result of its commitment to enhancing the healthcare system. Several state governments also raised the amount of resources they devote to the industry. Additionally, efforts were made to improve the amount of resources allocated to primary healthcare at the federal level. For instance, a primary health care development fund was included in the National Health Bill, which would enhance the amount of money designated for PHC <strong>WHO, 2008</strong>. The National Health Insurance Scheme (NHIS) was created as part of the government’s effort to solve the issues with health financing. The National Health Insurance System (NHIS) was first conceived in Nigeria in 1960, but it wasn’t implemented until 1984, when the National Council on Health (NCH) established a committee to advise the federal government on the necessity of its implementation. The National Health Insurance Review Committee was established in 1985 <strong>FMOH, 2001</strong> as a result of this committee’s favorable response. For formal sector employees, NHIS collected premiums and made medical care purchases. This represented less than 40% of the population leaving out over 60% employed in the informal sector, especially over 52% in the rural areas. In effect, despite the introduction of the NHIS over 90% of health services in Nigeria remained paid for through direct user fee.</p>
+<p>Some Community Based Health Financing Schemes (CBHFs) were created as a result of the issue of the informal sector’s exclusion <strong>Omoruan, et al., 2009</strong>. Some CBHF specifically targeted members of neighborhood trade associations, including the association of cab drivers, market associations like Lawanson Health Plan (LHP) in Lagos and Ariaria Trader’s Health Scheme in Aba. Others, like the Country Women Association of Nigeria (COWAN) and the Ndo Nwanne Health Scheme of Enugu, focused on residents of a specific community. The repackaging of the NHIS was approved at the 42nd meeting of NCH in 1997 in order to achieve complete private sector participation by giving reinsurance coverage to the CBHF and Health Maintenance Organizations (HMOs) to create Social Health Insurance (SHI). SHI was introduced in October 1997, and the scheme’s enabling statute, Decree 35 of 1999, was signed in May of that same year. The start date was put off to June 6, 2005. Although the NHIS was designed to provide universal coverage, only formal sector employees have been eligible for benefits. Due to this restriction, the majority of individuals continued to pay for healthcare out of their own pockets, which has had a substantial impact on access. Because of this, there was concern that the number of uninsured persons would continue to rise, which would further contribute to the decline of important health indicators and, in addition to the scourge of HIV/AIDS, contribute to escalating an already dismal life expectancy rate.</p>
+<p>However, the Dutch Ministry of Foreign Affairs’ <span class="math inline">\(\$131\)</span> million Insurance Health Fund (IHF) launch would increase coverage to a sizeable section of the populace <span class="citation" data-cites="irin2008">Irin (<a href="#ref-irin2008" role="doc-biblioref">2008</a>)</span>. The fund’s attractiveness is based on its effect on the main barrier to using health insurance, which is the cost. The program would lower premium costs by as much as 95% in some circumstances <span class="citation" data-cites="irin2008">Irin (<a href="#ref-irin2008" role="doc-biblioref">2008</a>)</span>,enabling more people to buy insurance. However, health insurance programs offer to guarantee guaranteed funds for health, increase the effectiveness of managing health resources, and shield consumers from unaffordable medical costs.</p>
+<p>In the 1990s, donors’ contributions to the health sector also decreased. The loss in international support for the growth of the health sector, which started in the middle of the 1980s and persisted until the 1990s, was a significant factor in the decrease in health financing in Nigeria. Most donor nations, particularly the United States and the United Kingdom, and international organizations stopped funding projects in Nigeria, including those that were related to health, as a result of the military government’s refusal to give in to calls for the restoration of democracy and the international community’s subsequent rejection of the military government. However, after democracy was restored in 1999, the situation improved as many of the international partners resumed their work with the government and made a significant contribution to tackling pressing issues. When civilians restored control of government in 1999, the proportion of all foreign aid going to the health sector, which was 3.0% in 1998, grew to 19.8% <span class="citation" data-cites="who2002">(<a href="#ref-who2002" role="doc-biblioref">WHO 2002</a>)</span>.</p>
+<p>The supply of health services is another problem. In Nigeria, healthcare is complexly and pluralistically organized. There are several providers in both the public and private sectors, as well as for-profit businesses, non-governmental organizations, neighborhood-based groups, and traditional as well as religious care providers. In general, health services were far less readily available, accessible, high-quality, and used in the 1990s. In 1999, there were 18,258 registered PHC facilities, 3275 secondary facilities, and 29 tertiary facilities nationwide, according to data from the Federal Ministry of Health that are currently available <span class="citation" data-cites="who2002">WHO (<a href="#ref-who2002" role="doc-biblioref">2002</a>)</span>. According to <strong>UNICEF, 2001</strong>, the public sector owned 67% of PHC institutions, 25% of secondary facilities, and all but one of the postsecondary facilities. Inadequate decentralization of services was the health services’ main flaw. PHC facilities only provided a small number of services. The majority of health services are only available at the secondary and tertiary levels, which are concentrated in metropolitan areas. This restricts access by raising the beneficiary’s cost of receiving treatments in the rural area. According to <span class="citation" data-cites="who2002">WHO (<a href="#ref-who2002" role="doc-biblioref">2002</a>)</span>, 88% of households in the South West, 87% in the South East, 82% in the North Central, 73% in the North East, and 67% in the North West regions lived within 10 kilometers of a hospital, clinic, or health center. However, just because there were medical facilities there doesn’t mean they were operational. The majority of them lacked critical supplies, trained personnel, and adequate equipment. Particularly, PHC interventions like immunization and access to clean water and sanitation saw a decrease in coverage.</p>
+<p>Significant disparities also persisted between the rich and the poor, rural and urban areas, and between the regions. Additionally, the current health care delivery system was limited in its ability to provide health services across a continuum of care due to insufficient referral links between the various levels of healthcare. In particular in the private sectors, there were no health services. The National Health Bill, however, stipulates that “all Nigerians shall be entitled to a guaranteed minimum package of services” in an effort to correct the issue. In 2007, the Ward Minimum Health Care Package (WMHCP) 2007 – 2012 was ratified and adopted by the Nigerian National Council on Health as a minimum standard for the delivery of primary health care services in Nigeria (<strong>WHO, 2008</strong>). In the area of infectious disease control, the new civilian administrations made significant progress. In 1999, the government of President Olusegun Obasanjo set up a National Action Committee on AIDS charged with the responsibility of coordinating various activities related to the prevention and control of HIV/AIDS in the country. The Committee was later transformed through a legislative act into a statutory agency.</p>
+<p>The World Bank, the Global Fund, and the United States Presidential Emergency Plan for AIDS Relief (PEPFAR) have all contributed significantly to the realization of the Nigerian government’s commitment to providing antiretroviral medication to all citizens. This commitment was made in 2005. According to sentinel surveys, the prevalence rate increased from 1.8 percent in 1991 to 5.8% in 2001, but in 2006, it was assessed to be 3.9 percent. Prior to 1999, there was no large-scale technical organization capable of monitoring and combating infectious diseases. However, a plan was developed to transform the current Central Public Health Laboratory in Lagos into a National Disease and Control Prevention Center. Campaigns for routine vaccination against diseases like polio and others that can be prevented have also gained momentum.</p>
+<p><strong>Conceptual Framework</strong></p>
+<p>Utilization and application of CGE modeling CGE models are an effort to transform the abstract Walrasian general equilibrium theory into accurate representations of real economies30. The models aim to quantitatively identify the features of an observable global equilibrium. A logical and consistent method for analyzing policy challenges involving multiple economic agents is provided by CGE modeling. For instance, a rise in healthcare spending in a publicly funded health system will result in a rise in the demand for healthcare inputs, which must come from other areas of the economy. Labor will be attracted to the healthcare sector from other industries, assuming that factors of production are mobile across sectors. Utilization and application of CGE modeling CGE models are an effort to transform the abstract Walrasian general equilibrium theory into accurate representations of real economies30. The models aim to quantitatively identify the features of an observable global equilibrium. A logical and consistent method for analyzing policy challenges involving multiple economic agents is provided by CGE modeling. For instance, a rise in healthcare spending in a publicly funded health system will result in a rise in the demand for healthcare inputs, which must come from other areas of the economy. Labor will be attracted to the healthcare sector from other industries, assuming that factors of production are mobile across sectors. Additionally, CGE modeling has the ability to analyze multiple policy shocks at once in order to fully understand their combined influence and to examine how changes in policy resulting from internal or external shocks affect macroeconomic variables. An vast collection of time series data on the variables to be modelled is typically needed for econometric analysis, which is a different approach that is frequently not available. Using arrows to indicate the direction of the step-by-step process for benchmark data needs, building the counterfactual equilibrium, and policy evaluation, Figure 1 demonstrates how the CGE modelling technique operates.</p>
+<div id="fig-figure-2.1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="figures/figure2.1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1. Flow chart showing calibration procedure and the use of a CGE model</figcaption>
+</figure>
+</div>
+<p><strong>A healthcare system and the economy</strong></p>
+<p>According to <strong>World Health Organisation, 2000</strong>, a health system is a collection of assets, participants, and organizations involved in the funding, oversight, and supply of actions with the primary goal of enhancing or maintaining health. A health system fulfills four standard tasks: funding, providing health services, stewardship, and resource development. Health is its primary objective. 2000. World Health Organization. All the characteristics that define the interactions between the health sector and the rest of the economy should be included in an analytical framework of the health sector’s connections with other sectors. A good place to start is with the macroeconomics and health framework developed by <strong>Shariff, 2004</strong> and the WHO standard framework for evaluating the performance of health systems developed <strong>Murray &amp; Frenk, 2000</strong> and the <strong>World Health Organisation, 2010</strong>.An expansion of the WHO paradigm is used to show how the economy and population health are interdependent. This addition to the paradigm, however, focuses on the direct impact of the health system on health status on macroeconomic indicators. Other economic implications of health policy exist, and they are not always related to changes in population health. Investment in healthcare will also have an effect on how the economy is structured through a variety of mechanisms, including those affecting employment, wage rates, currency rates, and sector composition, among others. As a result, <strong>Hsiao &amp; Heller, 2007</strong> introduced the mechanism by which the health system affects macroeconomic variables to their theory. Figure 2 shows a few of the several channels via which the healthcare system engages with the economy and produces both direct and indirect consequences. The variables are given numbers for convenience of reference, and the direction of the arrows denotes the direction of the flow of influence between them</p>
+<p><img src="figures/figure2.2.png" id="fig-figure-2.2" class="img-fluid"></p>
+<p>The following is a quick explanation of the interactions seen in Figure 2.2. Initial circumstances, including the environment, demographics, age distribution, and genetic make-up of individuals, among others, are invariably what determine a population’s health status17 (Channel 1). The beginning circumstances will also impact the demand for healthcare, affecting how a healthcare system is organized (Channel 2). For instance, a sizable portion of those who reside in less affluent environments are more likely to suffer from communicable diseases, necessitating investment in preventive and curative healthcare services, while an aging population necessitates investment in measures to lessen the effects of non-communicable/chronic diseases. Microeconomic variables (Channel 3) are impacted by health status due to their effect on labor productivity. The demand for medical care as well as the demand and consumption of non-healthcare items are thus impacted, as are household wages, savings rates, poverty rates, and demand for medical care. These variables ultimately affect GDP growth, commodity and factor prices, and production (Channel 4). Additionally, government policies like healthcare financing (general taxes, donor funding, private funding), which determines the quantity and quality of health services available to the population, will directly affect the status of a population (Channel 5).</p>
+<p>In addition, resource generation strategies like investing in physical capital and training healthcare professionals are crucial to the delivery of healthcare services and, as a result, affect a population’s health. Furthermore, depending on the size and importance of the health sector, the implementation of healthcare policies and healthcare finance schemes would have a direct impact on the macroeconomic variables (Channel 6). For instance, tax rates and household income are impacted by publicly supported healthcare provision made possible by general tax revenue. Increasing the budget for government healthcare indicates that the government must find new funding, possibly through increased taxes, in order to address the budgetary imbalance. Additionally, it might decrease the resources available to other industries and/or decrease transfers to households, which would have an impact on household income. Concerns concerning the amount of help and its effects on the nation’s macroeconomic factors as well as absorption capability are raised by donor-funded healthcare <strong>Martins, 2006</strong>.In order to more quickly reach the targeted targets for healthcare delivery, donor-funded healthcare frequently necessitates increased hiring of professional workers, and health workers in particular. Due to their high demand, skilled labor tends to command higher compensation in the health sector, notably for health professionals, which puts pressure on other industries and government departments to do the same.<strong>Bourguignon &amp; Sundberg, 2006</strong>.. Increased funding allocation to the health sector is likely to accompany the expansion of health service delivery. Naturally, the reallocation disturbs an economy that has a fixed supply of resources. If there is a fixed pool of labor, for example, increasing the amount of labor available to the health sector indicates that there will be less accessible to other sectors, which could result in higher wages in the rest of the economy. Given that Nigeria is a net importer of pharmaceutical items, the position of the pharmaceutical sector as a supply of inputs to healthcare has consequences for the current account balance. The need for foreign currency will rise as pharmaceutical supply rise. A rise in the domestic consumer price of pharmaceuticals would follow a rise in the global price of pharmaceutical items, lowering the real income of families. If the health system promotes the export of domestic health personnel, this could be a foreign exchange source that affects the current account. The low pay for health workers in Nigeria is a contributing factor to the export of domestic health employees. They depart the nation in pursuit of better opportunities overseas, this is the <em>japa-syndrome</em>. A framework for analyzing the effects of healthcare spending must take the general equilibrium condition of an economy into account. An explicit focus of a general equilibrium analysis is on how various economic players interact. A dynamic analysis is also necessary because some of the inter-relationship’s impacts happen quickly while others take time to appear. Therefore, the best method for capturing the effects of Nigeria’s healthcare reforms on the entire economy is a dynamic computable general equilibrium modeling technique.</p>
+</section>
+<section id="research-methodology" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Research Methodology</h1>
+<section id="introduction-1" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="introduction-1"><span class="header-section-number">4.1</span> Introduction</h2>
+<p>We shall divide this section into three sub-sections: the first discusses the data source and variable descriptions; the second discusses the theoretical framework; and the third discusses the estimating techniques to be employed in the study.</p>
+</section>
+<section id="data-sources-and-description" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="data-sources-and-description"><span class="header-section-number">4.2</span> Data Sources and Description</h2>
+<p>The dataset to be employed in the study is exclusively from the 2018 Nigeria Social Accounting Matrix (SAM) follows IFPRI’s Standard Nexus SAM approach by focusing on consistency, comparability, and transparency of data.</p>
+</section>
+<section id="analyticaltheoretical-framework" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="analyticaltheoretical-framework"><span class="header-section-number">4.3</span> Analytical/Theoretical Framework</h2>
+<p>In this study, the model includes exogenous factors that represent the effects of healthcare on labor outcomes. Despite the fact that this is the case, it is still important to understand the household labor supply model that underpins the connection between effective labor supplies and healthcare in the economy. The household labor supply model specifies the following relationship between healthcare and employment outcomes:</p>
+<p><span class="math inline">\(L=L(H,X, \theta)\)</span></p>
+<p><span class="math inline">\(H = H(HC)\)</span></p>
+<p>where <span class="math inline">\(L\)</span> represents labour outcomes (which may be labour participation rates or labour productivity rates), <span class="math inline">\(H\)</span> is the health status of an individual, itself a function of a health composite <span class="math inline">\(HC\)</span>, <span class="math inline">\(X\)</span> are observable household characteristics that affect productivity and <span class="math inline">\(\theta\)</span> are other unobservable household characteristics that may affect labour outcomes.</p>
+<p>It was established in the literature review section that the elasticity of the economy’s effective labour endowments would depend on the actual percentage of the labor force waiting to be treated, the elasticity of the labor force waiting to be treated, and changes in healthcare output. This was based on the theoretical model of production equilibrium that was extended to health and healthcare. It is acknowledged from the healthcare perspective that the availability of skilled labor depends on both the quantity and the quality (efficacy) of healthcare. Assuming that households are uniformly afflicted by illness so that the number of un-well labourers is the same across households, the proportion of labourers unable to work (non-participation rate) can be defined by a constant elasticity function of a healthcare composite:</p>
+<p><span class="math inline">\(\beta_{fel}= \beta_{0f}HC^{- \epsilon_f}_f\)</span></p>
+<p>where <span class="math inline">\(\beta_{f\epsilon l}\)</span> represents the non-participation rate for labour <span class="math inline">\(l\)</span>, <span class="math inline">\(\epsilon_{f\epsilon l}\)</span> is a waiting list elasticity parameter and <span class="math inline">\(\beta_{of\epsilon l} &gt; 0\)</span> is a scale parameter which is calibrated so that <span class="math inline">\(\beta_{f\epsilon l} &lt; 1\)</span>. This specification suggests that increasing healthcare will increase treatments and curing of the sick and eventually lead to a reduction in the labour non-participation rate. Therefore, as <span class="math inline">\(HC_f\)</span> tends to infinity the non-participation rate tends to zero. When the healthcare provision is undertaken by both government and the private healthcare sector, the health status of the labour force is determined by a health composite of private and public healthcare. The health composite is given by the formulation:</p>
+<p><span class="math inline">\(HC_t = (C_{Hg})^{\rho l} (C_{Hng}^{(l-\rho l)})\)</span></p>
+<p>where <span class="math inline">\(HCl\)</span> is a healthcare composite for labour <span class="math inline">\(l\)</span>, <span class="math inline">\(CHg\)</span> and <span class="math inline">\(CHng\)</span> are government and non-government healthcare consumption respectively, for labour <span class="math inline">\(l\)</span>, and 0 ≤ <span class="math inline">\(pl\)</span> ≤ 1 is the share of government healthcare in the health status of labour <span class="math inline">\(l\)</span> .</p>
+<p>In order to determine the impact of healthcare on labour outcomes using the formulation above, data on three important parameters is required: the share of public and private healthcare consumption in the health status of the different labour categories, <span class="math inline">\(pl\)</span>, the waiting list elasticity parameter <span class="math inline">\(\epsilon f\)</span>, and a basis for calibrating the scale parameter . This suggests that the impact of a healthcare financing reform policy which generates health outcomes that impact on the household labour supply module could be more precisely captured, if data on the effectiveness of healthcare were available.</p>
+<p>Given that policy guidance is often required even for those settings where data is scarce, such as Nigeria; this study undertakes to model the health effects as exogenous parameters. The envisaged healthcare effects of increased public health expenditure are modelled as growth in labour supply, labour productivity and total factor productivity. The health effects considered enter the model exogenously and the parameter values for the health effects shall be obtained from literature on health and economic growth.</p>
+</section>
+<section id="estimation-technique" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="estimation-technique"><span class="header-section-number">4.4</span> Estimation Technique</h2>
+<p>The dynamic CGE model used for this study specifically models the health sector as being divided into non-government healthcare, government primary healthcare, and government other healthcare. Using conventional CGE technology, the disaggregated health sector is linked to the rest of the economy to forecast the consequences of healthcare financing reforms. The International Food and Policy Research Institute (IFPRI)’s neoclassical standard CGE model, which was described in <strong>Lofgren et al., 2002</strong> serves as its foundation.</p>
+<p>The widely utilized CGE model is a currently used analytical technique created by other academics. The model will specifically be modified in the following ways to fit the Nigerian economy. The Nigeria SAM will first be revised and balanced, with the health sector account being divided into three new health accounts. Second, the newly formed health sector accounts and any associated activity, commodity, factor, and institutional accounts in the SAM must be incorporated into the model equations for production, consumption, and factors of production for the health sector. Included in this is a description of the necessary equation updates to reflect the scenarios analysis. Third, the model closing guidelines were created to address the study’s questions.</p>
+<p>For the following reasons, the static model is appropriate for assessing the economic effects of changes to health and healthcare financing policies. First, the consequences of health and healthcare on the whole economy could take time to manifest. For instance, there is data that points to the benefits of early childhood health on cognitive and physical growth, which affects adult productivity. The static model’s updating equations for labor force and productivity growth allow for the capture of the short-term effects of population health status on labor supply and productivity across all economic sectors. Processes defining underlying development in total factor productivity across economic sectors, linked to advancements in healthcare and wellness, are also incorporated in the model.</p>
+<p>The model is made to examine the most important problems with raising resources for the health sector through a range of approaches and mapping their distributed effects. It is designed to calculate how healthcare finance strategies affect different sectors of production, sector market shares, factor needs, income of various household types, and income of different labor skills. As a result, the model forecasts growth rates in GDP, private consumption, investment, exports and imports, as well as rates of poverty reduction. The model is calibrated using data from the Nigeria <strong>SAM of 2011</strong>, which was enhanced with a detailed and disaggregated health sector.</p>
+<div style="page-break-after: always;"></div>
+<p><strong>Reference</strong></p>
+
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-dixon2004" class="csl-entry" role="listitem">
+Dixon, Simon, Steve McDonald, and Jennifer Roberts. 2004. <span>“AIDS in Botswana: Evaluating the General Equilibrium Implications of Health Care Interventions.”</span> Health Economics and Decision Science. Sheffield: University of Sheffield, UK.
+</div>
+<div id="ref-irin2008" class="csl-entry" role="listitem">
+Irin. 2008. <span>“Nigeria: New Insurance Scheme for the Poor.”</span> Retrieved November 2008. <a href="http://www.irinnews.org/report.aspx?Report/d=62764">http://www.irinnews.org/report.aspx?Report/d=62764</a>.
+</div>
+<div id="ref-muiu2002" class="csl-entry" role="listitem">
+Muiu, Mwangi. 2002. <span>“Globalisation and Hegemony: Which Way Africa.”</span> <em>Journal of Policy Studies</em> 8 (1): 68–88.
+</div>
+<div id="ref-npc2003" class="csl-entry" role="listitem">
+NPC. 2003. <span>“Nigeria Demographic Health Survey, 2003.”</span> Abuja: National Population Commission.
+</div>
+<div id="ref-rutten2004" class="csl-entry" role="listitem">
+Rutten, Martine. 2004. <span>“The Economic Impact of Health Care Provision: A CGE Assessment for the UK.”</span> Doctoral dissertation, University of Nottingham.
+</div>
+<div id="ref-who2002" class="csl-entry" role="listitem">
+WHO. 2002. <span>“WHO Cooperation Strategy: Federal Republic of Nigeria 2002-2007.”</span> Brazzaville: WHO Regional Office for Africa.
+</div>
+<div id="ref-bank2004" class="csl-entry" role="listitem">
+World, Bank. 2004. <em>The Millennium Development Goals for Health: Rising to the Challenges</em>. Washington, DC: The World Bank.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

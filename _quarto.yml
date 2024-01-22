@@ -37,8 +37,6 @@ format:
     theme: zephyr
     css: styles.css
     toc: true
-  variables:
-    primary-color: "maroon";  
-
+  
 editor: visual
 
