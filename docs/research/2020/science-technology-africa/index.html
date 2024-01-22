@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,72 +18,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -118,7 +55,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -126,7 +64,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -137,29 +75,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <span class="navbar-title">Helpman Institute</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:info@helpmaninstitute.org"><i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:info@helpmaninstitute.org" rel="" target=""><i class="bi bi-envelope" role="img" aria-label="email">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute"><i class="bi bi-linkedin" role="img" aria-label="linkedin">
+    <a class="nav-link" href="https://www.linkedin.com/company/helpmaninstitute" rel="" target=""><i class="bi bi-linkedin" role="img" aria-label="linkedin">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -167,25 +107,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contents</h2>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#why-doesnt-africa-produce-more-st" id="toc-why-doesnt-africa-produce-more-st" class="nav-link active" data-scroll-target="#why-doesnt-africa-produce-more-st">Why doesn’t Africa produce more S&amp;T?</a></li>
   <li><a href="#case-study-nokias-story" id="toc-case-study-nokias-story" class="nav-link" data-scroll-target="#case-study-nokias-story">Case study: Nokia’s story</a></li>
   </ul>
 </nav>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Science and Technology in Africa’s Development</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">Science and Technology in Africa’s Development</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Blog &amp; commentary</div>
   </div>
@@ -197,7 +135,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    Olumide Taiwo 
+    <p class="author">Olumide Taiwo </p>
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -255,8 +193,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Blomström, M. and Kokko, A. From natural resources to high tech production: the evolution of industrial competitiveness in Sweden and Finland</p>
 
 
-<!-- -->
-
 </section>
 
 
@@ -296,9 +232,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -334,57 +284,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
-  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -414,6 +313,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -452,102 +437,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Science and Technology in Africa’s Development"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  - Blog &amp; commentary</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2020-05-17</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">date-modified:</span><span class="co"> 2020-09-17</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> "MMM YYYY"</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Olumide Taiwo</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliations:</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">      - ref: hdi</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">    attributes:</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">      corresponding: true</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">    email: otaiwo@helpmaninstitute.org</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="an">affiliations:</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">  - id: hdi</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">    name: Helpman Development Institute, FCT Abuja, Nigeria.</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">  html: </span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">    fig-cap-location: margin</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: false</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, include=FALSE}</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(svglite)</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flextable)</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(officer)</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(officedown)</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">fig.width =</span> <span class="dv">12</span>, <span class="at">fig.height =</span> <span class="dv">10</span>, <span class="at">fig.align =</span> <span class="st">"center"</span>,</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>                      <span class="at">out.width =</span> <span class="st">"100%"</span>, <span class="at">collapse =</span> <span class="cn">TRUE</span>, <span class="at">fig.pos =</span> <span class="st">"H"</span>, <span class="at">out.extra =</span> <span class="st">""</span>,</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>                      <span class="at">ft.tabcolsep=</span><span class="dv">5</span>)</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">set_flextable_defaults</span>(<span class="at">font.size =</span> <span class="dv">10</span>,</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>                       <span class="at">theme_fun =</span> theme_booktabs,</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>                       <span class="at">table.layout =</span> <span class="st">'autofit'</span>,</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>                       <span class="at">font.family =</span> <span class="st">"Arial"</span>)</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>In a general sense, science and technology refers to the production and application of new knowledge for development. It is the main driver of transformation in every sphere of society, be it economic, social, or political. Advances in science and technology capabilities are at the heart of economic, demographic, and environmental differences between the developed and developing countries. Indeed, no nation can dream of development without science and technology.</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>At its 44th session in 1989, the United Nations' General Assembly noted "with great concern that the effect of increasing disparities in scientific and technological capabilities between the industrialized and the developing countries as a whole has been to contribute to a widening of the economic gap between them."<span class="ot">[^1]</span> Indeed, this acknowledgment dates back to the creation of the International Council of Scientific Unions (ICSU) in 1931 and has subsequently been essential to the programs and conferences of the United Nations (UN) after its creation in 1945. Early efforts to facilitate the application of science and technology in the less developed countries began with the New York scientific conference on the conservation and utilization of resources in 1949, and continued through the Geneva conference on the application of science and technology for the benefit of the less developed areas in 1963, as well as the Vienna conference on science and technology for development in 1979.</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>Resolution 44/14, Implementation of the Vienna Programme of Action on Science and Technology for Development, Section A of the resolution, End-of-Decade Review of the Vienna Programme of Action on Science and Technology for Development and its Revitalization, 42nd plenary meeting, 26 October 1989. See Official Records of the General Assembly, Forty-fourth Session, Supplement No. 37 (A/44/37), p. 21.</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>Despite a few, very notable successes in scientific and technological (S&amp;T) output that have been produced within the continent of Africa, it is clear that S&amp;T production is heavily based elsewhere, largely in the global north. One can cite most metrics on the issue to support this characterization, e.g. number of patents registered, scientific journal article submitted, etc. Increasingly, there is an consensus among Africans and Africanists that the continent cannot grow economically without redressing this imbalance. In order to do so, one would do well by understanding the root causes for the poor performance of many African countries in this regard.</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why doesn't Africa produce more S&amp;T?</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>A number of factors underlie Africa's low level of S&amp;T production. Many also underlie the continent's low level of development generally, including its colonial history, its generally poor governance, its high rate of conflict, etc. By and large, these 'macro-factors' will be given short-shrift in this paper.<span class="ot">[^2]</span> In their place, issue more specific to S&amp;T production will be the focus. In particular, since the responsibility for S&amp;T production (and development, more generally) lies squarely on the shoulders of African governments, the issues and decisions they face will assume an elevated importance.</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ot">[^2]: </span>One such issue that has attracted a lot of attention on this issue has been the so-called 'brain-drain', which refers to the exodus of skilled researchers and technicians from the developing world to the developed world. **(See reviews by.... and ...)**. The impact of this immigration on S&amp;T production in many parts of Africa is dramatic **(cite a study)**. However, given that its well-addressed in the academic literature, it will not be an issue that is discussed directly in this study.</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>On paper, it might appear that African government do a great deal to promulgate the S&amp;T agenda. Countries have issued a number of statements attesting to their commitment to the cause; they have signed treaties like the Lagos Plan of Action, the Abuja Treaty and most recently the Consolidated Plan of Action, etc; they instituted entire ministries tasked with promoting S&amp;T. The reality, however, is quite different than the formal proclamations and rhetoric might suggest. On the whole, African governments do little to prioritize S&amp;T research and its application. The ministries charged with this role are typically minor players in their national governments; they are considered to have relatively low importance and are underfunded accordingly. Other countries lack S&amp;T ministries altogether or have policies that were created a generation ago and geared towards a context which no longer applies.<span class="ot">[^3]</span></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ot">[^3]: </span>"A number of African countries formulated their science and technology policies in <span class="co">[</span><span class="ot">the 1970s and 1980s</span><span class="co">](http://www.nepadst.org/doclibrary/pdfs/ast_cpa_2007.pdf)</span> when development imperatives and technological opportunities were different"</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Under-attention of the issue and the under-resourcing of the actors meant to address has lead to a relatively greater foreign influence in the matter. Foreign donors have be able to drive their own S&amp;T agenda, and often, they emphasized 'technology transfer' as a key component of their modus operandi. The idea---which dominated the African independence era of the 1960s and has had lingering effects thereafter---was that the existing stock of scientific knowledge required for economic progress existed in the developed countries and simply needed to be transmitted to the developing countries in order for them to develop. This attitude almost systematically neglected the importance of the building-up of local S&amp;T capacity and local ownership of S&amp;T projects.</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>The consequences were, to a large degree, negative. A sense of 'knowledge dependence' in Africa has resulted, and, decades after independence, African countries are still largely reliant on the importation of Western technology. Making matters worse, African countries exercise relatively little control in using imported technology towards their own stated aims. Ogbu (2002, 2) expressed this sentiment succinctly by noting:</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>There is a certain unwitting acceptance of technological determinism among Africans, certainly among many African policy makers. Their tendency is to treat technology as manna from heaven. The technology does not have a social context. And, that the impacts or effects of technology are determined by the technology itself. Yet we know that the direction of development and impacts of any given technology are shaped by social and economic forces embedded in well-crafted science and technology policies.</span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>One manifestation of this 'lack of control' has been a disconnect between S&amp;T research and the private sector industry which could benefit from its knowledge.<span class="ot">[^4]</span> For instance, Africa continues to predominantly export primary commodities---like oil, natural gas and minerals---as opposed to products with more 'value-added' to them which require a higher level of S&amp;T sophistication. African development writ large suffers as a result.</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ot">[^4]: </span>"<span class="co">[</span><span class="ot">weak or no links</span><span class="co">](http://www.nepadst.org/doclibrary/pdfs/ast_cpa_2007.pdf)</span> between industry and science and technology institutions, a mismatch between R&amp;D activities and national industrial development strategies and goals"</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>This policy paper will address a series of interrelated issues. Most prominently, it will ask: why has the Science and Technology agenda not taken off in many African countries, as it has in many non-African countries? In answering this question, a set of seven African and seven non-African countries will be used as case studies (the methodology behind their selection will be addressed in a later chapter.) Both quantitative and more qualitative, historical data will be marshaled to address the question.</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>Investigating it question will inevitably involve addressing a number of subordinate issues, which can be roughly thought of as falling under one of two 'sets.' One set will deal with education policy, and will touch upon broad questions like 'How clear is the relationship between tertiary school enrollment---and specifically school enrollment in scientific fields---and S&amp;T outcomes?' The second set, albeit one that has significant overlap with the first, will have to do with finance, i.e. expenditure on research and development. This set will address questions such as 'How is R&amp;D expenditure typically allocated between basic, applied and experimental research, etc.?'; and 'Who finances and who performs R&amp;D?'. After establishing an empirical background on these subjects, the paper will transition into more normative questions. These will include 'How much money should a particular government spend on R&amp;D, and how should it allocates this money in doing so?' The aim of the paper is to both discover and disseminate lessons that can be useful to policy makers in promoting the S&amp;T agenda.</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>Unstated so far has been how the 'level' of S&amp;T will be measured exactly. Such an issue is not trivial; any approach will undoubtedly have its critics. To minimize these criticisms, we use at a range of scientific and technological 'outputs' that might approximate a level of S&amp;T in a given country. These include the number of scientific articles authored by a country's citizens, the number of R&amp;D researchers in country and the number of patents held by its nationals. Of course, these are imperfect 'proxies' and will be utilized only when it is judicious to do so. Furthermore, due to the scanty nature of much of the collected data (that describe both the inputs, i.e. education and finance, and the specified outputs), the analysis will tend to focus on answering a fairly limited set of questions---only those which have reliable empirical backdrop. In this sense, the availability of data will drive much of what is asked about it.</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">## Case study: Nokia's story</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>Finland's economic story is one of success and diversification. Initially, its economic structure was geared towards the production of raw materials; its comparative advantages were in iron ore and timber, products which found ready consumers in the economies of Western Europe. Over time, however, the country's developed technologically and, as a result, began to create more sophisticated products, that were higher up on the economic value chain. (That said, a significant part of Finland's economy to this day is raw material production---which suggests that there is still a role for this type of economic activity in highly advanced economies.)</span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>The story of the Finnish company Nokia reflects, in some ways, the story of Finland's economic trajectory. (The company has also been a significant factor in driving Finland's economic trajectory---but that story will not be addressed here.) In its early stages, the company was comprised of three smaller organizations (which had formally merged together but still exercised a degree of independence from each other). Nokia Ltd. produced paper and pulp; Finnish Rubber Works produced rubber boots and tires; and Finnish Cable Works produced electrical wires and cable. For each outfit, crucial technology had been imported from abroad.</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>The electronics division of the company---which would eventually become central to the business's functioning---was created in 1960. The profits from this venture came slowly and, often, not at all. Nonetheless, the company's leaders were resolute in insisting on its importance; the division enjoyed sizeable monetary investments and contact with the most current technology products on the market. However, it wasn't until the company acquired a number of businesses in the 1970s and 80s that Nokia truly transformed itself from a producer specializing in low-tech goods to one specializing in high-tech goods. In this process, the mobile phone increasingly became the company's focus. One reason why the company was able to adapt (and able to integrate the knowledge base of its recent acquisitions) was because it had been assiduous in making investments in its human capital.</span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Nokia had invested substantially in the Finnish public school education, helping change the system's orientation to one which emphasized life-long learning. It had created bridges with academia by working with a number of schools to establish 'Nokia University' in the 1980s. The objective of this school was to increase the educational training of its workers: if an employee had a bachelors degree, he was encouraged to get a masters; if he had a masters degree, he was encouraged to aim for doctorate. Employees were also encouraged to go abroad, to work at Nokia's foreign affiliates, where they could acquire a more diverse set of skills than they could in Finland. In all, these efforts paid handsome dividends, helping the company immensely. Over time, however, the nature of the skill production that they encouraged changed. As the company (and the nation it was based in) developed, the skills needed by the business were increasingly seen as 'public goods' and fostered in the public domain, accordingly.</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>A number of useful lessons follow from Nokia's story. The first is of the importance of a long-term time horizon in business. Had Nokia's leadership insisted on immediate profits from its electronics division after the wing had been established, the company would never have been able to reap the sizable long-run returns it eventually did. One possible reason why the business could afford to have a long-term time horizon was because it had profitable projects in place. These could be used as a safeguard for the company to fall back on, in case the investments in electronics did not pan out, and could be used to subsidize R&amp;D investments before the investments generated returns themselves. Viewed at the issue in this regard, business competitiveness---even if it is not it is directly related to science and technology---might be important in pursuing S&amp;T production, more generally.</span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>The second lesson is of the importance of creating 'synergies' between various actors in a society. Nokia's relationship with Finnish academic institutions was pivotal in raising the level of human capital among its employees---which, in turn, was pivotal in helping transform the company into its modern incarnation. ...The obvious lesson for both businesses and policy makers in developing countries is to strength the linkage between the educational system and the private sector. The details of how this is should be done will undoubtedly vary with context. Nonetheless, private-sector investments in public education; programs encouraging workers to return to school; and curricula geared towards practical, industry-based issues should be considered options. In many cases, these actions would result in a win-win result. Students would be better motivated in school, knowing that, upon graduation, they can get a job using the skills they had just learned; businesses would benefit by having more knowledgeable employees in their ranks.</span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>Resource:</span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>Blomström, M. and Kokko, A. From natural resources to high tech production: the evolution of industrial competitiveness in Sweden and Finland</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</script>
 </div> <!-- /content -->
 
 

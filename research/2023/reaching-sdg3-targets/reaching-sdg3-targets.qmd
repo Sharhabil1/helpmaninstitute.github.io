@@ -154,31 +154,19 @@ The relative performance of private health care and public health care can be me
 
 3.  Outcomes Outcomes refer to treatment success rates, population coverage, morbidity, and mortality. From a cross-sectional viewpoint, maternal and child health outcomes are superior in areas where private healthcare facilities dominate because of the better accessibility and responsiveness of private healthcare facilities. With states ranked according to the share of labor and delivery services provided by the private sector, the table below shows the disparity in service delivery and outcomes between the top 5 states and the bottom 5 states of the distribution
 
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | State        | Private Sector (%) | Infant Mortality Rate | Under-5 Mortality Rate | Skilled ANC (%) | Skilled ANC (%) | Full immunization (%) |
-+==============+====================+=======================+========================+=================+=================+=======================+
+|--------------|--------------------|-----------------------|------------------------|-----------------|-----------------|-----------------------|
 | **Top 5**    |                    |                       |                        |                 |                 |                       |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | Abia         | 79                 | 55                    | 83                     | 911             | 91              | 34                    |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | Enugu        | 77                 | \-                    | \-                     | 93              | 92              | 51                    |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | Imo          | 74                 | 66                    | 96                     | 96              | 96              | 44                    |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | Bayelsa      | 73                 | 57                    | 95                     | 62              | 38              | 28                    |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | Anambra      | 71                 | 39                    | 53                     | 98              | 97              | 55                    |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | Average      | 75                 | 54                    | 52                     | 88              | 83              | 42                    |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | **Bottom 5** |                    |                       |                        |                 |                 |                       |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | Bauchi       | 32                 | 81                    | 161                    | 60              | 22              | 14                    |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | Taraba       | 29                 | 64                    | 105                    | 45              | 30              | 12                    |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 | Zamfara      | 28                 | 104                   | 210                    | 42              | 16              | 5                     |
-+--------------+--------------------+-----------------------+------------------------+-----------------+-----------------+-----------------------+
 
 : A table showing the disparity in service delivery and outcomes between private sector serviced states in Nigeria.
 
@@ -220,15 +208,11 @@ In India, the government grants under private-public partnerships in healthcare 
 
 A study in Pakistan showed the impact of Private-Public primary healthcare on maternal and child healthcare services such as antenatal care, postnatal care, and immunization. Coverage of these services increased during the period of PPP implementation. Although baseline data were not available for postnatal care, however, data showed an increase in coverage from the PPP pioneer year (2012) to 2013.[@imtiaz2017]
 
-+----------------------------------------+-------------------------+--------------------------+
 | **Maternal and Child Health Services** | **Pre-PPP (2010-2011)** | **Post-PPP (2012-2013)** |
-+========================================+=========================+==========================+
+|----------------------------------------|-------------------------|--------------------------|
 | **Antenatal Care**                     | 8,437 pregnant women    | 11,740 pregnant women    |
-+----------------------------------------+-------------------------+--------------------------+
 | **Postnatal Care**                     | 2,407 (2012) women      | 3,317 women              |
-+----------------------------------------+-------------------------+--------------------------+
 | **Immunization**                       | 12,594 children         | 21,656 children          |
-+----------------------------------------+-------------------------+--------------------------+
 
 : A table showing an increase in the coverage of maternal and child health services in Pakistan from the PPP pioneer year (2012) to 2013.
 
@@ -262,15 +246,11 @@ Source: World Health Organization and the United Nations Children's Fund (UNICEF
 
 Nigeria has also gained some momentum with private-public partnership in primary healthcare. A tuberculosis program carried out in Kaduna State in Nigeria showed the effectiveness of private-public primary healthcare in tuberculosis treatment. Treatment outcomes compared favorably to state and national figures.[@gidado2009]
 
-+---------------------------------------+---------------------+-----------------------+---------------------+-----------------------+------------------+--------------+
 | **Sector**                            | **Private**         |                       | **Public**          |                       | **Kaduna state** | **National** |
-+=======================================+=====================+=======================+=====================+=======================+==================+==============+
+|---------------------------------------|---------------------|-----------------------|---------------------|-----------------------|------------------|--------------|
 | **Delivery**                          | Primary Health Care | Secondary Health Care | Primary Health Care | Secondary Health Care |                  |              |
-+---------------------------------------+---------------------+-----------------------+---------------------+-----------------------+------------------+--------------+
 | **Percentage**                        | 70%                 | 30%                   | 60%                 | 40%                   |                  |              |
-+---------------------------------------+---------------------+-----------------------+---------------------+-----------------------+------------------+--------------+
 | **Treatment success of tuberculosis** |                     |                       | 81.3%               |                       | 80.4%            | 81.0%        |
-+---------------------------------------+---------------------+-----------------------+---------------------+-----------------------+------------------+--------------+
 
 : A table showing the impact of PPP on the treatment outcomes for a tuberculosis program in Kaduna State, Nigeria.
 
