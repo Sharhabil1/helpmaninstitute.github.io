@@ -1,0 +1,49 @@
+---
+title: "REACHING THE SUSTAINABLE DEVELOPMENT GOAL (SDG) 3 TARGETS IN NIGERIA: EMPHASIS ON PRIVATE-PUBLIC PARTNERSHIPS (PPP) IN PRIMARY HEALTH CARE "
+
+image: "figures/mmr_nigeria.png"
+categories:
+  -  Working papers
+
+date: 2023-10-10
+date-modified: today
+date-format: "MMM YYYY"
+author:
+  - name: Oshokunuozaname Dania  
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: false
+    email: odania@helpmaninstitute.org
+  - name: Sharhabil Tasiu A.
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: stasiu@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, FCT Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+execute:
+  echo: false
+  
+---
+
+## Abstract
+
+Primary Healthcare which is the cornerstone of every healthcare system is monitored using the three maternal and child health indicators which are Maternal Mortality Ratio (MMR), Under-5 Mortality Rate (U-5MR), and Neonatal Mortality rate (NMR). We observed how these indicators have performed poorly in Nigeria for the last three decades with reference to the 2030 goals for the Sustainable Development Goal (SDG) 3. MMR in Nigeria declined from 1100 per 100,000 live births in 1990 to 512 per 100,000 live births in 2018. However, this figure remains far from the targeted goal of 70 per 100,000 live births by 2030. Nigeria’s U-5MR dropped from 193 per 1,000 live births in 1990 to 132 per 1,000 live births in 2018, falling significantly short of the intended goal of 25 per 1,000 live births per year by 2030. NMR in Nigeria declined slightly from 42 per 1,000 live births per year in 1990 to 39 per 1,000 live births per year in 2018 indicating a considerable gap from the targeted goal of 12 per 1,000 live births per year by 2030. These numbers are a reflection of Nigeria’s poor primary healthcare. To overcome these challenges, we recognized the need for a shift from exclusive private and public primary healthcare to private-public partnerships in primary healthcare. Additionally, we identified expanding coverage for social health insurance as a crucial step in addressing these existing healthcare disparities.
+
+Keywords: Primary Health care, Private public partnership, SGD 3 and Social health Insurance.
+ 
+## Key figure
+
+![maternal mortality ratio](figures/mmr_nigeria.png)
+
+## PDF links
+
+-   [Paper (preprint) in PDF format](reaching-sdg3-targets.pdf)
