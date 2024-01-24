@@ -1,0 +1,51 @@
+---
+title: "Employment choice and earnings analysis of FCT labour force: an examination of determinants and motivations."
+
+image: "figures/figure2.png"
+categories:
+  -  Working papers
+
+date: 2024-01-22
+date-modified: today
+date-format: "MMM YYYY"
+author:
+  - name: Chukwuma Nwofor  
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: false
+    email: cnwofor@helpmaninstitute.org
+  - name: Halimat Abdulrazaq
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: habdulrazaq@helpmaninstitute.org
+
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, FCT Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+execute:
+  echo: false
+  
+---
+
+# Abstract
+
+This study examines the factors affecting income levels, reservation income expectations, and employment sector transition choices in the Nigerian economy. We employed descriptive tables, Mincerian regression models, and multinomial logit regression models to analyze workers' employment transition motivations and economic constraints. Data from a multipurpose survey carried out by Helpman Development Institute Garki 2, Abuja, which focused on employment sector choices, income levels, reservation wage expectations, fertility decisions, and insurance knowledge is used in this research endeavor. Finding show that majority of FCT workers plan to become employers in five years' time. We also find that monthly living costs, educational level (specifically possessing a national diploma or higher), gender, an individual's employment sector, and apprenticeship experience significantly influence income levels of FCT workers. The research findings also suggest that FCT workers with a Bachelor's degrees or higher had notable reservation wage expectations, while gender did not significantly influence reservation income expectations. Our research findings also indicate that larger childhood household sizes increase the probability of transitioning into the self-employment sector from wage/salary employment and also from self-employment to employer sector. The major policy implication of our results is the need to provide a stable environment for the growth and expansion of businesses as we see that majority of FCT workers intend to become employers or self-employed workers in five years' time, their major motivation being in search of a better room for growth and expansion.
+
+
+
+**Key words**: multinomial logistic regression, income, Nigerian, transition
+ 
+## Key figure
+
+![Worker’s intended employment sectors and their motivations](figures/figure2.png)
+
+## PDF links
+
+-   [Paper (preprint) in PDF format](employment-choice-analysis.pdf)
