@@ -64,6 +64,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts_2024 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts_2024'] = new List('listing-posts_2024', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-posts_2023 .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -370,18 +398,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Year</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2023</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2022</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2021</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2020</a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2019</a></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2018</a></li>
-  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2017</a></li>
-  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2016</a></li>
-  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">2015</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2024</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2023</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2022</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2021</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2020</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2019</a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2018</a></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2017</a></li>
+  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">2016</a></li>
+  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9">2015</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(23)</span></div><div class="category" data-category="Articles &amp; reports">Articles &amp; reports <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Blog &amp; commentary">Blog &amp; commentary <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Research notes">Research notes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Working papers">Working papers <span class="quarto-category-count">(15)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(24)</span></div><div class="category" data-category="Articles &amp; reports">Articles &amp; reports <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Blog &amp; commentary">Blog &amp; commentary <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Research notes">Research notes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Working papers">Working papers <span class="quarto-category-count">(16)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -404,10 +433,55 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Explore the latest health and economic research and policy proposals from Helpman Development Institute’s experts.</p>
 <section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2023</h2>
+<h2 class="anchored" data-anchor-id="section">2024</h2>
+<div id="listing-posts_2024" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1705878000000" data-listing-file-modified-sort="1706117821923" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./research/2024/employment-choice-analysis/index.html"> <img src="./research/2024/employment-choice-analysis/figures/figure2.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./research/2024/employment-choice-analysis/index.html">
+<h3 class="no-anchor listing-title">
+Employment choice and earnings analysis of FCT labour force: an examination of determinants and motivations.
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Working papers'); return false;">
+Working papers
+</div>
+</div>
+<a href="./research/2024/employment-choice-analysis/index.html">
+<div class="listing-description">
+This study examines the factors affecting income levels, reservation income expectations, and employment sector transition choices in the Nigerian economy. We employed…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./research/2024/employment-choice-analysis/index.html">
+<div class="listing-date">
+January 22, 2024
+</div>
+<div class="listing-author">
+Chukwuma Nwofor, Halimat Abdulrazaq
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2023</h2>
 <div id="listing-posts_2023" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1696892400000" data-listing-file-modified-sort="1705924673696" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1696892400000" data-listing-file-modified-sort="1706117119381" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2023/reaching-sdg3-targets/index.html"> <img src="./research/2023/reaching-sdg3-targets/figures/mmr_nigeria.png" class="thumbnail-image"> </a></p>
 </div>
@@ -442,7 +516,7 @@ Oshokunuozaname Dania, Sharhabil Tasiu A.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Working papers" data-listing-date-sort="1689116400000" data-listing-file-modified-sort="1697287958371" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="1" data-categories="Working papers" data-listing-date-sort="1689116400000" data-listing-file-modified-sort="1706117119414" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2023/sectoral-non-oil-export/index.html"> <img src="./research/2023/sectoral-non-oil-export/figures/Figure1.png" class="thumbnail-image"> </a></p>
 </div>
@@ -477,7 +551,7 @@ Abdulrahman Ibrahim, QUADRI, Umar Faruq
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Working papers" data-listing-date-sort="1688252400000" data-listing-file-modified-sort="1697287957821" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="2" data-categories="Working papers" data-listing-date-sort="1688252400000" data-listing-file-modified-sort="1706117118914" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2023/environmental-quality-energy/index.html"> <p class="card-img-top"><img src="research\2023\environmental-quality-energy\figures\rgdp-energy-carbon-i.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -512,7 +586,7 @@ QUADRI, Umar Faruq
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Working papers" data-listing-date-sort="1683154800000" data-listing-file-modified-sort="1697287958287" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="3" data-categories="Working papers" data-listing-date-sort="1683154800000" data-listing-file-modified-sort="1706117119364" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./research/2023/larcs-scoping-review/index.html"> <img src="./research/2023/larcs-scoping-review/figures/larcs-use-map.svg" class="thumbnail-image"> </a></p>
 </div>
@@ -547,7 +621,7 @@ Chidinma Oli, Benedict Nwogu, Edifofon Akpan
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Blog &amp; commentary" data-listing-date-sort="1672527600000" data-listing-file-modified-sort="1697287957856" data-listing-date-modified-sort="1677625200000" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="4" data-categories="Blog &amp; commentary" data-listing-date-sort="1672527600000" data-listing-file-modified-sort="1706117118948" data-listing-date-modified-sort="1677625200000" data-listing-reading-time-sort="8">
 <div class="thumbnail">
 <p><a href="./research/2023/labour-employment-elasticity/index.html"> <img src="./research/2023/labour-employment-elasticity/figures/labour-absorption-rate.svg" class="thumbnail-image"> </a></p>
 </div>
@@ -588,11 +662,11 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2022</h2>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">2022</h2>
 <div id="listing-posts_2022" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1672786800000" data-listing-file-modified-sort="1697287957789" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16">
+<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1672786800000" data-listing-file-modified-sort="1706117118898" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16">
 <div class="thumbnail">
 <p><a href="./research/2022/policy-relevant-economic/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -627,7 +701,7 @@ Olumide Taiwo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Working papers" data-listing-date-sort="1655506800000" data-listing-file-modified-sort="1697287957623" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="Working papers" data-listing-date-sort="1655506800000" data-listing-file-modified-sort="1706117118773" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./research/2022/Macroeconomic-Implications-Healthcare/index.html"> <img src="./research/2022/Macroeconomic-Implications-Healthcare/figures/figure2.2.png" class="thumbnail-image"> </a></p>
 </div>
@@ -662,7 +736,7 @@ QUADRI, Umar Faruq
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Working papers" data-listing-date-sort="1655506800000" data-listing-file-modified-sort="1697287957689" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="2" data-categories="Working papers" data-listing-date-sort="1655506800000" data-listing-file-modified-sort="1706117118829" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2022/effect-of-birth-control/index.html"> <img src="./research/2022/effect-of-birth-control/figures/figure.png" class="thumbnail-image"> </a></p>
 </div>
@@ -697,7 +771,7 @@ QUADRI, Umar Faruq
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Working papers" data-listing-date-sort="1654988400000" data-listing-file-modified-sort="1697287957773" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="3" data-categories="Working papers" data-listing-date-sort="1654988400000" data-listing-file-modified-sort="1706117118882" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2022/oil-price-fluctuations/index.html"> <p class="card-img-top"><img src="research\2022\oil-price-fluctuations\figures\stability-test-figure-4.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -732,7 +806,7 @@ QUADRI, Umar Faruq
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Working papers" data-listing-date-sort="1651618800000" data-listing-file-modified-sort="1697287957711" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="4" data-categories="Working papers" data-listing-date-sort="1651618800000" data-listing-file-modified-sort="1706117118831" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2022/harris-todaro-model/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -773,11 +847,11 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">2021</h2>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">2021</h2>
 <div id="listing-posts_2021" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1620082800000" data-listing-file-modified-sort="1697287957603" data-listing-date-modified-sort="1683154800000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1620082800000" data-listing-file-modified-sort="1706117118757" data-listing-date-modified-sort="1683154800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2021/tfr-determinants-bongaarts/index.html"> <img src="./research/2021/tfr-determinants-bongaarts/figures/fp-effort-index.svg" class="thumbnail-image"> </a></p>
 </div>
@@ -812,7 +886,7 @@ Edifofon Akpan, Chidinma Oli, Abdulafeez Adefabi, Olumide Taiwo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Blog &amp; commentary" data-listing-date-sort="1556924400000" data-listing-file-modified-sort="1697287957574" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="28">
+<div class="quarto-post image-right" data-index="1" data-categories="Blog &amp; commentary" data-listing-date-sort="1556924400000" data-listing-file-modified-sort="1706117118741" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="28">
 <div class="thumbnail">
 <p><a href="./research/2021/knowledge-economy-competitiveness/index.html"> <img src="./research/2021/knowledge-economy-competitiveness/figures/knowledge-economy-competitiveness.png" class="thumbnail-image"> </a></p>
 </div>
@@ -853,11 +927,11 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3">2020</h2>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4">2020</h2>
 <div id="listing-posts_2020" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1591916400000" data-listing-file-modified-sort="1697287957555" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1591916400000" data-listing-file-modified-sort="1706117118725" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./research/2020/family-group-theory/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -892,7 +966,7 @@ Olumide Taiwo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Working papers" data-listing-date-sort="1591225200000" data-listing-file-modified-sort="1697287957555" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="Working papers" data-listing-date-sort="1591225200000" data-listing-file-modified-sort="1706117118732" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./research/2020/skills-entrepreneurship-wages/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -927,7 +1001,7 @@ Olumide Taiwo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Blog &amp; commentary" data-listing-date-sort="1589670000000" data-listing-file-modified-sort="1697287957555" data-listing-date-modified-sort="1600297200000" data-listing-reading-time-sort="13">
+<div class="quarto-post image-right" data-index="2" data-categories="Blog &amp; commentary" data-listing-date-sort="1589670000000" data-listing-file-modified-sort="1706117118732" data-listing-date-modified-sort="1600297200000" data-listing-reading-time-sort="13">
 <div class="thumbnail">
 <p><a href="./research/2020/science-technology-africa/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -968,11 +1042,11 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-4" class="level2">
-<h2 class="anchored" data-anchor-id="section-4">2019</h2>
+<section id="section-5" class="level2">
+<h2 class="anchored" data-anchor-id="section-5">2019</h2>
 <div id="listing-posts_2019" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Articles &amp; reports" data-listing-date-sort="1556924400000" data-listing-file-modified-sort="1697287957489" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="0" data-categories="Articles &amp; reports" data-listing-date-sort="1556924400000" data-listing-file-modified-sort="1706117118648" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2019/sokoto-epidemiology-profile/index.html"> <img src="./research/2019/sokoto-epidemiology-profile/figures/road-traffic-accidents.svg" class="thumbnail-image"> </a></p>
 </div>
@@ -1013,11 +1087,11 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-5" class="level2">
-<h2 class="anchored" data-anchor-id="section-5">2018</h2>
+<section id="section-6" class="level2">
+<h2 class="anchored" data-anchor-id="section-6">2018</h2>
 <div id="listing-posts_2018" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1525388400000" data-listing-file-modified-sort="1697287957472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1525388400000" data-listing-file-modified-sort="1706117118631" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
 <p><a href="./research/2018/sense-nigeria-population/index.html"> <img src="./research/2018/sense-nigeria-population/figures/sense-nigeria-population.jpg" class="thumbnail-image"> </a></p>
 </div>
@@ -1058,11 +1132,11 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-6" class="level2">
-<h2 class="anchored" data-anchor-id="section-6">2017</h2>
+<section id="section-7" class="level2">
+<h2 class="anchored" data-anchor-id="section-7">2017</h2>
 <div id="listing-posts_2017" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1504479600000" data-listing-file-modified-sort="1697287957472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="0" data-categories="Blog &amp; commentary" data-listing-date-sort="1504479600000" data-listing-file-modified-sort="1706117118629" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <div class="thumbnail">
 <p><a href="./research/2017/medical-tourism-nigeria/index.html"> <img src="./research/2017/medical-tourism-nigeria/figures/medical-tourism-nigeria.png" class="thumbnail-image"> </a></p>
 </div>
@@ -1103,11 +1177,11 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-7" class="level2">
-<h2 class="anchored" data-anchor-id="section-7">2016</h2>
+<section id="section-8" class="level2">
+<h2 class="anchored" data-anchor-id="section-8">2016</h2>
 <div id="listing-posts_2016" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1464994800000" data-listing-file-modified-sort="1697287957455" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1464994800000" data-listing-file-modified-sort="1706117118614" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2016/unemployment-rise-nigeria/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -1142,7 +1216,7 @@ Olumide Taiwo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Working papers,Research notes" data-listing-date-sort="1459465200000" data-listing-file-modified-sort="1697287957437" data-listing-date-modified-sort="1687129200000" data-listing-reading-time-sort="15">
+<div class="quarto-post image-right" data-index="1" data-categories="Working papers,Research notes" data-listing-date-sort="1459465200000" data-listing-file-modified-sort="1706117118605" data-listing-date-modified-sort="1687129200000" data-listing-reading-time-sort="15">
 <div class="thumbnail">
 <p><a href="./research/2016/education-mobility-poverty/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -1186,11 +1260,11 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-8" class="level2">
-<h2 class="anchored" data-anchor-id="section-8">2015</h2>
+<section id="section-9" class="level2">
+<h2 class="anchored" data-anchor-id="section-9">2015</h2>
 <div id="listing-posts_2015" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1433372400000" data-listing-file-modified-sort="1697287957421" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="Working papers" data-listing-date-sort="1433372400000" data-listing-file-modified-sort="1706117118587" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./research/2015/land-rights-and-polygyny/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -1225,7 +1299,7 @@ Olumide Taiwo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Working papers" data-listing-date-sort="1433372400000" data-listing-file-modified-sort="1697287957422" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="Working papers" data-listing-date-sort="1433372400000" data-listing-file-modified-sort="1706117118600" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./research/2015/property-human-capital/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -1260,7 +1334,7 @@ Olumide Taiwo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Articles &amp; reports" data-listing-date-sort="1430694000000" data-listing-file-modified-sort="1697287957404" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="2" data-categories="Articles &amp; reports" data-listing-date-sort="1430694000000" data-listing-file-modified-sort="1706117118587" data-listing-date-modified-sort="1706050800000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./research/2015/capital-enterprise-development/index.html"> <img src="./research/2015/capital-enterprise-development/figures/figure-5.png" class="thumbnail-image"> </a></p>
 </div>
