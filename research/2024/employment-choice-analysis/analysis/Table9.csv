@@ -1,0 +1,23 @@
+VARIABLES,Log Monthly Income,Log Reservation Income
+Employment duration,0.00131***,0.000503
+,(-0.000429),(-0.000422)
+Log monthly cost,0.671***,0.641***
+,(-0.0289),(-0.0295)
+National diploma ,0.228***,0.00967
+,(-0.0581),(-0.0568)
+BSc and above ,0.424***,0.280***
+,(-0.0515),(-0.0501)
+Married,0.0342,-0.00812
+,(-0.0453),(-0.0439)
+Employer & family enterprise,0.241***,0.0607
+,(-0.0703),(-0.0629)
+Self employed ,0.213***,0.117**
+,(-0.0502),(-0.0489)
+Female ,-0.120***,-0.0705*
+,(-0.0435),(-0.0418)
+Apprenticeship experience,-0.101**,0.0188
+,(-0.0411),(-0.0397)
+Constant,3.429***,4.495***
+,(-0.307),(-0.312)
+Observations,689,708
+R-squared,0.651,0.564
