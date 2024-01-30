@@ -1,0 +1,9 @@
+,Dependent Children,Monthly Income,Monthly living cost,Kids number currently,Number of intended children,Childhood household size,Hours worked in a week
+Number of Dependent Children,1,,,,,,
+Monthly Income,0.0009,1,,,,,
+Monthly living cost,0.0421,0.7719*,1,,,,
+Kids number currently,0.2649*,0.2354*,0.2880*,1,,,
+Number of intended children,0.2887*,0.0574,0.0760*,0.3035*,1,,
+Childhood household size,0.1797*,0.1013*,0.1243*,0.2564*,0.2972*,1,
+Hours worked in a week,0.0562,-0.2521*,-0.2120*,-0.0325,0.0206,0.0506,1
+Ideal number of children,0.2780*,0.0179,0.0016,0.2000*,0.7241*,0.2702*,0.0021

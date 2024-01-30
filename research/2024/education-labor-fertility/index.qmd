@@ -1,0 +1,37 @@
+---
+title: "Exploring the Interplay between Education, Labor Market, and Fertility: A Study on FCT labor force."
+
+categories:
+  -  Working papers
+
+date: 2024-01-25
+date-modified: today
+date-format: "MMM YYYY"
+author:
+  - name: Usman Usman  
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: false
+    email: uusman@helpmaninstitute.org
+ 
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, FCT Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+execute:
+  echo: false
+---
+
+# Abstract
+
+This research paper delves into the intricate interplay between education, labor, and fertility, unraveling nuanced relationships that shape family planning decisions using a multi-purpose survey conducted across major towns within the Federal Capital Territory (FCT) of Nigeria. Through a comprehensive analysis, the study reveals key findings: the negative impact of dependent children on intended fertility, the mitigating role of income, the complex dynamics of longer work hours, and the gender-specific influences of childhood household size. These findings contribute to our understanding of demographic transitions, shedding light on evolving societal structures and influencing policy considerations*
+
+**Key words**: fertility, demographic transitions, labor, education, multi-purpose survey
+
+## PDF links
+
+-   [Paper (preprint) in PDF format](education-labor-fertility.pdf)
