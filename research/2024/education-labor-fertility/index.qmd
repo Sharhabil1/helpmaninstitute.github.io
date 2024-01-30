@@ -8,13 +8,19 @@ date: 2024-01-25
 date-modified: today
 date-format: "MMM YYYY"
 author:
-  - name: Usman Usman  
+  - name: Usman Bala Usman  
     affiliations:
       - ref: hdi
     attributes:
       corresponding: false
     email: uusman@helpmaninstitute.org
- 
+  - name: Dr. Olumide Taiwo
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: otaiwo@helpmaninstitute.org
+
 affiliations:
   - id: hdi
     name: Helpman Development Institute, FCT Abuja, Nigeria.
@@ -26,11 +32,18 @@ execute:
   echo: false
 ---
 
+
 # Abstract
 
 This research paper delves into the intricate interplay between education, labor, and fertility, unraveling nuanced relationships that shape family planning decisions using a multi-purpose survey conducted across major towns within the Federal Capital Territory (FCT) of Nigeria. Through a comprehensive analysis, the study reveals key findings: the negative impact of dependent children on intended fertility, the mitigating role of income, the complex dynamics of longer work hours, and the gender-specific influences of childhood household size. These findings contribute to our understanding of demographic transitions, shedding light on evolving societal structures and influencing policy considerations*
 
 **Key words**: fertility, demographic transitions, labor, education, multi-purpose survey
+
+## Key figure
+
+![Monthly income/living cost by gender in FCT](figures/figure1.png)
+
+
 
 ## PDF links
 
