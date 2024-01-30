@@ -8,13 +8,13 @@ date-modified: today
 date-format: "MMM YYYY"
 
 author:
-  - name: Usman Usman
+  - name: Usman Bala Usman
     affiliations:
       - ref: hdi
     attributes:
       corresponding: true
     email: uusman@helpmaninstitute.org
-  - name: Olumide Taiwo
+  - name: Dr. Olumide Taiwo
     affiliations:
       - ref: hdi
     attributes:
@@ -170,9 +170,7 @@ Approximately 18% of respondents reported having at least one foster child livin
 
 {{< pagebreak >}}
 
-![Monthly income/living cost by gender in FCT](figures/figure1.png){fig-alt="Source: authors’ computation from survey data"}
-
-{{< pagebreak >}}
+![Monthly income/living cost by gender in FCT](figures/figure1.png){fig-alt="Source: authors’ computation from survey data" width="560"}
 
 The descriptive statistics in Table 3 offer valuable insights into the gender-specific dynamics of factors influencing fertility intentions. Variations in working hours, income, living costs, and family size preferences highlight the nuanced interplay of socioeconomic factors. Understanding these nuances is essential when considering the diverse influences on fertility decisions within different gender contexts.
 
