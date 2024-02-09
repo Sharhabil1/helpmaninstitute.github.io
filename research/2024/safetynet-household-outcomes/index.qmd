@@ -1,0 +1,48 @@
+---
+title: "Does safety net improve household outcomes? Evidence from Nigeria."
+
+categories:
+  -  Working papers
+
+date: 2024-01-31
+date-modified: today
+date-format: "MMM YYYY"
+author:
+  - name: Adewumi Adediran
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: aadediran@helpmaninstitute.org
+  - name: Kamuludeen Salihu
+    affiliations:
+      - ref: hdi
+    attributes:
+      corresponding: true
+    email: kahmed@helpmaninstitute.org
+ 
+affiliations:
+  - id: hdi
+    name: Helpman Development Institute, FCT Abuja, Nigeria.
+
+format: 
+  html: 
+    fig-cap-location: margin
+execute:
+  echo: false
+---
+
+# Abstract
+
+Using a comprehensive household survey data on living conditions in Nigeria, the authors examined the impact of safety net measures (cash assistance, food assistance, in-kind assistance and scholarship) on household outcomes (consumption level and level of education). Using Principal Component Analysis (PCA), households were classified into different wealth level category to know the wealth level of households that received the safety net measures and to know if the targeting was effective. The estimate show very effective targeting in urban areas compared to rural areas. Propensity Score Matching (PSM) was employed to determine the impact of safety net measures on household outcomes. The findings show evidence that cash and food assistance improves the consumption level of households and that scholarship improves attendance of school age children in school, while suggesting that the targeting mechanism should be looked into in order to get safety net measures to households that will benefit the most from it the most specifically in rural areas
+
+**Key words**: safety net, household outcomes, Principal Component Analysis (PCA), Propensity Score Matching (PSM)
+
+## Key figure
+
+![Representation of cash assistance estimate by sector](figures/figure1.png)
+
+## PDF links
+
+-   [Paper (preprint) in PDF format](safetynet-household-outcomes.pdf)
+

@@ -1,0 +1,3 @@
+Variable,Sample,Treated,Controls,Difference,S.E.,T-stat
+current school atten,Unmatched,9.21153846,6.58449556,2.6270429,0.524739548,5.01
+,ATT,9.21153846,8.55769231,0.653846154,0.913593505,0.72

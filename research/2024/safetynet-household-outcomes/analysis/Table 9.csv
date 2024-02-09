@@ -1,0 +1,3 @@
+Variable,Sample,Treated,Controls,Difference,S.E.,T-stat
+Consumption level,Unmatched,108584.094,60394.3468,48189.7468,6816.95716,7.07
+,ATT,108584.094,57638.4795,50945.614,10047.3512,5.07

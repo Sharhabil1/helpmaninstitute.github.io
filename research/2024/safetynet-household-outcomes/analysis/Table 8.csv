@@ -1,0 +1,3 @@
+Variable,Sample,Treated,Controls,Difference,S.E.,T-stat
+food_consumption,Unmatched,445.706888,347.825583,97.8813048,28.8257488,3.4
+,ATT,445.706888,296.414286,149.292602,39.112943,3.82
