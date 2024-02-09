@@ -1,0 +1,42 @@
+,-1,-2
+VARIABLES,In-kind assistance,In-kind assistance
+,,
+Rural household,0.00126,0.00122
+,(-0.00217),(-0.00217)
+Owned a non-agricultural business,-0.00352,-0.00354
+,(-0.00232),(-0.00232)
+Processed any purchased crops,0.0189***,0.0157***
+,(-0.00357),(-0.00493)
+Owned a trading business ,0.00178,0.00176
+,(-0.00195),(-0.00196)
+Individual in household,-0.000101,-0.000106
+,(-0.000573),(-0.000573)
+Farming housing,0.000775,0.000795
+,(-0.00232),(-0.00232)
+Livestock household,0.000786,0.000835
+,(-0.00192),(-0.00192)
+Dwelling of housing,0.00239,0.00238
+,(-0.00208),(-0.00208)
+Female headed household,-0.000264,-0.000308
+,(-0.00269),(-0.00269)
+Household head education level_1,-0.00425,-0.00425
+,(-0.00297),(-0.00297)
+Household head education level _3,-0.00392,-0.00394
+,(-0.00322),(-0.00322)
+Asset Score,0.000437,0.000431
+,(-0.000368),(-0.000368)
+Elderly households,0.00131,0.00128
+,(-0.00231),(-0.00231)
+Households with children less than 6,0.00258***,0.00239***
+,(-0.000886),(-0.00091)
+Households with school age children,-0.000114,-0.000118
+,(-0.00091),(-0.00091)
+Foster children,0.00483,0.00491
+,(-0.00399),(-0.004)
+Processed any purchased crops_Children less than 6,,0.00205
+,,(-0.00221)
+Constant,0.00648**,0.00674**
+,(-0.00264),(-0.00265)
+,,
+Observations,"16,591","16,591"
+R-squared,0.004,0.004
